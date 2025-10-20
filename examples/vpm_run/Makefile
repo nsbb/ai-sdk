@@ -17,7 +17,7 @@ ifeq ("$(NPU_SW_VERSION)", "v2.0")
   LIBS_VIP += -L../../viplite-tina/lib/aarch64-none-linux-gnu/v2.0/ -lNBGlinker -lVIPhal
   MYCFLAGS += -DNPU_SW_VERSION=2
 else
-  INCLUDE += ../../viplite-tina/lib/aarch64-none-linux-gnu/v1.13/inc
+  INCLUDE += -I../../viplite-tina/lib/aarch64-none-linux-gnu/v1.13/inc
   LIBS_VIP += -L../../viplite-tina/lib/aarch64-none-linux-gnu/v1.13/ -lVIPlite -lVIPuser
   MYCFLAGS += -DNPU_SW_VERSION=1
 endif
