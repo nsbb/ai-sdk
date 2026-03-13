@@ -1,0 +1,46 @@
+convert PLATFORM=t527
+~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx/wav2vec2_base_960h_20s ~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx
+=========== Converting wav2vec2_base_960h_20s ONNX model ===========
+/home/nsbb/travail/T527/acuity-toolkit-binary-6.12.0/bin/pegasus import onnx --model wav2vec2_base_960h_20s.onnx --output-model wav2vec2_base_960h_20s.json --output-data wav2vec2_base_960h_20s.data
+WARNING: ONNX Optimizer has been moved to https://github.com/onnx/optimizer.
+All further enhancements and fixes to optimizers will be done in this new repo.
+The optimizer code in onnx/onnx repo will be removed in 1.9 release.
+
+[31m import SUCCESS [0m
+[31m already has wav2vec2_base_960h_20s_inputmeta.yml [0m
+[31m already has wav2vec2_base_960h_20s_postprocess_file.yml [0m
+~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx
+~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx/wav2vec2_base_960h_20s ~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx
+~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx
+~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx/wav2vec2_base_960h_20s ~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx
+ =======================================================================
+ ==== Start Quantizing wav2vec2_base_960h_20s model with type of  ===
+ =======================================================================
+/home/nsbb/travail/T527/acuity-toolkit-binary-6.12.0/bin/pegasus quantize --model wav2vec2_base_960h_20s.json --model-data wav2vec2_base_960h_20s.data --device CPU --with-input-meta wav2vec2_base_960h_20s_inputmeta.yml --compute-entropy --rebuild --model-quantize wav2vec2_base_960h_20s_bf16.quantize --quantizer qbfloat16 --qtype qbfloat16
+[TRAINER]Quantization start...
+[31m SUCCESS [0m
+~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx
+~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx/wav2vec2_base_960h_20s ~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx
+VIP9000NANOSI_PLUS_PID0X10000016  /home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools/
+ =======================================================================
+ =========== Start Generate wav2vec2_base_960h_20s ovx C code with type of bf16 ===========
+ =======================================================================
+[31m using  wav2vec2_base_960h_20s_bf16.quantize [0m
+/home/nsbb/travail/T527/acuity-toolkit-binary-6.12.0/bin/pegasus export ovxlib --model wav2vec2_base_960h_20s.json --model-data wav2vec2_base_960h_20s.data --dtype quantized --model-quantize wav2vec2_base_960h_20s_bf16.quantize --batch-size 1 --save-fused-graph --target-ide-project 'linux64' --optimize VIP9000NANOSI_PLUS_PID0X10000016 --viv-sdk /home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools/ --pack-nbg-unify --with-input-meta wav2vec2_base_960h_20s_inputmeta.yml --postprocess-file wav2vec2_base_960h_20s_postprocess_file.yml --output-path ./wksp/wav2vec2_base_960h_20s_bf16/wav2vec2_base_960h_20s_bf16
+gcc -Wall -std=c++0x -I. -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/CL -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/VX -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ovxlib -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/jpeg -D__linux__ -DLINUX -O3 -c vnn_pre_process.c
+gcc -Wall -std=c++0x -I. -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/CL -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/VX -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ovxlib -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/jpeg -D__linux__ -DLINUX -O3 -c vnn_wav2vec2base960h20sbf16.c
+gcc -Wall -std=c++0x -I. -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/CL -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/VX -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ovxlib -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/jpeg -D__linux__ -DLINUX -O3 -c main.c
+gcc -Wall -std=c++0x -I. -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/CL -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/VX -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ovxlib -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/jpeg -D__linux__ -DLINUX -O3 -c vnn_post_process.c
+gcc -Wall -std=c++0x -I. -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/CL -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/VX -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/ovxlib -I/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/include/jpeg -D__linux__ -DLINUX -O3 -O3  vnn_pre_process.o vnn_wav2vec2base960h20sbf16.o main.o vnn_post_process.o -L/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/lib -lOpenVX -lOpenVXU -lCLC -lVSC -lGAL -lovxlib -lEmulator -lvdtproxy -L/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/lib/vsim -lOpenVX -lOpenVXU -lCLC -lVSC -lGAL -lovxlib -lEmulator -lvdtproxy -L/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/lib/x64_linux -lOpenVX -lOpenVXU -lCLC -lVSC -lGAL -lovxlib -lEmulator -lvdtproxy -L/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/lib/x64_linux/vsim -lOpenVX -lOpenVXU -lCLC -lVSC -lGAL -lovxlib -lEmulator -lvdtproxy -L/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/lib/x64_linux/vsim -lOpenVX -lOpenVXU -lCLC -lVSC -lGAL -lovxlib -lEmulator -lvdtproxy -L/home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/../common/lib/ -lvdtproxy /home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools//vsimulator/../common/lib/libjpeg.a -o gen_nbg
+Galcore warning: MMU is disabled!
+ =======================================================================
+ =========== End  Generate wav2vec2_base_960h_20s ovx C code with type of  ===========
+ =======================================================================
+~/travail/T527/A523_A527_T527_A733_T736_Android13_AIOT-V1.0/android13/vendor/aw/ai-sdk/models/w2v_v.1.0.0_onnx
+./wksp/wav2vec2_base_960h_20s_bf16_nbg_unify/network_binary.nb
+[32m CMD History:[0m
+[32m CMD:pegasus import onnx --model wav2vec2_base_960h_20s.onnx --output-model wav2vec2_base_960h_20s.json --output-data wav2vec2_base_960h_20s.data  [0m
+[31m already has wav2vec2_base_960h_20s_inputmeta.yml [0m
+[31m already has wav2vec2_base_960h_20s_postprocess_file.yml [0m
+[32m CMD:pegasus quantize --model wav2vec2_base_960h_20s.json --model-data wav2vec2_base_960h_20s.data --device CPU --with-input-meta wav2vec2_base_960h_20s_inputmeta.yml --compute-entropy --rebuild --model-quantize wav2vec2_base_960h_20s_bf16.quantize --quantizer qbfloat16 --qtype qbfloat16  [0m
+[32m CMD:pegasus export ovxlib --model wav2vec2_base_960h_20s.json --model-data wav2vec2_base_960h_20s.data --dtype quantized --model-quantize wav2vec2_base_960h_20s_bf16.quantize --batch-size 1 --save-fused-graph --target-ide-project 'linux64' --optimize VIP9000NANOSI_PLUS_PID0X10000016 --viv-sdk /home/nsbb/VeriSilicon/VivanteIDE5.7.2/cmdtools/ --pack-nbg-unify --with-input-meta wav2vec2_base_960h_20s_inputmeta.yml --postprocess-file wav2vec2_base_960h_20s_postprocess_file.yml --output-path ./wksp/wav2vec2_base_960h_20s_bf16/wav2vec2_base_960h_20s_bf16 [0m

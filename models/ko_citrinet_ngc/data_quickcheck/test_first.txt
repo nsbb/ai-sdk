@@ -1,0 +1,2 @@
+wav_path	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data_quickcheck/wav_test/test_00000.wav
+text	턴테이블

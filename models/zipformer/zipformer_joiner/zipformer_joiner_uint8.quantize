@@ -1,0 +1,52 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@attach_Gemm_/output_linear/Gemm/out0_0:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 11.177534103393555
+    min_value: -20.26224708557129
+    scale: 0.12329325824975967
+    zero_point: 164
+  '@Gemm_/output_linear/Gemm_1:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 11.177534103393555
+    min_value: -20.26224708557129
+    scale: 0.12329325824975967
+    zero_point: 164
+  '@Tanh_/Tanh_2:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9830379486083984
+    min_value: -0.9799128770828247
+    scale: 0.00769784627482295
+    zero_point: 127
+  '@Add_/Add_3:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.380704164505005
+    min_value: -2.295365333557129
+    scale: 0.01833752728998661
+    zero_point: 125
+  '@Gemm_/output_linear/Gemm_1:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.257196426391602
+    min_value: -5.4528117179870605
+    scale: 0.04200003296136856
+    zero_point: 130
+  '@Gemm_/output_linear/Gemm_1:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 694302.4996766902
+    min_value: -694302.5
+    scale: 0.00032330979593098164
+    zero_point: 0
+customized_quantize_layers: {}

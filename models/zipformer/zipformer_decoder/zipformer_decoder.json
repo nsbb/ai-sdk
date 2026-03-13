@@ -1,0 +1,243 @@
+{
+    "MetaData": {
+        "Name": "torch_jit",
+        "AcuityVersion": "6",
+        "Platform": "tensorflow",
+        "Org_Platform": "onnx"
+    },
+    "Layers": {
+        "attach_Gemm_/decoder_proj/Gemm/out0_0": {
+            "name": "attach_Gemm_/decoder_proj/Gemm/out0",
+            "op": "output",
+            "parameters": {},
+            "inputs": [
+                "@Gemm_/decoder_proj/Gemm_1:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Gemm_/decoder_proj/Gemm_1": {
+            "name": "Gemm_/decoder_proj/Gemm",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 512,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@Squeeze_/Squeeze_2:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Squeeze_/Squeeze_2": {
+            "name": "Squeeze_/Squeeze",
+            "op": "squeeze",
+            "parameters": {
+                "axis_list": [
+                    1
+                ],
+                "name": null
+            },
+            "inputs": [
+                "@Relu_/decoder/Relu_3:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_/decoder/Relu_3": {
+            "name": "Relu_/decoder/Relu",
+            "op": "relu",
+            "inputs": [
+                "@Conv_/decoder/conv/Conv_5:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/decoder/conv/Conv_5": {
+            "name": "Conv_/decoder/conv/Conv",
+            "op": "group_conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": false,
+                "group_number": 128,
+                "ksize": 2,
+                "stride": 1,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/decoder/Mul_7:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/decoder/Mul_7": {
+            "name": "Mul_/decoder/Mul",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Gather_/decoder/embedding/Gather_8:out0",
+                "@Cast_/decoder/Cast_1_9:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Gather_/decoder/embedding/Gather_8": {
+            "name": "Gather_/decoder/embedding/Gather",
+            "op": "gather",
+            "parameters": {
+                "axis": 0,
+                "batch_dims": null
+            },
+            "inputs": [
+                "@Initializer_decoder.embedding.weight_10:out0",
+                "@Clip_/decoder/Clip_11:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Cast_/decoder/Cast_1_9": {
+            "name": "Cast_/decoder/Cast_1",
+            "op": "cast",
+            "parameters": {
+                "in_data_type": "float32",
+                "out_data_type": "float32"
+            },
+            "inputs": [
+                "@Unsqueeze_/decoder/Unsqueeze_12:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Initializer_decoder.embedding.weight_10": {
+            "name": "Initializer_decoder.embedding.weight",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    5000,
+                    512
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Clip_/decoder/Clip_11": {
+            "name": "Clip_/decoder/Clip",
+            "op": "clipbyvalue",
+            "parameters": {
+                "clip_value_min": 0.0,
+                "clip_value_max": Infinity
+            },
+            "inputs": [
+                "@Cast_/decoder/Cast_13:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Unsqueeze_/decoder/Unsqueeze_12": {
+            "name": "Unsqueeze_/decoder/Unsqueeze",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@GreaterOrEqual_/decoder/GreaterOrEqual_14:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Cast_/decoder/Cast_13": {
+            "name": "Cast_/decoder/Cast",
+            "op": "cast",
+            "parameters": {
+                "in_data_type": "int64",
+                "out_data_type": "int64"
+            },
+            "inputs": [
+                "@y_16:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "GreaterOrEqual_/decoder/GreaterOrEqual_14": {
+            "name": "GreaterOrEqual_/decoder/GreaterOrEqual",
+            "op": "greater_equal",
+            "inputs": [
+                "@Cast_/decoder/Cast_13:out0",
+                "@Initializer_/decoder/Constant_1_output_0_15:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Initializer_/decoder/Constant_1_output_0_15": {
+            "name": "Initializer_/decoder/Constant_1_output_0",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "int64"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "y_16": {
+            "name": "y",
+            "op": "input",
+            "parameters": {
+                "size": "",
+                "channels": 1,
+                "shape": [
+                    1,
+                    2
+                ],
+                "is_scalar": false,
+                "type": "int64"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        }
+    },
+    "quantize_info": {}
+}

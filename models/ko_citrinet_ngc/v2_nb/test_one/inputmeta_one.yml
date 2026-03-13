@@ -1,0 +1,53 @@
+# !!!This file disallow TABs!!!
+# "category" allowed values: "image, frequency, undefined"
+# "database" allowed types: "TEXT, NPY, H5FS, SQLITE, LMDB, GENERATOR, ZIP"
+# "tensor_name" only support in H5FS database
+# "preproc_type" allowed types:"IMAGE_RGB, IMAGE_RGB888_PLANAR, IMAGE_RGB888_PLANAR_SEP, IMAGE_I420, 
+# IMAGE_NV12, IMAGE_YUV444, IMAGE_GRAY, IMAGE_BGRA, TENSOR"
+input_meta:
+  databases:
+  - path: /nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/v2_nb/test_one/dataset_one.txt
+    type: TEXT
+    ports:
+    - lid: audio_signal_2227
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 1
+      - 80
+      - 1
+      - 300
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+    - lid: audio_signal_length_2228
+      category: undefined
+      dtype: int64
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 1
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+      redirect_to_output: false

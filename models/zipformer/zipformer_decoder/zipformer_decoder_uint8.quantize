@@ -1,0 +1,108 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@attach_Gemm_/decoder_proj/Gemm/out0_0:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.349043607711792
+    min_value: -2.7248497009277344
+    scale: 0.019897621124982834
+    zero_point: 137
+  '@Gemm_/decoder_proj/Gemm_1:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.349043607711792
+    min_value: -2.7248497009277344
+    scale: 0.019897621124982834
+    zero_point: 137
+  '@Squeeze_/Squeeze_2:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.735049307346344
+    min_value: 0.0
+    scale: 0.002882546279579401
+    zero_point: 0
+  '@Relu_/decoder/Relu_3:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.735049307346344
+    min_value: 0.0
+    scale: 0.002882546279579401
+    zero_point: 0
+  '@Conv_/decoder/conv/Conv_5:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.735049307346344
+    min_value: 0.0
+    scale: 0.002882546279579401
+    zero_point: 0
+  '@Mul_/decoder/Mul_7:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 9.295035362243652
+    min_value: -18.737552642822266
+    scale: 0.10993171483278275
+    zero_point: 170
+  '@Gather_/decoder/embedding/Gather_8:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 9.295035362243652
+    min_value: -18.737552642822266
+    scale: 0.10993171483278275
+    zero_point: 170
+  '@Cast_/decoder/Cast_1_9:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0
+    min_value: 0.0
+    scale: 0.003921568859368563
+    zero_point: 0
+  '@Initializer_decoder.embedding.weight_10:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 9.295035362243652
+    min_value: -18.737552642822266
+    scale: 0.10993171483278275
+    zero_point: 170
+  '@Gemm_/decoder_proj/Gemm_1:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.9433302879333496
+    min_value: -5.257327556610107
+    scale: 0.03608101233839989
+    zero_point: 146
+  '@Gemm_/decoder_proj/Gemm_1:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 223349.4373959948
+    min_value: -223349.4375
+    scale: 0.00010400518658570945
+    zero_point: 0
+  '@Conv_/decoder/conv/Conv_5:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.09639810025691986
+    min_value: -0.09495725482702255
+    scale: 0.0007504131644964218
+    zero_point: 127
+  '@Initializer_decoder.embedding.weight_10:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 9.295035362243652
+    min_value: -18.737552642822266
+    scale: 0.10993171483278275
+    zero_point: 170
+customized_quantize_layers: {}

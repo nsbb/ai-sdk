@@ -1,0 +1,43 @@
+{
+    "Inputs": {
+        "audio_signal_1166": {
+            "name": "audio_signal",
+            "shape": [
+                1,
+                80,
+                1,
+                300
+            ],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "i8",
+                "max_value": 3.4278831481933594,
+                "min_value": -1.918067216873169,
+                "scale": 0.02096451073884964,
+                "zero_point": -37
+            }
+        }
+    },
+    "Outputs": {
+        "attach_Unsqueeze_/Unsqueeze/out0_0": {
+            "name": "attach_Unsqueeze_/Unsqueeze/out0",
+            "shape": [
+                1,
+                2049,
+                1,
+                38
+            ],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "i8",
+                "max_value": 0.0,
+                "min_value": -28.728269577026367,
+                "scale": 0.11265987902879715,
+                "zero_point": 127
+            }
+        }
+    },
+    "Recurrent_connections": {}
+}

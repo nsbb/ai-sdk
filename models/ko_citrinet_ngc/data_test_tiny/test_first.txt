@@ -1,0 +1,2 @@
+wav_path	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data_test_tiny/wav_test/test_00000.wav
+text	허생은 아주 초라해 보였습니다

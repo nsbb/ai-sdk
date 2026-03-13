@@ -1,0 +1,41 @@
+{
+    "Inputs": {
+        "encoder_out_4": {
+            "name": "encoder_out",
+            "shape": [
+                1,
+                512
+            ],
+            "format": "nchw",
+            "dtype": "float16"
+        },
+        "decoder_out_5": {
+            "name": "decoder_out",
+            "shape": [
+                1,
+                512
+            ],
+            "format": "nchw",
+            "dtype": "float16"
+        }
+    },
+    "Outputs": {
+        "attach_Gemm_/output_linear/Gemm/out0_0": {
+            "name": "attach_Gemm_/output_linear/Gemm/out0",
+            "shape": [
+                1,
+                5000
+            ],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "max_value": 11.177534103393555,
+                "min_value": -20.26224708557129,
+                "scale": 0.12329325824975967,
+                "zero_point": 164
+            }
+        }
+    },
+    "Recurrent_connections": {}
+}

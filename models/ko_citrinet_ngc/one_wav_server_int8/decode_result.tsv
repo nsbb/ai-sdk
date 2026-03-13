@@ -1,0 +1,2 @@
+idx	wav_path	gt	pred	cer
+0	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/bundle_int8/test_input.wav	nan	싶씩 아 하나다 나 아 않 바 그러니까	4.666666666666667

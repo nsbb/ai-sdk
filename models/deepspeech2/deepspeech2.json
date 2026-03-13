@@ -1,0 +1,803 @@
+{
+    "MetaData": {
+        "Name": "deepspeech2",
+        "AcuityVersion": "6",
+        "Platform": "tensorflow",
+        "Org_Platform": "tensorflow"
+    },
+    "Layers": {
+        "attach_logits/BiasAdd/out0_0": {
+            "name": "attach_logits/BiasAdd/out0",
+            "op": "output",
+            "parameters": {},
+            "inputs": [
+                "@logits/BiasAdd_2:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "x_1": {
+            "name": "x",
+            "op": "input",
+            "parameters": {
+                "size": "",
+                "channels": 1,
+                "shape": [
+                    0,
+                    756,
+                    161,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "logits/BiasAdd_2": {
+            "name": "logits/BiasAdd",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 29,
+                "bias": true,
+                "regularize": false,
+                "axis": 2
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/concat_3:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/concat_3": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/concat",
+            "op": "concat",
+            "parameters": {
+                "dim": 2
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/transpose_5:out0",
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/ReverseV2_4:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/ReverseV2_4": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/ReverseV2",
+            "op": "reverse",
+            "parameters": {
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/transpose_6:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/transpose_5": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_7:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/transpose_6": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_8:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_7": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3",
+            "op": "lstm",
+            "parameters": {
+                "weights": 1024,
+                "time_major": true,
+                "forget_bias": 1.0,
+                "activation": "tanh",
+                "use_layer_norm_lstm": false,
+                "use_cifg": false,
+                "use_peepholes": false,
+                "num_proj": null,
+                "cell_clip": 0.0,
+                "proj_clip": 0.0,
+                "recurrent_activation": "sigmoid",
+                "return_sequences": true,
+                "peephole": true
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/transpose_9:out0"
+            ],
+            "outputs": [
+                "out0",
+                "out1",
+                "out2"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_8": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3",
+            "op": "lstm",
+            "parameters": {
+                "weights": 1024,
+                "time_major": true,
+                "forget_bias": 1.0,
+                "activation": "tanh",
+                "use_layer_norm_lstm": false,
+                "use_cifg": false,
+                "use_peepholes": false,
+                "num_proj": null,
+                "cell_clip": 0.0,
+                "proj_clip": 0.0,
+                "recurrent_activation": "sigmoid",
+                "return_sequences": true,
+                "peephole": true
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/transpose_10:out0"
+            ],
+            "outputs": [
+                "out0",
+                "out1",
+                "out2"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/transpose_9": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/concat_11:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/transpose_10": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/ReverseV2_12:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/concat_11": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/concat",
+            "op": "concat",
+            "parameters": {
+                "dim": 2
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/transpose_14:out0",
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/ReverseV2_13:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/ReverseV2_12": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/ReverseV2",
+            "op": "reverse",
+            "parameters": {
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/concat_11:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/ReverseV2_13": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/ReverseV2",
+            "op": "reverse",
+            "parameters": {
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/transpose_15:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/transpose_14": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_16:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/transpose_15": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_17:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_16": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3",
+            "op": "lstm",
+            "parameters": {
+                "weights": 1024,
+                "time_major": true,
+                "forget_bias": 1.0,
+                "activation": "tanh",
+                "use_layer_norm_lstm": false,
+                "use_cifg": false,
+                "use_peepholes": false,
+                "num_proj": null,
+                "cell_clip": 0.0,
+                "proj_clip": 0.0,
+                "recurrent_activation": "sigmoid",
+                "return_sequences": true,
+                "peephole": true
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/transpose_18:out0"
+            ],
+            "outputs": [
+                "out0",
+                "out1",
+                "out2"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_17": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3",
+            "op": "lstm",
+            "parameters": {
+                "weights": 1024,
+                "time_major": true,
+                "forget_bias": 1.0,
+                "activation": "tanh",
+                "use_layer_norm_lstm": false,
+                "use_cifg": false,
+                "use_peepholes": false,
+                "num_proj": null,
+                "cell_clip": 0.0,
+                "proj_clip": 0.0,
+                "recurrent_activation": "sigmoid",
+                "return_sequences": true,
+                "peephole": true
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/transpose_19:out0"
+            ],
+            "outputs": [
+                "out0",
+                "out1",
+                "out2"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/transpose_18": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/concat_20:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/transpose_19": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/ReverseV2_21:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/concat_20": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/concat",
+            "op": "concat",
+            "parameters": {
+                "dim": 2
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/transpose_23:out0",
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/ReverseV2_22:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/ReverseV2_21": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/ReverseV2",
+            "op": "reverse",
+            "parameters": {
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/concat_20:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/ReverseV2_22": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/ReverseV2",
+            "op": "reverse",
+            "parameters": {
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/transpose_24:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/transpose_23": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_25:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/transpose_24": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_26:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_25": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3",
+            "op": "lstm",
+            "parameters": {
+                "weights": 1024,
+                "time_major": true,
+                "forget_bias": 1.0,
+                "activation": "tanh",
+                "use_layer_norm_lstm": false,
+                "use_cifg": false,
+                "use_peepholes": false,
+                "num_proj": null,
+                "cell_clip": 0.0,
+                "proj_clip": 0.0,
+                "recurrent_activation": "sigmoid",
+                "return_sequences": true,
+                "peephole": true
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/transpose_27:out0"
+            ],
+            "outputs": [
+                "out0",
+                "out1",
+                "out2"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_26": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3",
+            "op": "lstm",
+            "parameters": {
+                "weights": 1024,
+                "time_major": true,
+                "forget_bias": 1.0,
+                "activation": "tanh",
+                "use_layer_norm_lstm": false,
+                "use_cifg": false,
+                "use_peepholes": false,
+                "num_proj": null,
+                "cell_clip": 0.0,
+                "proj_clip": 0.0,
+                "recurrent_activation": "sigmoid",
+                "return_sequences": true,
+                "peephole": true
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/transpose_28:out0"
+            ],
+            "outputs": [
+                "out0",
+                "out1",
+                "out2"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/transpose_27": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@Reshape_29:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/transpose_28": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    1,
+                    0,
+                    2
+                ]
+            },
+            "inputs": [
+                "@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/ReverseV2_30:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_29": {
+            "name": "Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    378,
+                    1312
+                ]
+            },
+            "inputs": [
+                "@batch_normalization_2/cond/FusedBatchNorm_1_31:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/ReverseV2_30": {
+            "name": "bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/ReverseV2",
+            "op": "reverse",
+            "parameters": {
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_29:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "batch_normalization_2/cond/FusedBatchNorm_1_31": {
+            "name": "batch_normalization_2/cond/FusedBatchNorm_1",
+            "op": "batchnormalize",
+            "parameters": {
+                "eps": 0.0010000000474974513
+            },
+            "inputs": [
+                "@conv2/Relu_32:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv2/Relu_32": {
+            "name": "conv2/Relu",
+            "op": "relu",
+            "inputs": [
+                "@conv2/BiasAdd_33:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv2/BiasAdd_33": {
+            "name": "conv2/BiasAdd",
+            "op": "convolution",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 32,
+                "padding": "SAME",
+                "bias": true,
+                "group_number": 1,
+                "regularize": false,
+                "ksize_h": 11,
+                "ksize_w": 21,
+                "stride_h": 1,
+                "stride_w": 2,
+                "pad_h": 5,
+                "pad_w": 10,
+                "dilation": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "pad_method": "padding_const",
+                "pad": [
+                    5,
+                    5,
+                    10,
+                    10
+                ]
+            },
+            "inputs": [
+                "@batch_normalization/cond/FusedBatchNorm_1_34:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "batch_normalization/cond/FusedBatchNorm_1_34": {
+            "name": "batch_normalization/cond/FusedBatchNorm_1",
+            "op": "batchnormalize",
+            "parameters": {
+                "eps": 0.0010000000474974513
+            },
+            "inputs": [
+                "@conv1/Relu_35:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv1/Relu_35": {
+            "name": "conv1/Relu",
+            "op": "relu",
+            "inputs": [
+                "@conv1/BiasAdd_36_conv_42:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv1/BiasAdd_36_pad_37": {
+            "name": "conv1/BiasAdd_36_pad",
+            "op": "pad",
+            "parameters": {
+                "padding_value": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        4,
+                        6
+                    ],
+                    [
+                        20,
+                        23
+                    ],
+                    [
+                        0,
+                        0
+                    ]
+                ],
+                "padding_mode": "CONSTANT",
+                "padding_const": 0
+            },
+            "inputs": [
+                "@x_1:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv1/BiasAdd_36_space2depth_38": {
+            "name": "conv1/BiasAdd_36_space2depth",
+            "op": "space2depth",
+            "parameters": {
+                "block_size": [
+                    2,
+                    2
+                ]
+            },
+            "inputs": [
+                "@conv1/BiasAdd_36_pad_37:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv1/BiasAdd_36_slice_39": {
+            "name": "conv1/BiasAdd_36_slice",
+            "op": "slice",
+            "parameters": {
+                "begin": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "size": [
+                    -1,
+                    383,
+                    91,
+                    -1
+                ]
+            },
+            "inputs": [
+                "@conv1/BiasAdd_36_space2depth_38:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv1/BiasAdd_36_slice_40": {
+            "name": "conv1/BiasAdd_36_slice",
+            "op": "slice",
+            "parameters": {
+                "begin": [
+                    0,
+                    0,
+                    11,
+                    0
+                ],
+                "size": [
+                    -1,
+                    383,
+                    91,
+                    -1
+                ]
+            },
+            "inputs": [
+                "@conv1/BiasAdd_36_space2depth_38:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv1/BiasAdd_36_concat_41": {
+            "name": "conv1/BiasAdd_36_concat",
+            "op": "concat",
+            "parameters": {
+                "dim": 3
+            },
+            "inputs": [
+                "@conv1/BiasAdd_36_slice_39:out0",
+                "@conv1/BiasAdd_36_slice_40:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "conv1/BiasAdd_36_conv_42": {
+            "name": "conv1/BiasAdd_36_conv",
+            "op": "convolution",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 32,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "regularize": false,
+                "ksize_h": 6,
+                "ksize_w": 11,
+                "stride_h": 1,
+                "stride_w": 1,
+                "pad_h": 0,
+                "pad_w": 0,
+                "dilation": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "inputs": [
+                "@conv1/BiasAdd_36_concat_41:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        }
+    },
+    "quantize_info": {}
+}

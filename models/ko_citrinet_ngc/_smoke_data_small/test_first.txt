@@ -1,0 +1,2 @@
+wav_path	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/_smoke_data_small/wav_test/test_00000.wav
+text	너무나 인상적이었어요

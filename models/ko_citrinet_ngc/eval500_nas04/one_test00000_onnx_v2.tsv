@@ -1,0 +1,2 @@
+idx	wav_path	gt	pred	gt_norm	pred_norm	edit_distance	ref_len	cer
+0	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00000.wav	턴테이블	턴테이블	턴테이블	턴테이블	0	4	0.0

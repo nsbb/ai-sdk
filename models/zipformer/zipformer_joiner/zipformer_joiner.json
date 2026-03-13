@@ -1,0 +1,99 @@
+{
+    "MetaData": {
+        "Name": "torch_jit",
+        "AcuityVersion": "6",
+        "Platform": "tensorflow",
+        "Org_Platform": "onnx"
+    },
+    "Layers": {
+        "attach_Gemm_/output_linear/Gemm/out0_0": {
+            "name": "attach_Gemm_/output_linear/Gemm/out0",
+            "op": "output",
+            "parameters": {},
+            "inputs": [
+                "@Gemm_/output_linear/Gemm_1:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Gemm_/output_linear/Gemm_1": {
+            "name": "Gemm_/output_linear/Gemm",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 5000,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@Tanh_/Tanh_2:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Tanh_/Tanh_2": {
+            "name": "Tanh_/Tanh",
+            "op": "tanh",
+            "parameters": {
+                "hyperbolic_tan_scale_a": 1.0,
+                "hyperbolic_tan_scale_b": 1.0
+            },
+            "inputs": [
+                "@Add_/Add_3:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/Add_3": {
+            "name": "Add_/Add",
+            "op": "add",
+            "inputs": [
+                "@encoder_out_4:out0",
+                "@decoder_out_5:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "encoder_out_4": {
+            "name": "encoder_out",
+            "op": "input",
+            "parameters": {
+                "size": "",
+                "channels": 1,
+                "shape": [
+                    1,
+                    512
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "decoder_out_5": {
+            "name": "decoder_out",
+            "op": "input",
+            "parameters": {
+                "size": "",
+                "channels": 1,
+                "shape": [
+                    1,
+                    512
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        }
+    },
+    "quantize_info": {}
+}

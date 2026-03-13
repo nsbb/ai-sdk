@@ -1,0 +1,2 @@
+wav_path	text	src_path
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data_test_tiny/wav_test/test_00000.wav	허생은 아주 초라해 보였습니다	/nas03/data_audio/133.감성 및 발화 스타일 동시 고려 음성합성 데이터/01-1.정식개방데이터/Training/01.원천데이터/TS_구연체_106/F-S1-Q-106-0513.wav

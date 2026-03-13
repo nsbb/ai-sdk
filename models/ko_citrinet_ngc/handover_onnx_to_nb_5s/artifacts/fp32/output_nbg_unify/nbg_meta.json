@@ -1,0 +1,29 @@
+{
+    "Inputs": {
+        "audio_signal_1166": {
+            "name": "audio_signal",
+            "shape": [
+                1,
+                80,
+                1,
+                500
+            ],
+            "format": "nchw",
+            "dtype": "float32"
+        }
+    },
+    "Outputs": {
+        "attach_Unsqueeze_/Unsqueeze/out0_0": {
+            "name": "attach_Unsqueeze_/Unsqueeze/out0",
+            "shape": [
+                1,
+                2049,
+                1,
+                63
+            ],
+            "format": "nchw",
+            "dtype": "float32"
+        }
+    },
+    "Recurrent_connections": {}
+}

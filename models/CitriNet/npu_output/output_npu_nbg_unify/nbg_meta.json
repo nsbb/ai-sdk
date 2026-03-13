@@ -1,0 +1,43 @@
+{
+    "Inputs": {
+        "audio_signal_457": {
+            "name": "audio_signal",
+            "shape": [
+                1,
+                80,
+                1,
+                300
+            ],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "max_value": 3.874817371368408,
+                "min_value": -4.00498104095459,
+                "scale": 0.030901169404387474,
+                "zero_point": 130
+            }
+        }
+    },
+    "Outputs": {
+        "attach_Conv_/dec.0/Conv/out0_0": {
+            "name": "attach_Conv_/dec.0/Conv/out0",
+            "shape": [
+                1,
+                1025,
+                1,
+                38
+            ],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "max_value": 0.0,
+                "min_value": 0.0,
+                "scale": 1.0,
+                "zero_point": 0
+            }
+        }
+    },
+    "Recurrent_connections": {}
+}

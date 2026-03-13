@@ -1,0 +1,26 @@
+{
+    "Inputs": {
+        "input_values_604": {
+            "name": "input_values",
+            "shape": [
+                1,
+                80000
+            ],
+            "format": "nchw",
+            "dtype": "float32"
+        }
+    },
+    "Outputs": {
+        "attach_Add_/lm_head/Add/out0_0": {
+            "name": "attach_Add_/lm_head/Add/out0",
+            "shape": [
+                1,
+                249,
+                32
+            ],
+            "format": "nchw",
+            "dtype": "float32"
+        }
+    },
+    "Recurrent_connections": {}
+}

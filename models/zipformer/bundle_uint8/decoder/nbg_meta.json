@@ -1,0 +1,32 @@
+{
+    "Inputs": {
+        "y_16": {
+            "name": "y",
+            "shape": [
+                1,
+                2
+            ],
+            "format": "nchw",
+            "dtype": "int32"
+        }
+    },
+    "Outputs": {
+        "attach_Gemm_/decoder_proj/Gemm/out0_0": {
+            "name": "attach_Gemm_/decoder_proj/Gemm/out0",
+            "shape": [
+                1,
+                512
+            ],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "max_value": 2.349043607711792,
+                "min_value": -2.7248497009277344,
+                "scale": 0.019897621124982834,
+                "zero_point": 137
+            }
+        }
+    },
+    "Recurrent_connections": {}
+}

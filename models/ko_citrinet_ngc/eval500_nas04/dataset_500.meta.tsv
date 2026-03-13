@@ -1,0 +1,501 @@
+npy_path	wav_path	text
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00000.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000099.wav	근데 오십 년 걸렸습니다 천 구백에서 천 구백 오십 년 까지 십 년 걸렸습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00001.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000289.wav	이게 주인층의 모습입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00002.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023515/0011.wav	아까 뭐 뜯어서 보낼지 말지 저 쪽
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00003.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000247.wav	라는 건 가야하고 신라는 다들 궁금하실 텐데요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00004.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00878.wav	어떤 식으로
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00005.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01672.wav	그 스프링하는 지금 스프링 아니야
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00006.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038549/0011.wav	다른 문의 사항 더 없으실까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00007.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000137.wav	전봉준이 회고하기로는 오백 명을 남기고 궤멸을 한 큰 사건입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00008.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000336.wav	섬마을엔 선생님들이 오려고 하지를 않는다는 이야기를 들었다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00009.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000014/000060.wav	아유 아이고 아이고 오래간만에 나오셨는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00010.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038495/0004.wav	아 그거는 좀 어려우시고요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00011.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03446.wav	기차 탈 거면 괜찮을걸 떨린다 나 한강에 라면 한 번도 안 먹어 봤어 이제 먹어보고 싶었어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00012.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000273.wav	타자를 치는 것보다 빠르고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00013.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02920.wav	아 아니 근데 나는 미술관에서  가보고 싶어 그 동생이 미술하니까 걔는 미술관 엄청 많이 간단 말이야  나중에 한번 같이 가볼 생각은 있긴 한데 뭐 어쨌든 어쨌든
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00014.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023606/0022.wav	네 감사합니다 좋은 하루 되세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00015.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04158.wav	나도 완벽한 타인 그 특히 유해진하고 그 그 누구지 누군진 모르겠는데 그 게이로 나오는 아저씨 있잖아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00016.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01657.wav	노래를 부르고 있었는데 어느 순간
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00017.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000052.wav	환율이 처음으로 팔 개월 만에 환율이 천 이백 십 칠 원까지 내려가고 하루 사이에 한 오 원 정도가 이렇게 내려가는 환율 안정의 그런 조짐을 보이고 있는 것도 상당히 우리 경제에는 좋은
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00018.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05013.wav	어  정말이야  원피스도 샀잖아 이번에 입고 가겠다고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00019.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03693.wav	물어봐도 걔가 전화를 해봤겠지 전화를 해봤는데 우리 교학팀에도 얘기 전화를 해보고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00020.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01573.wav	그래서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00021.npy	/nas03/workspace/existing-wonder/stt_testset/ut_modelhouse/2m/jy/2025-12-02_14-49-37_12345567_101_105_wallpad_1570501813_오늘_경제_뉴스_알려줘.mp3	오늘 경제뉴스 알려줘
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00022.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D17_wav_0/D17/G02/S000035/000052.wav	남의 생각을 읽으면서 어떤 나의 어떤 관점 시각을
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00023.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000553/0009.wav	아 네 알아본 결과 학습 종료가 아직 안 된 걸로 나와있습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00024.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D17_wav_0/D17/G02/S000035/000066.wav	더 나은 방법을 찾은 것은 칼럼만 읽는 것보다는 동영상 강의도 듣고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00025.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00013092/0002.wav	안녕하세요 한자 배워보고 싶어서요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00026.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038506/0003.wav	확인되셨고요 교재 세 권 지금 어 방금 구매하신 거 확인되시는데요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00027.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01604.wav	응 친군 줄 알았거든
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00028.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023575/0005.wav	그래서 좀 양해 말씀을 드려야 될 것 같고요 그래서 지금 환불이 좀 진행이 안되었어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00029.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000424.wav	저 정규 교수로 있은 지도 벌써 십 삼 년 쨉니다 예
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00030.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023536/0015.wav	제가 뭘 어떻게 결제했는지 사실 기억 하나도 안나고 예 그냥 요고 그냥 같은 걸로 해서 이 회 누락된 것만 보내주시면 안돼요 모의고사 일 회
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00031.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038689/0009.wav	네 그렇긴 한데 좀 최 그래도 최대 그 가급적 좀 빨리 연락을 주셔야지 저희도
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00032.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05042.wav	할아버지 건강이 편찮으시다  아니면 자기 집안 사람들 얘기
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00033.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02319.wav	어 그럼 우리가 두 개가 되니까 어차피 그러면은 그거 이십만 원 할인받는 거
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00034.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00013096/0003.wav	중학교 때 한자 수업이 있었는데 그때는 한자를 왜 배워야 하는지 솔직히 잘 모르겠더라구요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00035.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000560.wav	그러니까 어느 한쪽이 이해관계에 근거하고 있다고 한다면 싸움이 빨리 끝날 텐데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00036.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000577/000272.wav	상당히 시일도 오래 걸리지만 거기서 내리는 게 솜방망이 처벌이라는 거죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00037.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000015/000052.wav	자 삼색토크 여자 살풀이 수다방 오늘도 방문을 활짝 열어보겠습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00038.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02350.wav	그렇게 해서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00039.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038683/0001.wav	네 어제 어 결제 어제 결제를 했는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00040.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03990.wav	그 교수는 추천 시스템 계속 밀고있고  물론 나도 추천 시스템 나쁘진 않다고 생각해 근데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00041.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000646.wav	이 일을 거드는 분이 없어서 그냥 영혼만 안장해 모셨습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00042.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02212.wav	걔 그래서  막 청년부 그런 선생님 약간 그런 거 할껄
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00043.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000620.wav	이 컴퓨터와 인터넷이 고도로 발달한 사회에서의 전쟁은 정보전
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00044.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05979.wav	그래서 연휴에 한 게 다른게 있는데 에서 스카이 캐슬 정주행을 해주는 거야
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00045.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000015/000068.wav	저는 어느 살에다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00046.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018415/0023.wav	알겠습니다 그럼 그렇게 해야겠네요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00047.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02184.wav	웹툰에서는 그냥 회사원이었어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00048.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000035.wav	내 인내 어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00049.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03687.wav	미래를 보는 거였나 그 부 미래의 불행을
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00050.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03152.wav	그냥 진짜 환상 속의 얘기 걍 얘기로만 듣던 그런 거잖아 족보는 그래서 설마 족보대로 똑같이 나오겠어 해서 안 봤거든 나는 그 족보를 나왔더라고 그래갖고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00051.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000016/000017.wav	어 어떻게 좀 잘 보존하면서 그 의미를 좀 많은 사람들한테 알릴 수 있는 그런 식으로 개발했으면 좋겠다는 생각이 드는데 어떠세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00052.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02238.wav	어 이제
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00053.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000576/000377.wav	나와서 그것도 뭐 작다면 작지만 또 크다면 큰 돈이 나오거든요 그래서 저희가 일 인당 차비와 같이 여럿이 같이 모여 가지고 정말 맛있게 식사하고 그리고 또
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00054.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01685.wav	주변에 결혼한 사람들 얘기를 들어보면
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00055.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038395/0005.wav	어 회원님 이거 저희가 일단 취소는 해드릴 수 있는데 결제를 전체 취소로 도움드려도 괜찮으실까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00056.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000011/000063.wav	국내 외 마임이스트와 문화인이 함께 더불어 참여할 수 있는 행사로 호평을 받고 있다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00057.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000005/000302.wav	오늘 얘기는 여기서 마치겠는데요 나와주신 사제부 예 세 분야의 나오신 분들 감사드리며 참관인 두 분 께도 감사드립니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00058.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03047.wav	휴식기를 가지면서 인생을 돌아보고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00059.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05743.wav	우리가 갱이나 안 죽으면 이기겠다 이렇게 생각하겠지 근데 그렇게 상대팀을 그렇게 생각하고 그러면  그 상대 반대쪽은
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00060.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01810.wav	태국이건 아무 상관이 없었는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00061.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000005/000127.wav	어 적성의 자기 적성에 안 맞았다는 건가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00062.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000178.wav	느희 어머니를 만나서 느희 어머니를 내가 고향으로 돌아가시게 하마 그럼 너 자살하지 않지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00063.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01443.wav	그날 노래방 이제 더 이상 안 간다 안 간다고 했는데 갔어 안 갔어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00064.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000010/000270.wav	그 최근 들어서면서 뭐 그 새로운 신종 전염병들 나오기도 하고 또 이 바이러스에 대한 위험이 점점 더 커지고 있다 이런 얘기들을 자꾸 하는데 그 이유를 잘 모르겠어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00065.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00012641/0011.wav	가능합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00066.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00015106/0007.wav	강의 시작 전 컴퓨터 전원 켜고 끄고만 하면 되는 거죠 다 준비해놓고 할머니 부르려고요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00067.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00530.wav	가야 되는데  돈이 모일까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00068.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03442.wav	새로운 경험을 겪고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00069.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023565/0015.wav	좋은하루 되세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00070.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000579/000406.wav	그러믄 인제 저기 밥하고 빨래하고 이런 거는 어떻게 해요 아빠가 다 하세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00071.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02042.wav	뭐 걸어가야지 뭐 저까지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00072.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000013/000171.wav	에 그래서 이제 이 쓰레기 처리방법으로 따진다고 그러면 그 쓰레기 성상이 아까 이대수 박사님께서 말씀하신 대로 그것이 에 아주 순수한 쓰레기만 나온다 그러면 쓰레기 처리방법으로 괜찮은 방법입니다 사실 매립 방법이라는 것이 국토가 이제
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00073.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011385/0051.wav	그럼 수고하세요 친절하게 상담해주셔서 감사합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00074.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000062.wav	선생님이 헌 책을 열심히 모으는 것도 이 때문이다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00075.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05055.wav	보통 까 까 까나 난 근데  알바해서 실수 같은 거 하면 나는 그냥 사장님이  좀
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00076.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000521.wav	또 한 자리 얘기가 있습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00077.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05896.wav	그냥 감상만 한 거야 관람
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00078.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05556.wav	아니 그냥 샌드위치 연어 샌드위치
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00079.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000575/000257.wav	그 날씨가 너무 추우니까 환기를 하루에 한 삼십 분 정도 밖에 못하는데 대신 공기청정기를 쓰면 어떤가 이런 의견을 올려주셨어요 그랬더니 친절하게 밑에 현이 맘이라는 분 께서요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00080.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000499.wav	예를 들까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00081.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02524.wav	여러 가지 생각하게 될 계기들이 많았던 것 같애
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00082.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000006/000111.wav	에 그런 식이니까 지금 칠 년 된
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00083.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02913.wav	하면 좋으실 거 좋을 거 같긴 한데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00084.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04261.wav	그거를 좀 목표를
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00085.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02941.wav	아니 아니 이 학 그거야 졸업 안 했어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00086.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02392.wav	근데 어쨌든 나이가 있으니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00087.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00001232/0047.wav	친구 소개하면서 제가 받는 혜택의 기간이나 일정도 따로 정해져 있나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00088.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000016.wav	따라서 교원 존경 풍토를 조성해야 되겠다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00089.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00013350/0029.wav	네 맞습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00090.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018243/0007.wav	그러면 벨트 디자인이랑 블라우스도 디자인 노카라 제품으로 변경할게요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00091.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00259.wav	하루에 십 오만 원 정도 드는 거 같은데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00092.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01186.wav	아 몰랐다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00093.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00001494/0075.wav	네 다른 문의 사항은 없으신가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00094.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02931.wav	내가 문제만 봤어 내가 보내 줬잖아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00095.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00014057/0009.wav	아 그래서 어릴 때부터 배우면 좋은 거였네요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00096.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038412/0011.wav	뭐 언니 집에 있거나 뭐 이래서 그 보낸 거 같은데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00097.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000645/0020.wav	한번 이해하고 넘어갔으면 좀 더 조심해줘야 하는 거 아닌가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00098.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05694.wav	어 닮아서 마멜예서 이러고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00099.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01396.wav	좀 따뜻하지 않나
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00100.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011589/0001.wav	안녕하세요 누구보다 빠른 교육 귀에 쏙쏙 학습센타입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00101.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00002206/0019.wav	필수 설치해 두 개고요 선택설치가 두 개고 각각 설치할 수 있고 토 통합 설치를 누르면 한꺼번에 설치해야 된다고 뜨네요 여기서 저는 그 필수 설치 각각 눌러서 설치했어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00102.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00170.wav	예를 들어서 요즘 카페 창업이든 음식점 창업이던 좀 남을 따라하려는 경향이 좀 많아서 그래서 좀 더
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00103.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000577/000377.wav	저는 심리 상담을 하니까는요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00104.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02803.wav	이관가 문과 문관지 잘 모르겠다 기억이 하나도 안 나 요즘에
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00105.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000460.wav	어 이것두 괜찮다라는 생각이 들었습니다 그래서 애들보고 막 힘들어하고 슨생님 뭐 앞으로 만화계가 어떻게 될까요 뭐 이 길이 맞습니까 그럼 제가 그 얘기를  하죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00106.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018430/0024.wav	그럼 지정된 날짜에 오전 일곱 시까지 배송해 주세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00107.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000251.wav	이리 앉거라
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00108.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000336.wav	그러시면서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00109.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000579/000271.wav	그리고 방법도 뭐 학습지도 해보고 과외도 해보고 학원도 해보고 이렇게 섞어가면서 얘한테 뭐가 맞는지를
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00110.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011241/0037.wav	단말기가 너무 무거워요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00111.npy	/nas03/workspace/existing-wonder/stt_testset/ut_modelhouse/2m/sk/2025-12-02_14-37-48_12345567_101_105_wallpad_1803300320_칠료오일_구지_알려줘.mp3	칠월오일 공지 알려줘
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00112.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000010/000154.wav	이 담양 주변에는 우리가 또 아이들을 데리고 또 둘러볼 만한 곳이 어디가 있겠습니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00113.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05212.wav	내가 치매 한 번 해보니까는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00114.npy	/nas04/nlp_sk/STT/data/test/HJY/2025-11-19_09-09-07_12345555_101_101_wallpad_426871813_알려줘.wav	알려줘
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00115.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04779.wav	어 가정 얘기  그런 느낌을 많이 하는 느낌이더라고 그래서  옆에 있으면  어쩔 줄을 모르겠어 내가 거기에 끼어들 수 없잖아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00116.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000388.wav	이거에 비해 볼 때 이 규모가 그리고 사실은 아이티가 비티와 엔티 아이티가 엔티에 이티에다 영향을 준다고 할 때
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00117.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000016/000177.wav	어 어차피 산성이라는 것이 어떤 그 전쟁시에 그 이제 방비하는 목적으로 진 것이기 때문에
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00118.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000450.wav	그 시대를 제가 함께 했죠 그러고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00119.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03474.wav	코엑스 빼면은
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00120.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011241/0003.wav	네 고객님 상담원 홍길동입니다 무엇을 도와드릴까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00121.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03057.wav	아 실 아직 안샀는데 실 필기 끝나면 살라고 실기만 필기는 그냥 혼자 해보고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00122.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01767.wav	아 그냥 하는 제스쳐나 그런 게 다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00123.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000462.wav	사색 당쟁이 있고 정쟁을 그렇게 했습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00124.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000012/000131.wav	감사합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00125.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023439/0003.wav	오늘 제가 잘못 시켰다고 그러는데 혹시 반품되나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00126.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000374.wav	한 번도 교실에 안 들어왔서 다섯 살 입학해서 열 일곱 살 졸업할 때까지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00127.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05202.wav	아니야 아 나이키가 좀 더 세
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00128.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000289.wav	아이들 좋아하겠고 또
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00129.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011220/0046.wav	오히려 잘 된 거 같아요 약정 때문에 더 열심히 공부하는 것 같아요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00130.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D13_wav_0/D13/G02/S000163/000373.wav	이 시대에 필요 하다는 느낌이 듭니다 그래서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00131.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038593/0006.wav	동일하지 않아도 저희는 입금 확인 가능하세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00132.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04778.wav	우리보다 훨씬 어린데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00133.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04462.wav	응 어차피 똑같이 유성온천역 있으니까 역 근처고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00134.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04473.wav	밖에 보니까 아까 럭키 밥 주고 있을 때 보니까는 막 이렇게 다 떨어져 있더라고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00135.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038616/0015.wav	이게 결합 상품이기 때문에 이제 방법이 두 가지가 있는데 그냥 교재 캐시 구만 칠천 원을
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00136.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04754.wav	그게 나중에 걔랑 사이가 소원해지면은 나중에 나에 대해서 그걸로 뒷말이 도는 게
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00137.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000077.wav	중국 우리를 따라오고 있는 존재이기도
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00138.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000014/000207.wav	자꾸 애들하고 관계를 맺고 이러다보면  예
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00139.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000008/000158.wav	자 저희가 프로그램 시작하면서 문화강국의 비전을 얘기했잖아요 자 선생님
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00140.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00004607/0022.wav	네 수령하실 장소 말씀해주세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00141.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000014/000100.wav	어 왕릉들 왕릉이 자리 잡고 있는 능산리 고분군 여기에서 그 영봉 금동봉래산 향로가 출토된 것이죠 이런 유족들이 부여 지역에 아주 산재해 있습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00142.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038475/0011.wav	네 감사합니다 네
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00143.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038376/0008.wav	아 그러셨나요 사용도 그럼 안 해주신 거죠 회원님
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00144.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04819.wav	여자가 봐도 알아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00145.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000362.wav	물론 거기에 규칙 같은 게 있습니다만 규칙은 어린이회의에서 정한 것이 규칙입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00146.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05171.wav	그게 뭐 팔십 퍼센튼가 거 거의 일 몇 막 손
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00147.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000359.wav	그러면서 실제로 돈이 그다지 많이 필요하지 않고 그 내부에서는 실제로 돈이 많지 않아도 모든 어떤 서비스를 갖다 충족 발할 수 있을 테니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00148.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023433/0004.wav	혹시 교재 수강 신청하셨나요 강의
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00149.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000657.wav	강도 높게 지금 목청 높여 소리치고 있습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00150.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000011/000056.wav	정부의 발표대로 지역문화는 균형적으로 발전하고 있을까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00151.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05108.wav	업계에서 인제 일하시는 분들의 하류 인생 그걸 인제 좀 적나라하게 표현했는데  거의 뭐
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00152.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00908.wav	그래서 반전이 있지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00153.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000637/0019.wav	죄송합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00154.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01448.wav	그니까 그때도 막 뽀뽀하고 그랬대 아이 그냥 막 이렇 이렇게 볼에다가 이렇게 막 그런대
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00155.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000576/000029.wav	전임 회장님이신 우리 전임 회장님이셨던 이인숙 씨에 대해서 누가 부모로써 어떤 분인지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00156.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000489/0057.wav	다른 엄마들 이런 일 안 참아요 아시죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00157.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000043.wav	이 낙업의 반대말을 찾을 것 같으면 고업이 될겁니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00158.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04563.wav	막 어떤 언니랑 아 뭐 반갑다 이러면서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00159.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000220.wav	적어도 한 달에 책 한 권씩 읽었다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00160.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000339.wav	그 시절에는 만화책을 산더미처럼 쌓아놓고 기름 뿌어 갖구서 불지르던 거를 티브이에서 이케 막 생중계 하고 그랬었잖아요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00161.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04335.wav	십육 년전이면  아가 때 초딩
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00162.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03456.wav	너희 과 조용하다 했지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00163.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00013050/0028.wav	네 추가금도 부담이 없네요 그런데 시작 전에 선생님께서 방문해서 어느 정도의 수준인지 간단한 시험 및 상담한다고 들었거든요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00164.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000638.wav	다시는 분열하지 말고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00165.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000556.wav	음악선생님은 머리끝서부터 발끝까지가 전체가 음악이야
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00166.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000099.wav	그럼 중요한 거는 친구든
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00167.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000576/000111.wav	네 방송 보기는 쉽죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00168.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04651.wav	이러이런 거 필수고 너 복전이면 그 과목 하나 정도는  아마 또 학년 필수일 거고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00169.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03338.wav	지금 안하지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00170.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01240.wav	내가 족보를 안 봤다 난 족보대로 나올 줄 몰라가지고 해서 그랬는데 그 좀 속상했고 기말고사 때는 족보가 안 돌았어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00171.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023551/0018.wav	선불로 배송비를 선불로 지불하고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00172.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000622.wav	이런 상황에 맞추어서요 우리사회에서도 이 십 만 해커를 양성해야 한다는 주장이 나오고 있는데요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00173.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000010/000239.wav	네 잘 알겠습니다 오늘 야간 자율학습을 주제로
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00174.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000297.wav	계단을 통해 삼 층으로 올라가면 주인세대가 쓰는 이러한 공간들이 있습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00175.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00004717/0001.wav	안녕하세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00176.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01990.wav	개꿈이지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00177.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038498/0015.wav	우선 모르실 때는 내 강의실 들어가서 스크롤 맨 밑으로 내려보신다면 이제 수강 연장 안내가 나와 있고요 우선 내 강의실 들어가셨을 때
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00178.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03406.wav	이탈리아가 의외로 다른 서유럽보다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00179.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000010/000077.wav	그 종손이 지키고 있으니까 그 종손한테 가서 소쇄원은 어떻게 만들었을까 그동안에 에 그 몇백년동안 지켜오는 집안의 사연들 그다음에 정원의 담겨져있는 어떤 의미들 이런 것들을 아주 자세하게 설명해주실 겁니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00180.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02313.wav	근데 뭐 십팔 일날 올라가니까 그 후로는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00181.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000577/000044.wav	그런 다툼 오래되다가 술기운에 인제 힘이 좀 빠지셔서 아버지가 좀 잠깐 잠이 드셨구요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00182.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02258.wav	주변에 이렇게 돌아다니다 보니까  좀 신기한 게 많더라고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00183.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05174.wav	어제는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00184.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00001559/0081.wav	네 다른 문의 사항은 없으신가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00185.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000005/000301.wav	이런 시각에서 봐야 될 때가 아닌가 하는 생각으로 이런 주제를 정해봤습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00186.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03529.wav	어어 그 바로 앞에 식자재 마트가 있 저 있었어  거기에 갔는데 한 블록 거의 한 어 카페 그 충남대 구카페
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00187.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038373/0033.wav	오른쪽이랑 왼쪽 차이 한 번 확인해 주실 수 있을까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00188.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023485/0011.wav	그러시면 제가 메세지로 반송 관련 안내를
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00189.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00013081/0023.wav	학습지도 체계적으로 할 수 있게 되어 있는 거 같아서 좋네요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00190.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000017/000329.wav	밖으로 갖게 되면 불행해지는 것 같아요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00191.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000013/000106.wav	땅에 매립된 쓰레기는 부패하면서 토양을 오염시키며 하천을 통해 빠져나간 오수와 쓰레기는 바다 생태계를 파괴하고 있다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00192.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011201/0022.wav	수업 듣는 건 재밌는데 시험이 너무 어려워요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00193.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00001921/0030.wav	고객님 카드 수령은 직접 수령이 원칙이라 그건 어려울 것 같습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00194.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04793.wav	가진 사람은 아니지만  어쨌든 그런 면이 조금 보이는 사람도 있다 이런 말이잖아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00195.npy	/nas03/workspace/existing-wonder/stt_testset/ut_modelhouse/2m_no_heater/sk/2025-12-02_14-55-19_12345567_101_105_wallpad_1570843813_가스밸브_현태_열려있어.mp3	가스밸브 현재 열려있어?
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00196.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023476/0013.wav	환불처리는 할 수 있는 거죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00197.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000773/0028.wav	그렇습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00198.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05736.wav	그 두 번 두 개는 가격이 좀 있어 가지구
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00199.npy	/nas04/nlp_sk/STT/data/test/KSK/12345555_101_101_wallpad_346161813_2025-11-18 10:43:57_이번 주 공지사항 있었어.wav	이번주 공지사항 있었어?
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00200.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01906.wav	그 완전 코팬 아니잖아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00201.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03881.wav	우리 학번
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00202.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000340.wav	취해줍니다 감형 조치를 취합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00203.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00017981/0015.wav	그리고 다시 주문하기 전에 포인트 관련해서도 추가 문의드릴게요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00204.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000684/0024.wav	그러면 이걸 어떻게 처리해 줄 거예요 저는 지금 당장 학습 종료 해주시고요 저희 결제는 그럼 환불해  으 처리해 줬으면 좋겠어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00205.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038647/0013.wav	저희 쪽 전화하셔가지고 뭐 바꿔주시던지 그렇게 하시면 돼요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00206.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000096.wav	제일 처음에 인간의 지식과 기술이 배 증가하는 천 구백 오십 년  그랬습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00207.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000014/000111.wav	에 출토된 발굴된 유물들이 전시 돼 있습니다 그래서 그 유물을 통해서 백제의 문화를 느낄 수가 있죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00208.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02132.wav	어 그런 건 없어 우리가
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00209.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023477/0004.wav	그거 뭐 다시 구매하는 거 안된다는 그 창이 떠서요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00210.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00001265/0044.wav	그럼 마지막으로 하나만 더 물어볼께요 이게 한 강의에 몰아서 해도 되고 아니면 개별적으로도 각각 기간 설정해서 선택도 가능한가요 제가 듣는 강의가 지금 최소 다섯 개 넘어서 필요한 만큼 되는지 궁금해요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00211.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02843.wav	그랬지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00212.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023549/0005.wav	새로 강좌를 구매해주셔야 되세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00213.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000180.wav	임무를 정작 배려하지는 잘 못했던 것 같습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00214.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00866.wav	안 먹을래
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00215.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000601.wav	난 돌아와서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00216.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000009/000208.wav	학부모들께서 지금 들으셨는데요 성교육의 내용적인 측면에 대해서 학부모님들은 어떤 생각을 갖고 계십니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00217.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01346.wav	아니 마음에 안 들었다며
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00218.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038426/0016.wav	네 어머니 제가 문자 한 통 더 넣어드렸구요 확인 한번 더 해주세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00219.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018272/0006.wav	또 블라우스도 카라 제품이랑 노카라 제품이랑 있는 걸로 봤는데 이것도 변경되나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00220.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023449/0005.wav	환불 네 안내 받아보신 걸로 확인되시는데 그러면 이거
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00221.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011385/0006.wav	다시 보기 기능이 없어서요 아무리 찾아봐도 없네요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00222.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000177.wav	어떤 정해진 법규 안에서 최대한의 건축면적을 확보하면서 가능한 싸고 빠르게 짓자 식에 인제 양적 성장에만 머물러 있었던 것 같아요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00223.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02432.wav	그렇게 해서 몇 학점 이십 일 학점이니까 어떻게 어떻게 해야 된다라고 했는데 멍청이가
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00224.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038398/0010.wav	그래서 보내드리면 되는 건가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00225.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00027.wav	아니 그니까 같이 사는 거 생각 없어 딴 딴 데 유성이나 이쪽에
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00226.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000008.wav	어 기존의 건축가들에 대한 이미지나 건축이라고 하면 일반인들이 느낄 때 좀 너무 어려운 혹은  왜 이러케 이제 느끼시는 분들이 많은데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00227.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038605/0015.wav	일단 회원님께서 저희가 이거를
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00228.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01459.wav	그렇지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00229.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000009/000167.wav	이때 어디선가 용이 나타나서 큰 돌을 집어 들어 겁을 줘서 쫓아 보냈는데 이때 들어 올렸던 돌이 바로 이 부석이고 그때 나타난 용이 지난 날 의상을 사모했던 당나라 여인 선묘였다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00230.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000574/000218.wav	워낙 종류도 많고 뭐 그림도 많고 어떤 것이 아이들한테 좋은 건지 또 선생님들은 간단한 걸 사 오라고 하시거든요 근데 아이는 이걸 갖겠다고 울고 있고 참 그런 사소한 것들이 참 선택하는 데 어려움이 있더라고요 먼저 뭐 책가방부터 시작해서 좀 그런 여러 가지 좀 말씀해 주시죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00231.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000212.wav	그 왼쪽의 두 세대는 그
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00232.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00001265/0003.wav	어떤 회원가입 정보를 수정하시는 걸까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00233.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01053.wav	그걸 어떻게 푸는지 나도
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00234.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00017518/0007.wav	아 네 동일 가격의 다른 제품으로 교환이 가능하다고요 딸기 타르트가 사만 원인 걸로 아는데 그럼 당근 케이크 기프티콘을 사용하고 차액은 따로 결제할 수 있을까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00235.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038348/0005.wav	혹시 회원님 네 문자는 받아보셨는지 확인가능할까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00236.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023463/0036.wav	해서 직접 대면으로 주셔도 되고 아니면 문 앞에 두셔도 되는데 어떻게 진행을 해주실 건가 건가여
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00237.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04762.wav	어 확실히 너는 좀 딱 떨어지는 걸 좋아하잖아 공식에 느면 딱딱 떨어지긴 하는데 일단 공식을 외워야 되니까 그게 좀 힘든 힘들지 않을까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00238.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04114.wav	고거 빨리 가서 입학 확인증 내 아 퇴 자퇴 확인증 떼야돼요 안그러면 그 동시 입학 처리돼가지구 둘 다 합격 취소된대요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00239.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01301.wav	그때 알아보고 가
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00240.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00013276/0040.wav	네 가능합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00241.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03199.wav	일본 쪽은 생각을 안 했었던 쪽이라서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00242.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000008/000174.wav	역시 문화인프라와 관련된 건데 지방 가면 지방에 계시는 분들께 죄송합니다 아주 깜짝 놀랄 때가 많습니다 새로운 문화예술회관 지었다는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00243.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023481/0003.wav	네 네 월요일은 제가 쫌 이게 딱 확답을 드리기가 어려운 부분이 있어요 회원님
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00244.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000013/000030.wav	근데 문화유산 답사는 그냥 떠날 수가 없잖아요 사전에 준비를 많이 해야 될 것은 생각이 드는데 어떤 준비를 해야 됩니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00245.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05156.wav	그런 부분에서 너무 상업적인 목적으로 예술적인 목적에서 많이 벗어나고 상업적인 목적으로만 하는 그런 신파 일명 신파라고 하죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00246.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02641.wav	그 대게가 그 분  그래서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00247.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023473/0057.wav	책마다 그것도 잘못됐다고 생각을 해요 겉에 비닐 있죠 비닐이 어떤 책은 크고 어떤 책은 얇아요 그럼 얇은 거는 그만큼 이걸 맞는 거를 배송을 해야지 저는 맞다고 생각을 하거든요 왜냐하면 이게 책이 얼마든지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00248.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000009.wav	이 시대에 우리와 같이 살게 된다면 그분은
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00249.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00002668/0007.wav	원래는 귀찮아서 그냥 한 번에 설치되도록 통합 섭취하는데 그 과정에서 저번에 노트북이 많이들였거든요 그래서 선택 설치는 안했어요 어차피 필수로 해야하는곳만 있으면 상관없는거죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00250.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00461.wav	정보를 알다 보니까 이제 갈려고 하는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00251.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023548/0012.wav	아 네 맞습니다  그래서 저희가 지금 문자 하나 보내드렸는데 혹시 받으셨을까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00252.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05131.wav	우리가 어 여기 맛집이래 하면서 블로그에서 찾았던 데도 처음으로 가보고 해서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00253.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03454.wav	음 그 웬만해서 그러면 다이소 가도 다 있다는 거네 그 뭐 어디 따로 뭐 사는 데는 들어가기 전에 살 거 같은 거는 다 다이소에 있겠네 웬만해서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00254.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000684/0009.wav	학습이 종료가 안 됐다고요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00255.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00732.wav	그렇지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00256.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023469/0024.wav	저희가 피디에프나 이런 거는 저희가 제공을  해드릴 수가 없는 부분이어서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00257.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04369.wav	그거 이제 구하는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00258.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018202/0014.wav	그리고 다시 주문하기 전에 포인트 관련해서도 추가 문의드릴까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00259.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011288/0017.wav	돌아서면 까먹긴 한데 들을 때는 재밌습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00260.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000389.wav	중학교 일 이 삼 학년학생 여학생
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00261.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000643.wav	우리 선조가 당한 아픔을 참회할 수 있는 그런 곳으로 만들자
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00262.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03833.wav	그 너가 노력해야 될 거고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00263.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02785.wav	이탈리아가
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00264.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01434.wav	어떤 식으로
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00265.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000478.wav	은데 요즘 젊은이들은 그런 말을 해요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00266.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000005/000188.wav	자 이 논점을 다시 한 번 줄여서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00267.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000013/000211.wav	또 하나는 폐기물 처리에도 우리가 베스트 어베일러블 테크놀러지라고 그래서 비에이치 이라는 말을 많이 쓰고 있습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00268.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038442/0002.wav	네 여보세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00269.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038625/0002.wav	네 네 본인만 이용 가능하신 거세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00270.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000533.wav	어 그래서 예를 들면은 지로용지가 오거나 아니면 자기가 그 찾아가서 내거나 은행에 가서 내야 하는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00271.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038680/0021.wav	아니 제가 왜 여쭤보냐면
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00272.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000016/000061.wav	그다음에 이제 그 강변에 있는 유적들인데 유적을 찾아가는 코스가 되겠습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00273.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03998.wav	까 교통비랑 거기 자 거기 숙박이랑
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00274.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000227.wav	난 그 어머님 말씀을 들으면서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00275.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00012925/0008.wav	선생님은 한 분입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00276.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03515.wav	뒷말이 도니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00277.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00000746/0019.wav	지금 당장 전화통화로 개설하는 건 어렵겠죠 모바일 어플리케이션이나  직접 방문 개설만 가능한 거죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00278.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04275.wav	어제 아니 엊그제  그 너 간 다음에 우리 그 걔네랑 놀 때
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00279.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000577/000509.wav	주말에 아이들과 남편과 함께 어디 야외로 놀러 가고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00280.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00000353/0044.wav	집에서도 금방 할 수 있을 것 같기도 하고 네
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00281.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05952.wav	치형
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00282.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000198.wav	또 한 부분으로는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00283.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000044.wav	그리고 경업의 반대말을 찾으믄
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00284.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000533.wav	그런데도 불구하고 조직을 기대에서 만족하는 사람은 드물어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00285.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000629.wav	도전감을 익히고 도전 뭡니까 이게 모험적인
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00286.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038372/0005.wav	이렇게 두 권 취소 원하시는 거 맞으세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00287.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000009/000210.wav	앞으로는 이렇게 졸졸졸 물이 흐르고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00288.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018084/0016.wav	포인트 적립이 오만 원 이상이면 오 퍼센트고 미만이면 삼 퍼센트 적립으로 나와있어서요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00289.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03074.wav	일본에서 만난 애
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00290.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038695/0009.wav	네 거기서 애들을 시켜서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00291.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03349.wav	응 그럼 십삼 일에서 십팔 일 사이에 가는 게 어때
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00292.npy	/nas04/nlp_sk/STT/data/test/KSK/12345555_101_101_wallpad_346705813_2025-11-18 10:53:01_작년 십일월월 관리비 얼마 나왔어.wav	작년 십이월 관리비 얼마 나왔어?
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00293.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04329.wav	뭘 싫어해
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00294.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000585/0037.wav	선생님한테 꼭 저희 아이 정보 전달해 주세요 요일은 격주 수요일로 유지할 거니까 알아두시고요 저번에 선생님이 금요일 수업 어떠냐고 물어보시던데 저희 금요일은 안 돼요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00295.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000244.wav	고조선의 유민이
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00296.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03360.wav	응 구 월 이십 일
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00297.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05639.wav	보시구 나는 좀 이제 키 제한 없는 편한 놀이기구로 가긴 했는데 그 키 제한 있는 놀이기구 할 때가 되게되게 힘들었어 나는 그리구
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00298.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000122.wav	두 분이 깊은 고민을 담고 이런 생각을 정리한 노트는  저희로서도 참 많은 생각을 하게 예 하였었습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00299.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04618.wav	발리에서 두 달 살면서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00300.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000290.wav	그리고 인제 옥상에 올라가면 어떤 옥상에서 바베큐 파티나 이런 것들을 할 수 있는 게 이게
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00301.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000005/000156.wav	학교 네임벨류가 최고다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00302.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000577/000071.wav	아버지가 사망을 했기 때문에
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00303.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00802.wav	그럴 수
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00304.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038656/0002.wav	아 네 안녕하세요 지금
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00305.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000016/000126.wav	화면 보시죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00306.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05970.wav	걔가 엄청 당황했어 진짜 바로 맞췄어 내가 한번에 바로 맞췄어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00307.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00013597/0012.wav	네 배움은 끝도 없다고 하잖아요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00308.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01768.wav	그때 진짜 그랬어 지금은 안 그래 복학하면 약간 작정하구
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00309.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00686.wav	아니 그런 생각이 들 수 있긴 한데 내가 궁금한건 그 사람들 그 아 진짜였을까 근데 어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00310.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03783.wav	지금 나이에
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00311.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000200.wav	결국 공동체의 자기가 가지고 있는 걸 기여를 하고 그다음에 그 공동체에 대해서 자기가 보호를 요구할 수 있는 그런 운동이 구조인데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00312.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011352/0007.wav	네 과목 카테고리에서 동영상 터치하시면 다시 보기 버튼 나옵니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00313.npy	/nas04/nlp_sk/STT/data/test/KSK/12345555_101_101_wallpad_346119813_2025-11-18 10:43:14_응 말해줘.wav	응 말해줘
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00314.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000010/000090.wav	예를 들어서 그 변종이 생긴다든가 이럴 경우에는 저희가 대책을 세우기가 어려운 측면이 있죠 예를 들어서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00315.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01874.wav	이제 여행에도 이렇게 문화가 있으니까 너무 즐기는 것도 좋지만 거기 살고 있는 사람들을 위해서 예절문화도 조금 있어야 될 거 같애 왜냐면  요근래 대마도에서 한국인 거부한다는 뭐 그런 뉴스도 있고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00316.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01703.wav	딱 그때 술 한 잔 먹고 자야지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00317.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01246.wav	배 안 고파
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00318.npy	/nas04/nlp_sk/STT/data/test/KSK/12345555_101_101_wallpad_346154813_2025-11-18 10:43:49_지난번 공지사항 뭐였지.wav	지난번 공지사항 뭐였지?
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00319.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00001485/0020.wav	네 고객님
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00320.npy	/nas04/nlp_sk/STT/data/test/KSK/12345555_101_101_wallpad_346672813_2025-11-18 10:52:28_응급상황이야.wav	응급상황이야
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00321.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023582/0004.wav	네 네 네 맞아요 그 잠시만 보내주신 주소가 어디냐면은
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00322.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038358/0002.wav	그 변경할 수 있는지 궁금해서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00323.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011618/0036.wav	네 큰일 납니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00324.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000850/0001.wav	네 고객님 중앙교육의 이진혁 상담원입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00325.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038574/0006.wav	어떤 혜택 말씀하시는 거세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00326.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03695.wav	근데 교육은 뭐 별거 아니야 할만해 아무것도 아니라서 할만한데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00327.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05887.wav	어 야 넌 두 숟갈 가지고 성에 차니 응
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00328.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038363/0009.wav	네 감사합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00329.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000015/000187.wav	저도 내가 왜이렇게 옛날에는 내 살들에 대해서도 증오심을 가질 정도로 괴롭혔을까 생각을 해보니까 나가서 받는 대접이 달라요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00330.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000388.wav	쫌 오래된 자룝니다 한 이십 년 전에 뽑은 자료입니다 그렇기 때문에 현재와는 맞지 않을지도 모르겠습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00331.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000575/000103.wav	육식이 인제 다른 식단에 비해서 좀 적다라는 느낌이 들거든요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00332.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038410/0004.wav	아 지금 조회 되셨구요 제가 이전에 상담했던 내역 지금 볼 건데요 혹시 어떤 걸로 추가로 문의주셨는지 알 수 있나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00333.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03164.wav	지금 역사적으로 알고 있는 진실과 맞물려지는지 저는 궁금합니다 왜냐하면 영화에서 봤을 때 민주화 운동은 항상 바른 거고 정당한 건데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00334.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000577/000390.wav	매맞는 아이도 옆에는 사실 매맞는 엄마도 있거든요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00335.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011561/0037.wav	네 알겠습니다 근데 하나 건의해드리고 싶은 게 있어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00336.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02353.wav	이렇게 회사를 다니다가
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00337.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05744.wav	이틀을 있었는데 이제 처음이라서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00338.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00364.wav	응 근데 나는 사실 그 영화를 볼 때  생각이 너무 많아가지고 자세히 못 봤던 것 같아  집중이 하나도 안 됐어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00339.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05929.wav	유명한 거 거기서 유명한 거
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00340.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000266.wav	성경이 없으면 해석이 안 되잖아요 근데 지금 우리는 뭘로 해석하냐 하면은 중국의 어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00341.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018297/0012.wav	일 이 삼 사 오 육 칠입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00342.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D17_wav_0/D17/G02/S000035/000183.wav	이것도 일종의 저는 다 모방이라고 생각해요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00343.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000606.wav	밖에서 귀뚜라미 소리가 나는 것을 보면서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00344.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03399.wav	탈락한 거야
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00345.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04401.wav	그리고 얼마 전에 요새 핫한 그 스카이캐슬 드라마  처럼
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00346.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02685.wav	그 살다 응
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00347.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00002380/0017.wav	네 토익 육 백 번 강의인데 지금 제일 첫 번째 강의 오리엔테이션 강의 플레이 버튼 누를게요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00348.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D17_wav_0/D17/G02/S000035/000091.wav	그리고 세 번째는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00349.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02007.wav	나도 안 먹어 봤어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00350.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000128.wav	그 제 가슴은 하나의 통곡의 경전입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00351.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05561.wav	거기서 계산해 주시는 분이  딱 계산을 하러 우리한테 왔는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00352.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03623.wav	거기서 뭐지 애들 엄청 많이 다녀가지고 아는 애들 막 다 두루두루 친하던데 거기 다녔던 애들
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00353.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000317.wav	예를 들겠습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00354.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000051.wav	우선 이 근업의 문제입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00355.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023473/0052.wav	종이를 안 쓰고 있는 경우가 좀 많아요 요즘 교재에서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00356.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000259.wav	이런것들은 이제 시민단체나 시민들이 직접 정치인들에게 압력을 가하는 운동으로 어 이 정치 쪽에서 운동이 발전할 가능성을 보여줬던 거라고 보여지고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00357.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02152.wav	기어 기억이 안나
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00358.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000021.wav	위대한 그 위인들로서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00359.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000377.wav	오늘또 난 이만큼 남들보다 드 많이 살았어 뭐 이런 기분이지 이게 힘들다 뭐 이런 생각이 전혀 없었거든요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00360.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00008510/0002.wav	네 안녕하세요 제가 택시에 카드를 두고 내린 거 같은데 지금 제가 지방 출장 나와 있는 상황이라 카드를 찾을 수가 없는 상황이여서 어 그런데 카드 내역 확인이랑 카드 정지 요청 좀 하려고 하는데 전화로도 가능한가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00361.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011385/0040.wav	네 가끔 도서관에서 공부할 때도 있어서 들고 다니려니깐 여간 불편한 게 아니더라고요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00362.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05563.wav	우리가 같이 비긴어를 했었으니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00363.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000009/000180.wav	자기 친구가
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00364.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023467/0016.wav	잘 들리세여
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00365.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000018/000164.wav	그러면은 세계 이 위 삼위인 일본과 어 일위인 미국 사이에 군사비가 무려 다섯 배 이상 차이가 나는군요 중국 같은 경우에는 공식적으로 한 이백억 달라밖에 안 됩니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00366.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000296.wav	그리고 이제 참정권이라든지 기본적인 그 권리를 보장하면서 특히 천 구백 칠십 오 년에 유 엔이 정한 세계 여성의 해를 거쳐서 구십 오 년에 북경 세계 여성 회의에 이르기까지 또 이제 올해 유 월달에 또 유엔 특별총회가 열리입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00367.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00002341/0029.wav	그럼 본인 인증 후 진행하겠습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00368.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000426.wav	에 그때는 내 감정이 살아 있을 때입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00369.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000575/000038.wav	아니 저희도 어디 갈 때 옥수수 스무 자루 감자 고구마 준비할 수 있는데 도통 아이들이 잘 먹질 않으니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00370.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000378.wav	하지만 학교 재정의 어려움 때문에 건물이 완공되는데 걸리는 시간은 적어도 삼사 년
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00371.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038612/0021.wav	이렇게 너무 이렇게 번거롭죠 이게
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00372.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038668/0001.wav	예 근데 그게 두 개가 뭐 어제까지 한 거랑
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00373.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000290.wav	앞으로는 정말 서로가 작게 살려고 하는 노력도 있어야지만 저는 기본적으로 평등과 자유가 같이 누릴 수 있다고 생각합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00374.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038421/0005.wav	근데 금액이 결제가 됐어요 저도 그래서 저도 지금 온라인에 들어가 봤는데 안돼 있는데 저한테는 청구가 됐어요 그래서 제가 지금 전화를 드린 거예요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00375.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00270.wav	뭔가 좀 순박해
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00376.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023431/0019.wav	게시판은 저희가 순차적으로 확인하시고 답변을 하시는 거라서 아직 답변 전인 거로 확인됩니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00377.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00013265/0010.wav	네 그렇습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00378.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038689/0010.wav	아 아 예 예 예 제가 그럼 며칠 내로 다시 한번 전화 드릴게요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00379.npy	/nas03/workspace/existing-wonder/stt_testset/ut_modelhouse/2m/sk/2025-12-02_14-38-56_12345567_101_105_wallpad_1803368320_가스밸브_현재_열려있어.mp3	가스밸브 현재 열려있어?
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00380.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011523/0030.wav	네 수업 이탈율 방지를 위해 십 분으로 지정되어 있습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00381.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02555.wav	그 부분에 대해서는 이제 어떻게 생각을 하시는지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00382.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000365.wav	예를 들어서 점심에 빵을 얻을 때 저 뒤에 슨다든지 애들 나름대로 그른 규칙을 갖다 정하는 겁니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00383.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00001437/0006.wav	이름은 김태주고 전화번호는 공 일 공 일 이 삼 사 오 육 칠 팔이고 카드명은 지우 은행 신용카드입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00384.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023471/0029.wav	아 일단 저희가 좀 확인을 해봐야 될 거 같거든여 이것도
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00385.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05113.wav	지금 당장 다섯 명이서 쓰는 것도 허덕이고 있잖아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00386.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023543/0016.wav	감사합니다 그렇게 해주세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00387.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000015/000249.wav	지금 가장 역시 그 현안이라면은 북한 핵 문제이구요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00388.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02794.wav	노래 노래라 노래방을 이렇게 얘기하니까  나는 원래 초등학교 때나 중학교 때나 특 고등학교 때도 사실 고등학교  초기까지만 해도
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00389.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04813.wav	그럴걸 근데 집에 내가 집에 갔었잖아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00390.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00460.wav	두 편 다 봤던 거 같애
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00391.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D17_wav_0/D17/G02/S000035/000144.wav	그리고 또 하나 자료를 제가 찾으면서 느끼는 것은
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00392.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04102.wav	한방에  난 졸업 후에 다시 보더라도  난 그렇게 할래
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00393.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02068.wav	밥 먹고 치울 때 이럴 때도
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00394.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000440.wav	교도관에게 교도소 책임자에게 이야기 했습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00395.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011328/0026.wav	네 끝까지 마무리를 하셔야 해요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00396.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023528/0001.wav	네 안녕하세요 회원님
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00397.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038415/0007.wav	잠시만요 네 이제 교재랑 같이 구매하셨는데 교재는 사용하셨죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00398.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02887.wav	하긴 그렇지 그 그 우리가 만났을 때가 거의 한 사 오 년 전이니까 좀 뭐 어제일도 기억하기 힘든데  사 오 년전이면은 조금 웬만한 뭐 그렇게 그 사람에 대해서 정말 옆집  뭐 가까운 친구 아니면은
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00399.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000100.wav	천 구백 오십부터 천 구백 육십 요새 매 오 년마다 인간의 지식과 기술이 급진적으로 증가를 하고 있습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00400.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01093.wav	아 근데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00401.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000016/000074.wav	여성운동의 미래는 어떻습니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00402.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01035.wav	그치 응 나도 가깝고 너도 가까웠지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00403.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04346.wav	아  음 그럼 원래 그럼 대전 어디서부터 이제 계속 어디 동네서 활동을 하게 되셨나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00404.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000013/000087.wav	그러니까 왕과 왕비 이름까지 합쳐서 왕릉이라고 하는데 이제 확장릉이 있거든요 왕과 왕비가 함께 묻힌 왕릉도 있고 그리고 또 추정된 왕릉
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00405.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000532/0005.wav	근데 며칠 전에 갑자기 여기 학습지 결제 문자가 뜨더라구요 십 팔만 원이 결제됐는데  저희 지금 여기 학습지 이용을 안 하고 있어요 어떻게 된 건가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00406.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000575/000375.wav	그래도 아이들이 버섯이나 멸치 되게 싫어하거든요 저 같은 경우에 형체도 없이 갑니다 이건 가루로 갈아가지고 자기가 좋아하는 음식에다 이렇게 뿌려준다든지 같은 소스하고 이렇게 쳐서 먹는다든지 그렇게 하니까 또 아이들도 잘 먹어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00407.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00004.wav	응 근데 오늘 일단 밥 먹고  이것 저것 하다가 시간되면 뭐 가는 거고 안 되면
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00408.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000185.wav	그 표시를 한 부분이니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00409.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00001265/0036.wav	해당 부분은 이벤트 상세 페이지에 기재되어 있으며 교재와 강의 선택 가능합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00410.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000575/000075.wav	그 채소 속에 있는 영양소를 충분히 흡수하기위해서장이 긴 구조로 적응을 해 왔다고 합니다 근데 인제 상대적으로 고기는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00411.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000579/000209.wav	요새 뭐 애들 다 학원 다니고 하니까 집에는 잘 안 다니는데 오면 이제 더 잘해주고 저는 또 인제 같이 더 잘 놀아라고 그랬는데 설마 그런 행동을 했으리라고는 전혀 몰랐었거든요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00412.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000009/000146.wav	어렸을 때부터
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00413.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038678/0016.wav	네 잠시만 더 기다려주세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00414.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023554/0022.wav	메모 얘기들으신거 아니예요 메모
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00415.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018322/0017.wav	무료배송을 취소하고 배송비 낼 테니까 오 퍼센트 적립으로 되나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00416.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038431/0012.wav	하나는 열 두 시 한 팔 분 구 분
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00417.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038432/0001.wav	네 문의 사항 말씀해 주시겠어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00418.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00012729/0003.wav	아이가 초등학교 일 학년인데 한자에 흥미를 가져서 한자를 좀 시켜볼까 하거든요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00419.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05793.wav	아 치매 보조 활동이면은 뭐 청소하고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00420.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00001793/0007.wav	고객님 성함과 휴대폰 번호 뒤 네 자리 부탁드립니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00421.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04140.wav	야 근데 노트북으로 잡으면 안될까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00422.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000358.wav	과거에는 반도체 자동차 선박
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00423.npy	/nas04/nlp_sk/STT/data/test/KSK/12345555_101_101_wallpad_346539813_2025-11-18 10:50:15_가스밸브 잠갔나.wav	가스밸브 잠궜나?
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00424.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000017/000056.wav	밀어붙였는데 그렇게 직접적인
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00425.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03769.wav	아침에 직장인이
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00426.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02073.wav	우리 내일 아침에 아홉시
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00427.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00002288/0040.wav	알겠어요 수고하세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00428.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000378.wav	이거 벌어 들이려면 삼백 억 불 사백 억 불 수출해야 됩니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00429.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000009/000164.wav	네 부석 말그대로 돌이 떴었다는 얘기인데요 저렇게 큰돌이 어떻게 뜰 수 있었냐구요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00430.npy	/nas03/data_audio/012.상담음성데이터/Validation/D62/J93/S00018064/0010.wav	그냥 주문 취소해주시면 제가 다시 주문해도 될까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00431.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04392.wav	하다가 죽을 거 같애서 하나는 철회하고 하나만 했는데도 괴로웠대
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00432.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000553/0007.wav	아 알아보겠습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00433.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000013/000234.wav	옛날 집이믄 이 정도면 큰 집이죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00434.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00012652/0016.wav	아이의 한자 실력이 어느 정도 잘 모르겠는데 한자시험은 몇 급을 준비하면 좋을지 선생님이 레벨테스트도 해주시나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00435.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000574/000121.wav	예 지금  선생님 말씀하셨는데요 지금 어떠세요 학부모님 입장에서 이렇게 들어보시니까 선생님이 말씀하시는 거 하고 지금 아이들 입학시켰을 때 하고 시행착오도 참 많았을 것 같은데 어떠셨어요  씨는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00436.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03948.wav	가야 된다고  일 년에 한 번씩이야
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00437.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038641/0009.wav	아 그러면은 그 절차가 어떻게 되는 거예요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00438.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038408/0008.wav	네 아 끝난건가요 환불이
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00439.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000011/000091.wav	남자 여자는 남자의 미래다 이 말이 궁극적으로 찾아갈 곳은 결국은 남자하고 여자하고 공존하자는 얘기겠죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00440.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038628/0004.wav	인제 앞으로 이용하실 계획 없으시구요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00441.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023459/0023.wav	교재하고 강의하고 같이 하고 있는데 이게 이 교재가 부교재가 있다 해서 그때 들었거든요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00442.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05768.wav	그래도 지금까지는 많이 아픈 데 없고 그래가지고 그나마 이 정돈데 정말 아프면 클라지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00443.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023591/0025.wav	근데 제가 한번 보니까
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00444.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023469/0050.wav	어디인지 말씀하 해주면 안 돼요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00445.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04891.wav	네 검색을 해봤어요 이제 자료 조사를 해봤는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00446.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011501/0029.wav	시간을 좀 늘려줄 수는 없나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00447.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000015/000074.wav	병을 얻으셨어요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00448.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05531.wav	그런 에피소드도 있었어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00449.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000016/000141.wav	자 저기가 문이 있던 자리요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00450.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02247.wav	그러다가
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00451.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01574.wav	그렇구나
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00452.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000050.wav	그리고 관점들도  마찬가지일 것 같습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00453.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000525.wav	왠지 이 사람은 잘 될 거  같다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00454.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000422.wav	즉 뭐냐 우리는 다 할 수가 없습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00455.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04319.wav	일단 나이가 많은걸 아니까  처음엔 안녕하세요 해  가면갈수록 애들이
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00456.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D21/G02/S000008/000104.wav	하루에도 몇 번씩 청계천을 찾아 안전을 돌보고 있는 그다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00457.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000714/0013.wav	처리해주는 건 당연하고요 그것보다 저희 카드번호도 분명히 개인정보인데 해지하면 착제해야 하는 것 아닌가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00458.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023453/0004.wav	아 그러셨어요  일단 불편해서 너무 죄송하고  음 그러면 그 인쇄가 잘못됐다는 게 어떤 식으로 좀 잘못되어 있는지 제가 좀 알 수 있을까여
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00459.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038713/0007.wav	네 네 감사합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00460.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03603.wav	그니까 밥집 자체 밥 그니까  식당인데도 불구하고 음식을 팔아야 되는데도 그 대문에다가 한국인은 들어오지 마십시오라고 그렇게
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00461.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000166.wav	어 우리나라 주거유형을 살펴보면 크게 이제 아파트
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00462.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000007/000248.wav	이 학교 운영위원회가 이 돈 문제하고 관련해서 하나 좀 교육부의 어떤 지침 같은 게 있는지 좀 여쭤보고 싶은데 교육부에서는 뭐 크게 뭐 지시를 한다든지 이런 건 없죠
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00463.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00012619/0008.wav	네 선생님은 한 분이십니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00464.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000011/000211.wav	지금 시청자 여러분들은 아잇 저 사람들끼리 현실적이지 않은 얘기를 하나 이런 분들도 계실지 모르지만 이렇게 꿈을 꾸지 않으면 다람쥐 쳇바퀴 돌 듯 미래의 행복을 위해서 현재를 억누르면서 살 수 밖에 없을 것 같아요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00465.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03486.wav	누구 닮았는데
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00466.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000527.wav	그래서 그것을 해야 된다고 생각합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00467.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000019/000023.wav	저 스스로한테 최면을 거는
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00468.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038701/0008.wav	현금 환불 원하시는 경우에는 네 어머님께서 네 부모님 법적 보호자 부모님께서 문의주시면 저희가 현금 환불 접수 진행 도와드리도록 하겠습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00469.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00015058/0017.wav	배움의 나라 한글 공부 말고도 여러 가지 수업이 있더라고요 어르신들 위주로 살 수 있는 수업들이 채색 수업이랑 영어교실도 있던데 맞나요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00470.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03298.wav	아이코스
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00471.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00011580/0034.wav	아 네 그렇군요 그 아무래도 진도나 개인 정보 같은 게 있어서 그런가 보네요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00472.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00696.wav	아 근데 좀 재미가 없긴해
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00473.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038356/0002.wav	네 혹시 취소 원하시는 사유는 어떻게 되세요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00474.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023585/0031.wav	그 퀵 비용을 저희가 확인을 해 봐야 돼요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00475.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04731.wav	너무 멋있다 생각이 들었습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00476.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03591.wav	육교에서 떨어지면서
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00477.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02505.wav	뭐 인터넷 매체로 이렇게 보급도 하고 이제 자기 딴에는 이제 좋은 거를 제공한다고 하는데  근데 그렇게 장사가 많이 잘 되지 않아가지구 그래가지구 자기에 어떤 이제 그
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00478.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00482.wav	어머니가 뭐  그렇게 많이 쓰진 않지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00479.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000328.wav	그래서 하 선생끼리 분란이 나타나고 싸움이 나타나서 학교 문 달고서 나온 교육의 교육 사업의 실패자입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00480.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000036.wav	한국은행이 발표한 것을 보면은
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00481.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00012696/0030.wav	그럼 매주 목요일 열 여섯 시 삼십 분으로 수학도 같이 신청할게요 수학은 얼마인가요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00482.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E03384.wav	맞아 오토바이도 그때 비싸져
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00483.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02343.wav	아니 엄마한테
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00484.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D22/G02/S000575/000036.wav	여러 가지 인공 감미료나 첨가물 색소 뭐 이런 것 때문에 잘 못 먹더라구요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00485.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000392.wav	장난질을 할 저가 지금은 무언가를 느껴서 선생님을 그림으로
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00486.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000293.wav	일어나야 됩니다 발이 안 떨어져
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00487.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000005/000106.wav	보건실에는 보건교사가 늘 이십 사 학교에 출근하시면 계시고 또
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00488.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038496/0010.wav	그 저희가 그냥 이제 어 어 회원님께서 이제 직접 돈을 주시고 결제를 하고 이제 어 이제 구매를 해주시는 캐시인데요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00489.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02878.wav	남들보단 잘 되잖아
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00490.npy	/nas03/data_audio/012.상담음성데이터/Validation/D61/J92/S00001494/0045.wav	그냥 다른 우편물처럼
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00491.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E04107.wav	뭐라해야되지 앉자마자 인사연습 시켰나 어 인사연습 했어
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00492.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05199.wav	인사동 쌈짓길이지
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00493.npy	/nas03/data_audio/010.한국어_음성/eval_other_wav/KsponSpeech_E05939.wav	자만심 이런 거에 빠져 있구나 저 사람이 날 쳐다보지도 않는데 날 쳐다본다고 생각을 한다 이렇게 생각을 하고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00494.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D17_wav_0/D17/G02/S000035/000263.wav	전이 감정의 전이가 되거나 역지사지가 돼서 막 이렇게 돼가지고
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00495.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000018/000307.wav	예 어 김 박사님 말씀 아주 저도 동감하는 바이고요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00496.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E02790.wav	어 어딜 가나 알바들은 불쌍한 거 같애
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00497.npy	/nas04/nlp_sk/STT/data/test/KSK/12345555_101_101_wallpad_346653813_2025-11-18 10:52:08_살려줘 도와줘 비상.wav	살려줘! 도와줘, 비상
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00498.npy	/nas03/data_audio/012.상담음성데이터/Validation/D60/J91/S00000448/0037.wav	예 죄송합니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00499.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D16_wav_0/D16/G02/S001029/000160.wav	그래야 삼이 뭔지 죽음이 뭔지 알 것 아니냐
