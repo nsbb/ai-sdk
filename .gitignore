@@ -1,5 +1,8 @@
 # Large model binaries
 *.onnx
+*.tar.bz2
+*.tar.gz
+pytorch_model.bin
 *.nemo
 *.nb
 *.data
