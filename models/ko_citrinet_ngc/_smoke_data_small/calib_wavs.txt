@@ -1,0 +1,2 @@
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/_smoke_data_small/wav_calib/calib_00000.wav
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/_smoke_data_small/wav_calib/calib_00001.wav

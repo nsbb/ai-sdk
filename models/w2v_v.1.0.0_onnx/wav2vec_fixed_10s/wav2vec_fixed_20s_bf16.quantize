@@ -1,0 +1,2588 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@Add_/wav2vec2/encoder/layer_norm/Add_1_4:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.23/Add_1_6:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.23/Add_8:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.22/Add_1_11:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.23/feed_forward/intermediate_act_fn/Mul_1_13:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.22/Add_15:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.21/Add_1_21:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.23/final_layer_norm/Add_1_28:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.21/Add_30:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.22/feed_forward/intermediate_act_fn/Mul_1_34:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.23/attention/Transpose_38:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.20/Add_1_39:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.23/attention/Softmax_47:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.20/Add_49:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.21/feed_forward/intermediate_act_fn/Mul_1_53:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.22/final_layer_norm/Add_1_57:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.19/Add_1_61:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.22/attention/Transpose_70:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.23/attention/Mul_72:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.23/attention/Mul_1_73:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.19/Add_76:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.20/feed_forward/intermediate_act_fn/Mul_1_80:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.21/final_layer_norm/Add_1_84:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.22/attention/Softmax_86:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.23/attention/Transpose_1_88:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_23_attention_Sqrt_1__wav2vec2_encoder_layers_23_attention_Sqrt_1_output_0_as_const_89:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.23/attention/Transpose_2_90:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_23_attention_Sqrt_2__wav2vec2_encoder_layers_23_attention_Sqrt_2_output_0_as_const_91:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.23/layer_norm/Add_1_92:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.18/Add_1_94:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.21/attention/Transpose_103:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.18/Add_112:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.19/feed_forward/intermediate_act_fn/Mul_1_116:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.20/final_layer_norm/Add_1_120:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.21/attention/Softmax_122:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.22/attention/Mul_124:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.22/attention/Mul_1_125:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.22/layer_norm/Add_1_126:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.17/Add_1_132:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.20/attention/Transpose_141:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.22/attention/Transpose_1_146:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_22_attention_Sqrt_1__wav2vec2_encoder_layers_22_attention_Sqrt_1_output_0_as_const_147:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.22/attention/Transpose_2_148:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_22_attention_Sqrt_2__wav2vec2_encoder_layers_22_attention_Sqrt_2_output_0_as_const_149:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.17/Add_155:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.18/feed_forward/intermediate_act_fn/Mul_1_159:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.19/final_layer_norm/Add_1_163:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.20/attention/Softmax_165:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.21/attention/Mul_167:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.21/attention/Mul_1_168:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.21/layer_norm/Add_1_169:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.16/Add_1_175:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.19/attention/Transpose_184:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.21/attention/Transpose_1_189:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_21_attention_Sqrt_1__wav2vec2_encoder_layers_21_attention_Sqrt_1_output_0_as_const_190:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.21/attention/Transpose_2_191:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_21_attention_Sqrt_2__wav2vec2_encoder_layers_21_attention_Sqrt_2_output_0_as_const_192:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.16/Add_197:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.17/feed_forward/intermediate_act_fn/Mul_1_201:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.18/final_layer_norm/Add_1_205:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.19/attention/Softmax_207:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.20/attention/Mul_209:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.20/attention/Mul_1_210:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.20/layer_norm/Add_1_211:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.15/Add_1_218:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.18/attention/Transpose_227:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.20/attention/Transpose_1_232:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_20_attention_Sqrt_1__wav2vec2_encoder_layers_20_attention_Sqrt_1_output_0_as_const_233:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.20/attention/Transpose_2_234:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_20_attention_Sqrt_2__wav2vec2_encoder_layers_20_attention_Sqrt_2_output_0_as_const_235:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.15/Add_240:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.16/feed_forward/intermediate_act_fn/Mul_1_244:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.17/final_layer_norm/Add_1_248:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.18/attention/Softmax_250:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.19/attention/Mul_252:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.19/attention/Mul_1_253:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.19/layer_norm/Add_1_254:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.14/Add_1_262:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.17/attention/Transpose_271:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.19/attention/Transpose_1_276:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_19_attention_Sqrt_1__wav2vec2_encoder_layers_19_attention_Sqrt_1_output_0_as_const_277:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.19/attention/Transpose_2_278:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_19_attention_Sqrt_2__wav2vec2_encoder_layers_19_attention_Sqrt_2_output_0_as_const_279:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.14/Add_284:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.15/feed_forward/intermediate_act_fn/Mul_1_288:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.16/final_layer_norm/Add_1_292:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.17/attention/Softmax_294:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.18/attention/Mul_296:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.18/attention/Mul_1_297:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.18/layer_norm/Add_1_298:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.13/Add_1_306:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.16/attention/Transpose_315:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.18/attention/Transpose_1_320:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_18_attention_Sqrt_1__wav2vec2_encoder_layers_18_attention_Sqrt_1_output_0_as_const_321:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.18/attention/Transpose_2_322:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_18_attention_Sqrt_2__wav2vec2_encoder_layers_18_attention_Sqrt_2_output_0_as_const_323:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.13/Add_328:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.14/feed_forward/intermediate_act_fn/Mul_1_332:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.15/final_layer_norm/Add_1_336:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.16/attention/Softmax_338:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.17/attention/Mul_340:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.17/attention/Mul_1_341:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.17/layer_norm/Add_1_342:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.12/Add_1_350:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.15/attention/Transpose_359:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.17/attention/Transpose_1_364:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_17_attention_Sqrt_1__wav2vec2_encoder_layers_17_attention_Sqrt_1_output_0_as_const_365:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.17/attention/Transpose_2_366:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_17_attention_Sqrt_2__wav2vec2_encoder_layers_17_attention_Sqrt_2_output_0_as_const_367:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.12/Add_372:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.13/feed_forward/intermediate_act_fn/Mul_1_376:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.14/final_layer_norm/Add_1_380:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.15/attention/Softmax_382:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.16/attention/Mul_384:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.16/attention/Mul_1_385:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.16/layer_norm/Add_1_386:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.11/Add_1_394:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.14/attention/Transpose_403:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.16/attention/Transpose_1_408:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_16_attention_Sqrt_1__wav2vec2_encoder_layers_16_attention_Sqrt_1_output_0_as_const_409:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.16/attention/Transpose_2_410:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_16_attention_Sqrt_2__wav2vec2_encoder_layers_16_attention_Sqrt_2_output_0_as_const_411:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.11/Add_416:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.12/feed_forward/intermediate_act_fn/Mul_1_420:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.13/final_layer_norm/Add_1_424:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.14/attention/Softmax_426:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.15/attention/Mul_428:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.15/attention/Mul_1_429:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.15/layer_norm/Add_1_430:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.10/Add_1_438:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.13/attention/Transpose_447:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.15/attention/Transpose_1_452:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_15_attention_Sqrt_1__wav2vec2_encoder_layers_15_attention_Sqrt_1_output_0_as_const_453:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.15/attention/Transpose_2_454:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_15_attention_Sqrt_2__wav2vec2_encoder_layers_15_attention_Sqrt_2_output_0_as_const_455:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.10/Add_460:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.11/feed_forward/intermediate_act_fn/Mul_1_464:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.12/final_layer_norm/Add_1_468:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.13/attention/Softmax_470:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.14/attention/Mul_472:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.14/attention/Mul_1_473:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.14/layer_norm/Add_1_474:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.9/Add_1_482:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.12/attention/Transpose_491:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.14/attention/Transpose_1_496:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_14_attention_Sqrt_1__wav2vec2_encoder_layers_14_attention_Sqrt_1_output_0_as_const_497:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.14/attention/Transpose_2_498:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_14_attention_Sqrt_2__wav2vec2_encoder_layers_14_attention_Sqrt_2_output_0_as_const_499:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.9/Add_504:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.10/feed_forward/intermediate_act_fn/Mul_1_508:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.11/final_layer_norm/Add_1_512:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.12/attention/Softmax_514:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.13/attention/Mul_516:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.13/attention/Mul_1_517:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.13/layer_norm/Add_1_518:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.8/Add_1_526:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.11/attention/Transpose_535:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.13/attention/Transpose_1_540:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_13_attention_Sqrt_1__wav2vec2_encoder_layers_13_attention_Sqrt_1_output_0_as_const_541:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.13/attention/Transpose_2_542:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_13_attention_Sqrt_2__wav2vec2_encoder_layers_13_attention_Sqrt_2_output_0_as_const_543:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.8/Add_548:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.9/feed_forward/intermediate_act_fn/Mul_1_552:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.10/final_layer_norm/Add_1_556:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.11/attention/Softmax_558:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.12/attention/Mul_560:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.12/attention/Mul_1_561:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.12/layer_norm/Add_1_562:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.7/Add_1_570:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.10/attention/Transpose_579:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.12/attention/Transpose_1_584:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_12_attention_Sqrt_1__wav2vec2_encoder_layers_12_attention_Sqrt_1_output_0_as_const_585:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.12/attention/Transpose_2_586:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_12_attention_Sqrt_2__wav2vec2_encoder_layers_12_attention_Sqrt_2_output_0_as_const_587:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.7/Add_592:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.8/feed_forward/intermediate_act_fn/Mul_1_596:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.9/final_layer_norm/Add_1_600:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.10/attention/Softmax_602:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.11/attention/Mul_604:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.11/attention/Mul_1_605:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.11/layer_norm/Add_1_606:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.6/Add_1_614:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.9/attention/Transpose_623:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.11/attention/Transpose_1_628:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_11_attention_Sqrt_1__wav2vec2_encoder_layers_11_attention_Sqrt_1_output_0_as_const_629:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.11/attention/Transpose_2_630:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_11_attention_Sqrt_2__wav2vec2_encoder_layers_11_attention_Sqrt_2_output_0_as_const_631:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.6/Add_636:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.7/feed_forward/intermediate_act_fn/Mul_1_640:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.8/final_layer_norm/Add_1_644:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.9/attention/Softmax_646:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.10/attention/Mul_648:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.10/attention/Mul_1_649:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.10/layer_norm/Add_1_650:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.5/Add_1_658:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.8/attention/Transpose_667:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.10/attention/Transpose_1_672:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_10_attention_Sqrt_1__wav2vec2_encoder_layers_10_attention_Sqrt_1_output_0_as_const_673:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.10/attention/Transpose_2_674:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_10_attention_Sqrt_2__wav2vec2_encoder_layers_10_attention_Sqrt_2_output_0_as_const_675:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.5/Add_680:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.6/feed_forward/intermediate_act_fn/Mul_1_684:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.7/final_layer_norm/Add_1_688:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.8/attention/Softmax_690:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.9/attention/Mul_692:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.9/attention/Mul_1_693:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.9/layer_norm/Add_1_694:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.4/Add_1_702:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.7/attention/Transpose_711:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.9/attention/Transpose_1_716:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_9_attention_Sqrt_1__wav2vec2_encoder_layers_9_attention_Sqrt_1_output_0_as_const_717:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.9/attention/Transpose_2_718:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_9_attention_Sqrt_2__wav2vec2_encoder_layers_9_attention_Sqrt_2_output_0_as_const_719:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.4/Add_724:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.5/feed_forward/intermediate_act_fn/Mul_1_728:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.6/final_layer_norm/Add_1_732:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.7/attention/Softmax_734:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.8/attention/Mul_736:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.8/attention/Mul_1_737:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.8/layer_norm/Add_1_738:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.3/Add_1_746:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.6/attention/Transpose_755:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.8/attention/Transpose_1_760:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_8_attention_Sqrt_1__wav2vec2_encoder_layers_8_attention_Sqrt_1_output_0_as_const_761:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.8/attention/Transpose_2_762:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_8_attention_Sqrt_2__wav2vec2_encoder_layers_8_attention_Sqrt_2_output_0_as_const_763:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.3/Add_768:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.4/feed_forward/intermediate_act_fn/Mul_1_772:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.5/final_layer_norm/Add_1_776:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.6/attention/Softmax_778:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.7/attention/Mul_780:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.7/attention/Mul_1_781:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.7/layer_norm/Add_1_782:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.2/Add_1_790:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_799:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.7/attention/Transpose_1_804:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_7_attention_Sqrt_1__wav2vec2_encoder_layers_7_attention_Sqrt_1_output_0_as_const_805:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.7/attention/Transpose_2_806:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_7_attention_Sqrt_2__wav2vec2_encoder_layers_7_attention_Sqrt_2_output_0_as_const_807:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.2/Add_812:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.3/feed_forward/intermediate_act_fn/Mul_1_816:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.4/final_layer_norm/Add_1_820:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.5/attention/Softmax_822:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.6/attention/Mul_824:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.6/attention/Mul_1_825:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.6/layer_norm/Add_1_826:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.1/Add_1_834:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_843:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.6/attention/Transpose_1_848:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_6_attention_Sqrt_1__wav2vec2_encoder_layers_6_attention_Sqrt_1_output_0_as_const_849:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.6/attention/Transpose_2_850:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_6_attention_Sqrt_2__wav2vec2_encoder_layers_6_attention_Sqrt_2_output_0_as_const_851:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.1/Add_856:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.2/feed_forward/intermediate_act_fn/Mul_1_860:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.3/final_layer_norm/Add_1_864:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.4/attention/Softmax_866:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.5/attention/Mul_868:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.5/attention/Mul_1_869:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.5/layer_norm/Add_1_870:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.0/Add_1_878:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_887:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_1_892:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_1__wav2vec2_encoder_layers_5_attention_Sqrt_1_output_0_as_const_893:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_2_894:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_2__wav2vec2_encoder_layers_5_attention_Sqrt_2_output_0_as_const_895:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.0/Add_900:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.1/feed_forward/intermediate_act_fn/Mul_1_904:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.2/final_layer_norm/Add_1_908:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.3/attention/Softmax_910:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.4/attention/Mul_912:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.4/attention/Mul_1_913:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.4/layer_norm/Add_1_914:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/Add_922:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_931:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_1_936:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_1__wav2vec2_encoder_layers_4_attention_Sqrt_1_output_0_as_const_937:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_2_938:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_2__wav2vec2_encoder_layers_4_attention_Sqrt_2_output_0_as_const_939:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.0/feed_forward/intermediate_act_fn/Mul_1_948:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.1/final_layer_norm/Add_1_952:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.2/attention/Softmax_954:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.3/attention/Mul_956:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.3/attention/Mul_1_957:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.3/layer_norm/Add_1_958:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/pos_conv_embed/activation/Mul_1_968:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_974:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_1_979:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_1__wav2vec2_encoder_layers_3_attention_Sqrt_1_output_0_as_const_980:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_2_981:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_2__wav2vec2_encoder_layers_3_attention_Sqrt_2_output_0_as_const_982:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/feature_projection/layer_norm/Add_1_987:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Slice_/wav2vec2/encoder/pos_conv_embed/padding/Slice_989:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv_990:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.0/final_layer_norm/Add_1_993:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.1/attention/Softmax_995:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.2/attention/Mul_997:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.2/attention/Mul_1_998:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.2/layer_norm/Add_1_999:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/Transpose_1007:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.6/activation/Mul_1_1008:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_1011:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_1_1016:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_1__wav2vec2_encoder_layers_2_attention_Sqrt_1_output_0_as_const_1017:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_2_1018:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_2__wav2vec2_encoder_layers_2_attention_Sqrt_2_output_0_as_const_1019:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/feature_extractor/conv_layers.6/Transpose_1_1024:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/feature_extractor/conv_layers.6/layer_norm/Add_1_1025:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_/wav2vec2/encoder/layers.0/attention/Softmax_1027:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.1/attention/Mul_1029:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.1/attention/Mul_1_1030:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.1/layer_norm/Add_1_1031:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.6/conv/Conv_1040:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_1_1044:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_1__wav2vec2_encoder_layers_1_attention_Sqrt_1_output_0_as_const_1045:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_2_1046:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_2__wav2vec2_encoder_layers_1_attention_Sqrt_2_output_0_as_const_1047:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.5/activation/Mul_1_1052:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.0/attention/Mul_1053:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/encoder/layers.0/attention/Mul_1_1054:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/encoder/layers.0/layer_norm/Add_1_1055:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/feature_extractor/conv_layers.5/layer_norm/Add_1_1063:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_1_1064:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_1__wav2vec2_encoder_layers_0_attention_Sqrt_1_output_0_as_const_1065:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_2_1066:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_2__wav2vec2_encoder_layers_0_attention_Sqrt_2_output_0_as_const_1067:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.5/conv/Conv_1073:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.4/activation/Mul_1_1080:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/feature_extractor/conv_layers.4/layer_norm/Add_1_1084:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.4/conv/Conv_1088:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.3/activation/Mul_1_1089:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/feature_extractor/conv_layers.3/layer_norm/Add_1_1091:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.3/conv/Conv_1093:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.2/activation/Mul_1_1094:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/feature_extractor/conv_layers.2/layer_norm/Add_1_1096:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.2/conv/Conv_1098:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.1/activation/Mul_1_1099:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/feature_extractor/conv_layers.1/layer_norm/Add_1_1101:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.1/conv/Conv_1103:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.0/activation/Mul_1_1104:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Add_1_1106:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_1108:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_1108_acuity_mark_perm_1126:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1127:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1128:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1130:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1131:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1133:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1134:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1136:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1137:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1138:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1139:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1140:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1142:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1143:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1145:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1146:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1148:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1149:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1150:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1151:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1152:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1154:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1155:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1157:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1158:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1159:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1160:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1161:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1163:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1164:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1166:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1167:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1169:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1170:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1171:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1172:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1173:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1175:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1176:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1178:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1179:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1181:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1182:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1184:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1185:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1187:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1188:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1189:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1190:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1191:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1193:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1194:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1196:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1197:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1199:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1200:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1202:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1203:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1204:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1205:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1206:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1208:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1209:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1211:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1212:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1214:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1215:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1217:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1218:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1220:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1221:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1222:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1223:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1224:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1226:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1227:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1229:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1230:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1232:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1233:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1235:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1236:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1238:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1239:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1240:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1241:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1242:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1244:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1245:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1247:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1248:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1250:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1251:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1253:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1254:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1256:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1257:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1258:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1259:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1260:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1262:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1263:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1265:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1266:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1268:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1269:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1271:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1272:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1274:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1275:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1276:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1277:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1278:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1280:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1281:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1283:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1284:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1286:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1287:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1289:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1290:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1292:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1293:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1294:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1295:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1296:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1298:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1299:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1301:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1302:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1304:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1305:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1307:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1308:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1310:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1311:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1312:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1313:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1314:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1316:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1317:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1319:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1320:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1322:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1323:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1325:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1326:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1328:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1329:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1330:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1331:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1332:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1334:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1335:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1337:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1338:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1340:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1341:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1343:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1344:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1346:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1347:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1348:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1349:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1350:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1352:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1353:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1355:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1356:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1358:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1359:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1361:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1362:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1364:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1365:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1366:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1367:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1368:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1370:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1371:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1373:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1374:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1376:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1377:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1379:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1380:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1382:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1383:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1384:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1385:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1386:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1388:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1389:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1391:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1392:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1394:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1395:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1397:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1398:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1400:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1401:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1402:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1403:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1404:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1406:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1407:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1409:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1410:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1412:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1413:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1415:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1416:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1418:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1419:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1420:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1421:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1422:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1424:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1425:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1427:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1428:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1430:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1431:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1433:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1434:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1436:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1437:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1438:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1439:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1440:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1442:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1443:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1445:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1446:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1448:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1449:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1451:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1452:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1454:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1455:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1456:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1457:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1458:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1460:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1461:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1463:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1464:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1466:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1467:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1469:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1470:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1472:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1473:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1474:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1475:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1476:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1478:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1479:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1481:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1482:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1484:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1485:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1487:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1488:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1490:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1491:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1492:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1493:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1494:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1496:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1497:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1499:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1500:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1502:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1503:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1505:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1506:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1508:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1509:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1510:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1511:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1512:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1514:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1515:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1517:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1518:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1520:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1521:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1523:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1524:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1525:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1526:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1527:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1528:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1529:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1530:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1532:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1533:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1535:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1536:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1538:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1539:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1541:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1542:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1544:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1545:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1547:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1548:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1550:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1551:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1553:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1554:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1556:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1557:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1559:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1560:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_1562:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1563:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_23_attention_Sqrt_1__wav2vec2_encoder_layers_23_attention_Sqrt_1_output_0_as_const_89:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_23_attention_Sqrt_2__wav2vec2_encoder_layers_23_attention_Sqrt_2_output_0_as_const_91:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_22_attention_Sqrt_1__wav2vec2_encoder_layers_22_attention_Sqrt_1_output_0_as_const_147:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_22_attention_Sqrt_2__wav2vec2_encoder_layers_22_attention_Sqrt_2_output_0_as_const_149:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_21_attention_Sqrt_1__wav2vec2_encoder_layers_21_attention_Sqrt_1_output_0_as_const_190:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_21_attention_Sqrt_2__wav2vec2_encoder_layers_21_attention_Sqrt_2_output_0_as_const_192:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_20_attention_Sqrt_1__wav2vec2_encoder_layers_20_attention_Sqrt_1_output_0_as_const_233:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_20_attention_Sqrt_2__wav2vec2_encoder_layers_20_attention_Sqrt_2_output_0_as_const_235:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_19_attention_Sqrt_1__wav2vec2_encoder_layers_19_attention_Sqrt_1_output_0_as_const_277:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_19_attention_Sqrt_2__wav2vec2_encoder_layers_19_attention_Sqrt_2_output_0_as_const_279:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_18_attention_Sqrt_1__wav2vec2_encoder_layers_18_attention_Sqrt_1_output_0_as_const_321:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_18_attention_Sqrt_2__wav2vec2_encoder_layers_18_attention_Sqrt_2_output_0_as_const_323:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_17_attention_Sqrt_1__wav2vec2_encoder_layers_17_attention_Sqrt_1_output_0_as_const_365:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_17_attention_Sqrt_2__wav2vec2_encoder_layers_17_attention_Sqrt_2_output_0_as_const_367:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_16_attention_Sqrt_1__wav2vec2_encoder_layers_16_attention_Sqrt_1_output_0_as_const_409:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_16_attention_Sqrt_2__wav2vec2_encoder_layers_16_attention_Sqrt_2_output_0_as_const_411:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_15_attention_Sqrt_1__wav2vec2_encoder_layers_15_attention_Sqrt_1_output_0_as_const_453:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_15_attention_Sqrt_2__wav2vec2_encoder_layers_15_attention_Sqrt_2_output_0_as_const_455:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_14_attention_Sqrt_1__wav2vec2_encoder_layers_14_attention_Sqrt_1_output_0_as_const_497:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_14_attention_Sqrt_2__wav2vec2_encoder_layers_14_attention_Sqrt_2_output_0_as_const_499:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_13_attention_Sqrt_1__wav2vec2_encoder_layers_13_attention_Sqrt_1_output_0_as_const_541:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_13_attention_Sqrt_2__wav2vec2_encoder_layers_13_attention_Sqrt_2_output_0_as_const_543:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_12_attention_Sqrt_1__wav2vec2_encoder_layers_12_attention_Sqrt_1_output_0_as_const_585:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_12_attention_Sqrt_2__wav2vec2_encoder_layers_12_attention_Sqrt_2_output_0_as_const_587:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_11_attention_Sqrt_1__wav2vec2_encoder_layers_11_attention_Sqrt_1_output_0_as_const_629:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_11_attention_Sqrt_2__wav2vec2_encoder_layers_11_attention_Sqrt_2_output_0_as_const_631:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_10_attention_Sqrt_1__wav2vec2_encoder_layers_10_attention_Sqrt_1_output_0_as_const_673:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_10_attention_Sqrt_2__wav2vec2_encoder_layers_10_attention_Sqrt_2_output_0_as_const_675:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_9_attention_Sqrt_1__wav2vec2_encoder_layers_9_attention_Sqrt_1_output_0_as_const_717:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_9_attention_Sqrt_2__wav2vec2_encoder_layers_9_attention_Sqrt_2_output_0_as_const_719:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_8_attention_Sqrt_1__wav2vec2_encoder_layers_8_attention_Sqrt_1_output_0_as_const_761:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_8_attention_Sqrt_2__wav2vec2_encoder_layers_8_attention_Sqrt_2_output_0_as_const_763:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_7_attention_Sqrt_1__wav2vec2_encoder_layers_7_attention_Sqrt_1_output_0_as_const_805:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_7_attention_Sqrt_2__wav2vec2_encoder_layers_7_attention_Sqrt_2_output_0_as_const_807:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_6_attention_Sqrt_1__wav2vec2_encoder_layers_6_attention_Sqrt_1_output_0_as_const_849:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_6_attention_Sqrt_2__wav2vec2_encoder_layers_6_attention_Sqrt_2_output_0_as_const_851:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_1__wav2vec2_encoder_layers_5_attention_Sqrt_1_output_0_as_const_893:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_2__wav2vec2_encoder_layers_5_attention_Sqrt_2_output_0_as_const_895:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_1__wav2vec2_encoder_layers_4_attention_Sqrt_1_output_0_as_const_937:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_2__wav2vec2_encoder_layers_4_attention_Sqrt_2_output_0_as_const_939:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_1__wav2vec2_encoder_layers_3_attention_Sqrt_1_output_0_as_const_980:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_2__wav2vec2_encoder_layers_3_attention_Sqrt_2_output_0_as_const_982:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv_990:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_1__wav2vec2_encoder_layers_2_attention_Sqrt_1_output_0_as_const_1017:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_2__wav2vec2_encoder_layers_2_attention_Sqrt_2_output_0_as_const_1019:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.6/conv/Conv_1040:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_1__wav2vec2_encoder_layers_1_attention_Sqrt_1_output_0_as_const_1045:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_2__wav2vec2_encoder_layers_1_attention_Sqrt_2_output_0_as_const_1047:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_1__wav2vec2_encoder_layers_0_attention_Sqrt_1_output_0_as_const_1065:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_2__wav2vec2_encoder_layers_0_attention_Sqrt_2_output_0_as_const_1067:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.5/conv/Conv_1073:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.4/conv/Conv_1088:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.3/conv/Conv_1093:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.2/conv/Conv_1098:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.1/conv/Conv_1103:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_1108:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1128:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1131:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1134:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1137:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1140:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1143:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1146:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1149:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1152:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1155:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1158:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1161:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1164:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1167:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1170:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1173:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1176:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1179:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1182:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1185:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1188:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1191:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1194:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1197:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1200:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1203:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1206:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1209:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1212:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1215:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1218:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1221:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1224:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1227:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1230:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1233:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1236:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1239:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1242:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1245:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1248:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1251:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1254:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1257:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1260:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1263:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1266:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1269:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1272:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1275:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1278:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1281:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1284:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1287:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1290:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1293:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1296:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1299:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1302:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1305:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1308:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1311:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1314:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1317:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1320:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1323:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1326:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1329:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1332:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1335:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1338:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1341:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1344:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1347:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1350:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1353:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1356:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1359:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1362:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1365:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1368:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1371:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1374:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1377:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1380:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1383:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1386:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1389:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1392:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1395:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1398:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1401:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1404:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1407:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1410:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1413:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1416:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1419:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1422:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1425:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1428:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1431:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1434:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1437:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1440:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1443:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1446:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1449:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1452:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1455:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1458:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1461:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1464:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1467:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1470:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1473:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1476:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1479:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1482:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1485:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1488:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1491:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1494:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1497:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1500:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1503:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1506:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1509:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1512:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1515:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1518:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1521:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1524:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1527:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1530:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1533:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1536:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1539:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1542:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1545:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1548:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1551:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1554:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1557:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1560:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_1563:weight':
+    qtype: bf16
+    quantizer: bfloat16
+customized_quantize_layers:
+  Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv_990: dynamic_fixed_point-i16

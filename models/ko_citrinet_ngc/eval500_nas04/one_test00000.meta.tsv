@@ -1,0 +1,2 @@
+npy_path	wav_path	text
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00000.npy	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00000.wav	턴테이블

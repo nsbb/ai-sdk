@@ -1,0 +1,40 @@
+
+soong_config_module_type {
+    name: "prebuilt_network_binary",
+    module_type: "prebuilt_etc",
+    config_namespace: "npu",
+    variables: [
+        "npu_version",
+    ],
+    properties: [
+        "src",
+    ],
+}
+
+soong_config_string_variable {
+    name: "npu_version",
+    values: [
+        "v1",
+        "v2",
+        "v3",
+    ],
+}
+
+prebuilt_network_binary {
+    name: "deepspeech2.nb",
+    vendor: true,
+    soong_config_variables: {
+        npu_version: {
+            conditions_default: {
+                src: "v3/deepspeech2.nb",
+            },
+            v2: {
+                src: "v2/deepspeech2.nb",
+            },
+            v3: {
+                src: "v3/deepspeech2.nb",
+            },
+        },
+    },
+    sub_dir: "models",
+}

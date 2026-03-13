@@ -1,0 +1,11 @@
+idx	wav_path	gt	pred	cer
+0	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00000.wav	턴테이블	싶 수 바다는다 않 그러니까	2.75
+1	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00001.wav	열선 시트 조금만 뒤로 옮겨	씨 싶 수 않 하나 않 나는 나는 가 바니다	1.3636363636363635
+2	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00002.wav	어느 방에 에어컨 작동 중이야	지금특 시 수 바 하나 나 나는 나 하나 나는 차 상황 나는 있는 있는데 예	2.25
+3	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00003.wav	그 내용이 아직은 정확하지 않아요 고객님	시 집 지특 수 사람 사 나 하 나 나 나는	0.9411764705882353
+4	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00004.wav	극도의 공포와 불안을 느끼는 것 같아요	국다고 국 그런데 나오 나 나 나는 기 사람	1.0
+5	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00005.wav	누가 더 빨리 올라가나 내기하지	수치 시 시 하고 나 하나 하나 나는 나는 나는 있는 나는 제가	1.6923076923076923
+6	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00006.wav	내가 좋아하는 음식 같이 먹는 게 더 좋아요	씨 시 실다는 사 나는 않 실 바 다 차 나는 때 나는 하나하고 원	1.2352941176470589
+7	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00007.wav	줄 서면 하나씩 줄게	곧 바 차 사 나는 다다 자까다	1.25
+8	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00008.wav	그니까 수거를 했다고 지금 그러니까	수 계 사 나오 나는 차 나는 되는 나 나 하나다고	1.2
+9	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data/wav_test/test_00009.wav	그런데 관용사가 오지 않았어요	특칠특 나는 나는	1.0

@@ -1,0 +1,3 @@
+wav_path	text	src_path
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data_test_tiny/wav_calib/calib_00000.wav	기차 요금 확인해줘	/nas03/data_audio/006.명령어 음성(노인남녀)/Training/[원천]4.비정형_원천_2_명령어(노년)_training/zzpw2719_1-674309(2)-02-99-HSJ-F-08-A.wav
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/data_test_tiny/wav_calib/calib_00001.wav	어머니께서 말씀해주신 대로 사실 교재 캐시 차이세요	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/training/D01/J020/S014982/0013.wav

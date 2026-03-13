@@ -1,0 +1,1068 @@
+# !!!This file disallow TABs!!!
+# "category" allowed values: "image, frequency, undefined"
+# "database" allowed types: "TEXT, NPY, H5FS, SQLITE, LMDB, GENERATOR, ZIP"
+# "tensor_name" only support in H5FS database
+# "preproc_type" allowed types:"IMAGE_RGB, IMAGE_RGB888_PLANAR, IMAGE_RGB888_PLANAR_SEP, IMAGE_I420, 
+# IMAGE_NV12, IMAGE_YUV444, IMAGE_GRAY, IMAGE_BGRA, TENSOR"
+input_meta:
+  databases:
+  - path: dataset0.txt
+    type: TEXT
+    ports:
+    - lid: x_2593
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 1
+      - 39
+      - 80
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+      redirect_to_output: false
+  - path: dataset1.txt
+    type: TEXT
+    ports:
+    - lid: cached_len_0_2594
+      category: undefined
+      dtype: int64
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 1
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+      redirect_to_output: false
+  - path: dataset2.txt
+    type: TEXT
+    ports:
+    - lid: cached_len_1_2595
+      category: undefined
+      dtype: int64
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 1
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+      redirect_to_output: false
+  - path: dataset3.txt
+    type: TEXT
+    ports:
+    - lid: cached_len_2_2596
+      category: undefined
+      dtype: int64
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 3
+      - 1
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+      redirect_to_output: false
+  - path: dataset4.txt
+    type: TEXT
+    ports:
+    - lid: cached_len_3_2597
+      category: undefined
+      dtype: int64
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 1
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+      redirect_to_output: false
+  - path: dataset5.txt
+    type: TEXT
+    ports:
+    - lid: cached_len_4_2598
+      category: undefined
+      dtype: int64
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 1
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+      redirect_to_output: false
+  - path: dataset6.txt
+    type: TEXT
+    ports:
+    - lid: cached_avg_0_2599
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 1
+      - 384
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+      redirect_to_output: false
+  - path: dataset7.txt
+    type: TEXT
+    ports:
+    - lid: cached_avg_1_2600
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 1
+      - 384
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+      redirect_to_output: false
+  - path: dataset8.txt
+    type: TEXT
+    ports:
+    - lid: cached_avg_2_2601
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 3
+      - 1
+      - 384
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+      redirect_to_output: false
+  - path: dataset9.txt
+    type: TEXT
+    ports:
+    - lid: cached_avg_3_2602
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 1
+      - 384
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+      redirect_to_output: false
+  - path: dataset10.txt
+    type: TEXT
+    ports:
+    - lid: cached_avg_4_2603
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 1
+      - 384
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+      redirect_to_output: false
+  - path: dataset11.txt
+    type: TEXT
+    ports:
+    - lid: cached_key_0_2604
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 64
+      - 1
+      - 192
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset12.txt
+    type: TEXT
+    ports:
+    - lid: cached_key_1_2605
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 32
+      - 1
+      - 192
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset13.txt
+    type: TEXT
+    ports:
+    - lid: cached_key_2_2606
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 3
+      - 16
+      - 1
+      - 192
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset14.txt
+    type: TEXT
+    ports:
+    - lid: cached_key_3_2607
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 8
+      - 1
+      - 192
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset15.txt
+    type: TEXT
+    ports:
+    - lid: cached_key_4_2608
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 32
+      - 1
+      - 192
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset16.txt
+    type: TEXT
+    ports:
+    - lid: cached_val_0_2609
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 64
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset17.txt
+    type: TEXT
+    ports:
+    - lid: cached_val_1_2610
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 32
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset18.txt
+    type: TEXT
+    ports:
+    - lid: cached_val_2_2611
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 3
+      - 16
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset19.txt
+    type: TEXT
+    ports:
+    - lid: cached_val_3_2612
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 8
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset20.txt
+    type: TEXT
+    ports:
+    - lid: cached_val_4_2613
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 32
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset21.txt
+    type: TEXT
+    ports:
+    - lid: cached_val2_0_2614
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 64
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset22.txt
+    type: TEXT
+    ports:
+    - lid: cached_val2_1_2615
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 32
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset23.txt
+    type: TEXT
+    ports:
+    - lid: cached_val2_2_2616
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 3
+      - 16
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset24.txt
+    type: TEXT
+    ports:
+    - lid: cached_val2_3_2617
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 8
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset25.txt
+    type: TEXT
+    ports:
+    - lid: cached_val2_4_2618
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 32
+      - 1
+      - 96
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset26.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv1_0_2619
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset27.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv1_1_2620
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset28.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv1_2_2621
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 3
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset29.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv1_3_2622
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset30.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv1_4_2623
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset31.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv2_0_2624
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset32.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv2_1_2625
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset33.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv2_2_2626
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 3
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset34.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv2_3_2627
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 2
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false
+  - path: dataset35.txt
+    type: TEXT
+    ports:
+    - lid: cached_conv2_4_2628
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 4
+      - 1
+      - 384
+      - 30
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        mean:
+        - 0
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_image_size:
+          - 30
+          - 384
+          preproc_crop:
+            enable_preproc_crop: false
+            crop_rect:
+            - 0
+            - 0
+            - 30
+            - 384
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+          - 3
+      redirect_to_output: false

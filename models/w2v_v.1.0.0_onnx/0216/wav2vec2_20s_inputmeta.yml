@@ -1,0 +1,18 @@
+# !!!This file disallow TABs!!!
+input_meta:
+  databases:
+    - path: dataset.txt
+      type: TEXT
+      ports:
+        - lid: input
+          category: image
+          dtype: float32
+          sparse: false
+          layout: NC
+          shape: [1, 320000]
+          preprocess:
+            preproc_node_params:
+              add_preproc_node: false
+              preproc_type: TENSOR
+          redirect_to_output: false
+

@@ -1,0 +1,1 @@
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/handover_onnx_to_nb_5s/bundle_int8/input_5s_float.npy

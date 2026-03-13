@@ -1,0 +1,7 @@
+
+prebuilt_etc {
+    name: "1188-133604-0010.flac_756_161_1.tensor",
+    vendor: true,
+    src: "1188-133604-0010.flac_756_161_1.tensor",
+    sub_dir: "input_data",
+}

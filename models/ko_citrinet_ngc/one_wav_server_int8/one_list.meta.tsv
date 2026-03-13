@@ -1,0 +1,2 @@
+npy_path	wav_path	text
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/one_wav_server_int8/npy/input_00000.npy	/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/bundle_int8/test_input.wav	

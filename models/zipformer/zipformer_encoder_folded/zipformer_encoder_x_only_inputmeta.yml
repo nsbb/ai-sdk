@@ -1,0 +1,28 @@
+# !!!This file disallow TABs!!!
+input_meta:
+  databases:
+  - path: dataset0.txt
+    type: TEXT
+    ports:
+    - lid: x_2593
+      category: undefined
+      dtype: float32
+      sparse: false
+      tensor_name:
+      layout: nchw
+      shape:
+      - 1
+      - 39
+      - 80
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+      redirect_to_output: false

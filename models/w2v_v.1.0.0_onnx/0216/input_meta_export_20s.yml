@@ -1,0 +1,9 @@
+InputMeta:
+  enable_crop: false
+  enable_preprocess: false
+  inputs:
+    - name: input_values
+      dtype: int8
+      shape: [1, 320000]
+      layout: NC
+

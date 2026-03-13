@@ -1,0 +1,3 @@
+wav_path	text	src_path
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/_smoke_data_fast/wav_calib/calib_00000.wav	검색해서 읽어드릴게요	/nas03/data_audio/135.명령어_인식을_위한_소음_환경_데이터/Training/01.원천데이터/TS_02.차량_소음_환경_007.멀티미디어-방송_01.저속/B-C0609F-C-NULNU-s0mR-C711246-N.wav
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/_smoke_data_fast/wav_calib/calib_00001.wav	공기 중에 잘 있던 수증기가요	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/1.Training/원천데이터_0908_add/KlecSpeech_train_D04_wav_1/D04/M03/S000021/000267.wav

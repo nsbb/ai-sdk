@@ -1,0 +1,59 @@
+# Large model binaries
+*.onnx
+*.nemo
+*.nb
+*.data
+*.pb
+*.tflite
+*.caffemodel
+
+# Calibration datasets (numpy arrays)
+dataset/
+**/dataset*/
+*.npy
+
+# Test tensor/binary input files
+*.tensor
+*.flac
+
+# Inference/quantization working directories
+wksp/
+inf/
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+
+# Test input data
+*.dat
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Acuity generated build artifacts
+*.vcxproj
+*.2012.vcxproj
+.project
+.cproject
+makefile.linux
+*.o
+
+# Log files
+*.log
+
+# Acuity intermediate files
+entropy.txt
+*_fused.json
+
+# Large dataset text lists (paths to wav files)
+**/data/calib_wavs.txt
+**/data/test_wavs.txt
+**/data_*/calib_wavs.txt
+**/data_*/test_wavs.txt
+
+# Conversation artifacts
+conversation_history.txt

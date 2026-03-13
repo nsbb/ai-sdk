@@ -1,0 +1,2303 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@Conv_/dec.0/Conv_1:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.22/mconv.3/Mul_2:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.22/conv_1/Conv_3:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.22/mconv.3/fc/fc.2/Conv_4:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.22/conv/Conv_5:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.22/mconv.3/fc/fc.1/Relu_6:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.21/Add_7:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.22/mconv.3/fc/fc.0/Conv_8:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.21/mconv.23/Mul_9:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_10/Conv_10:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.22/mconv.3/GlobalAveragePool_11:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_9/Conv_12:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/mconv.23/fc/fc.2/Conv_13:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.20/Add_14:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_10/Conv_15:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_8/Conv_16:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.21/mconv.23/fc/fc.1/Relu_17:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.20/mconv.23/Mul_18:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.19/Add_19:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.21/fc.1_3/Relu_20:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/mconv.23/fc/fc.0/Conv_21:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_9/Conv_22:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/mconv.23/fc/fc.2/Conv_23:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.19/mconv.23/Mul_24:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_10/Conv_25:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_7/Conv_26:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.21/mconv.23/GlobalAveragePool_27:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_8/Conv_28:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.20/mconv.23/fc/fc.1/Relu_29:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_9/Conv_30:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/mconv.23/fc/fc.2/Conv_31:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.18/Add_32:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_6/Conv_33:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.21/fc.1_2/Relu_34:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.20/fc.1_3/Relu_35:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/mconv.23/fc/fc.0/Conv_36:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_8/Conv_37:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.19/mconv.23/fc/fc.1/Relu_38:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.18/mconv.23/Mul_39:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_10/Conv_40:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_5/Conv_41:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_7/Conv_42:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.20/mconv.23/GlobalAveragePool_43:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.19/fc.1_3/Relu_44:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/mconv.23/fc/fc.0/Conv_45:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_9/Conv_46:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/mconv.23/fc/fc.2/Conv_47:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.17/Add_48:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_4/Conv_49:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_6/Conv_50:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.20/fc.1_2/Relu_51:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_7/Conv_52:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.19/mconv.23/GlobalAveragePool_53:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_8/Conv_54:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.18/mconv.23/fc/fc.1/Relu_55:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.17/mconv.23/Mul_56:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_10/Conv_57:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.21/fc.1_1/Relu_58:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_5/Conv_59:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_6/Conv_60:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.19/fc.1_2/Relu_61:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.18/fc.1_3/Relu_62:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/mconv.23/fc/fc.0/Conv_63:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_9/Conv_64:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/mconv.23/fc/fc.2/Conv_65:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.16/Add_66:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_3/Conv_67:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_4/Conv_68:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_5/Conv_69:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_7/Conv_70:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.18/mconv.23/GlobalAveragePool_71:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_8/Conv_72:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.17/mconv.23/fc/fc.1/Relu_73:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.16/mconv.23/Mul_74:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_10/Conv_75:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_2/Conv_76:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.20/fc.1_1/Relu_77:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_4/Conv_78:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_6/Conv_79:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.18/fc.1_2/Relu_80:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.17/fc.1_3/Relu_81:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/mconv.23/fc/fc.0/Conv_82:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_9/Conv_83:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/mconv.23/fc/fc.2/Conv_84:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.15/Add_85:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.21/fc.1/Relu_86:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_3/Conv_87:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.19/fc.1_1/Relu_88:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_5/Conv_89:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_7/Conv_90:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.17/mconv.23/GlobalAveragePool_91:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_8/Conv_92:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.16/mconv.23/fc/fc.1/Relu_93:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.15/mconv.23/Mul_94:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_10/Conv_95:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_1/Conv_96:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_2/Conv_97:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_3/Conv_98:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_4/Conv_99:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_6/Conv_100:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.17/fc.1_2/Relu_101:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.16/fc.1_3/Relu_102:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/mconv.23/fc/fc.0/Conv_103:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_9/Conv_104:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/mconv.23/fc/fc.2/Conv_105:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.14/Add_106:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv/Conv_107:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.20/fc.1/Relu_108:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_2/Conv_109:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.18/fc.1_1/Relu_110:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_5/Conv_111:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_7/Conv_112:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.16/mconv.23/GlobalAveragePool_113:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_8/Conv_114:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.15/mconv.23/fc/fc.1/Relu_115:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.14/mconv.23/Mul_116:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_10/Conv_117:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.13/Add_118:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_1/Conv_119:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.19/fc.1/Relu_120:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_3/Conv_121:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_4/Conv_122:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_6/Conv_123:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.16/fc.1_2/Relu_124:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.15/fc.1_3/Relu_125:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/mconv.23/fc/fc.0/Conv_126:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_9/Conv_127:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/mconv.23/fc/fc.2/Conv_128:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.13/mconv.23/Mul_129:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_10/Conv_130:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv/Conv_131:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_1/Conv_132:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_2/Conv_133:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.17/fc.1_1/Relu_134:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_5/Conv_135:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_7/Conv_136:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.15/mconv.23/GlobalAveragePool_137:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_8/Conv_138:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.14/mconv.23/fc/fc.1/Relu_139:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_9/Conv_140:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/mconv.23/fc/fc.2/Conv_141:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.12/Add_142:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_10/Conv_143:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv/Conv_144:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.18/fc.1/Relu_145:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_3/Conv_146:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_4/Conv_147:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_6/Conv_148:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.15/fc.1_2/Relu_149:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.14/fc.1_3/Relu_150:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/mconv.23/fc/fc.0/Conv_151:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_8/Conv_152:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.13/mconv.23/fc/fc.1/Relu_153:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.12/mconv.23/Mul_154:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.11/Add_155:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_10/Conv_156:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_1/Conv_157:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_2/Conv_158:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.16/fc.1_1/Relu_159:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_5/Conv_160:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_7/Conv_161:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.14/mconv.23/GlobalAveragePool_162:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.13/fc.1_3/Relu_163:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/mconv.23/fc/fc.0/Conv_164:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_9/Conv_165:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/mconv.23/fc/fc.2/Conv_166:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.11/mconv.23/Mul_167:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.10/Add_168:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv/Conv_169:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.17/fc.1/Relu_170:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_3/Conv_171:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_4/Conv_172:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_6/Conv_173:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.14/fc.1_2/Relu_174:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_7/Conv_175:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.13/mconv.23/GlobalAveragePool_176:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_8/Conv_177:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.12/mconv.23/fc/fc.1/Relu_178:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_9/Conv_179:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/mconv.23/fc/fc.2/Conv_180:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.10/mconv.23/Mul_181:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_10/Conv_182:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.9/Add_183:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_1/Conv_184:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_2/Conv_185:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.15/fc.1_1/Relu_186:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_5/Conv_187:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_6/Conv_188:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.13/fc.1_2/Relu_189:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.12/fc.1_3/Relu_190:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/mconv.23/fc/fc.0/Conv_191:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_8/Conv_192:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.11/mconv.23/fc/fc.1/Relu_193:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_9/Conv_194:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/mconv.23/fc/fc.2/Conv_195:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.9/mconv.23/Mul_196:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_10/Conv_197:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv/Conv_198:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.16/fc.1/Relu_199:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_3/Conv_200:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_4/Conv_201:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_5/Conv_202:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_7/Conv_203:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.12/mconv.23/GlobalAveragePool_204:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.11/fc.1_3/Relu_205:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/mconv.23/fc/fc.0/Conv_206:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_8/Conv_207:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.10/mconv.23/fc/fc.1/Relu_208:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_9/Conv_209:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/mconv.23/fc/fc.2/Conv_210:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.8/Add_211:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_10/Conv_212:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_1/Conv_213:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_2/Conv_214:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.14/fc.1_1/Relu_215:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_4/Conv_216:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_6/Conv_217:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.12/fc.1_2/Relu_218:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_7/Conv_219:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.11/mconv.23/GlobalAveragePool_220:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.10/fc.1_3/Relu_221:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/mconv.23/fc/fc.0/Conv_222:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_8/Conv_223:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.9/mconv.23/fc/fc.1/Relu_224:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.8/mconv.23/Mul_225:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.7/Add_226:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv/Conv_227:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.15/fc.1/Relu_228:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_3/Conv_229:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.13/fc.1_1/Relu_230:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_5/Conv_231:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_6/Conv_232:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.11/fc.1_2/Relu_233:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_7/Conv_234:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.10/mconv.23/GlobalAveragePool_235:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.9/fc.1_3/Relu_236:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/mconv.23/fc/fc.0/Conv_237:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_9/Conv_238:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/mconv.23/fc/fc.2/Conv_239:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.7/mconv.23/Mul_240:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_10/Conv_241:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.6/Add_242:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_1/Conv_243:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_2/Conv_244:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_3/Conv_245:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_4/Conv_246:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_5/Conv_247:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_6/Conv_248:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.10/fc.1_2/Relu_249:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_7/Conv_250:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.9/mconv.23/GlobalAveragePool_251:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_8/Conv_252:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.8/mconv.23/fc/fc.1/Relu_253:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_9/Conv_254:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/mconv.23/fc/fc.2/Conv_255:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.6/mconv.23/Mul_256:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_10/Conv_257:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv/Conv_258:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.14/fc.1/Relu_259:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_2/Conv_260:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.12/fc.1_1/Relu_261:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_4/Conv_262:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_5/Conv_263:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_6/Conv_264:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.9/fc.1_2/Relu_265:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.8/fc.1_3/Relu_266:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/mconv.23/fc/fc.0/Conv_267:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_8/Conv_268:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.7/mconv.23/fc/fc.1/Relu_269:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_9/Conv_270:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/mconv.23/fc/fc.2/Conv_271:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.5/Add_272:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_10/Conv_273:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_1/Conv_274:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.13/fc.1/Relu_275:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_3/Conv_276:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.11/fc.1_1/Relu_277:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_4/Conv_278:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_5/Conv_279:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_7/Conv_280:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.8/mconv.23/GlobalAveragePool_281:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.7/fc.1_3/Relu_282:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/mconv.23/fc/fc.0/Conv_283:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_8/Conv_284:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.6/mconv.23/fc/fc.1/Relu_285:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.5/mconv.23/Mul_286:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.4/Add_287:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv/Conv_288:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_1/Conv_289:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_2/Conv_290:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_3/Conv_291:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.10/fc.1_1/Relu_292:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_4/Conv_293:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_6/Conv_294:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.8/fc.1_2/Relu_295:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_7/Conv_296:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.7/mconv.23/GlobalAveragePool_297:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.6/fc.1_3/Relu_298:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/mconv.23/fc/fc.0/Conv_299:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_9/Conv_300:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/mconv.23/fc/fc.2/Conv_301:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.4/mconv.23/Mul_302:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_10/Conv_303:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.3/Add_304:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv/Conv_305:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.12/fc.1/Relu_306:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_2/Conv_307:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_3/Conv_308:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.9/fc.1_1/Relu_309:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_5/Conv_310:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_6/Conv_311:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.7/fc.1_2/Relu_312:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_7/Conv_313:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.6/mconv.23/GlobalAveragePool_314:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_8/Conv_315:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.5/mconv.23/fc/fc.1/Relu_316:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_9/Conv_317:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/mconv.23/fc/fc.2/Conv_318:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.3/mconv.23/Mul_319:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_10/Conv_320:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.2/Add_321:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_1/Conv_322:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.11/fc.1/Relu_323:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_2/Conv_324:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_3/Conv_325:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_4/Conv_326:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_5/Conv_327:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_6/Conv_328:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.6/fc.1_2/Relu_329:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.5/fc.1_3/Relu_330:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/mconv.23/fc/fc.0/Conv_331:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_8/Conv_332:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.4/mconv.23/fc/fc.1/Relu_333:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_9/Conv_334:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/mconv.23/fc/fc.2/Conv_335:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.2/mconv.23/Mul_336:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_10/Conv_337:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv/Conv_338:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_1/Conv_339:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.10/fc.1/Relu_340:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_2/Conv_341:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.8/fc.1_1/Relu_342:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_4/Conv_343:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_5/Conv_344:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_7/Conv_345:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.5/mconv.23/GlobalAveragePool_346:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.4/fc.1_3/Relu_347:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/mconv.23/fc/fc.0/Conv_348:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_8/Conv_349:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.3/mconv.23/fc/fc.1/Relu_350:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_9/Conv_351:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/mconv.23/fc/fc.2/Conv_352:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_/enc.1/Add_353:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_10/Conv_354:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv/Conv_355:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_1/Conv_356:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.9/fc.1/Relu_357:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_3/Conv_358:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.7/fc.1_1/Relu_359:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_4/Conv_360:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_6/Conv_361:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.5/fc.1_2/Relu_362:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_7/Conv_363:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.4/mconv.23/GlobalAveragePool_364:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.3/fc.1_3/Relu_365:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/mconv.23/fc/fc.0/Conv_366:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_8/Conv_367:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.2/mconv.23/fc/fc.1/Relu_368:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.1/mconv.23/Mul_369:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_/enc.0/mconv.3/Mul_370:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/mconv.3/fc/fc.2/Conv_371:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv/Conv_372:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_1/Conv_373:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_2/Conv_374:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_3/Conv_375:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.6/fc.1_1/Relu_376:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_5/Conv_377:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_6/Conv_378:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.4/fc.1_2/Relu_379:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_7/Conv_380:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.3/mconv.23/GlobalAveragePool_381:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.2/fc.1_3/Relu_382:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/mconv.23/fc/fc.0/Conv_383:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_9/Conv_384:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/mconv.23/fc/fc.2/Conv_385:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/conv_1/Conv_386:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.0/mconv.3/fc/fc.1/Relu_387:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/mconv.3/fc/fc.0/Conv_388:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv/Conv_389:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.8/fc.1/Relu_390:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_2/Conv_391:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_3/Conv_392:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_4/Conv_393:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_5/Conv_394:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_6/Conv_395:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.3/fc.1_2/Relu_396:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_7/Conv_397:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.2/mconv.23/GlobalAveragePool_398:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_8/Conv_399:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.1/mconv.23/fc/fc.1/Relu_400:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/conv/Conv_401:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.0/mconv.3/GlobalAveragePool_402:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/mconv.23/fc/fc.0/Conv_403:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_1/Conv_404:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.7/fc.1/Relu_405:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_2/Conv_406:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.5/fc.1_1/Relu_407:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_4/Conv_408:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_5/Conv_409:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_6/Conv_410:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.2/fc.1_2/Relu_411:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.1/fc.1_3/Relu_412:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@GlobalAveragePool_/enc.1/mconv.23/GlobalAveragePool_413:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv/Conv_414:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_1/Conv_415:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.6/fc.1/Relu_416:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_3/Conv_417:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.4/fc.1_1/Relu_418:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_4/Conv_419:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_5/Conv_420:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_7/Conv_421:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_6/Conv_422:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.1/fc.1_2/Relu_423:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv/Conv_424:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_1/Conv_425:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_2/Conv_426:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_3/Conv_427:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.3/fc.1_1/Relu_428:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_4/Conv_429:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_5/Conv_430:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_4/Conv_431:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv/Conv_432:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.5/fc.1/Relu_433:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_2/Conv_434:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_3/Conv_435:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.2/fc.1_1/Relu_436:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.1/fc.1_1/Relu_437:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_3/Conv_438:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_1/Conv_439:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.4/fc.1/Relu_440:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_2/Conv_441:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_3/Conv_442:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_2/Conv_443:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv/Conv_444:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_1/Conv_445:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.3/fc.1/Relu_446:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_2/Conv_447:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.1/fc.1/Relu_448:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_1/Conv_449:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv/Conv_450:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_1/Conv_451:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Relu_/enc.2/fc.1/Relu_452:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv/Conv_453:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_1/Conv_454:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv/Conv_455:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv/Conv_456:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/conv/Conv_401_acuity_mark_perm_459:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/dec.0/Conv_1:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.22/conv_1/Conv_3:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.22/mconv.3/fc/fc.2/Conv_4:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.22/conv/Conv_5:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.22/mconv.3/fc/fc.0/Conv_8:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_10/Conv_10:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_9/Conv_12:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/mconv.23/fc/fc.2/Conv_13:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_10/Conv_15:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_8/Conv_16:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/mconv.23/fc/fc.0/Conv_21:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_9/Conv_22:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/mconv.23/fc/fc.2/Conv_23:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_10/Conv_25:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_7/Conv_26:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_8/Conv_28:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_9/Conv_30:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/mconv.23/fc/fc.2/Conv_31:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_6/Conv_33:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/mconv.23/fc/fc.0/Conv_36:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_8/Conv_37:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_10/Conv_40:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_5/Conv_41:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_7/Conv_42:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/mconv.23/fc/fc.0/Conv_45:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_9/Conv_46:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/mconv.23/fc/fc.2/Conv_47:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_4/Conv_49:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_6/Conv_50:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_7/Conv_52:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_8/Conv_54:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_10/Conv_57:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_5/Conv_59:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_6/Conv_60:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/mconv.23/fc/fc.0/Conv_63:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_9/Conv_64:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/mconv.23/fc/fc.2/Conv_65:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_3/Conv_67:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_4/Conv_68:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_5/Conv_69:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_7/Conv_70:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_8/Conv_72:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_10/Conv_75:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_2/Conv_76:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_4/Conv_78:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_6/Conv_79:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/mconv.23/fc/fc.0/Conv_82:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_9/Conv_83:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/mconv.23/fc/fc.2/Conv_84:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_3/Conv_87:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_5/Conv_89:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_7/Conv_90:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_8/Conv_92:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_10/Conv_95:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv_1/Conv_96:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_2/Conv_97:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_3/Conv_98:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_4/Conv_99:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_6/Conv_100:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/mconv.23/fc/fc.0/Conv_103:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_9/Conv_104:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/mconv.23/fc/fc.2/Conv_105:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.21/conv/Conv_107:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_2/Conv_109:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_5/Conv_111:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_7/Conv_112:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_8/Conv_114:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_10/Conv_117:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv_1/Conv_119:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_3/Conv_121:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_4/Conv_122:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_6/Conv_123:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/mconv.23/fc/fc.0/Conv_126:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_9/Conv_127:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/mconv.23/fc/fc.2/Conv_128:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_10/Conv_130:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.20/conv/Conv_131:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv_1/Conv_132:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_2/Conv_133:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_5/Conv_135:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_7/Conv_136:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_8/Conv_138:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_9/Conv_140:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/mconv.23/fc/fc.2/Conv_141:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_10/Conv_143:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.19/conv/Conv_144:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_3/Conv_146:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_4/Conv_147:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_6/Conv_148:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/mconv.23/fc/fc.0/Conv_151:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_8/Conv_152:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_10/Conv_156:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv_1/Conv_157:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_2/Conv_158:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_5/Conv_160:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_7/Conv_161:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/mconv.23/fc/fc.0/Conv_164:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_9/Conv_165:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/mconv.23/fc/fc.2/Conv_166:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.18/conv/Conv_169:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_3/Conv_171:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_4/Conv_172:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_6/Conv_173:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_7/Conv_175:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_8/Conv_177:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_9/Conv_179:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/mconv.23/fc/fc.2/Conv_180:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_10/Conv_182:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv_1/Conv_184:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_2/Conv_185:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_5/Conv_187:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_6/Conv_188:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/mconv.23/fc/fc.0/Conv_191:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_8/Conv_192:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_9/Conv_194:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/mconv.23/fc/fc.2/Conv_195:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_10/Conv_197:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.17/conv/Conv_198:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_3/Conv_200:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_4/Conv_201:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_5/Conv_202:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_7/Conv_203:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/mconv.23/fc/fc.0/Conv_206:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_8/Conv_207:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_9/Conv_209:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/mconv.23/fc/fc.2/Conv_210:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_10/Conv_212:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv_1/Conv_213:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_2/Conv_214:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_4/Conv_216:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_6/Conv_217:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_7/Conv_219:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/mconv.23/fc/fc.0/Conv_222:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_8/Conv_223:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.16/conv/Conv_227:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_3/Conv_229:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_5/Conv_231:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_6/Conv_232:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_7/Conv_234:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/mconv.23/fc/fc.0/Conv_237:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_9/Conv_238:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/mconv.23/fc/fc.2/Conv_239:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_10/Conv_241:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv_1/Conv_243:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_2/Conv_244:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_3/Conv_245:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_4/Conv_246:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_5/Conv_247:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_6/Conv_248:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_7/Conv_250:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_8/Conv_252:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_9/Conv_254:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/mconv.23/fc/fc.2/Conv_255:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_10/Conv_257:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.15/conv/Conv_258:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_2/Conv_260:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_4/Conv_262:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_5/Conv_263:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_6/Conv_264:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/mconv.23/fc/fc.0/Conv_267:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_8/Conv_268:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_9/Conv_270:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/mconv.23/fc/fc.2/Conv_271:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_10/Conv_273:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv_1/Conv_274:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_3/Conv_276:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_4/Conv_278:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_5/Conv_279:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_7/Conv_280:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/mconv.23/fc/fc.0/Conv_283:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_8/Conv_284:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.14/conv/Conv_288:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv_1/Conv_289:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_2/Conv_290:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_3/Conv_291:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_4/Conv_293:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_6/Conv_294:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_7/Conv_296:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/mconv.23/fc/fc.0/Conv_299:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_9/Conv_300:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/mconv.23/fc/fc.2/Conv_301:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_10/Conv_303:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.13/conv/Conv_305:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_2/Conv_307:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_3/Conv_308:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_5/Conv_310:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_6/Conv_311:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_7/Conv_313:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_8/Conv_315:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_9/Conv_317:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/mconv.23/fc/fc.2/Conv_318:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_10/Conv_320:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv_1/Conv_322:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_2/Conv_324:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_3/Conv_325:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_4/Conv_326:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_5/Conv_327:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_6/Conv_328:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/mconv.23/fc/fc.0/Conv_331:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_8/Conv_332:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_9/Conv_334:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/mconv.23/fc/fc.2/Conv_335:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_10/Conv_337:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.12/conv/Conv_338:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv_1/Conv_339:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_2/Conv_341:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_4/Conv_343:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_5/Conv_344:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_7/Conv_345:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/mconv.23/fc/fc.0/Conv_348:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_8/Conv_349:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_9/Conv_351:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/mconv.23/fc/fc.2/Conv_352:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_10/Conv_354:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.11/conv/Conv_355:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv_1/Conv_356:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_3/Conv_358:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_4/Conv_360:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_6/Conv_361:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_7/Conv_363:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/mconv.23/fc/fc.0/Conv_366:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_8/Conv_367:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/mconv.3/fc/fc.2/Conv_371:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.10/conv/Conv_372:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv_1/Conv_373:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_2/Conv_374:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_3/Conv_375:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_5/Conv_377:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_6/Conv_378:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_7/Conv_380:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/mconv.23/fc/fc.0/Conv_383:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_9/Conv_384:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/mconv.23/fc/fc.2/Conv_385:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/conv_1/Conv_386:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/mconv.3/fc/fc.0/Conv_388:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.9/conv/Conv_389:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_2/Conv_391:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_3/Conv_392:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_4/Conv_393:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_5/Conv_394:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_6/Conv_395:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_7/Conv_397:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_8/Conv_399:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.0/conv/Conv_401:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/mconv.23/fc/fc.0/Conv_403:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv_1/Conv_404:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_2/Conv_406:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_4/Conv_408:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_5/Conv_409:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_6/Conv_410:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.8/conv/Conv_414:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv_1/Conv_415:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_3/Conv_417:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_4/Conv_419:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_5/Conv_420:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_7/Conv_421:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_6/Conv_422:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.7/conv/Conv_424:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv_1/Conv_425:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_2/Conv_426:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_3/Conv_427:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_4/Conv_429:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_5/Conv_430:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_4/Conv_431:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.6/conv/Conv_432:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_2/Conv_434:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_3/Conv_435:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_3/Conv_438:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv_1/Conv_439:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_2/Conv_441:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_3/Conv_442:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_2/Conv_443:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.5/conv/Conv_444:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv_1/Conv_445:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_2/Conv_447:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv_1/Conv_449:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.4/conv/Conv_450:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv_1/Conv_451:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.1/conv/Conv_453:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv_1/Conv_454:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.3/conv/Conv_455:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_/enc.2/conv/Conv_456:weight':
+    qtype: bf16
+    quantizer: bfloat16
+customized_quantize_layers:
+  Conv_/enc.22/conv/Conv_5: dynamic_fixed_point-i16
+  Conv_/enc.21/conv_8/Conv_16: dynamic_fixed_point-i16
+  Conv_/enc.20/conv_8/Conv_28: dynamic_fixed_point-i16
+  Conv_/enc.21/conv_6/Conv_33: dynamic_fixed_point-i16
+  Conv_/enc.20/mconv.23/fc/fc.0/Conv_36: dynamic_fixed_point-i16
+  Conv_/enc.19/conv_8/Conv_37: dynamic_fixed_point-i16
+  Conv_/enc.21/conv_4/Conv_49: dynamic_fixed_point-i16
+  Conv_/enc.20/conv_6/Conv_50: dynamic_fixed_point-i16
+  Conv_/enc.18/conv_8/Conv_54: dynamic_fixed_point-i16
+  Conv_/enc.19/conv_6/Conv_60: dynamic_fixed_point-i16
+  Conv_/enc.18/mconv.23/fc/fc.0/Conv_63: dynamic_fixed_point-i16
+  Conv_/enc.20/conv_4/Conv_68: dynamic_fixed_point-i16
+  Conv_/enc.17/conv_8/Conv_72: dynamic_fixed_point-i16
+  Conv_/enc.21/conv_2/Conv_76: dynamic_fixed_point-i16
+  Conv_/enc.19/conv_4/Conv_78: dynamic_fixed_point-i16
+  Conv_/enc.18/conv_6/Conv_79: dynamic_fixed_point-i16
+  Conv_/enc.16/conv_8/Conv_92: dynamic_fixed_point-i16
+  Conv_/enc.20/conv_2/Conv_97: dynamic_fixed_point-i16
+  Conv_/enc.18/conv_4/Conv_99: dynamic_fixed_point-i16
+  Conv_/enc.17/conv_6/Conv_100: dynamic_fixed_point-i16
+  Conv_/enc.21/conv/Conv_107: dynamic_fixed_point-i16
+  Conv_/enc.19/conv_2/Conv_109: dynamic_fixed_point-i16
+  Conv_/enc.17/conv_4/Conv_122: dynamic_fixed_point-i16
+  Conv_/enc.16/conv_6/Conv_123: dynamic_fixed_point-i16
+  Conv_/enc.20/conv/Conv_131: dynamic_fixed_point-i16
+  Conv_/enc.18/conv_2/Conv_133: dynamic_fixed_point-i16
+  Conv_/enc.14/conv_8/Conv_138: dynamic_fixed_point-i16
+  Conv_/enc.19/conv/Conv_144: dynamic_fixed_point-i16
+  Conv_/enc.16/conv_4/Conv_147: dynamic_fixed_point-i16
+  Conv_/enc.13/conv_8/Conv_152: dynamic_fixed_point-i16
+  Conv_/enc.17/conv_2/Conv_158: dynamic_fixed_point-i16
+  Conv_/enc.18/conv/Conv_169: dynamic_fixed_point-i16
+  Conv_/enc.14/conv_6/Conv_173: dynamic_fixed_point-i16
+  Conv_/enc.12/conv_8/Conv_177: dynamic_fixed_point-i16
+  Conv_/enc.16/conv_2/Conv_185: dynamic_fixed_point-i16
+  Conv_/enc.13/conv_6/Conv_188: dynamic_fixed_point-i16
+  Conv_/enc.17/conv/Conv_198: dynamic_fixed_point-i16
+  Conv_/enc.14/conv_4/Conv_201: dynamic_fixed_point-i16
+  Conv_/enc.13/conv_4/Conv_216: dynamic_fixed_point-i16
+  Conv_/enc.12/conv_6/Conv_217: dynamic_fixed_point-i16
+  Conv_/enc.16/conv/Conv_227: dynamic_fixed_point-i16
+  Conv_/enc.14/conv_2/Conv_244: dynamic_fixed_point-i16
+  Conv_/enc.10/conv_6/Conv_248: dynamic_fixed_point-i16
+  Conv_/enc.15/conv/Conv_258: dynamic_fixed_point-i16
+  Conv_/enc.13/conv_2/Conv_260: dynamic_fixed_point-i16
+  Conv_/enc.8/mconv.23/fc/fc.0/Conv_267: dynamic_fixed_point-i16
+  Conv_/enc.10/conv_4/Conv_278: dynamic_fixed_point-i16
+  Conv_/enc.14/conv/Conv_288: dynamic_fixed_point-i16
+  Conv_/enc.12/conv_2/Conv_290: dynamic_fixed_point-i16
+  Conv_/enc.5/conv_9/Conv_300: dynamic_fixed_point-i16
+  Conv_/enc.13/conv/Conv_305: dynamic_fixed_point-i16
+  Conv_/enc.4/conv_9/Conv_317: dynamic_fixed_point-i16
+  Conv_/enc.10/conv_2/Conv_324: dynamic_fixed_point-i16
+  Conv_/enc.5/mconv.23/fc/fc.0/Conv_331: dynamic_fixed_point-i16
+  Conv_/enc.3/conv_9/Conv_334: dynamic_fixed_point-i16
+  Conv_/enc.4/mconv.23/fc/fc.0/Conv_348: dynamic_fixed_point-i16
+  Conv_/enc.2/conv_9/Conv_351: dynamic_fixed_point-i16
+  Conv_/enc.1/conv_10/Conv_354: dynamic_fixed_point-i16
+  Conv_/enc.5/conv_6/Conv_361: dynamic_fixed_point-i16
+  Conv_/enc.3/mconv.23/fc/fc.0/Conv_366: dynamic_fixed_point-i16
+  Conv_/enc.10/conv/Conv_372: dynamic_fixed_point-i16
+  Conv_/enc.8/conv_2/Conv_374: dynamic_fixed_point-i16
+  Conv_/enc.4/conv_6/Conv_378: dynamic_fixed_point-i16
+  Conv_/enc.2/mconv.23/fc/fc.0/Conv_383: dynamic_fixed_point-i16
+  Conv_/enc.1/conv_9/Conv_384: dynamic_fixed_point-i16
+  Conv_/enc.0/conv_1/Conv_386: dynamic_fixed_point-i16
+  Conv_/enc.9/conv/Conv_389: dynamic_fixed_point-i16
+  Conv_/enc.5/conv_4/Conv_393: dynamic_fixed_point-i16
+  Conv_/enc.1/mconv.23/fc/fc.0/Conv_403: dynamic_fixed_point-i16
+  Conv_/enc.4/conv_4/Conv_408: dynamic_fixed_point-i16
+  Conv_/enc.5/conv_2/Conv_426: dynamic_fixed_point-i16
+  Conv_/enc.2/conv_4/Conv_429: dynamic_fixed_point-i16
+  Conv_/enc.1/conv_4/Conv_431: dynamic_fixed_point-i16
+  Conv_/enc.4/conv_2/Conv_434: dynamic_fixed_point-i16
+  Conv_/enc.1/conv_2/Conv_443: dynamic_fixed_point-i16
+  Conv_/enc.5/conv/Conv_444: dynamic_fixed_point-i16
+  Conv_/enc.2/conv_2/Conv_447: dynamic_fixed_point-i16
+  Conv_/enc.1/conv_1/Conv_449: dynamic_fixed_point-i16
+  Conv_/enc.4/conv/Conv_450: dynamic_fixed_point-i16
+  Conv_/enc.1/conv/Conv_453: dynamic_fixed_point-i16
+  Conv_/enc.3/conv/Conv_455: dynamic_fixed_point-i16
+  Conv_/enc.2/conv/Conv_456: dynamic_fixed_point-i16

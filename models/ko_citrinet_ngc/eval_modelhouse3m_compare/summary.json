@@ -1,0 +1,7 @@
+{
+  "samples": 51,
+  "onnx_mean_cer": 0.2893629246570423,
+  "nb_mean_cer": 0.33722467619526436,
+  "onnx_mean_cer_percent": 28.936292465704227,
+  "nb_mean_cer_percent": 33.722467619526434
+}

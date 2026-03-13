@@ -1,0 +1,6 @@
+[network]
+/data/local/tmp/citrinet_ko_fixlen_int8/network_binary.nb
+[input]
+/data/local/tmp/citrinet_ko_fixlen_int8/input_0.dat
+[output]
+/data/local/tmp/citrinet_ko_fixlen_int8/output_0.dat

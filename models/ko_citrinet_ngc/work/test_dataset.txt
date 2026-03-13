@@ -1,0 +1,10 @@
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00000.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00001.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00002.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00003.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00004.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00005.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00006.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00007.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00008.npy
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/work/test_npy/input_00009.npy

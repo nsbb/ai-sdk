@@ -1,0 +1,563 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@attach_logits/BiasAdd/out0_0:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 16.498676300048828
+    min_value: -27.296886444091797
+    scale: 0.17174731194972992
+    zero_point: 159
+  '@x_1:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.843154191970825
+    min_value: 0.0
+    scale: 0.011149624362587929
+    zero_point: 0
+  '@logits/BiasAdd_2:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 16.498676300048828
+    min_value: -27.296886444091797
+    scale: 0.17174731194972992
+    zero_point: 159
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/concat_3:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9999991655349731
+    min_value: -1.0
+    scale: 0.007843133993446827
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/ReverseV2_4:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9999991655349731
+    min_value: -1.0
+    scale: 0.007843133993446827
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/transpose_5:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9999991655349731
+    min_value: -1.0
+    scale: 0.007843133993446827
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/transpose_6:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9999991655349731
+    min_value: -1.0
+    scale: 0.007843133993446827
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_7:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9999991655349731
+    min_value: -1.0
+    scale: 0.007843133993446827
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_7:out1':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9999991655349731
+    min_value: -1.0
+    scale: 0.007843133993446827
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_8:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9999991655349731
+    min_value: -1.0
+    scale: 0.007843133993446827
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_8:out1':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9999991655349731
+    min_value: -1.0
+    scale: 0.007843133993446827
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/transpose_9:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/transpose_10:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/concat_11:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/ReverseV2_12:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/ReverseV2_13:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/transpose_14:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/transpose_15:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_16:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_16:out1':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_17:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_17:out1':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9377148747444153
+    min_value: -0.9377148747444153
+    scale: 0.007354626432061195
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/transpose_18:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/transpose_19:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/concat_20:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/ReverseV2_21:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/ReverseV2_22:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/transpose_23:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/transpose_24:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_25:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_25:out1':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_26:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_26:out1':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9980965256690979
+    min_value: -0.9997429251670837
+    scale: 0.007834664545953274
+    zero_point: 128
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/transpose_27:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.247044324874878
+    min_value: -0.1682671457529068
+    scale: 0.01339337881654501
+    zero_point: 13
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/transpose_28:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.247044324874878
+    min_value: -0.1682671457529068
+    scale: 0.01339337881654501
+    zero_point: 13
+  '@Reshape_29:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.247044324874878
+    min_value: -0.1682671457529068
+    scale: 0.01339337881654501
+    zero_point: 13
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/ReverseV2_30:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.247044324874878
+    min_value: -0.1682671457529068
+    scale: 0.01339337881654501
+    zero_point: 13
+  '@batch_normalization_2/cond/FusedBatchNorm_1_31:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.247044324874878
+    min_value: -0.1682671457529068
+    scale: 0.01339337881654501
+    zero_point: 13
+  '@conv2/Relu_32:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 632.641357421875
+    min_value: 0.0
+    scale: 2.4809465408325195
+    zero_point: 0
+  '@conv2/BiasAdd_33:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 632.641357421875
+    min_value: 0.0
+    scale: 2.4809465408325195
+    zero_point: 0
+  '@batch_normalization/cond/FusedBatchNorm_1_34:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 57.766319274902344
+    min_value: -2.4592010974884033
+    scale: 0.23617851734161377
+    zero_point: 10
+  '@conv1/Relu_35:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 46.460453033447266
+    min_value: 0.0
+    scale: 0.18219785392284393
+    zero_point: 0
+  '@conv1/BiasAdd_36_pad_37:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.843154191970825
+    min_value: 0.0
+    scale: 0.011149624362587929
+    zero_point: 0
+  '@conv1/BiasAdd_36_space2depth_38:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.843154191970825
+    min_value: 0.0
+    scale: 0.011149624362587929
+    zero_point: 0
+  '@conv1/BiasAdd_36_slice_39:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.843154191970825
+    min_value: 0.0
+    scale: 0.011149624362587929
+    zero_point: 0
+  '@conv1/BiasAdd_36_slice_40:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.843154191970825
+    min_value: 0.0
+    scale: 0.011149624362587929
+    zero_point: 0
+  '@conv1/BiasAdd_36_concat_41:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.843154191970825
+    min_value: 0.0
+    scale: 0.011149624362587929
+    zero_point: 0
+  '@conv1/BiasAdd_36_conv_42:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 46.460453033447266
+    min_value: 0.0
+    scale: 0.18219785392284393
+    zero_point: 0
+  '@logits/BiasAdd_2:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.96875
+    min_value: -3.84375
+    scale: 0.022794118151068687
+    zero_point: 169
+  '@logits/BiasAdd_2:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 383921.3748212227
+    min_value: -383921.375
+    scale: 0.0001787773217074573
+    zero_point: 0
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_7:rnn/multi_rnn_cell/cell_0/lstm_cell/kernel':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.65625
+    min_value: -2.15625
+    scale: 0.018872549757361412
+    zero_point: 114
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_7:rnn/multi_rnn_cell/cell_0/lstm_cell/bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 298071.90611119947
+    min_value: -298071.90625
+    scale: 0.00013880054757464677
+    zero_point: 0
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_8:rnn/multi_rnn_cell/cell_0/lstm_cell/kernel':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.09375
+    min_value: -2.0625
+    scale: 0.016299020498991013
+    zero_point: 127
+  '@bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_8:rnn/multi_rnn_cell/cell_0/lstm_cell/bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 257425.7498801268
+    min_value: -257425.75
+    scale: 0.00011987320613116026
+    zero_point: 0
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_16:rnn/multi_rnn_cell/cell_0/lstm_cell/kernel':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5
+    min_value: -1.703125
+    scale: 0.012561274692416191
+    zero_point: 136
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_16:rnn/multi_rnn_cell/cell_0/lstm_cell/bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 211341.10927658662
+    min_value: -211341.109375
+    scale: 9.841337305260822e-05
+    zero_point: 0
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_17:rnn/multi_rnn_cell/cell_0/lstm_cell/kernel':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.3125
+    min_value: -1.296875
+    scale: 0.010232843458652496
+    zero_point: 127
+  '@bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_17:rnn/multi_rnn_cell/cell_0/lstm_cell/bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 172165.6874198291
+    min_value: -172165.6875
+    scale: 8.017089567147195e-05
+    zero_point: 0
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_25:rnn/multi_rnn_cell/cell_0/lstm_cell/kernel':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4375
+    min_value: -1.46875
+    scale: 0.011397059075534344
+    zero_point: 129
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_25:rnn/multi_rnn_cell/cell_0/lstm_cell/bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 327802.9060973549
+    min_value: -327802.90625
+    scale: 0.00015264512330759317
+    zero_point: 0
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_26:rnn/multi_rnn_cell/cell_0/lstm_cell/kernel':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.1875
+    min_value: -1.65625
+    scale: 0.015073529444634914
+    zero_point: 110
+  '@bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_26:rnn/multi_rnn_cell/cell_0/lstm_cell/bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 433545.7810481145
+    min_value: -433545.78125
+    scale: 0.00020188548660371453
+    zero_point: 0
+  '@conv2/BiasAdd_33:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.34375
+    min_value: -2.75
+    scale: 0.016053922474384308
+    zero_point: 171
+  '@conv2/BiasAdd_33:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8142380.996208409
+    min_value: -8142381.0
+    scale: 0.0037915916182100773
+    zero_point: 0
+  '@conv1/BiasAdd_36_conv_42:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.453125
+    min_value: -1.75
+    scale: 0.012561274692416191
+    zero_point: 139
+  '@conv1/BiasAdd_36_conv_42:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 300762.5936099465
+    min_value: -300762.59375
+    scale: 0.00014005349657963961
+    zero_point: 0
+customized_quantize_layers:
+  x_1: dynamic_fixed_point-i16
+  conv1/BiasAdd_36_pad_37: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_2/concat_3: dynamic_fixed_point-i16
+  logits/BiasAdd_2: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_7: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/fw/transpose_5: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_8: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/bw/transpose_6: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/fw/transpose_9: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_2/bidirectional_rnn/bw/transpose_10: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_16: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/fw/transpose_14: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_17: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/bw/transpose_15: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/fw/transpose_18: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_1/bidirectional_rnn/bw/transpose_19: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/TensorArrayStack/TensorArrayGatherV3_25: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/fw/transpose_23: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/TensorArrayStack/TensorArrayGatherV3_26: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/bw/transpose_24: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/fw/transpose_27: dynamic_fixed_point-i16
+  bi_lstm/stack_bidirectional_rnn/cell_0/bidirectional_rnn/bw/transpose_28: dynamic_fixed_point-i16
+  batch_normalization_2/cond/FusedBatchNorm_1_31: dynamic_fixed_point-i16
+  Reshape_29: dynamic_fixed_point-i16
+  conv2/Relu_32: dynamic_fixed_point-i16
+  conv2/BiasAdd_33: dynamic_fixed_point-i16
+  batch_normalization/cond/FusedBatchNorm_1_34: dynamic_fixed_point-i16
+  conv1/Relu_35: dynamic_fixed_point-i16
+  conv1/BiasAdd_36_space2depth_38: dynamic_fixed_point-i16
+  conv1/BiasAdd_36_concat_41: dynamic_fixed_point-i16
+  conv1/BiasAdd_36_conv_42: dynamic_fixed_point-i16

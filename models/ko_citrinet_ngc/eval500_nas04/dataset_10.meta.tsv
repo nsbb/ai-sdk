@@ -1,0 +1,11 @@
+npy_path	wav_path	text
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00000.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D19_wav_0/D19/G02/S001061/000099.wav	근데 오십 년 걸렸습니다 천 구백에서 천 구백 오십 년 까지 십 년 걸렸습니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00001.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D99_wav_0/D99/G02/S000014/000289.wav	이게 주인층의 모습입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00002.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J18/S023515/0011.wav	아까 뭐 뜯어서 보낼지 말지 저 쪽
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00003.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D15_wav_0/D15/G02/S000106/000247.wav	라는 건 가야하고 신라는 다들 궁금하실 텐데요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00004.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E00878.wav	어떤 식으로
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00005.npy	/nas03/data_audio/010.한국어_음성/eval_clean_wav/KsponSpeech_E01672.wav	그 스프링하는 지금 스프링 아니야
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00006.npy	/nas03/data_audio/007.저음질_전화망_음성인식_데이터/wav/validation/D04/J19/S038549/0011.wav	다른 문의 사항 더 없으실까요
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00007.npy	/nas03/data_audio/009.한국어_강의_데이터/01.데이터/2.Validation/원천데이터_0908_add/KlecSpeech_valid_D18_wav_0/D18/G02/S001034/000137.wav	전봉준이 회고하기로는 오백 명을 남기고 궤멸을 한 큰 사건입니다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00008.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D20/G02/S000008/000336.wav	섬마을엔 선생님들이 오려고 하지를 않는다는 이야기를 들었다
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/eval500_nas04/npy/input_00009.npy	/nas03/data_audio/010.회의_음성_데이터/Validation/D23/G02/S000014/000060.wav	아유 아이고 아이고 오래간만에 나오셨는데

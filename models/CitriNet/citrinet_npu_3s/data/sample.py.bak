@@ -1,0 +1,44 @@
+import librosa
+import numpy as np
+
+INPUT_WAV = "test.wav"
+OUTPUT_NPY = "test.npy"
+
+TARGET_SR = 16000
+TARGET_FRAMES = 300
+N_MELS = 80
+
+# wav load
+y, sr = librosa.load(INPUT_WAV, sr=TARGET_SR)
+
+# mel spectrogram 생성
+mel = librosa.feature.melspectrogram(
+    y=y,
+    sr=sr,
+    n_fft=400,
+    hop_length=160,
+    n_mels=N_MELS
+)
+
+# log mel
+mel = np.log(mel + 1e-6)
+
+print("mel shape before:", mel.shape)
+
+# frame 맞추기
+if mel.shape[1] > TARGET_FRAMES:
+    mel = mel[:, :TARGET_FRAMES]
+elif mel.shape[1] < TARGET_FRAMES:
+    pad = TARGET_FRAMES - mel.shape[1]
+    mel = np.pad(mel, ((0,0),(0,pad)), mode='constant')
+
+print("mel shape after:", mel.shape)
+
+# NPU input shape
+mel = mel.reshape(1, 80, 1, 300).astype(np.float32)
+
+print("final shape:", mel.shape)
+
+np.save(OUTPUT_NPY, mel)
+print("saved:", OUTPUT_NPY)
+

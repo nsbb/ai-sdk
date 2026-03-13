@@ -1,0 +1,1205 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@Add_Add_884_4:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_872_6:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_859_8:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_847_11:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_869_13:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_820_15:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_808_20:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_795_27:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_783_31:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_805_33:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_756_36:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_840_41:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_837_42:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_744_43:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_731_52:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_835_56:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_838_57:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_719_59:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_741_61:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_692_67:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_776_72:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_773_73:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_680_78:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_824_87:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_667_91:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_771_95:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_774_96:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Initializer_342_99:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_655_102:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_677_104:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_628_114:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_712_119:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_709_120:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_616_126:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_760_135:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_603_138:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_707_142:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_710_143:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_591_149:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_613_151:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_564_161:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_648_166:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_645_167:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_552_173:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_696_182:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_539_185:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_643_189:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_646_190:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_527_196:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_549_198:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_500_209:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_584_214:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_581_215:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_488_220:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_632_229:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_475_231:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_579_235:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_582_236:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_463_242:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_485_244:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_436_255:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_520_260:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_517_261:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_424_266:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_568_275:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_411_277:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_515_281:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_518_282:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_399_288:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_421_290:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_372_301:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_456_306:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_453_307:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_360_312:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_504_321:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_347_323:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_451_327:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_454_328:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_335_334:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_357_336:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_308_347:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_392_352:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_389_353:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_296_358:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_440_367:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_283_369:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_387_373:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_390_374:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_271_380:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_293_382:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_244_393:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_328_398:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_325_399:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_232_404:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_376_413:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_219_415:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_323_419:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_326_420:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_207_426:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_229_428:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_180_439:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_264_444:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_261_445:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_168_450:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_312_459:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_155_461:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_259_465:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_262_466:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_143_472:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_165_474:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_116_485:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_200_490:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_197_491:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_104_496:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_248_505:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_102_508:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_195_510:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_198_511:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Slice_Slice_94_519:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_89_520:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Add_Add_85_530:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Softmax_Softmax_136_533:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_133_534:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_72_540:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_64_541:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_184_544:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_63_547:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Reshape_Reshape_131_548:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Transpose_Transpose_134_549:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_55_556:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_54_557:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_46_563:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_45_564:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_37_570:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_36_571:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_120_572:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_28_574:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_27_575:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_19_580:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_18_581:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@InstanceNormalization_InstanceNormalization_6_588:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_1_590:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_1_590_acuity_mark_perm_596:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_597:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_598:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_600:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_601:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_603:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_604:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_606:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_607:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_608:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_609:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_610:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_612:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_613:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_615:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_616:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_617:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_618:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_619:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_621:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_622:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_624:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_625:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_626:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_627:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_628:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_630:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_631:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_633:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_634:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_636:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_637:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_638:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_639:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_640:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_642:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_643:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_644:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_645:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_646:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_648:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_649:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_651:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_652:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_654:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_655:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_656:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_657:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_658:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_660:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_661:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_662:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_663:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_664:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_666:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_667:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_669:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_670:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_671:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_672:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_673:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_675:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_676:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_678:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_679:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_681:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_682:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_683:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_684:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_685:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_687:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_688:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_689:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_690:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_691:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_693:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_694:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_696:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_697:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_699:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_700:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_701:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_702:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_703:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_705:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_706:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_707:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_708:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_709:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_711:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_712:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_714:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_715:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_717:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_718:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_719:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_720:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_721:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_723:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_724:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_725:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_726:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_727:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_729:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_730:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_732:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_733:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_735:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_736:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_737:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_738:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_739:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_741:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_742:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_743:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_744:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_745:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_747:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_748:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_750:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_751:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_753:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_754:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_755:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_756:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_757:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_759:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_760:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_761:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_762:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_763:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_765:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_766:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_768:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_769:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_771:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_772:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_773:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_774:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_775:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_777:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_778:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_779:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_780:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_781:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_783:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_784:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_786:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_787:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_789:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_790:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_791:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_792:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_793:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_794:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_795:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_796:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_798:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_799:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_800:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_801:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_802:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_804:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_805:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_807:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_808:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_809:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_810:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_811:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_813:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_814:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_815:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@reshape_816:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_817:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Mul_Mul_9_587_Add_Add_10_583:out0':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Initializer_342_99:data':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_89_520:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_64_541:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_55_556:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_46_563:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_37_570:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_28_574:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_19_580:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@Conv_Conv_1_590:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_598:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_601:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_604:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_607:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_610:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_613:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_616:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_619:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_622:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_625:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_628:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_631:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_634:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_637:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_640:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_643:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_646:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_649:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_652:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_655:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_658:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_661:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_664:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_667:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_670:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_673:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_676:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_679:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_682:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_685:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_688:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_691:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_694:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_697:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_700:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_703:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_706:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_709:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_712:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_715:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_718:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_721:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_724:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_727:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_730:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_733:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_736:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_739:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_742:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_745:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_748:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_751:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_754:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_757:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_760:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_763:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_766:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_769:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_772:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_775:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_778:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_781:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_784:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_787:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_790:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_793:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_796:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_799:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_802:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_805:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_808:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_811:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_814:weight':
+    qtype: bf16
+    quantizer: bfloat16
+  '@fullconnect_817:weight':
+    qtype: bf16
+    quantizer: bfloat16
+customized_quantize_layers:
+  Conv_Conv_89_520: dynamic_fixed_point-i16

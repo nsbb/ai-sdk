@@ -1,0 +1,33 @@
+
+cc_binary {
+    name: "deepspeech2",
+
+    vendor: true,
+
+    srcs: [
+        "main.c",
+        "deepspeech2_post_process.cpp",
+    ],
+
+    shared_libs: [
+        "libawnn.viplite",
+        "liblog",
+    ],
+
+    static_libs: [
+        "libawutils",
+    ],
+
+    required: [
+        "deepspeech2.nb",
+        "1188-133604-0010.flac_756_161_1.tensor",
+        "deepspeech2.sh",
+    ],
+
+}
+
+sh_binary {
+    name: "deepspeech2.sh",
+    src: "deepspeech2.sh",
+    vendor: true,
+}

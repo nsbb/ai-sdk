@@ -1,0 +1,40 @@
+{
+    "Inputs": {
+        "input_values_604": {
+            "name": "input_values",
+            "shape": [
+                1,
+                80000
+            ],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "max_value": 0.387939453125,
+                "min_value": -0.339111328125,
+                "scale": 0.0028511795680969954,
+                "zero_point": 119
+            }
+        }
+    },
+    "Outputs": {
+        "attach_Add_/lm_head/Add/out0_0": {
+            "name": "attach_Add_/lm_head/Add/out0",
+            "shape": [
+                1,
+                249,
+                32
+            ],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "max_value": 67.6522216796875,
+                "min_value": -55.541168212890625,
+                "scale": 0.48311132192611694,
+                "zero_point": 115
+            }
+        }
+    },
+    "Recurrent_connections": {}
+}

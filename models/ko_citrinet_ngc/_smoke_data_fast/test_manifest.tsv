@@ -1,0 +1,2 @@
+wav_path	text	src_path
+/nas02/geonhui83/stt/new_citirinet/ko_citrinet_ngc/_smoke_data_fast/wav_test/test_00000.wav	심 봉사는 딸을 보내고 마음이 편하지 않았습니다	/nas03/data_audio/133.감성 및 발화 스타일 동시 고려 음성합성 데이터/01-1.정식개방데이터/Training/01.원천데이터/TS_구연체_156/F-S1-Q-156-0411.wav

@@ -1,0 +1,4917 @@
+{
+	"MetaData":{
+		"Name": "Ovxlib_Debug_Graph",
+		"AcuityVersion": "UNKNOWN",
+		"Platform": "UNKNOWN",
+		"Org_Platform": "UNKNOWN"
+	},
+	"Layers":{
+		"uid_99":{
+			"op": "VARIABLE",
+			"inputs": [ "@data_input_uid_478:out0" ],
+			"inut_shape": [ [ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 1 ] ]
+		},
+		"uid_591":{
+			"op": "RESHAPE2",
+			"inputs": [ "@data_input_uid_479:out0" ],
+			"inut_shape": [ [ 320000, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 320000, 1, 1 ] ]
+		},
+		"uid_590":{
+			"op": "CONV1D",
+			"inputs": [ "@uid_591:out0", "@data_input_uid_480:out0", "@data_input_uid_481:out0" ],
+			"inut_shape": [ [ 320000, 1, 1 ],[ 10, 1, 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 63999, 512, 1 ] ]
+		},
+		"uid_588":{
+			"op": "INSTANCE_NORM",
+			"inputs": [ "@uid_590:out0", "@data_input_uid_482:out0", "@data_input_uid_483:out0" ],
+			"inut_shape": [ [ 63999, 512, 1 ],[ 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 63999, 512, 1 ] ]
+		},
+		"uid_583":{
+			"op": "BATCH_NORM",
+			"inputs": [ "@uid_588:out0", "@data_input_uid_484:out0", "@data_input_uid_485:out0", "@data_input_uid_486:out0", "@data_input_uid_487:out0" ],
+			"inut_shape": [ [ 63999, 512, 1 ],[ 512 ],[ 512 ],[ 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 63999, 512, 1 ] ]
+		},
+		"uid_581":{
+			"op": "GELU",
+			"inputs": [ "@uid_583:out0" ],
+			"inut_shape": [ [ 63999, 512, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 63999, 512, 1 ] ]
+		},
+		"uid_580":{
+			"op": "CONV1D",
+			"inputs": [ "@uid_581:out0", "@data_input_uid_488:out0", "@data_input_uid_489:out0" ],
+			"inut_shape": [ [ 63999, 512, 1 ],[ 3, 512, 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 31999, 512, 1 ] ]
+		},
+		"uid_575":{
+			"op": "GELU",
+			"inputs": [ "@uid_580:out0" ],
+			"inut_shape": [ [ 31999, 512, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 31999, 512, 1 ] ]
+		},
+		"uid_574":{
+			"op": "CONV1D",
+			"inputs": [ "@uid_575:out0", "@data_input_uid_490:out0", "@data_input_uid_491:out0" ],
+			"inut_shape": [ [ 31999, 512, 1 ],[ 3, 512, 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 15999, 512, 1 ] ]
+		},
+		"uid_571":{
+			"op": "GELU",
+			"inputs": [ "@uid_574:out0" ],
+			"inut_shape": [ [ 15999, 512, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 15999, 512, 1 ] ]
+		},
+		"uid_570":{
+			"op": "CONV1D",
+			"inputs": [ "@uid_571:out0", "@data_input_uid_492:out0", "@data_input_uid_493:out0" ],
+			"inut_shape": [ [ 15999, 512, 1 ],[ 3, 512, 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 7999, 512, 1 ] ]
+		},
+		"uid_564":{
+			"op": "GELU",
+			"inputs": [ "@uid_570:out0" ],
+			"inut_shape": [ [ 7999, 512, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 7999, 512, 1 ] ]
+		},
+		"uid_563":{
+			"op": "CONV1D",
+			"inputs": [ "@uid_564:out0", "@data_input_uid_494:out0", "@data_input_uid_495:out0" ],
+			"inut_shape": [ [ 7999, 512, 1 ],[ 3, 512, 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3999, 512, 1 ] ]
+		},
+		"uid_557":{
+			"op": "GELU",
+			"inputs": [ "@uid_563:out0" ],
+			"inut_shape": [ [ 3999, 512, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3999, 512, 1 ] ]
+		},
+		"uid_556":{
+			"op": "CONV1D",
+			"inputs": [ "@uid_557:out0", "@data_input_uid_496:out0", "@data_input_uid_497:out0" ],
+			"inut_shape": [ [ 3999, 512, 1 ],[ 2, 512, 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 1999, 512, 1 ] ]
+		},
+		"uid_547":{
+			"op": "GELU",
+			"inputs": [ "@uid_556:out0" ],
+			"inut_shape": [ [ 1999, 512, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 1999, 512, 1 ] ]
+		},
+		"uid_541":{
+			"op": "CONV1D",
+			"inputs": [ "@uid_547:out0", "@data_input_uid_498:out0", "@data_input_uid_499:out0" ],
+			"inut_shape": [ [ 1999, 512, 1 ],[ 2, 512, 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 512, 1 ] ]
+		},
+		"uid_540":{
+			"op": "GELU",
+			"inputs": [ "@uid_541:out0" ],
+			"inut_shape": [ [ 999, 512, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 512, 1 ] ]
+		},
+		"uid_2":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_540:out0" ],
+			"inut_shape": [ [ 999, 512, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 512, 999, 1 ] ]
+		},
+		"uid_530":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_2:out0", "@data_input_uid_500:out0", "@data_input_uid_501:out0" ],
+			"inut_shape": [ [ 512, 999, 1 ],[ 512 ],[ 512 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 512, 999, 1 ] ]
+		},
+		"uid_798":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_530:out0" ],
+			"inut_shape": [ [ 512, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 512, 999 ] ]
+		},
+		"uid_799":{
+			"op": "FCL",
+			"inputs": [ "@uid_798:out0", "@data_input_uid_502:out0", "@data_input_uid_503:out0" ],
+			"inut_shape": [ [ 512, 999 ],[ 512, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_800":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_799:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_5":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_800:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 768, 1 ] ]
+		},
+		"uid_520":{
+			"op": "GROUPED_CONV1D",
+			"inputs": [ "@uid_5:out0", "@data_input_uid_504:out0", "@data_input_uid_505:out0" ],
+			"inut_shape": [ [ 999, 768, 1 ],[ 128, 48, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 1000, 768, 1 ] ]
+		},
+		"uid_519":{
+			"op": "SLICE",
+			"inputs": [ "@uid_520:out0" ],
+			"inut_shape": [ [ 1000, 768, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 768, 1 ] ]
+		},
+		"uid_508":{
+			"op": "GELU",
+			"inputs": [ "@uid_519:out0" ],
+			"inut_shape": [ [ 999, 768, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 768, 1 ] ]
+		},
+		"uid_1":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_508:out0" ],
+			"inut_shape": [ [ 999, 768, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_496":{
+			"op": "ADD",
+			"inputs": [ "@uid_800:out0", "@uid_1:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_485":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_496:out0", "@data_input_uid_506:out0", "@data_input_uid_507:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_810":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_485:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_813":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_485:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_816":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_485:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_811":{
+			"op": "FCL",
+			"inputs": [ "@uid_810:out0", "@data_input_uid_508:out0", "@data_input_uid_509:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_814":{
+			"op": "FCL",
+			"inputs": [ "@uid_813:out0", "@data_input_uid_510:out0", "@data_input_uid_511:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_817":{
+			"op": "FCL",
+			"inputs": [ "@uid_816:out0", "@data_input_uid_512:out0", "@data_input_uid_513:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_550":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_811:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_815":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_814:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_568":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_817:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_543":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_550:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_572":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_815:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_566":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_568:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_534":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_543:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_565":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_572:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_559":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_566:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_558":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_565:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_549":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_559:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_548":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_558:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_542":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_548:out0", "@uid_549:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_533":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_542:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_521":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_533:out0", "@uid_534:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_509":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_521:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_501":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_509:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_786":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_501:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_787":{
+			"op": "FCL",
+			"inputs": [ "@uid_786:out0", "@data_input_uid_514:out0", "@data_input_uid_515:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_788":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_787:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_472":{
+			"op": "ADD",
+			"inputs": [ "@uid_485:out0", "@uid_788:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_461":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_472:out0", "@data_input_uid_516:out0", "@data_input_uid_517:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_789":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_461:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_790":{
+			"op": "FCL",
+			"inputs": [ "@uid_789:out0", "@data_input_uid_518:out0", "@data_input_uid_519:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_791":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_790:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_474":{
+			"op": "GELU",
+			"inputs": [ "@uid_791:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_774":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_474:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_775":{
+			"op": "FCL",
+			"inputs": [ "@uid_774:out0", "@data_input_uid_520:out0", "@data_input_uid_521:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_776":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_775:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_450":{
+			"op": "ADD",
+			"inputs": [ "@uid_461:out0", "@uid_776:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_439":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_450:out0", "@data_input_uid_522:out0", "@data_input_uid_523:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_801":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_439:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_804":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_439:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_807":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_439:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_802":{
+			"op": "FCL",
+			"inputs": [ "@uid_801:out0", "@data_input_uid_524:out0", "@data_input_uid_525:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_805":{
+			"op": "FCL",
+			"inputs": [ "@uid_804:out0", "@data_input_uid_526:out0", "@data_input_uid_527:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_808":{
+			"op": "FCL",
+			"inputs": [ "@uid_807:out0", "@data_input_uid_528:out0", "@data_input_uid_529:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_512":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_802:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_538":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_805:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_809":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_808:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_504":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_512:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_536":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_538:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_544":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_809:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_491":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_504:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_523":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_536:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_535":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_544:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_511":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_523:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_522":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_535:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_510":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_522:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_503":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_510:out0", "@uid_511:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_490":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_503:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_476":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_490:out0", "@uid_491:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_464":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_476:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_455":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_464:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_768":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_455:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_769":{
+			"op": "FCL",
+			"inputs": [ "@uid_768:out0", "@data_input_uid_530:out0", "@data_input_uid_531:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_770":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_769:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_426":{
+			"op": "ADD",
+			"inputs": [ "@uid_439:out0", "@uid_770:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_415":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_426:out0", "@data_input_uid_532:out0", "@data_input_uid_533:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_771":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_415:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_772":{
+			"op": "FCL",
+			"inputs": [ "@uid_771:out0", "@data_input_uid_534:out0", "@data_input_uid_535:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_773":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_772:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_428":{
+			"op": "GELU",
+			"inputs": [ "@uid_773:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_756":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_428:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_757":{
+			"op": "FCL",
+			"inputs": [ "@uid_756:out0", "@data_input_uid_536:out0", "@data_input_uid_537:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_758":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_757:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_404":{
+			"op": "ADD",
+			"inputs": [ "@uid_415:out0", "@uid_758:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_393":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_404:out0", "@data_input_uid_538:out0", "@data_input_uid_539:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_783":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_393:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_792":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_393:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_795":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_393:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_784":{
+			"op": "FCL",
+			"inputs": [ "@uid_783:out0", "@data_input_uid_540:out0", "@data_input_uid_541:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_793":{
+			"op": "FCL",
+			"inputs": [ "@uid_792:out0", "@data_input_uid_542:out0", "@data_input_uid_543:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_796":{
+			"op": "FCL",
+			"inputs": [ "@uid_795:out0", "@data_input_uid_544:out0", "@data_input_uid_545:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_467":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_784:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_794":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_793:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_495":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_796:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_458":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_467:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_505":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_794:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_493":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_495:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_445":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_458:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_492":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_505:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_478":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_493:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_477":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_492:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_466":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_478:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_465":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_477:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_457":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_465:out0", "@uid_466:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_444":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_457:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_430":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_444:out0", "@uid_445:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_418":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_430:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_409":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_418:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_750":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_409:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_751":{
+			"op": "FCL",
+			"inputs": [ "@uid_750:out0", "@data_input_uid_546:out0", "@data_input_uid_547:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_752":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_751:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_380":{
+			"op": "ADD",
+			"inputs": [ "@uid_393:out0", "@uid_752:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_369":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_380:out0", "@data_input_uid_548:out0", "@data_input_uid_549:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_753":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_369:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_754":{
+			"op": "FCL",
+			"inputs": [ "@uid_753:out0", "@data_input_uid_550:out0", "@data_input_uid_551:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_755":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_754:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_382":{
+			"op": "GELU",
+			"inputs": [ "@uid_755:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_738":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_382:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_739":{
+			"op": "FCL",
+			"inputs": [ "@uid_738:out0", "@data_input_uid_552:out0", "@data_input_uid_553:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_740":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_739:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_358":{
+			"op": "ADD",
+			"inputs": [ "@uid_369:out0", "@uid_740:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_347":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_358:out0", "@data_input_uid_554:out0", "@data_input_uid_555:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_765":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_347:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_777":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_347:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_780":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_347:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_766":{
+			"op": "FCL",
+			"inputs": [ "@uid_765:out0", "@data_input_uid_556:out0", "@data_input_uid_557:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_778":{
+			"op": "FCL",
+			"inputs": [ "@uid_777:out0", "@data_input_uid_558:out0", "@data_input_uid_559:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_781":{
+			"op": "FCL",
+			"inputs": [ "@uid_780:out0", "@data_input_uid_560:out0", "@data_input_uid_561:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_421":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_766:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_779":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_778:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_449":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_781:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_412":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_421:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_459":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_779:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_447":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_449:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_399":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_412:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_446":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_459:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_432":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_447:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_431":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_446:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_420":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_432:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_419":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_431:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_411":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_419:out0", "@uid_420:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_398":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_411:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_384":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_398:out0", "@uid_399:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_372":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_384:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_363":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_372:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_732":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_363:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_733":{
+			"op": "FCL",
+			"inputs": [ "@uid_732:out0", "@data_input_uid_562:out0", "@data_input_uid_563:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_734":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_733:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_334":{
+			"op": "ADD",
+			"inputs": [ "@uid_347:out0", "@uid_734:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_323":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_334:out0", "@data_input_uid_564:out0", "@data_input_uid_565:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_735":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_323:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_736":{
+			"op": "FCL",
+			"inputs": [ "@uid_735:out0", "@data_input_uid_566:out0", "@data_input_uid_567:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_737":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_736:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_336":{
+			"op": "GELU",
+			"inputs": [ "@uid_737:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_720":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_336:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_721":{
+			"op": "FCL",
+			"inputs": [ "@uid_720:out0", "@data_input_uid_568:out0", "@data_input_uid_569:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_722":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_721:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_312":{
+			"op": "ADD",
+			"inputs": [ "@uid_323:out0", "@uid_722:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_301":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_312:out0", "@data_input_uid_570:out0", "@data_input_uid_571:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_747":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_301:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_759":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_301:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_762":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_301:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_748":{
+			"op": "FCL",
+			"inputs": [ "@uid_747:out0", "@data_input_uid_572:out0", "@data_input_uid_573:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_760":{
+			"op": "FCL",
+			"inputs": [ "@uid_759:out0", "@data_input_uid_574:out0", "@data_input_uid_575:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_763":{
+			"op": "FCL",
+			"inputs": [ "@uid_762:out0", "@data_input_uid_576:out0", "@data_input_uid_577:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_375":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_748:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_761":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_760:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_403":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_763:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_366":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_375:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_413":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_761:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_401":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_403:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_353":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_366:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_400":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_413:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_386":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_401:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_385":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_400:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_374":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_386:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_373":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_385:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_365":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_373:out0", "@uid_374:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_352":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_365:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_338":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_352:out0", "@uid_353:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_326":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_338:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_317":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_326:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_714":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_317:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_715":{
+			"op": "FCL",
+			"inputs": [ "@uid_714:out0", "@data_input_uid_578:out0", "@data_input_uid_579:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_716":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_715:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_288":{
+			"op": "ADD",
+			"inputs": [ "@uid_301:out0", "@uid_716:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_277":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_288:out0", "@data_input_uid_580:out0", "@data_input_uid_581:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_717":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_277:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_718":{
+			"op": "FCL",
+			"inputs": [ "@uid_717:out0", "@data_input_uid_582:out0", "@data_input_uid_583:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_719":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_718:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_290":{
+			"op": "GELU",
+			"inputs": [ "@uid_719:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_702":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_290:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_703":{
+			"op": "FCL",
+			"inputs": [ "@uid_702:out0", "@data_input_uid_584:out0", "@data_input_uid_585:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_704":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_703:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_266":{
+			"op": "ADD",
+			"inputs": [ "@uid_277:out0", "@uid_704:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_255":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_266:out0", "@data_input_uid_586:out0", "@data_input_uid_587:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_729":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_255:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_741":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_255:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_744":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_255:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_730":{
+			"op": "FCL",
+			"inputs": [ "@uid_729:out0", "@data_input_uid_588:out0", "@data_input_uid_589:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_742":{
+			"op": "FCL",
+			"inputs": [ "@uid_741:out0", "@data_input_uid_590:out0", "@data_input_uid_591:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_745":{
+			"op": "FCL",
+			"inputs": [ "@uid_744:out0", "@data_input_uid_592:out0", "@data_input_uid_593:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_329":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_730:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_743":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_742:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_357":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_745:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_320":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_329:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_367":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_743:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_355":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_357:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_307":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_320:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_354":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_367:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_340":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_355:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_339":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_354:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_328":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_340:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_327":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_339:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_319":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_327:out0", "@uid_328:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_306":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_319:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_292":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_306:out0", "@uid_307:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_280":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_292:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_271":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_280:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_696":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_271:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_697":{
+			"op": "FCL",
+			"inputs": [ "@uid_696:out0", "@data_input_uid_594:out0", "@data_input_uid_595:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_698":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_697:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_242":{
+			"op": "ADD",
+			"inputs": [ "@uid_255:out0", "@uid_698:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_231":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_242:out0", "@data_input_uid_596:out0", "@data_input_uid_597:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_699":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_231:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_700":{
+			"op": "FCL",
+			"inputs": [ "@uid_699:out0", "@data_input_uid_598:out0", "@data_input_uid_599:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_701":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_700:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_244":{
+			"op": "GELU",
+			"inputs": [ "@uid_701:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_684":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_244:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_685":{
+			"op": "FCL",
+			"inputs": [ "@uid_684:out0", "@data_input_uid_600:out0", "@data_input_uid_601:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_686":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_685:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_220":{
+			"op": "ADD",
+			"inputs": [ "@uid_231:out0", "@uid_686:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_209":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_220:out0", "@data_input_uid_602:out0", "@data_input_uid_603:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_711":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_209:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_723":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_209:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_726":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_209:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_712":{
+			"op": "FCL",
+			"inputs": [ "@uid_711:out0", "@data_input_uid_604:out0", "@data_input_uid_605:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_724":{
+			"op": "FCL",
+			"inputs": [ "@uid_723:out0", "@data_input_uid_606:out0", "@data_input_uid_607:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_727":{
+			"op": "FCL",
+			"inputs": [ "@uid_726:out0", "@data_input_uid_608:out0", "@data_input_uid_609:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_283":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_712:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_725":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_724:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_311":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_727:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_274":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_283:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_321":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_725:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_309":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_311:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_261":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_274:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_308":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_321:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_294":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_309:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_293":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_308:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_282":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_294:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_281":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_293:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_273":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_281:out0", "@uid_282:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_260":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_273:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_246":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_260:out0", "@uid_261:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_234":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_246:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_225":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_234:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_678":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_225:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_679":{
+			"op": "FCL",
+			"inputs": [ "@uid_678:out0", "@data_input_uid_610:out0", "@data_input_uid_611:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_680":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_679:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_196":{
+			"op": "ADD",
+			"inputs": [ "@uid_209:out0", "@uid_680:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_185":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_196:out0", "@data_input_uid_612:out0", "@data_input_uid_613:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_681":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_185:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_682":{
+			"op": "FCL",
+			"inputs": [ "@uid_681:out0", "@data_input_uid_614:out0", "@data_input_uid_615:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_683":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_682:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_198":{
+			"op": "GELU",
+			"inputs": [ "@uid_683:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_666":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_198:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_667":{
+			"op": "FCL",
+			"inputs": [ "@uid_666:out0", "@data_input_uid_616:out0", "@data_input_uid_617:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_668":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_667:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_173":{
+			"op": "ADD",
+			"inputs": [ "@uid_185:out0", "@uid_668:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_161":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_173:out0", "@data_input_uid_618:out0", "@data_input_uid_619:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_693":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_161:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_705":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_161:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_708":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_161:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_694":{
+			"op": "FCL",
+			"inputs": [ "@uid_693:out0", "@data_input_uid_620:out0", "@data_input_uid_621:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_706":{
+			"op": "FCL",
+			"inputs": [ "@uid_705:out0", "@data_input_uid_622:out0", "@data_input_uid_623:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_709":{
+			"op": "FCL",
+			"inputs": [ "@uid_708:out0", "@data_input_uid_624:out0", "@data_input_uid_625:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_237":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_694:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_707":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_706:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_265":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_709:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_228":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_237:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_275":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_707:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_263":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_265:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_215":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_228:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_262":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_275:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_248":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_263:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_247":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_262:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_236":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_248:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_235":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_247:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_227":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_235:out0", "@uid_236:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_214":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_227:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_200":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_214:out0", "@uid_215:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_188":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_200:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_178":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_188:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_657":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_178:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_658":{
+			"op": "FCL",
+			"inputs": [ "@uid_657:out0", "@data_input_uid_626:out0", "@data_input_uid_627:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_659":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_658:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_149":{
+			"op": "ADD",
+			"inputs": [ "@uid_161:out0", "@uid_659:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_138":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_149:out0", "@data_input_uid_628:out0", "@data_input_uid_629:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_660":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_138:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_661":{
+			"op": "FCL",
+			"inputs": [ "@uid_660:out0", "@data_input_uid_630:out0", "@data_input_uid_631:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_662":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_661:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_151":{
+			"op": "GELU",
+			"inputs": [ "@uid_662:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_648":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_151:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_649":{
+			"op": "FCL",
+			"inputs": [ "@uid_648:out0", "@data_input_uid_632:out0", "@data_input_uid_633:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_650":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_649:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_126":{
+			"op": "ADD",
+			"inputs": [ "@uid_138:out0", "@uid_650:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_114":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_126:out0", "@data_input_uid_634:out0", "@data_input_uid_635:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_675":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_114:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_687":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_114:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_690":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_114:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_676":{
+			"op": "FCL",
+			"inputs": [ "@uid_675:out0", "@data_input_uid_636:out0", "@data_input_uid_637:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_688":{
+			"op": "FCL",
+			"inputs": [ "@uid_687:out0", "@data_input_uid_638:out0", "@data_input_uid_639:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_691":{
+			"op": "FCL",
+			"inputs": [ "@uid_690:out0", "@data_input_uid_640:out0", "@data_input_uid_641:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_191":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_676:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_689":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_688:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_219":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_691:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_181":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_191:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_229":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_689:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_217":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_219:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_167":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_181:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_216":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_229:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_202":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_217:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_201":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_216:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_190":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_202:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_189":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_201:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_180":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_189:out0", "@uid_190:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_166":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_180:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_153":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_166:out0", "@uid_167:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_141":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_153:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_131":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_141:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_639":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_131:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_640":{
+			"op": "FCL",
+			"inputs": [ "@uid_639:out0", "@data_input_uid_642:out0", "@data_input_uid_643:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_641":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_640:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_102":{
+			"op": "ADD",
+			"inputs": [ "@uid_114:out0", "@uid_641:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_91":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_102:out0", "@data_input_uid_644:out0", "@data_input_uid_645:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_642":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_91:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_643":{
+			"op": "FCL",
+			"inputs": [ "@uid_642:out0", "@data_input_uid_646:out0", "@data_input_uid_647:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_644":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_643:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_104":{
+			"op": "GELU",
+			"inputs": [ "@uid_644:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_630":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_104:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_631":{
+			"op": "FCL",
+			"inputs": [ "@uid_630:out0", "@data_input_uid_648:out0", "@data_input_uid_649:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_632":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_631:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_78":{
+			"op": "ADD",
+			"inputs": [ "@uid_91:out0", "@uid_632:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_67":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_78:out0", "@data_input_uid_650:out0", "@data_input_uid_651:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_663":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_67:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_669":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_67:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_672":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_67:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_664":{
+			"op": "FCL",
+			"inputs": [ "@uid_663:out0", "@data_input_uid_652:out0", "@data_input_uid_653:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_670":{
+			"op": "FCL",
+			"inputs": [ "@uid_669:out0", "@data_input_uid_654:out0", "@data_input_uid_655:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_673":{
+			"op": "FCL",
+			"inputs": [ "@uid_672:out0", "@data_input_uid_656:out0", "@data_input_uid_657:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_144":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_664:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_671":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_670:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_183":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_673:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_134":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_144:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_182":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_671:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_169":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_183:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_120":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_134:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_168":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_182:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_155":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_169:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_154":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_168:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_143":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_155:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_142":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_154:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_133":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_142:out0", "@uid_143:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_119":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_133:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_106":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_119:out0", "@uid_120:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_94":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_106:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_83":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_94:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_621":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_83:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_622":{
+			"op": "FCL",
+			"inputs": [ "@uid_621:out0", "@data_input_uid_658:out0", "@data_input_uid_659:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_623":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_622:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_59":{
+			"op": "ADD",
+			"inputs": [ "@uid_67:out0", "@uid_623:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_52":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_59:out0", "@data_input_uid_660:out0", "@data_input_uid_661:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_624":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_52:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_625":{
+			"op": "FCL",
+			"inputs": [ "@uid_624:out0", "@data_input_uid_662:out0", "@data_input_uid_663:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_626":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_625:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_61":{
+			"op": "GELU",
+			"inputs": [ "@uid_626:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_618":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_61:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_619":{
+			"op": "FCL",
+			"inputs": [ "@uid_618:out0", "@data_input_uid_664:out0", "@data_input_uid_665:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_620":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_619:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_43":{
+			"op": "ADD",
+			"inputs": [ "@uid_52:out0", "@uid_620:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_36":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_43:out0", "@data_input_uid_666:out0", "@data_input_uid_667:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_645":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_36:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_651":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_36:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_654":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_36:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_646":{
+			"op": "FCL",
+			"inputs": [ "@uid_645:out0", "@data_input_uid_668:out0", "@data_input_uid_669:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_652":{
+			"op": "FCL",
+			"inputs": [ "@uid_651:out0", "@data_input_uid_670:out0", "@data_input_uid_671:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_655":{
+			"op": "FCL",
+			"inputs": [ "@uid_654:out0", "@data_input_uid_672:out0", "@data_input_uid_673:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_97":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_646:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_136":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_652:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_656":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_655:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_86":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_97:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_122":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_136:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_135":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_656:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_73":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_86:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_108":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_122:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_121":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_135:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_96":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_108:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_107":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_121:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_95":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_107:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_85":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_95:out0", "@uid_96:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_72":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_85:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_63":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_72:out0", "@uid_73:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_55":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_63:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_48":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_55:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_612":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_48:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_613":{
+			"op": "FCL",
+			"inputs": [ "@uid_612:out0", "@data_input_uid_674:out0", "@data_input_uid_675:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_614":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_613:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_31":{
+			"op": "ADD",
+			"inputs": [ "@uid_36:out0", "@uid_614:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_27":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_31:out0", "@data_input_uid_676:out0", "@data_input_uid_677:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_615":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_27:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_616":{
+			"op": "FCL",
+			"inputs": [ "@uid_615:out0", "@data_input_uid_678:out0", "@data_input_uid_679:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_617":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_616:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_33":{
+			"op": "GELU",
+			"inputs": [ "@uid_617:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_609":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_33:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_610":{
+			"op": "FCL",
+			"inputs": [ "@uid_609:out0", "@data_input_uid_680:out0", "@data_input_uid_681:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_611":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_610:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_20":{
+			"op": "ADD",
+			"inputs": [ "@uid_27:out0", "@uid_611:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_15":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_20:out0", "@data_input_uid_682:out0", "@data_input_uid_683:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_627":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_15:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_633":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_15:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_636":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_15:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_628":{
+			"op": "FCL",
+			"inputs": [ "@uid_627:out0", "@data_input_uid_684:out0", "@data_input_uid_685:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_634":{
+			"op": "FCL",
+			"inputs": [ "@uid_633:out0", "@data_input_uid_686:out0", "@data_input_uid_687:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_637":{
+			"op": "FCL",
+			"inputs": [ "@uid_636:out0", "@data_input_uid_688:out0", "@data_input_uid_689:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_58":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_628:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_88":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_634:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_638":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_637:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_51":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_58:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_75":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_88:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_87":{
+			"op": "MULTIPLY",
+			"inputs": [ "@uid_638:out0", "@uid_99:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_42":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_51:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_65":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_75:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_74":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_87:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_57":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_65:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 64, 12 ] ]
+		},
+		"uid_64":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_74:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_56":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_64:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_50":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_56:out0", "@uid_57:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ],[ 999, 64, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_41":{
+			"op": "SOFTMAX",
+			"inputs": [ "@uid_50:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 999, 999, 12 ] ]
+		},
+		"uid_35":{
+			"op": "MATRIXMUL",
+			"inputs": [ "@uid_41:out0", "@uid_42:out0" ],
+			"inut_shape": [ [ 999, 999, 12 ],[ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12 ] ]
+		},
+		"uid_30":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_35:out0" ],
+			"inut_shape": [ [ 64, 999, 12 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 999, 12, 1 ] ]
+		},
+		"uid_25":{
+			"op": "PERMUTE",
+			"inputs": [ "@uid_30:out0" ],
+			"inut_shape": [ [ 64, 999, 12, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 64, 12, 999, 1 ] ]
+		},
+		"uid_603":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_25:out0" ],
+			"inut_shape": [ [ 64, 12, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_604":{
+			"op": "FCL",
+			"inputs": [ "@uid_603:out0", "@data_input_uid_690:out0", "@data_input_uid_691:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_605":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_604:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_11":{
+			"op": "ADD",
+			"inputs": [ "@uid_15:out0", "@uid_605:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_8":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_11:out0", "@data_input_uid_692:out0", "@data_input_uid_693:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_606":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_8:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_607":{
+			"op": "FCL",
+			"inputs": [ "@uid_606:out0", "@data_input_uid_694:out0", "@data_input_uid_695:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 3072 ],[ 3072 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_608":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_607:out0" ],
+			"inut_shape": [ [ 3072, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_13":{
+			"op": "GELU",
+			"inputs": [ "@uid_608:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999, 1 ] ]
+		},
+		"uid_600":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_13:out0" ],
+			"inut_shape": [ [ 3072, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 3072, 999 ] ]
+		},
+		"uid_601":{
+			"op": "FCL",
+			"inputs": [ "@uid_600:out0", "@data_input_uid_696:out0", "@data_input_uid_697:out0" ],
+			"inut_shape": [ [ 3072, 999 ],[ 3072, 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_602":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_601:out0" ],
+			"inut_shape": [ [ 768, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_6":{
+			"op": "ADD",
+			"inputs": [ "@uid_8:out0", "@uid_602:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_4":{
+			"op": "LAYER_NORM",
+			"inputs": [ "@uid_6:out0", "@data_input_uid_698:out0", "@data_input_uid_699:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ],[ 768 ],[ 768 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999, 1 ] ]
+		},
+		"uid_597":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_4:out0" ],
+			"inut_shape": [ [ 768, 999, 1 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 768, 999 ] ]
+		},
+		"uid_598":{
+			"op": "FCL",
+			"inputs": [ "@uid_597:out0", "@data_input_uid_700:out0", "@data_input_uid_701:out0" ],
+			"inut_shape": [ [ 768, 999 ],[ 768, 32 ],[ 32 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 32, 999 ] ]
+		},
+		"uid_599":{
+			"op": "RESHAPE2",
+			"inputs": [ "@uid_598:out0" ],
+			"inut_shape": [ [ 32, 999 ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ 32, 999, 1 ] ]
+		},
+		"data_input_uid_478":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_479":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_480":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_481":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_482":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_483":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_484":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_485":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_486":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_487":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_488":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_489":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_490":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_491":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_492":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_493":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_494":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_495":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_496":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_497":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_498":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_499":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_500":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_501":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_502":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_503":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_504":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_505":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_506":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_507":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_508":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_509":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_510":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_511":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_512":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_513":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_514":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_515":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_516":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_517":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_518":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_519":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_520":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_521":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_522":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_523":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_524":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_525":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_526":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_527":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_528":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_529":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_530":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_531":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_532":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_533":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_534":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_535":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_536":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_537":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_538":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_539":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_540":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_541":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_542":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_543":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_544":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_545":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_546":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_547":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_548":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_549":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_550":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_551":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_552":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_553":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_554":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_555":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_556":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_557":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_558":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_559":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_560":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_561":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_562":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_563":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_564":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_565":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_566":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_567":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_568":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_569":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_570":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_571":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_572":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_573":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_574":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_575":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_576":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_577":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_578":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_579":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_580":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_581":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_582":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_583":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_584":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_585":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_586":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_587":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_588":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_589":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_590":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_591":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_592":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_593":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_594":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_595":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_596":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_597":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_598":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_599":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_600":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_601":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_602":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_603":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_604":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_605":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_606":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_607":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_608":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_609":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_610":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_611":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_612":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_613":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_614":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_615":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_616":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_617":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_618":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_619":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_620":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_621":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_622":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_623":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_624":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_625":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_626":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_627":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_628":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_629":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_630":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_631":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_632":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_633":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_634":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_635":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_636":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_637":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_638":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_639":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_640":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_641":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_642":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_643":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_644":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_645":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_646":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_647":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_648":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_649":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_650":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_651":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_652":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_653":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_654":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_655":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_656":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_657":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_658":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_659":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_660":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_661":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_662":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_663":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_664":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_665":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_666":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_667":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_668":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_669":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_670":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_671":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_672":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_673":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_674":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_675":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_676":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_677":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_678":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_679":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_680":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_681":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_682":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_683":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_684":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_685":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_686":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_687":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_688":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_689":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_690":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_691":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_692":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_693":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_694":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_695":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_696":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_697":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_698":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_699":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_700":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		},
+		"data_input_uid_701":{
+			"op": "DATA_INPUT",
+			"inputs": [ ],
+			"inut_shape": [ [ ] ],
+			"outputs": [ "out0" ],
+			"output_shape": [ [ ] ]
+		}
+	}
+}
