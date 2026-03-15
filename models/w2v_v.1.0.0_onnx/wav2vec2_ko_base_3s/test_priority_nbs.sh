@@ -21,18 +21,23 @@ $WIN_ADB shell "mkdir -p $DEVICE_DIR" 2>/dev/null
 declare -a PRIORITY_NBS=(
     "nopad10_opset12_sim_ma"       # 1: opset12+sim, 1 var, uint8 MA — BEST CANDIDATE
     "nopad10_opset12_ma"           # 2: opset12, 12 var (same as English), uint8 MA
-    "nopad10_sim_ma"               # 3: onnxsim on opset14, uint8 MA
-    "nopad10_opset12_sim_int16"    # 4: opset12+sim, int16 DFP — highest accuracy potential
+    "nopad10_opset12_sim_int16"    # 3: opset12+sim, int16 DFP — highest accuracy
+    "nopad10_sim_ma"               # 4: onnxsim on opset14, uint8 MA
     "nopad10_opset12_sim_int8"     # 5: opset12+sim, int8 signed
-    "6L_nopad10_opset12_sim_ma"    # 6: 6-layer, fastest
-    "relu_nopad10_opset12_sim_ma"  # 7: ReLU, better quantization
-    "nopad10_opset12_sim_kl"       # 8: KL divergence
-    "nopad10_opset12_sim_normal"   # 9: normal quantization
-    "nopad10_opset12_sim_hybrid_ma" # 10: hybrid
-    "nopad10_ma"                   # 11: original (known to fail/garbled)
-    "combo_sim_relu_6l_nopad10_ma" # 12: combo
-    "6L_relu_nopad10_opset12_sim_ma" # 13: smallest
-    "nopad10_opset12_sim_ma96"      # 14: 96 calibration samples
+    "nopad10_opset12_sim_hybrid_ma" # 6: hybrid uint8+int16
+    "clip3s_nopad10_opset12_sim_ma" # 7: weight-clipped uint8 MA (98MB)
+    "clip3s_nopad10_opset12_sim_int16" # 8: weight-clipped int16 DFP (175MB)
+    "nopad10_opset12_sim_kl"       # 9: KL divergence
+    "nopad10_opset12_sim_normal"   # 10: normal quantization
+    "nopad10_opset12_sim_ma001"    # 11: MA weight 0.001
+    "nopad10_opset12_sim_ma01"     # 12: MA weight 0.01
+    "nopad10_opset12_sim_ma96"     # 13: 96 calibration samples
+    "nopad10_ma"                   # 14: original opset14 (known garbled)
+    "6L_nopad10_opset12_sim_ma"    # 15: 6-layer (sim=garbage, skip if #1 works)
+    "relu_nopad10_opset12_sim_ma"  # 16: ReLU (sim=garbage)
+    "2L_nopad10_opset12_sim_ma"    # 17: 2-layer canary (15MB)
+    "combo_sim_relu_6l_nopad10_ma" # 18: combo
+    "6L_relu_nopad10_opset12_sim_ma" # 19: smallest
 )
 
 for name in "${PRIORITY_NBS[@]}"; do
