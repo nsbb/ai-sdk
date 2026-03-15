@@ -16,6 +16,10 @@ declare -A NBS=(
     ["nopad10_6layers_ma"]="wksp/wav2vec2_ko_base_3s_nopad10_6layers_ma_nbg_unify/network_binary.nb"
     ["nopad10_hybrid_ma"]="wksp/wav2vec2_ko_base_3s_nopad10_hybrid_ma_nbg_unify/network_binary.nb"
     ["cnn_only_ma"]="wksp/wav2vec2_ko_base_3s_cnn_only_ma_nbg_unify/network_binary.nb"
+    ["nopad10_sim_ma"]="wksp/wav2vec2_ko_base_3s_nopad10_sim_ma_nbg_unify/network_binary.nb"
+    ["combo_relu_6l_nopad10_ma"]="wksp/wav2vec2_ko_base_3s_combo_relu_6l_nopad10_ma_nbg_unify/network_binary.nb"
+    ["nopad10_normal"]="wksp/wav2vec2_ko_base_3s_nopad10_normal_nbg_unify/network_binary.nb"
+    ["nopad10_auto"]="wksp/wav2vec2_ko_base_3s_nopad10_auto_nbg_unify/network_binary.nb"
 )
 
 echo "=== Korean wav2vec2 NB Batch Test ==="
