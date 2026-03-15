@@ -1,0 +1,44 @@
+{
+    "model": "wav2vec2-base-korean (Kkonjeong/wav2vec2-base-korean)",
+    "language": "Korean (Jamo CTC)",
+    "input_length_seconds": 3,
+    "Inputs": {
+        "input_values_568": {
+            "name": "input_values",
+            "shape": [1, 48000],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "max_value": 8.284131050109863,
+                "min_value": -8.704545974731445,
+                "scale": 0.06662226468324661,
+                "zero_point": 131
+            }
+        }
+    },
+    "Outputs": {
+        "attach_Add_/lm_head/Add/out0_0": {
+            "name": "logits",
+            "shape": [1, 149, 56],
+            "format": "nchw",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "max_value": 12.372973442077637,
+                "min_value": -5.218989372253418,
+                "scale": 0.06898809224367142,
+                "zero_point": 76
+            }
+        }
+    },
+    "vocab": {
+        "type": "jamo",
+        "size": 56,
+        "pad_id": 53,
+        "space_id": 51,
+        "unk_id": 52,
+        "note": "Korean jamo (ㄱ-ㅎ, ㅏ-ㅣ, compound consonants)"
+    },
+    "Recurrent_connections": {}
+}
