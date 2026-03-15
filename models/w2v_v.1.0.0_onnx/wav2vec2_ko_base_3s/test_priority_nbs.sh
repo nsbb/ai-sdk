@@ -32,6 +32,7 @@ declare -a PRIORITY_NBS=(
     "nopad10_ma"                   # 11: original (known to fail/garbled)
     "combo_sim_relu_6l_nopad10_ma" # 12: combo
     "6L_relu_nopad10_opset12_sim_ma" # 13: smallest
+    "nopad10_opset12_sim_ma96"      # 14: 96 calibration samples
 )
 
 for name in "${PRIORITY_NBS[@]}"; do
