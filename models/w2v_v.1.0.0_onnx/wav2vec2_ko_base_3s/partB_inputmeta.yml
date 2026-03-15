@@ -1,0 +1,27 @@
+# !!!This file disallow TABs!!!
+input_meta:
+  databases:
+  - path: partB_calib_npy/dataset.txt
+    type: TEXT
+    ports:
+    - lid: encoder_input_499
+      category: feature
+      dtype: float32
+      sparse: false
+      tensor_name:
+      shape:
+      - 1
+      - 149
+      - 768
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+          - 2
+      redirect_to_output: false
