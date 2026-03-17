@@ -1,0 +1,5544 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@attach_Add_/lm_head/Add/out0_0:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 12.372973442077637
+    min_value: -5.218989372253418
+    scale: 0.06898809224367142
+    zero_point: 76
+  '@Add_/wav2vec2/encoder/layers.11/final_layer_norm/Add_1_4:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.868475914001465
+    min_value: -3.8403639793395996
+    scale: 0.030230743810534477
+    zero_point: 127
+  '@Add_/wav2vec2/encoder/layers.11/Add_1_6:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.2846102714538574
+    min_value: -3.351562738418579
+    scale: 0.026024209335446358
+    zero_point: 129
+  '@Add_/wav2vec2/encoder/layers.11/layer_norm/Add_1_8:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0056281089782715
+    min_value: -2.352707624435425
+    scale: 0.01709151081740856
+    zero_point: 138
+  '@Add_/wav2vec2/encoder/layers.11/Add_11:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4764387607574463
+    min_value: -1.5282785892486572
+    scale: 0.011783204972743988
+    zero_point: 130
+  '@Mul_/wav2vec2/encoder/layers.11/feed_forward/intermediate_act_fn/Mul_1_13:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.2630414962768555
+    min_value: -0.16997122764587402
+    scale: 0.021305933594703674
+    zero_point: 8
+  '@Add_/wav2vec2/encoder/layers.10/final_layer_norm/Add_1_15:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.663496494293213
+    min_value: -1.558430790901184
+    scale: 0.012635008431971073
+    zero_point: 123
+  '@Add_/wav2vec2/encoder/layers.10/Add_1_20:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 147.14112854003906
+    min_value: -108.50980377197266
+    scale: 1.0025527477264404
+    zero_point: 108
+  '@Reshape_/wav2vec2/encoder/layers.11/attention/Reshape_3_22:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9124606251716614
+    min_value: -1.2012722492218018
+    scale: 0.008289148099720478
+    zero_point: 145
+  '@Transpose_/wav2vec2/encoder/layers.11/attention/Transpose_3_25:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9124606251716614
+    min_value: -1.2012722492218018
+    scale: 0.008289148099720478
+    zero_point: 145
+  '@Add_/wav2vec2/encoder/layers.10/layer_norm/Add_1_27:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.1368725299835205
+    min_value: -4.579375743865967
+    scale: 0.026338228955864906
+    zero_point: 174
+  '@MatMul_/wav2vec2/encoder/layers.11/attention/MatMul_1_30:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9124606251716614
+    min_value: -1.2012722492218018
+    scale: 0.008289148099720478
+    zero_point: 145
+  '@Add_/wav2vec2/encoder/layers.10/Add_31:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.324289321899414
+    min_value: -2.2399604320526123
+    scale: 0.01789901964366436
+    zero_point: 125
+  '@Mul_/wav2vec2/encoder/layers.10/feed_forward/intermediate_act_fn/Mul_1_33:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 17.368576049804688
+    min_value: -0.16997124254703522
+    scale: 0.0687786191701889
+    zero_point: 2
+  '@Softmax_/wav2vec2/encoder/layers.11/attention/Softmax_35:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.826961874961853
+    min_value: 4.5753249651170335e-06
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.11/attention/Transpose_36:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.668713927268982
+    min_value: -2.0252633094787598
+    scale: 0.014486185275018215
+    zero_point: 140
+  '@Add_/wav2vec2/encoder/layers.9/final_layer_norm/Add_1_37:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.2681379318237305
+    min_value: -2.217139482498169
+    scale: 0.017589321359992027
+    zero_point: 126
+  '@Reshape_/wav2vec2/encoder/layers.11/attention/Reshape_1_43:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.668713927268982
+    min_value: -2.0252633094787598
+    scale: 0.014486185275018215
+    zero_point: 140
+  '@Add_/wav2vec2/encoder/layers.9/Add_1_44:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.306551456451416
+    min_value: -11.155939102172852
+    scale: 0.07240191847085953
+    zero_point: 154
+  '@Reshape_/wav2vec2/encoder/layers.10/attention/Reshape_3_46:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.834773302078247
+    min_value: -2.063007116317749
+    scale: 0.015285413712263107
+    zero_point: 135
+  '@Transpose_/wav2vec2/encoder/layers.10/attention/Transpose_3_49:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.834773302078247
+    min_value: -2.063007116317749
+    scale: 0.015285413712263107
+    zero_point: 135
+  '@Mul_/wav2vec2/encoder/layers.11/attention/Mul_51:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.333483099937439
+    min_value: -1.6103870868682861
+    scale: 0.011544588953256607
+    zero_point: 139
+  '@Mul_/wav2vec2/encoder/layers.11/attention/Mul_1_52:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8297137022018433
+    min_value: -1.667860507965088
+    scale: 0.013715977780520916
+    zero_point: 122
+  '@Add_/wav2vec2/encoder/layers.9/layer_norm/Add_1_54:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.467182159423828
+    min_value: -9.195222854614258
+    scale: 0.05357806012034416
+    zero_point: 172
+  '@MatMul_/wav2vec2/encoder/layers.10/attention/MatMul_1_57:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.834773302078247
+    min_value: -2.063007116317749
+    scale: 0.015285413712263107
+    zero_point: 135
+  '@Transpose_/wav2vec2/encoder/layers.11/attention/Transpose_1_58:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.7716598510742188
+    min_value: -4.5548624992370605
+    scale: 0.03265303000807762
+    zero_point: 139
+  '@Constant__wav2vec2_encoder_layers_11_attention_Sqrt_1__wav2vec2_encoder_layers_11_attention_Sqrt_1_output_0_as_const_59:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.11/attention/Transpose_2_60:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.1752119064331055
+    min_value: -4.717422008514404
+    scale: 0.03879464045166969
+    zero_point: 122
+  '@Constant__wav2vec2_encoder_layers_11_attention_Sqrt_2__wav2vec2_encoder_layers_11_attention_Sqrt_2_output_0_as_const_61:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.9/Add_64:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.127575159072876
+    min_value: -3.245044708251953
+    scale: 0.024990664795041084
+    zero_point: 130
+  '@Mul_/wav2vec2/encoder/layers.9/feed_forward/intermediate_act_fn/Mul_1_66:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.380332946777344
+    min_value: -0.16997122764587402
+    scale: 0.01784433051943779
+    zero_point: 10
+  '@Softmax_/wav2vec2/encoder/layers.10/attention/Softmax_68:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.9919648170471191
+    min_value: 5.205524900020464e-10
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.10/attention/Transpose_69:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.4445369243621826
+    min_value: -2.0769925117492676
+    scale: 0.01773148775100708
+    zero_point: 117
+  '@Reshape_/wav2vec2/encoder/layers.11/attention/Reshape_2_70:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.7716598510742188
+    min_value: -4.5548624992370605
+    scale: 0.03265303000807762
+    zero_point: 139
+  '@Reshape_/wav2vec2/encoder/layers.11/attention/Reshape_71:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.1752119064331055
+    min_value: -4.717422008514404
+    scale: 0.03879464045166969
+    zero_point: 122
+  '@Add_/wav2vec2/encoder/layers.8/final_layer_norm/Add_1_74:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.0576109886169434
+    min_value: -3.4197402000427246
+    scale: 0.02540137805044651
+    zero_point: 135
+  '@Reshape_/wav2vec2/encoder/layers.10/attention/Reshape_1_80:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.4445369243621826
+    min_value: -2.0769925117492676
+    scale: 0.01773148775100708
+    zero_point: 117
+  '@Add_/wav2vec2/encoder/layers.8/Add_1_84:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 122.17488098144531
+    min_value: -94.54414367675781
+    scale: 0.8498785495758057
+    zero_point: 111
+  '@Reshape_/wav2vec2/encoder/layers.9/attention/Reshape_3_86:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0307228565216064
+    min_value: -1.8615435361862183
+    scale: 0.01526378933340311
+    zero_point: 122
+  '@Transpose_/wav2vec2/encoder/layers.9/attention/Transpose_3_89:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0307228565216064
+    min_value: -1.8615435361862183
+    scale: 0.01526378933340311
+    zero_point: 122
+  '@Mul_/wav2vec2/encoder/layers.10/attention/Mul_91:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.760525107383728
+    min_value: -2.103668212890625
+    scale: 0.015153699554502964
+    zero_point: 139
+  '@Mul_/wav2vec2/encoder/layers.10/attention/Mul_1_92:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.613361120223999
+    min_value: -1.8539143800735474
+    scale: 0.013597159646451473
+    zero_point: 136
+  '@Add_/wav2vec2/encoder/layers.8/layer_norm/Add_1_98:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.353927135467529
+    min_value: -13.47588062286377
+    scale: 0.07384238392114639
+    zero_point: 182
+  '@MatMul_/wav2vec2/encoder/layers.9/attention/MatMul_1_101:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0307228565216064
+    min_value: -1.8615435361862183
+    scale: 0.01526378933340311
+    zero_point: 122
+  '@Transpose_/wav2vec2/encoder/layers.10/attention/Transpose_1_102:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.979516983032227
+    min_value: -5.950072288513184
+    scale: 0.04286113381385803
+    zero_point: 139
+  '@Constant__wav2vec2_encoder_layers_10_attention_Sqrt_1__wav2vec2_encoder_layers_10_attention_Sqrt_1_output_0_as_const_103:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.10/attention/Transpose_2_104:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.563274383544922
+    min_value: -5.243661880493164
+    scale: 0.03845857456326485
+    zero_point: 136
+  '@Constant__wav2vec2_encoder_layers_10_attention_Sqrt_2__wav2vec2_encoder_layers_10_attention_Sqrt_2_output_0_as_const_105:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.8/Add_109:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.6289401054382324
+    min_value: -3.2952301502227783
+    scale: 0.027153609320521355
+    zero_point: 121
+  '@Mul_/wav2vec2/encoder/layers.8/feed_forward/intermediate_act_fn/Mul_1_111:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 13.820418357849121
+    min_value: -0.16997122764587402
+    scale: 0.054864272475242615
+    zero_point: 3
+  '@Softmax_/wav2vec2/encoder/layers.9/attention/Softmax_113:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.9742193222045898
+    min_value: 1.7431758076932868e-12
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.9/attention/Transpose_114:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.1955666542053223
+    min_value: -2.240640878677368
+    scale: 0.017396893352270126
+    zero_point: 129
+  '@Reshape_/wav2vec2/encoder/layers.10/attention/Reshape_2_115:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.979516983032227
+    min_value: -5.950072288513184
+    scale: 0.04286113381385803
+    zero_point: 139
+  '@Reshape_/wav2vec2/encoder/layers.10/attention/Reshape_116:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.563274383544922
+    min_value: -5.243661880493164
+    scale: 0.03845857456326485
+    zero_point: 136
+  '@Add_/wav2vec2/encoder/layers.7/final_layer_norm/Add_1_118:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9278817176818848
+    min_value: -2.772263288497925
+    scale: 0.022353509441018105
+    zero_point: 124
+  '@Reshape_/wav2vec2/encoder/layers.9/attention/Reshape_1_124:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.1955666542053223
+    min_value: -2.240640878677368
+    scale: 0.017396893352270126
+    zero_point: 129
+  '@Add_/wav2vec2/encoder/layers.7/Add_1_128:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 163.1126708984375
+    min_value: -42.949710845947266
+    scale: 0.8080877661705017
+    zero_point: 53
+  '@Reshape_/wav2vec2/encoder/layers.8/attention/Reshape_3_130:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.9707648754119873
+    min_value: -2.3595829010009766
+    scale: 0.016981756314635277
+    zero_point: 139
+  '@Transpose_/wav2vec2/encoder/layers.8/attention/Transpose_3_133:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.9707648754119873
+    min_value: -2.3595829010009766
+    scale: 0.016981756314635277
+    zero_point: 139
+  '@Mul_/wav2vec2/encoder/layers.9/attention/Mul_135:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.037933349609375
+    min_value: -2.112826108932495
+    scale: 0.016277488321065903
+    zero_point: 130
+  '@Mul_/wav2vec2/encoder/layers.9/attention/Mul_1_136:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.7839243412017822
+    min_value: -2.368314504623413
+    scale: 0.020204858854413033
+    zero_point: 117
+  '@Add_/wav2vec2/encoder/layers.7/layer_norm/Add_1_142:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.708376407623291
+    min_value: -30.42050552368164
+    scale: 0.14952503144741058
+    zero_point: 203
+  '@MatMul_/wav2vec2/encoder/layers.8/attention/MatMul_1_145:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.9707648754119873
+    min_value: -2.3595829010009766
+    scale: 0.016981756314635277
+    zero_point: 139
+  '@Transpose_/wav2vec2/encoder/layers.9/attention/Transpose_1_146:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.764145851135254
+    min_value: -5.9759745597839355
+    scale: 0.04603968560695648
+    zero_point: 130
+  '@Constant__wav2vec2_encoder_layers_9_attention_Sqrt_1__wav2vec2_encoder_layers_9_attention_Sqrt_1_output_0_as_const_147:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.9/attention/Transpose_2_148:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.874127388000488
+    min_value: -6.698605060577393
+    scale: 0.05714797228574753
+    zero_point: 117
+  '@Constant__wav2vec2_encoder_layers_9_attention_Sqrt_2__wav2vec2_encoder_layers_9_attention_Sqrt_2_output_0_as_const_149:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.7/Add_153:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.708580493927002
+    min_value: -3.3964595794677734
+    scale: 0.02394133433699608
+    zero_point: 142
+  '@Mul_/wav2vec2/encoder/layers.7/feed_forward/intermediate_act_fn/Mul_1_155:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 25.893396377563477
+    min_value: -0.16997122764587402
+    scale: 0.10220928490161896
+    zero_point: 2
+  '@Softmax_/wav2vec2/encoder/layers.8/attention/Softmax_157:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.927818775177002
+    min_value: 1.5825739969801272e-13
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.8/attention/Transpose_158:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.20458722114563
+    min_value: -2.5840907096862793
+    scale: 0.018779130652546883
+    zero_point: 138
+  '@Reshape_/wav2vec2/encoder/layers.9/attention/Reshape_2_159:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.764145851135254
+    min_value: -5.9759745597839355
+    scale: 0.04603968560695648
+    zero_point: 130
+  '@Reshape_/wav2vec2/encoder/layers.9/attention/Reshape_160:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.874127388000488
+    min_value: -6.698605060577393
+    scale: 0.05714797228574753
+    zero_point: 117
+  '@Add_/wav2vec2/encoder/layers.6/final_layer_norm/Add_1_162:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.55554461479187
+    min_value: -3.0358879566192627
+    scale: 0.021927187219262123
+    zero_point: 138
+  '@Reshape_/wav2vec2/encoder/layers.8/attention/Reshape_1_168:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.20458722114563
+    min_value: -2.5840907096862793
+    scale: 0.018779130652546883
+    zero_point: 138
+  '@Add_/wav2vec2/encoder/layers.6/Add_1_172:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.266036987304688
+    min_value: -57.695289611816406
+    scale: 0.2586718797683716
+    zero_point: 223
+  '@Reshape_/wav2vec2/encoder/layers.7/attention/Reshape_3_174:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5449386835098267
+    min_value: -1.659033179283142
+    scale: 0.01256459578871727
+    zero_point: 132
+  '@Transpose_/wav2vec2/encoder/layers.7/attention/Transpose_3_177:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5449386835098267
+    min_value: -1.659033179283142
+    scale: 0.01256459578871727
+    zero_point: 132
+  '@Mul_/wav2vec2/encoder/layers.8/attention/Mul_179:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8438234329223633
+    min_value: -2.1776154041290283
+    scale: 0.01577034778892994
+    zero_point: 138
+  '@Mul_/wav2vec2/encoder/layers.8/attention/Mul_1_180:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.69071364402771
+    min_value: -2.700626850128174
+    scale: 0.021142510697245598
+    zero_point: 128
+  '@Add_/wav2vec2/encoder/layers.6/layer_norm/Add_1_186:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.461128234863281
+    min_value: -54.329959869384766
+    scale: 0.23839642107486725
+    zero_point: 228
+  '@MatMul_/wav2vec2/encoder/layers.7/attention/MatMul_1_189:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5449386835098267
+    min_value: -1.659033179283142
+    scale: 0.01256459578871727
+    zero_point: 132
+  '@Transpose_/wav2vec2/encoder/layers.8/attention/Transpose_1_190:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.215120315551758
+    min_value: -6.159226894378662
+    scale: 0.04460528492927551
+    zero_point: 138
+  '@Constant__wav2vec2_encoder_layers_8_attention_Sqrt_1__wav2vec2_encoder_layers_8_attention_Sqrt_1_output_0_as_const_191:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.8/attention/Transpose_2_192:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.610487461090088
+    min_value: -7.638526439666748
+    scale: 0.059800054877996445
+    zero_point: 128
+  '@Constant__wav2vec2_encoder_layers_8_attention_Sqrt_2__wav2vec2_encoder_layers_8_attention_Sqrt_2_output_0_as_const_193:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.6/Add_197:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.5629520416259766
+    min_value: -5.536867141723633
+    scale: 0.03176399692893028
+    zero_point: 174
+  '@Mul_/wav2vec2/encoder/layers.6/feed_forward/intermediate_act_fn/Mul_1_199:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.628047943115234
+    min_value: -0.16997122764587402
+    scale: 0.018815763294696808
+    zero_point: 9
+  '@Softmax_/wav2vec2/encoder/layers.7/attention/Softmax_201:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.7433702945709229
+    min_value: 1.3521895825263641e-09
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.7/attention/Transpose_202:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.146724224090576
+    min_value: -2.1113221645355225
+    scale: 0.016698220744729042
+    zero_point: 126
+  '@Reshape_/wav2vec2/encoder/layers.8/attention/Reshape_2_203:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.215120315551758
+    min_value: -6.159226894378662
+    scale: 0.04460528492927551
+    zero_point: 138
+  '@Reshape_/wav2vec2/encoder/layers.8/attention/Reshape_204:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.610487461090088
+    min_value: -7.638526439666748
+    scale: 0.059800054877996445
+    zero_point: 128
+  '@Add_/wav2vec2/encoder/layers.5/final_layer_norm/Add_1_206:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.453645706176758
+    min_value: -3.297260046005249
+    scale: 0.022552572190761566
+    zero_point: 146
+  '@Reshape_/wav2vec2/encoder/layers.7/attention/Reshape_1_212:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.146724224090576
+    min_value: -2.1113221645355225
+    scale: 0.016698220744729042
+    zero_point: 126
+  '@Add_/wav2vec2/encoder/layers.5/Add_1_216:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.820018768310547
+    min_value: -52.68244171142578
+    scale: 0.22942140698432922
+    zero_point: 230
+  '@Reshape_/wav2vec2/encoder/layers.6/attention/Reshape_3_218:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4880343675613403
+    min_value: -1.506296157836914
+    scale: 0.01174247171729803
+    zero_point: 128
+  '@Transpose_/wav2vec2/encoder/layers.6/attention/Transpose_3_221:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4880343675613403
+    min_value: -1.506296157836914
+    scale: 0.01174247171729803
+    zero_point: 128
+  '@Mul_/wav2vec2/encoder/layers.7/attention/Mul_223:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.7670502662658691
+    min_value: -2.092582941055298
+    scale: 0.015135816298425198
+    zero_point: 138
+  '@Mul_/wav2vec2/encoder/layers.7/attention/Mul_1_224:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.627110004425049
+    min_value: -2.2292041778564453
+    scale: 0.01904436945915222
+    zero_point: 117
+  '@Add_/wav2vec2/encoder/layers.5/layer_norm/Add_1_230:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.086719989776611
+    min_value: -47.95433807373047
+    scale: 0.2080041468143463
+    zero_point: 231
+  '@MatMul_/wav2vec2/encoder/layers.6/attention/MatMul_1_233:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4880343675613403
+    min_value: -1.506296157836914
+    scale: 0.01174247171729803
+    zero_point: 128
+  '@Transpose_/wav2vec2/encoder/layers.7/attention/Transpose_1_234:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.9979729652404785
+    min_value: -5.918718338012695
+    scale: 0.042810551822185516
+    zero_point: 138
+  '@Constant__wav2vec2_encoder_layers_7_attention_Sqrt_1__wav2vec2_encoder_layers_7_attention_Sqrt_1_output_0_as_const_235:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.7/attention/Transpose_2_236:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.430589199066162
+    min_value: -6.305141448974609
+    scale: 0.05386561155319214
+    zero_point: 117
+  '@Constant__wav2vec2_encoder_layers_7_attention_Sqrt_2__wav2vec2_encoder_layers_7_attention_Sqrt_2_output_0_as_const_237:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.5/Add_241:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.259993076324463
+    min_value: -5.376128196716309
+    scale: 0.029945572838187218
+    zero_point: 180
+  '@Mul_/wav2vec2/encoder/layers.5/feed_forward/intermediate_act_fn/Mul_1_243:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.666517734527588
+    min_value: -0.16997122764587402
+    scale: 0.022888191044330597
+    zero_point: 7
+  '@Softmax_/wav2vec2/encoder/layers.6/attention/Softmax_245:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.9346844553947449
+    min_value: 1.8188586192735556e-09
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.6/attention/Transpose_246:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.556203842163086
+    min_value: -2.315648078918457
+    scale: 0.019105302169919014
+    zero_point: 121
+  '@Reshape_/wav2vec2/encoder/layers.7/attention/Reshape_2_247:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.9979729652404785
+    min_value: -5.918718338012695
+    scale: 0.042810551822185516
+    zero_point: 138
+  '@Reshape_/wav2vec2/encoder/layers.7/attention/Reshape_248:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.430589199066162
+    min_value: -6.305141448974609
+    scale: 0.05386561155319214
+    zero_point: 117
+  '@Add_/wav2vec2/encoder/layers.4/final_layer_norm/Add_1_250:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.10428524017334
+    min_value: -3.2016332149505615
+    scale: 0.020807525143027306
+    zero_point: 154
+  '@Reshape_/wav2vec2/encoder/layers.6/attention/Reshape_1_256:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.556203842163086
+    min_value: -2.315648078918457
+    scale: 0.019105302169919014
+    zero_point: 121
+  '@Add_/wav2vec2/encoder/layers.4/Add_1_260:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.421856880187988
+    min_value: -56.55005645751953
+    scale: 0.24694867432117462
+    zero_point: 229
+  '@Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_3_262:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4129830598831177
+    min_value: -1.3551206588745117
+    scale: 0.010855307802557945
+    zero_point: 125
+  '@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_3_265:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4129830598831177
+    min_value: -1.3551206588745117
+    scale: 0.010855307802557945
+    zero_point: 125
+  '@Mul_/wav2vec2/encoder/layers.6/attention/Mul_267:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8762394189834595
+    min_value: -1.8674589395523071
+    scale: 0.014681169763207436
+    zero_point: 127
+  '@Mul_/wav2vec2/encoder/layers.6/attention/Mul_1_268:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.5937371253967285
+    min_value: -2.400677442550659
+    scale: 0.01958593912422657
+    zero_point: 123
+  '@Add_/wav2vec2/encoder/layers.4/layer_norm/Add_1_274:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.789815902709961
+    min_value: -51.60153579711914
+    scale: 0.22114254534244537
+    zero_point: 233
+  '@MatMul_/wav2vec2/encoder/layers.5/attention/MatMul_1_277:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4129830598831177
+    min_value: -1.3551206588745117
+    scale: 0.010855307802557945
+    zero_point: 125
+  '@Transpose_/wav2vec2/encoder/layers.6/attention/Transpose_1_278:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.306806564331055
+    min_value: -5.281971454620361
+    scale: 0.04152461886405945
+    zero_point: 127
+  '@Constant__wav2vec2_encoder_layers_6_attention_Sqrt_1__wav2vec2_encoder_layers_6_attention_Sqrt_1_output_0_as_const_279:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.6/attention/Transpose_2_280:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.336196422576904
+    min_value: -6.7901411056518555
+    scale: 0.0553973987698555
+    zero_point: 123
+  '@Constant__wav2vec2_encoder_layers_6_attention_Sqrt_2__wav2vec2_encoder_layers_6_attention_Sqrt_2_output_0_as_const_281:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.4/Add_285:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.7203590869903564
+    min_value: -10.285805702209473
+    scale: 0.0510045662522316
+    zero_point: 202
+  '@Mul_/wav2vec2/encoder/layers.4/feed_forward/intermediate_act_fn/Mul_1_287:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.424057960510254
+    min_value: -0.16997122764587402
+    scale: 0.02978050708770752
+    zero_point: 6
+  '@Softmax_/wav2vec2/encoder/layers.5/attention/Softmax_289:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.6694899797439575
+    min_value: 4.682493948138244e-09
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_290:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0791637897491455
+    min_value: -2.058849811553955
+    scale: 0.01622750610113144
+    zero_point: 127
+  '@Reshape_/wav2vec2/encoder/layers.6/attention/Reshape_2_291:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.306806564331055
+    min_value: -5.281971454620361
+    scale: 0.04152461886405945
+    zero_point: 127
+  '@Reshape_/wav2vec2/encoder/layers.6/attention/Reshape_292:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.336196422576904
+    min_value: -6.7901411056518555
+    scale: 0.0553973987698555
+    zero_point: 123
+  '@Add_/wav2vec2/encoder/layers.3/final_layer_norm/Add_1_294:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.6339380741119385
+    min_value: -2.874098300933838
+    scale: 0.02160014398396015
+    zero_point: 133
+  '@Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_1_300:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0791637897491455
+    min_value: -2.058849811553955
+    scale: 0.01622750610113144
+    zero_point: 127
+  '@Add_/wav2vec2/encoder/layers.3/Add_1_304:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 84.25515747070312
+    min_value: -51.927764892578125
+    scale: 0.534050703048706
+    zero_point: 97
+  '@Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_3_306:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5207278728485107
+    min_value: -1.9936163425445557
+    scale: 0.02162487991154194
+    zero_point: 92
+  '@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_3_309:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5207278728485107
+    min_value: -1.9936163425445557
+    scale: 0.02162487991154194
+    zero_point: 92
+  '@Mul_/wav2vec2/encoder/layers.5/attention/Mul_311:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5652523040771484
+    min_value: -1.8911000490188599
+    scale: 0.01355432253330946
+    zero_point: 140
+  '@Mul_/wav2vec2/encoder/layers.5/attention/Mul_1_312:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.4159979820251465
+    min_value: -2.3029727935791016
+    scale: 0.018505766987800598
+    zero_point: 124
+  '@Add_/wav2vec2/encoder/layers.3/layer_norm/Add_1_318:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.493109703063965
+    min_value: -19.43340301513672
+    scale: 0.09382946789264679
+    zero_point: 207
+  '@MatMul_/wav2vec2/encoder/layers.4/attention/MatMul_1_321:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5207278728485107
+    min_value: -1.9936163425445557
+    scale: 0.02162487991154194
+    zero_point: 92
+  '@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_1_322:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.427202224731445
+    min_value: -5.348838806152344
+    scale: 0.03833741694688797
+    zero_point: 140
+  '@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_1__wav2vec2_encoder_layers_5_attention_Sqrt_1_output_0_as_const_323:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_2_324:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.833474636077881
+    min_value: -6.513791084289551
+    scale: 0.05234221741557121
+    zero_point: 124
+  '@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_2__wav2vec2_encoder_layers_5_attention_Sqrt_2_output_0_as_const_325:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.3/Add_329:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.3010189533233643
+    min_value: -3.214601516723633
+    scale: 0.02555145137012005
+    zero_point: 126
+  '@Mul_/wav2vec2/encoder/layers.3/feed_forward/intermediate_act_fn/Mul_1_331:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 15.190122604370117
+    min_value: -0.16997122764587402
+    scale: 0.06023566424846649
+    zero_point: 3
+  '@Softmax_/wav2vec2/encoder/layers.4/attention/Softmax_333:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.912666916847229
+    min_value: 2.771038953852667e-09
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_334:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5783426761627197
+    min_value: -2.3994786739349365
+    scale: 0.023442436009645462
+    zero_point: 102
+  '@Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_2_335:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.427202224731445
+    min_value: -5.348838806152344
+    scale: 0.03833741694688797
+    zero_point: 140
+  '@Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_336:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.833474636077881
+    min_value: -6.513791084289551
+    scale: 0.05234221741557121
+    zero_point: 124
+  '@Add_/wav2vec2/encoder/layers.2/final_layer_norm/Add_1_338:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.1065733432769775
+    min_value: -3.154193162918091
+    scale: 0.02455202490091324
+    zero_point: 128
+  '@Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_1_344:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5783426761627197
+    min_value: -2.3994786739349365
+    scale: 0.023442436009645462
+    zero_point: 102
+  '@Add_/wav2vec2/encoder/layers.2/Add_1_348:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.729342460632324
+    min_value: -15.008702278137207
+    scale: 0.09309037029743195
+    zero_point: 161
+  '@Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_3_350:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.6648359298706055
+    min_value: -1.3786927461624146
+    scale: 0.011935406364500523
+    zero_point: 116
+  '@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_3_353:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.6648359298706055
+    min_value: -1.3786927461624146
+    scale: 0.011935406364500523
+    zero_point: 116
+  '@Mul_/wav2vec2/encoder/layers.4/attention/Mul_355:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8348252773284912
+    min_value: -1.900636076927185
+    scale: 0.014648867771029472
+    zero_point: 130
+  '@Mul_/wav2vec2/encoder/layers.4/attention/Mul_1_356:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.7639801502227783
+    min_value: -2.4453516006469727
+    scale: 0.020428750663995743
+    zero_point: 120
+  '@Add_/wav2vec2/encoder/layers.2/layer_norm/Add_1_362:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.520750999450684
+    min_value: -14.503429412841797
+    scale: 0.07460463047027588
+    zero_point: 194
+  '@MatMul_/wav2vec2/encoder/layers.3/attention/MatMul_1_365:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.6648359298706055
+    min_value: -1.3786927461624146
+    scale: 0.011935406364500523
+    zero_point: 116
+  '@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_1_366:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.189669609069824
+    min_value: -5.375810623168945
+    scale: 0.04143325611948967
+    zero_point: 130
+  '@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_1__wav2vec2_encoder_layers_4_attention_Sqrt_1_output_0_as_const_367:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_2_368:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.817716598510742
+    min_value: -6.916499137878418
+    scale: 0.05778123810887337
+    zero_point: 120
+  '@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_2__wav2vec2_encoder_layers_4_attention_Sqrt_2_output_0_as_const_369:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.2/Add_373:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.930283308029175
+    min_value: -3.1264398097991943
+    scale: 0.02375185489654541
+    zero_point: 132
+  '@Mul_/wav2vec2/encoder/layers.2/feed_forward/intermediate_act_fn/Mul_1_375:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.400306701660156
+    min_value: -0.16997122764587402
+    scale: 0.03360893577337265
+    zero_point: 5
+  '@Softmax_/wav2vec2/encoder/layers.3/attention/Softmax_377:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.8204485177993774
+    min_value: 2.8711501492278968e-12
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_378:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.34757137298584
+    min_value: -2.2360730171203613
+    scale: 0.021896645426750183
+    zero_point: 102
+  '@Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_2_379:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.189669609069824
+    min_value: -5.375810623168945
+    scale: 0.04143325611948967
+    zero_point: 130
+  '@Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_380:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.817716598510742
+    min_value: -6.916499137878418
+    scale: 0.05778123810887337
+    zero_point: 120
+  '@Add_/wav2vec2/encoder/layers.1/final_layer_norm/Add_1_382:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9498071670532227
+    min_value: -3.0934956073760986
+    scale: 0.02369922585785389
+    zero_point: 131
+  '@Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_1_388:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.34757137298584
+    min_value: -2.2360730171203613
+    scale: 0.021896645426750183
+    zero_point: 102
+  '@Add_/wav2vec2/encoder/layers.1/Add_1_392:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 9.428533554077148
+    min_value: -12.692190170288086
+    scale: 0.08674793690443039
+    zero_point: 146
+  '@Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_3_394:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8705459833145142
+    min_value: -0.9176031947135925
+    scale: 0.0070123495534062386
+    zero_point: 131
+  '@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_3_397:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8705459833145142
+    min_value: -0.9176031947135925
+    scale: 0.0070123495534062386
+    zero_point: 131
+  '@Mul_/wav2vec2/encoder/layers.3/attention/Mul_399:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.7724027633666992
+    min_value: -1.953421950340271
+    scale: 0.0146110774949193
+    zero_point: 134
+  '@Mul_/wav2vec2/encoder/layers.3/attention/Mul_1_400:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0601818561553955
+    min_value: -2.36337947845459
+    scale: 0.017347298562526703
+    zero_point: 136
+  '@Add_/wav2vec2/encoder/layers.1/layer_norm/Add_1_406:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.244376182556152
+    min_value: -7.163523197174072
+    scale: 0.04473686218261719
+    zero_point: 160
+  '@MatMul_/wav2vec2/encoder/layers.2/attention/MatMul_1_409:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8705459833145142
+    min_value: -0.9176031947135925
+    scale: 0.0070123495534062386
+    zero_point: 131
+  '@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_1_410:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.0131120681762695
+    min_value: -5.525111675262451
+    scale: 0.0413263663649559
+    zero_point: 134
+  '@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_1__wav2vec2_encoder_layers_3_attention_Sqrt_1_output_0_as_const_411:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_2_412:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.8270745277404785
+    min_value: -6.6846466064453125
+    scale: 0.049065571278333664
+    zero_point: 136
+  '@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_2__wav2vec2_encoder_layers_3_attention_Sqrt_2_output_0_as_const_413:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.1/Add_417:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.489436149597168
+    min_value: -2.5558152198791504
+    scale: 0.01978529989719391
+    zero_point: 129
+  '@Mul_/wav2vec2/encoder/layers.1/feed_forward/intermediate_act_fn/Mul_1_419:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.164393901824951
+    min_value: -0.16997122764587402
+    scale: 0.0287622157484293
+    zero_point: 6
+  '@Softmax_/wav2vec2/encoder/layers.2/attention/Softmax_421:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.7471961975097656
+    min_value: 1.4347453003438204e-08
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_422:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.7722275257110596
+    min_value: -2.330798387527466
+    scale: 0.020011866465210915
+    zero_point: 116
+  '@Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_2_423:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.0131120681762695
+    min_value: -5.525111675262451
+    scale: 0.0413263663649559
+    zero_point: 134
+  '@Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_424:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.8270745277404785
+    min_value: -6.6846466064453125
+    scale: 0.049065571278333664
+    zero_point: 136
+  '@Add_/wav2vec2/encoder/layers.0/final_layer_norm/Add_1_426:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.5048296451568604
+    min_value: -2.584831714630127
+    scale: 0.019959457218647003
+    zero_point: 130
+  '@Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_1_432:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.7722275257110596
+    min_value: -2.330798387527466
+    scale: 0.020011866465210915
+    zero_point: 116
+  '@Add_/wav2vec2/encoder/layers.0/Add_1_436:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 10.956887245178223
+    min_value: -10.70353889465332
+    scale: 0.08494285494089127
+    zero_point: 126
+  '@Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_3_438:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.1502410173416138
+    min_value: -1.1206464767456055
+    scale: 0.00890544056892395
+    zero_point: 126
+  '@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_3_441:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.1502410173416138
+    min_value: -1.1206464767456055
+    scale: 0.00890544056892395
+    zero_point: 126
+  '@Mul_/wav2vec2/encoder/layers.2/attention/Mul_443:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8831653594970703
+    min_value: -1.648959994316101
+    scale: 0.013851472176611423
+    zero_point: 119
+  '@Mul_/wav2vec2/encoder/layers.2/attention/Mul_1_444:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.336376190185547
+    min_value: -2.1460068225860596
+    scale: 0.017577972263097763
+    zero_point: 122
+  '@Add_/wav2vec2/encoder/layers.0/layer_norm/Add_1_450:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.159858703613281
+    min_value: -3.8878254890441895
+    scale: 0.031559545546770096
+    zero_point: 123
+  '@MatMul_/wav2vec2/encoder/layers.1/attention/MatMul_1_453:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.1502410173416138
+    min_value: -1.1206464767456055
+    scale: 0.00890544056892395
+    zero_point: 126
+  '@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_1_454:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.3263959884643555
+    min_value: -4.663963317871094
+    scale: 0.03917787969112396
+    zero_point: 119
+  '@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_1__wav2vec2_encoder_layers_2_attention_Sqrt_1_output_0_as_const_455:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_2_456:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.608269691467285
+    min_value: -6.06982421875
+    scale: 0.049718014895915985
+    zero_point: 122
+  '@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_2__wav2vec2_encoder_layers_2_attention_Sqrt_2_output_0_as_const_457:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Add_/wav2vec2/encoder/layers.0/Add_461:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.6997079849243164
+    min_value: -1.615729808807373
+    scale: 0.013001716695725918
+    zero_point: 124
+  '@Mul_/wav2vec2/encoder/layers.0/feed_forward/intermediate_act_fn/Mul_1_463:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.112829685211182
+    min_value: -0.16997122764587402
+    scale: 0.020716864615678787
+    zero_point: 8
+  '@Softmax_/wav2vec2/encoder/layers.1/attention/Softmax_465:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.9544704556465149
+    min_value: 4.192790645923816e-12
+    fl: 15
+  '@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_466:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.3815815448760986
+    min_value: -2.5379419326782227
+    scale: 0.019292248412966728
+    zero_point: 132
+  '@Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_2_467:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.3263959884643555
+    min_value: -4.663963317871094
+    scale: 0.03917787969112396
+    zero_point: 119
+  '@Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_468:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.608269691467285
+    min_value: -6.06982421875
+    scale: 0.049718014895915985
+    zero_point: 122
+  '@Add_/wav2vec2/encoder/layer_norm/Add_1_470:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4692413806915283
+    min_value: -1.5375393629074097
+    scale: 0.011791296303272247
+    zero_point: 130
+  '@Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_1_476:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.3815815448760986
+    min_value: -2.5379419326782227
+    scale: 0.019292248412966728
+    zero_point: 132
+  '@Add_/wav2vec2/encoder/Add_480:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 25.516380310058594
+    min_value: -6.163451671600342
+    scale: 0.124234639108181
+    zero_point: 50
+  '@Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_3_482:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.641677737236023
+    min_value: -0.8564491271972656
+    scale: 0.005875007249414921
+    zero_point: 146
+  '@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_3_485:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.641677737236023
+    min_value: -0.8564491271972656
+    scale: 0.005875007249414921
+    zero_point: 146
+  '@Mul_/wav2vec2/encoder/layers.1/attention/Mul_487:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8127667903900146
+    min_value: -1.7083998918533325
+    scale: 0.013808497227728367
+    zero_point: 124
+  '@Mul_/wav2vec2/encoder/layers.1/attention/Mul_1_488:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.9457242488861084
+    min_value: -2.188284158706665
+    scale: 0.016211798414587975
+    zero_point: 135
+  '@Mul_/wav2vec2/encoder/pos_conv_embed/activation/Mul_1_495:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 20.79242515563965
+    min_value: -0.16997119784355164
+    scale: 0.08220547437667847
+    zero_point: 2
+  '@MatMul_/wav2vec2/encoder/layers.0/attention/MatMul_1_496:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.641677737236023
+    min_value: -0.8564491271972656
+    scale: 0.005875007249414921
+    zero_point: 146
+  '@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_1_497:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.127278804779053
+    min_value: -4.832084655761719
+    scale: 0.03905633091926575
+    zero_point: 124
+  '@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_1__wav2vec2_encoder_layers_1_attention_Sqrt_1_output_0_as_const_498:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_2_499:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.5033392906188965
+    min_value: -6.189402103424072
+    scale: 0.045853886753320694
+    zero_point: 135
+  '@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_2__wav2vec2_encoder_layers_1_attention_Sqrt_2_output_0_as_const_500:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Slice_/wav2vec2/encoder/pos_conv_embed/padding/Slice_506:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 20.79242515563965
+    min_value: -12.492234230041504
+    scale: 0.13052807748317719
+    zero_point: 96
+  '@Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv_507:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 20.79242515563965
+    min_value: -12.492234230041504
+    scale: 0.13052807748317719
+    zero_point: 96
+  '@Softmax_/wav2vec2/encoder/layers.0/attention/Softmax_508:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 0.3025619387626648
+    min_value: 0.00013116153422743082
+    fl: 16
+  '@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_509:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.7211438417434692
+    min_value: -2.2884583473205566
+    scale: 0.015723928809165955
+    zero_point: 146
+  '@Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_2_510:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.127278804779053
+    min_value: -4.832084655761719
+    scale: 0.03905633091926575
+    zero_point: 124
+  '@Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_511:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.5033392906188965
+    min_value: -6.189402103424072
+    scale: 0.045853886753320694
+    zero_point: 135
+  '@Add_/wav2vec2/feature_projection/layer_norm/Add_1_513:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.079603672027588
+    min_value: -1.9150214195251465
+    scale: 0.015665195882320404
+    zero_point: 122
+  '@Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_1_517:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.7211438417434692
+    min_value: -2.2884583473205566
+    scale: 0.015723928809165955
+    zero_point: 146
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.6/activation/Mul_1_522:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.33559611439704895
+    min_value: -0.16997116804122925
+    scale: 0.0019826169591397047
+    zero_point: 86
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.6/conv/Conv_523:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.488267719745636
+    min_value: -0.7555934190750122
+    scale: 0.004877887200564146
+    zero_point: 155
+  '@Mul_/wav2vec2/encoder/layers.0/attention/Mul_524:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.6964244842529297
+    min_value: -1.8089803457260132
+    scale: 0.013746686279773712
+    zero_point: 132
+  '@Mul_/wav2vec2/encoder/layers.0/attention/Mul_1_525:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4755690097808838
+    min_value: -1.413770079612732
+    scale: 0.011330741457641125
+    zero_point: 125
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.5/activation/Mul_1_532:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.039997100830078
+    min_value: -0.16997122764587402
+    scale: 0.00866654235869646
+    zero_point: 20
+  '@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_1_533:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.798213005065918
+    min_value: -5.1165690422058105
+    scale: 0.03888149559497833
+    zero_point: 132
+  '@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_1__wav2vec2_encoder_layers_0_attention_Sqrt_1_output_0_as_const_534:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_2_535:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.173539638519287
+    min_value: -3.9987456798553467
+    scale: 0.03204817697405815
+    zero_point: 125
+  '@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_2__wav2vec2_encoder_layers_0_attention_Sqrt_2_output_0_as_const_536:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_538:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.173539638519287
+    min_value: -3.9987456798553467
+    scale: 0.03204817697405815
+    zero_point: 125
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.5/conv/Conv_540:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0790932178497314
+    min_value: -8.919109344482422
+    scale: 0.04313020408153534
+    zero_point: 207
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.4/activation/Mul_1_541:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.740009784698486
+    min_value: -0.16997122764587402
+    scale: 0.023176394402980804
+    zero_point: 7
+  '@Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_2_542:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.798213005065918
+    min_value: -5.1165690422058105
+    scale: 0.03888149559497833
+    zero_point: 132
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.4/conv/Conv_544:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.740009784698486
+    min_value: -29.179786682128906
+    scale: 0.1369403749704361
+    zero_point: 213
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.3/activation/Mul_1_545:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 21.895641326904297
+    min_value: -0.16997124254703522
+    scale: 0.08653181791305542
+    zero_point: 2
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.3/conv/Conv_549:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 21.895641326904297
+    min_value: -113.59635162353516
+    scale: 0.5313411355018616
+    zero_point: 214
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.2/activation/Mul_1_550:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 50.82215118408203
+    min_value: -0.16997124254703522
+    scale: 0.1999691128730774
+    zero_point: 1
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.2/conv/Conv_555:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 50.82215118408203
+    min_value: -591.2826538085938
+    scale: 2.5180580615997314
+    zero_point: 235
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.1/activation/Mul_1_556:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 217.52468872070312
+    min_value: -0.16997122764587402
+    scale: 0.8537045121192932
+    zero_point: 0
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.1/conv/Conv_557:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 217.52468872070312
+    min_value: -1140.738525390625
+    scale: 5.326522350311279
+    zero_point: 214
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.0/activation/Mul_1_558:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 112.0908432006836
+    min_value: -0.16997124254703522
+    scale: 0.44023847579956055
+    zero_point: 0
+  '@Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_1_562:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 43.9530143737793
+    min_value: -35.9774284362793
+    scale: 0.31345272064208984
+    zero_point: 115
+  '@InstanceNormalization_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_564:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 43.9530143737793
+    min_value: -35.9774284362793
+    scale: 0.31345272064208984
+    zero_point: 115
+  '@Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_565:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 16.225040435791016
+    min_value: -15.539398193359375
+    scale: 0.12456642836332321
+    zero_point: 125
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_566:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 16.225040435791016
+    min_value: -15.539398193359375
+    scale: 0.12456642836332321
+    zero_point: 125
+  '@Unsqueeze_/wav2vec2/feature_extractor/Unsqueeze_567:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.284131050109863
+    min_value: -8.704545974731445
+    scale: 0.06662226468324661
+    zero_point: 131
+  '@input_values_568:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.284131050109863
+    min_value: -8.704545974731445
+    scale: 0.06662226468324661
+    zero_point: 131
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Mul_561_acuity_mark_perm_572:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 43.9530143737793
+    min_value: -35.9774284362793
+    scale: 0.31345272064208984
+    zero_point: 115
+  '@Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_1_562_acuity_mark_perm_573:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 43.9530143737793
+    min_value: -35.9774284362793
+    scale: 0.31345272064208984
+    zero_point: 115
+  '@InstanceNormalization_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_564_acuity_mark_perm_574:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 16.225040435791016
+    min_value: -15.539398193359375
+    scale: 0.12456642836332321
+    zero_point: 125
+  '@Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_565_acuity_mark_perm_575:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 16.225040435791016
+    min_value: -15.539398193359375
+    scale: 0.12456642836332321
+    zero_point: 125
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_566_acuity_mark_perm_576:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.284131050109863
+    min_value: -8.704545974731445
+    scale: 0.06662226468324661
+    zero_point: 131
+  '@reshape_577:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.868475914001465
+    min_value: -3.8403639793395996
+    scale: 0.030230743810534477
+    zero_point: 127
+  '@fullconnect_578:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 12.372973442077637
+    min_value: -5.218989372253418
+    scale: 0.06898809224367142
+    zero_point: 76
+  '@reshape_579:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 12.372973442077637
+    min_value: -5.218989372253418
+    scale: 0.06898809224367142
+    zero_point: 76
+  '@reshape_580:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.2630414962768555
+    min_value: -0.16997122764587402
+    scale: 0.021305933594703674
+    zero_point: 8
+  '@fullconnect_581:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.675182819366455
+    min_value: -2.489821195602417
+    scale: 0.020254917442798615
+    zero_point: 123
+  '@reshape_582:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.675182819366455
+    min_value: -2.489821195602417
+    scale: 0.020254917442798615
+    zero_point: 123
+  '@reshape_583:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9124606251716614
+    min_value: -1.2012722492218018
+    scale: 0.008289148099720478
+    zero_point: 145
+  '@fullconnect_584:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.633978545665741
+    min_value: -0.4710947871208191
+    scale: 0.0043336208909749985
+    zero_point: 109
+  '@reshape_585:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.633978545665741
+    min_value: -0.4710947871208191
+    scale: 0.0043336208909749985
+    zero_point: 109
+  '@reshape_586:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0056281089782715
+    min_value: -2.352707624435425
+    scale: 0.01709151081740856
+    zero_point: 138
+  '@fullconnect_587:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.263041973114014
+    min_value: -3.8596246242523193
+    scale: 0.035775162279605865
+    zero_point: 108
+  '@reshape_588:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.263041973114014
+    min_value: -3.8596246242523193
+    scale: 0.035775162279605865
+    zero_point: 108
+  '@reshape_589:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 17.368576049804688
+    min_value: -0.16997124254703522
+    scale: 0.0687786191701889
+    zero_point: 2
+  '@fullconnect_590:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 146.61497497558594
+    min_value: -108.3333511352539
+    scale: 0.9997974038124084
+    zero_point: 108
+  '@reshape_591:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 146.61497497558594
+    min_value: -108.3333511352539
+    scale: 0.9997974038124084
+    zero_point: 108
+  '@reshape_592:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.834773302078247
+    min_value: -2.063007116317749
+    scale: 0.015285413712263107
+    zero_point: 135
+  '@fullconnect_593:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.4950592517852783
+    min_value: -2.0120038986206055
+    scale: 0.017674757167696953
+    zero_point: 114
+  '@reshape_594:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.4950592517852783
+    min_value: -2.0120038986206055
+    scale: 0.017674757167696953
+    zero_point: 114
+  '@reshape_595:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.1368725299835205
+    min_value: -4.579375743865967
+    scale: 0.026338228955864906
+    zero_point: 174
+  '@fullconnect_596:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 17.368576049804688
+    min_value: -11.40730094909668
+    scale: 0.11284657567739487
+    zero_point: 101
+  '@reshape_597:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 17.368576049804688
+    min_value: -11.40730094909668
+    scale: 0.11284657567739487
+    zero_point: 101
+  '@reshape_598:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.380332946777344
+    min_value: -0.16997122764587402
+    scale: 0.01784433051943779
+    zero_point: 10
+  '@fullconnect_599:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.976660251617432
+    min_value: -10.986457824707031
+    scale: 0.07044360041618347
+    zero_point: 156
+  '@reshape_600:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.976660251617432
+    min_value: -10.986457824707031
+    scale: 0.07044360041618347
+    zero_point: 156
+  '@reshape_601:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.663496494293213
+    min_value: -1.558430790901184
+    scale: 0.012635008431971073
+    zero_point: 123
+  '@fullconnect_602:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.668713927268982
+    min_value: -2.0252633094787598
+    scale: 0.014486185275018215
+    zero_point: 140
+  '@reshape_603:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.668713927268982
+    min_value: -2.0252633094787598
+    scale: 0.014486185275018215
+    zero_point: 140
+  '@reshape_604:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0307228565216064
+    min_value: -1.8615435361862183
+    scale: 0.01526378933340311
+    zero_point: 122
+  '@fullconnect_605:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.3571228981018066
+    min_value: -1.3904519081115723
+    scale: 0.010774803347885609
+    zero_point: 129
+  '@reshape_606:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.3571228981018066
+    min_value: -1.3904519081115723
+    scale: 0.010774803347885609
+    zero_point: 129
+  '@reshape_607:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.467182159423828
+    min_value: -9.195222854614258
+    scale: 0.05357806012034416
+    zero_point: 172
+  '@fullconnect_608:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.380358695983887
+    min_value: -17.519176483154297
+    scale: 0.08588053286075592
+    zero_point: 204
+  '@reshape_609:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.380358695983887
+    min_value: -17.519176483154297
+    scale: 0.08588053286075592
+    zero_point: 204
+  '@reshape_610:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.663496494293213
+    min_value: -1.558430790901184
+    scale: 0.012635008431971073
+    zero_point: 123
+  '@fullconnect_611:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.1752119064331055
+    min_value: -4.717422008514404
+    scale: 0.03879464045166969
+    zero_point: 122
+  '@reshape_612:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.1752119064331055
+    min_value: -4.717422008514404
+    scale: 0.03879464045166969
+    zero_point: 122
+  '@reshape_613:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.663496494293213
+    min_value: -1.558430790901184
+    scale: 0.012635008431971073
+    zero_point: 123
+  '@fullconnect_614:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.7716598510742188
+    min_value: -4.5548624992370605
+    scale: 0.03265303000807762
+    zero_point: 139
+  '@reshape_615:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.7716598510742188
+    min_value: -4.5548624992370605
+    scale: 0.03265303000807762
+    zero_point: 139
+  '@reshape_616:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 13.820418357849121
+    min_value: -0.16997122764587402
+    scale: 0.054864272475242615
+    zero_point: 3
+  '@fullconnect_617:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 118.02781677246094
+    min_value: -94.19817352294922
+    scale: 0.8322587609291077
+    zero_point: 113
+  '@reshape_618:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 118.02781677246094
+    min_value: -94.19817352294922
+    scale: 0.8322587609291077
+    zero_point: 113
+  '@reshape_619:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.2681379318237305
+    min_value: -2.217139482498169
+    scale: 0.017589321359992027
+    zero_point: 126
+  '@fullconnect_620:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.4445369243621826
+    min_value: -2.0769925117492676
+    scale: 0.01773148775100708
+    zero_point: 117
+  '@reshape_621:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.4445369243621826
+    min_value: -2.0769925117492676
+    scale: 0.01773148775100708
+    zero_point: 117
+  '@reshape_622:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.9707648754119873
+    min_value: -2.3595829010009766
+    scale: 0.016981756314635277
+    zero_point: 139
+  '@fullconnect_623:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.6046156883239746
+    min_value: -3.169473171234131
+    scale: 0.026565054431557655
+    zero_point: 119
+  '@reshape_624:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.6046156883239746
+    min_value: -3.169473171234131
+    scale: 0.026565054431557655
+    zero_point: 119
+  '@reshape_625:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.353927135467529
+    min_value: -13.47588062286377
+    scale: 0.07384238392114639
+    zero_point: 182
+  '@fullconnect_626:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 13.820418357849121
+    min_value: -13.656530380249023
+    scale: 0.1077527329325676
+    zero_point: 127
+  '@reshape_627:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 13.820418357849121
+    min_value: -13.656530380249023
+    scale: 0.1077527329325676
+    zero_point: 127
+  '@reshape_628:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.2681379318237305
+    min_value: -2.217139482498169
+    scale: 0.017589321359992027
+    zero_point: 126
+  '@fullconnect_629:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.563274383544922
+    min_value: -5.243661880493164
+    scale: 0.03845857456326485
+    zero_point: 136
+  '@reshape_630:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.563274383544922
+    min_value: -5.243661880493164
+    scale: 0.03845857456326485
+    zero_point: 136
+  '@reshape_631:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.2681379318237305
+    min_value: -2.217139482498169
+    scale: 0.017589321359992027
+    zero_point: 126
+  '@fullconnect_632:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.979516983032227
+    min_value: -5.950072288513184
+    scale: 0.04286113381385803
+    zero_point: 139
+  '@reshape_633:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.979516983032227
+    min_value: -5.950072288513184
+    scale: 0.04286113381385803
+    zero_point: 139
+  '@reshape_634:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 25.893396377563477
+    min_value: -0.16997122764587402
+    scale: 0.10220928490161896
+    zero_point: 2
+  '@fullconnect_635:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 162.52255249023438
+    min_value: -12.529205322265625
+    scale: 0.6864774823188782
+    zero_point: 18
+  '@reshape_636:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 162.52255249023438
+    min_value: -12.529205322265625
+    scale: 0.6864774823188782
+    zero_point: 18
+  '@reshape_637:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.0576109886169434
+    min_value: -3.4197402000427246
+    scale: 0.02540137805044651
+    zero_point: 135
+  '@fullconnect_638:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.1955666542053223
+    min_value: -2.240640878677368
+    scale: 0.017396893352270126
+    zero_point: 129
+  '@reshape_639:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.1955666542053223
+    min_value: -2.240640878677368
+    scale: 0.017396893352270126
+    zero_point: 129
+  '@reshape_640:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5449386835098267
+    min_value: -1.659033179283142
+    scale: 0.01256459578871727
+    zero_point: 132
+  '@fullconnect_641:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8678390979766846
+    min_value: -3.211008310317993
+    scale: 0.019917048513889313
+    zero_point: 161
+  '@reshape_642:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8678390979766846
+    min_value: -3.211008310317993
+    scale: 0.019917048513889313
+    zero_point: 161
+  '@reshape_643:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.708376407623291
+    min_value: -30.42050552368164
+    scale: 0.14952503144741058
+    zero_point: 203
+  '@fullconnect_644:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 25.893396377563477
+    min_value: -22.172582626342773
+    scale: 0.18849404156208038
+    zero_point: 118
+  '@reshape_645:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 25.893396377563477
+    min_value: -22.172582626342773
+    scale: 0.18849404156208038
+    zero_point: 118
+  '@reshape_646:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.0576109886169434
+    min_value: -3.4197402000427246
+    scale: 0.02540137805044651
+    zero_point: 135
+  '@fullconnect_647:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.874127388000488
+    min_value: -6.698605060577393
+    scale: 0.05714797228574753
+    zero_point: 117
+  '@reshape_648:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.874127388000488
+    min_value: -6.698605060577393
+    scale: 0.05714797228574753
+    zero_point: 117
+  '@reshape_649:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.0576109886169434
+    min_value: -3.4197402000427246
+    scale: 0.02540137805044651
+    zero_point: 135
+  '@fullconnect_650:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.764145851135254
+    min_value: -5.9759745597839355
+    scale: 0.04603968560695648
+    zero_point: 130
+  '@reshape_651:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.764145851135254
+    min_value: -5.9759745597839355
+    scale: 0.04603968560695648
+    zero_point: 130
+  '@reshape_652:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.628047943115234
+    min_value: -0.16997122764587402
+    scale: 0.018815763294696808
+    zero_point: 9
+  '@fullconnect_653:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5096933841705322
+    min_value: -3.550640344619751
+    scale: 0.02768758311867714
+    zero_point: 128
+  '@reshape_654:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5096933841705322
+    min_value: -3.550640344619751
+    scale: 0.02768758311867714
+    zero_point: 128
+  '@reshape_655:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9278817176818848
+    min_value: -2.772263288497925
+    scale: 0.022353509441018105
+    zero_point: 124
+  '@fullconnect_656:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.20458722114563
+    min_value: -2.5840907096862793
+    scale: 0.018779130652546883
+    zero_point: 138
+  '@reshape_657:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.20458722114563
+    min_value: -2.5840907096862793
+    scale: 0.018779130652546883
+    zero_point: 138
+  '@reshape_658:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4880343675613403
+    min_value: -1.506296157836914
+    scale: 0.01174247171729803
+    zero_point: 128
+  '@fullconnect_659:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.9743642807006836
+    min_value: -2.898972511291504
+    scale: 0.01911112479865551
+    zero_point: 152
+  '@reshape_660:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.9743642807006836
+    min_value: -2.898972511291504
+    scale: 0.01911112479865551
+    zero_point: 152
+  '@reshape_661:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.461128234863281
+    min_value: -54.329959869384766
+    scale: 0.23839642107486725
+    zero_point: 228
+  '@fullconnect_662:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.628056526184082
+    min_value: -15.245668411254883
+    scale: 0.07793617993593216
+    zero_point: 196
+  '@reshape_663:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.628056526184082
+    min_value: -15.245668411254883
+    scale: 0.07793617993593216
+    zero_point: 196
+  '@reshape_664:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9278817176818848
+    min_value: -2.772263288497925
+    scale: 0.022353509441018105
+    zero_point: 124
+  '@fullconnect_665:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.610487461090088
+    min_value: -7.638526439666748
+    scale: 0.059800054877996445
+    zero_point: 128
+  '@reshape_666:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.610487461090088
+    min_value: -7.638526439666748
+    scale: 0.059800054877996445
+    zero_point: 128
+  '@reshape_667:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9278817176818848
+    min_value: -2.772263288497925
+    scale: 0.022353509441018105
+    zero_point: 124
+  '@fullconnect_668:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.215120315551758
+    min_value: -6.159226894378662
+    scale: 0.04460528492927551
+    zero_point: 138
+  '@reshape_669:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.215120315551758
+    min_value: -6.159226894378662
+    scale: 0.04460528492927551
+    zero_point: 138
+  '@reshape_670:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.666517734527588
+    min_value: -0.16997122764587402
+    scale: 0.022888191044330597
+    zero_point: 7
+  '@fullconnect_671:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.895343065261841
+    min_value: -4.958258628845215
+    scale: 0.03079843707382679
+    zero_point: 161
+  '@reshape_672:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.895343065261841
+    min_value: -4.958258628845215
+    scale: 0.03079843707382679
+    zero_point: 161
+  '@reshape_673:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.55554461479187
+    min_value: -3.0358879566192627
+    scale: 0.021927187219262123
+    zero_point: 138
+  '@fullconnect_674:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.146724224090576
+    min_value: -2.1113221645355225
+    scale: 0.016698220744729042
+    zero_point: 126
+  '@reshape_675:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.146724224090576
+    min_value: -2.1113221645355225
+    scale: 0.016698220744729042
+    zero_point: 126
+  '@reshape_676:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4129830598831177
+    min_value: -1.3551206588745117
+    scale: 0.010855307802557945
+    zero_point: 125
+  '@fullconnect_677:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0279195308685303
+    min_value: -3.0303566455841064
+    scale: 0.01983637735247612
+    zero_point: 153
+  '@reshape_678:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0279195308685303
+    min_value: -3.0303566455841064
+    scale: 0.01983637735247612
+    zero_point: 153
+  '@reshape_679:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.086719989776611
+    min_value: -47.95433807373047
+    scale: 0.2080041468143463
+    zero_point: 231
+  '@fullconnect_680:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.666517734527588
+    min_value: -14.507437705993652
+    scale: 0.07911355048418045
+    zero_point: 183
+  '@reshape_681:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.666517734527588
+    min_value: -14.507437705993652
+    scale: 0.07911355048418045
+    zero_point: 183
+  '@reshape_682:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.55554461479187
+    min_value: -3.0358879566192627
+    scale: 0.021927187219262123
+    zero_point: 138
+  '@fullconnect_683:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.430589199066162
+    min_value: -6.305141448974609
+    scale: 0.05386561155319214
+    zero_point: 117
+  '@reshape_684:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.430589199066162
+    min_value: -6.305141448974609
+    scale: 0.05386561155319214
+    zero_point: 117
+  '@reshape_685:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.55554461479187
+    min_value: -3.0358879566192627
+    scale: 0.021927187219262123
+    zero_point: 138
+  '@fullconnect_686:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.9979729652404785
+    min_value: -5.918718338012695
+    scale: 0.042810551822185516
+    zero_point: 138
+  '@reshape_687:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.9979729652404785
+    min_value: -5.918718338012695
+    scale: 0.042810551822185516
+    zero_point: 138
+  '@reshape_688:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.424057960510254
+    min_value: -0.16997122764587402
+    scale: 0.02978050708770752
+    zero_point: 6
+  '@fullconnect_689:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.32490348815918
+    min_value: -17.40983009338379
+    scale: 0.08523424714803696
+    zero_point: 204
+  '@reshape_690:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.32490348815918
+    min_value: -17.40983009338379
+    scale: 0.08523424714803696
+    zero_point: 204
+  '@reshape_691:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.453645706176758
+    min_value: -3.297260046005249
+    scale: 0.022552572190761566
+    zero_point: 146
+  '@fullconnect_692:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.556203842163086
+    min_value: -2.315648078918457
+    scale: 0.019105302169919014
+    zero_point: 121
+  '@reshape_693:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.556203842163086
+    min_value: -2.315648078918457
+    scale: 0.019105302169919014
+    zero_point: 121
+  '@reshape_694:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5207278728485107
+    min_value: -1.9936163425445557
+    scale: 0.02162487991154194
+    zero_point: 92
+  '@fullconnect_695:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.641613483428955
+    min_value: -8.997968673706055
+    scale: 0.045645419508218765
+    zero_point: 197
+  '@reshape_696:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.641613483428955
+    min_value: -8.997968673706055
+    scale: 0.045645419508218765
+    zero_point: 197
+  '@reshape_697:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.789815902709961
+    min_value: -51.60153579711914
+    scale: 0.22114254534244537
+    zero_point: 233
+  '@fullconnect_698:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.424057960510254
+    min_value: -11.735919952392578
+    scale: 0.0751371681690216
+    zero_point: 156
+  '@reshape_699:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.424057960510254
+    min_value: -11.735919952392578
+    scale: 0.0751371681690216
+    zero_point: 156
+  '@reshape_700:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.453645706176758
+    min_value: -3.297260046005249
+    scale: 0.022552572190761566
+    zero_point: 146
+  '@fullconnect_701:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.336196422576904
+    min_value: -6.7901411056518555
+    scale: 0.0553973987698555
+    zero_point: 123
+  '@reshape_702:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.336196422576904
+    min_value: -6.7901411056518555
+    scale: 0.0553973987698555
+    zero_point: 123
+  '@reshape_703:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.453645706176758
+    min_value: -3.297260046005249
+    scale: 0.022552572190761566
+    zero_point: 146
+  '@fullconnect_704:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.306806564331055
+    min_value: -5.281971454620361
+    scale: 0.04152461886405945
+    zero_point: 127
+  '@reshape_705:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.306806564331055
+    min_value: -5.281971454620361
+    scale: 0.04152461886405945
+    zero_point: 127
+  '@reshape_706:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 15.190122604370117
+    min_value: -0.16997122764587402
+    scale: 0.06023566424846649
+    zero_point: 3
+  '@fullconnect_707:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 84.19601440429688
+    min_value: -52.00171661376953
+    scale: 0.5341086983680725
+    zero_point: 97
+  '@reshape_708:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 84.19601440429688
+    min_value: -52.00171661376953
+    scale: 0.5341086983680725
+    zero_point: 97
+  '@reshape_709:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.10428524017334
+    min_value: -3.2016332149505615
+    scale: 0.020807525143027306
+    zero_point: 154
+  '@fullconnect_710:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0791637897491455
+    min_value: -2.058849811553955
+    scale: 0.01622750610113144
+    zero_point: 127
+  '@reshape_711:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.0791637897491455
+    min_value: -2.058849811553955
+    scale: 0.01622750610113144
+    zero_point: 127
+  '@reshape_712:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.6648359298706055
+    min_value: -1.3786927461624146
+    scale: 0.011935406364500523
+    zero_point: 116
+  '@fullconnect_713:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.327720284461975
+    min_value: -1.3872897624969482
+    scale: 0.010647098533809185
+    zero_point: 130
+  '@reshape_714:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.327720284461975
+    min_value: -1.3872897624969482
+    scale: 0.010647098533809185
+    zero_point: 130
+  '@reshape_715:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.493109703063965
+    min_value: -19.43340301513672
+    scale: 0.09382946789264679
+    zero_point: 207
+  '@fullconnect_716:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 15.190122604370117
+    min_value: -11.359256744384766
+    scale: 0.10411521047353745
+    zero_point: 109
+  '@reshape_717:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 15.190122604370117
+    min_value: -11.359256744384766
+    scale: 0.10411521047353745
+    zero_point: 109
+  '@reshape_718:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.10428524017334
+    min_value: -3.2016332149505615
+    scale: 0.020807525143027306
+    zero_point: 154
+  '@fullconnect_719:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.833474636077881
+    min_value: -6.513791084289551
+    scale: 0.05234221741557121
+    zero_point: 124
+  '@reshape_720:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.833474636077881
+    min_value: -6.513791084289551
+    scale: 0.05234221741557121
+    zero_point: 124
+  '@reshape_721:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.10428524017334
+    min_value: -3.2016332149505615
+    scale: 0.020807525143027306
+    zero_point: 154
+  '@fullconnect_722:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.427202224731445
+    min_value: -5.348838806152344
+    scale: 0.03833741694688797
+    zero_point: 140
+  '@reshape_723:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.427202224731445
+    min_value: -5.348838806152344
+    scale: 0.03833741694688797
+    zero_point: 140
+  '@reshape_724:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.400306701660156
+    min_value: -0.16997122764587402
+    scale: 0.03360893577337265
+    zero_point: 5
+  '@fullconnect_725:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.168227195739746
+    min_value: -10.025189399719238
+    scale: 0.07134672999382019
+    zero_point: 141
+  '@reshape_726:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.168227195739746
+    min_value: -10.025189399719238
+    scale: 0.07134672999382019
+    zero_point: 141
+  '@reshape_727:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.6339380741119385
+    min_value: -2.874098300933838
+    scale: 0.02160014398396015
+    zero_point: 133
+  '@fullconnect_728:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5783426761627197
+    min_value: -2.3994786739349365
+    scale: 0.023442436009645462
+    zero_point: 102
+  '@reshape_729:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.5783426761627197
+    min_value: -2.3994786739349365
+    scale: 0.023442436009645462
+    zero_point: 102
+  '@reshape_730:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8705459833145142
+    min_value: -0.9176031947135925
+    scale: 0.0070123495534062386
+    zero_point: 131
+  '@fullconnect_731:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0411889553070068
+    min_value: -0.9760015606880188
+    scale: 0.007910550571978092
+    zero_point: 123
+  '@reshape_732:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0411889553070068
+    min_value: -0.9760015606880188
+    scale: 0.007910550571978092
+    zero_point: 123
+  '@reshape_733:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.520750999450684
+    min_value: -14.503429412841797
+    scale: 0.07460463047027588
+    zero_point: 194
+  '@fullconnect_734:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.400306701660156
+    min_value: -8.776725769042969
+    scale: 0.06736091524362564
+    zero_point: 130
+  '@reshape_735:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.400306701660156
+    min_value: -8.776725769042969
+    scale: 0.06736091524362564
+    zero_point: 130
+  '@reshape_736:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.6339380741119385
+    min_value: -2.874098300933838
+    scale: 0.02160014398396015
+    zero_point: 133
+  '@fullconnect_737:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.817716598510742
+    min_value: -6.916499137878418
+    scale: 0.05778123810887337
+    zero_point: 120
+  '@reshape_738:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.817716598510742
+    min_value: -6.916499137878418
+    scale: 0.05778123810887337
+    zero_point: 120
+  '@reshape_739:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.6339380741119385
+    min_value: -2.874098300933838
+    scale: 0.02160014398396015
+    zero_point: 133
+  '@fullconnect_740:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.189669609069824
+    min_value: -5.375810623168945
+    scale: 0.04143325611948967
+    zero_point: 130
+  '@reshape_741:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.189669609069824
+    min_value: -5.375810623168945
+    scale: 0.04143325611948967
+    zero_point: 130
+  '@reshape_742:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.164393901824951
+    min_value: -0.16997122764587402
+    scale: 0.0287622157484293
+    zero_point: 6
+  '@fullconnect_743:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.574507713317871
+    min_value: -10.718111991882324
+    scale: 0.07565733045339584
+    zero_point: 142
+  '@reshape_744:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8.574507713317871
+    min_value: -10.718111991882324
+    scale: 0.07565733045339584
+    zero_point: 142
+  '@reshape_745:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.1065733432769775
+    min_value: -3.154193162918091
+    scale: 0.02455202490091324
+    zero_point: 128
+  '@fullconnect_746:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.34757137298584
+    min_value: -2.2360730171203613
+    scale: 0.021896645426750183
+    zero_point: 102
+  '@reshape_747:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.34757137298584
+    min_value: -2.2360730171203613
+    scale: 0.021896645426750183
+    zero_point: 102
+  '@reshape_748:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.1502410173416138
+    min_value: -1.1206464767456055
+    scale: 0.00890544056892395
+    zero_point: 126
+  '@fullconnect_749:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4557056427001953
+    min_value: -1.391954779624939
+    scale: 0.011167296208441257
+    zero_point: 125
+  '@reshape_750:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4557056427001953
+    min_value: -1.391954779624939
+    scale: 0.011167296208441257
+    zero_point: 125
+  '@reshape_751:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.244376182556152
+    min_value: -7.163523197174072
+    scale: 0.04473686218261719
+    zero_point: 160
+  '@fullconnect_752:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.164393901824951
+    min_value: -7.826952934265137
+    scale: 0.05878959223628044
+    zero_point: 133
+  '@reshape_753:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 7.164393901824951
+    min_value: -7.826952934265137
+    scale: 0.05878959223628044
+    zero_point: 133
+  '@reshape_754:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.1065733432769775
+    min_value: -3.154193162918091
+    scale: 0.02455202490091324
+    zero_point: 128
+  '@fullconnect_755:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.8270745277404785
+    min_value: -6.6846466064453125
+    scale: 0.049065571278333664
+    zero_point: 136
+  '@reshape_756:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.8270745277404785
+    min_value: -6.6846466064453125
+    scale: 0.049065571278333664
+    zero_point: 136
+  '@reshape_757:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.1065733432769775
+    min_value: -3.154193162918091
+    scale: 0.02455202490091324
+    zero_point: 128
+  '@fullconnect_758:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.0131120681762695
+    min_value: -5.525111675262451
+    scale: 0.0413263663649559
+    zero_point: 134
+  '@reshape_759:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.0131120681762695
+    min_value: -5.525111675262451
+    scale: 0.0413263663649559
+    zero_point: 134
+  '@reshape_760:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.112829685211182
+    min_value: -0.16997122764587402
+    scale: 0.020716864615678787
+    zero_point: 8
+  '@fullconnect_761:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 10.331454277038574
+    min_value: -10.603245735168457
+    scale: 0.08209685981273651
+    zero_point: 129
+  '@reshape_762:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 10.331454277038574
+    min_value: -10.603245735168457
+    scale: 0.08209685981273651
+    zero_point: 129
+  '@reshape_763:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9498071670532227
+    min_value: -3.0934956073760986
+    scale: 0.02369922585785389
+    zero_point: 131
+  '@fullconnect_764:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.7722275257110596
+    min_value: -2.330798387527466
+    scale: 0.020011866465210915
+    zero_point: 116
+  '@reshape_765:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.7722275257110596
+    min_value: -2.330798387527466
+    scale: 0.020011866465210915
+    zero_point: 116
+  '@reshape_766:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.641677737236023
+    min_value: -0.8564491271972656
+    scale: 0.005875007249414921
+    zero_point: 146
+  '@fullconnect_767:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.5949662923812866
+    min_value: -0.5892736315727234
+    scale: 0.0046440777368843555
+    zero_point: 127
+  '@reshape_768:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.5949662923812866
+    min_value: -0.5892736315727234
+    scale: 0.0046440777368843555
+    zero_point: 127
+  '@reshape_769:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.159858703613281
+    min_value: -3.8878254890441895
+    scale: 0.031559545546770096
+    zero_point: 123
+  '@fullconnect_770:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.112830638885498
+    min_value: -6.563077449798584
+    scale: 0.04578787460923195
+    zero_point: 143
+  '@reshape_771:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.112830638885498
+    min_value: -6.563077449798584
+    scale: 0.04578787460923195
+    zero_point: 143
+  '@reshape_772:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9498071670532227
+    min_value: -3.0934956073760986
+    scale: 0.02369922585785389
+    zero_point: 131
+  '@fullconnect_773:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.608269691467285
+    min_value: -6.06982421875
+    scale: 0.049718014895915985
+    zero_point: 122
+  '@reshape_774:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.608269691467285
+    min_value: -6.06982421875
+    scale: 0.049718014895915985
+    zero_point: 122
+  '@reshape_775:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9498071670532227
+    min_value: -3.0934956073760986
+    scale: 0.02369922585785389
+    zero_point: 131
+  '@fullconnect_776:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.3263959884643555
+    min_value: -4.663963317871094
+    scale: 0.03917787969112396
+    zero_point: 119
+  '@reshape_777:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.3263959884643555
+    min_value: -4.663963317871094
+    scale: 0.03917787969112396
+    zero_point: 119
+  '@reshape_778:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.5048296451568604
+    min_value: -2.584831714630127
+    scale: 0.019959457218647003
+    zero_point: 130
+  '@fullconnect_779:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.3815815448760986
+    min_value: -2.5379419326782227
+    scale: 0.019292248412966728
+    zero_point: 132
+  '@reshape_780:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.3815815448760986
+    min_value: -2.5379419326782227
+    scale: 0.019292248412966728
+    zero_point: 132
+  '@reshape_781:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.079603672027588
+    min_value: -1.9150214195251465
+    scale: 0.015665195882320404
+    zero_point: 122
+  '@fullconnect_782:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.301240921020508
+    min_value: -6.443755626678467
+    scale: 0.04998037964105606
+    zero_point: 129
+  '@reshape_783:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.301240921020508
+    min_value: -6.443755626678467
+    scale: 0.04998037964105606
+    zero_point: 129
+  '@reshape_784:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.5048296451568604
+    min_value: -2.584831714630127
+    scale: 0.019959457218647003
+    zero_point: 130
+  '@fullconnect_785:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.5033392906188965
+    min_value: -6.189402103424072
+    scale: 0.045853886753320694
+    zero_point: 135
+  '@reshape_786:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.5033392906188965
+    min_value: -6.189402103424072
+    scale: 0.045853886753320694
+    zero_point: 135
+  '@reshape_787:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.5048296451568604
+    min_value: -2.584831714630127
+    scale: 0.019959457218647003
+    zero_point: 130
+  '@fullconnect_788:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.127278804779053
+    min_value: -4.832084655761719
+    scale: 0.03905633091926575
+    zero_point: 124
+  '@reshape_789:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.127278804779053
+    min_value: -4.832084655761719
+    scale: 0.03905633091926575
+    zero_point: 124
+  '@reshape_790:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4692413806915283
+    min_value: -1.5375393629074097
+    scale: 0.011791296303272247
+    zero_point: 130
+  '@fullconnect_791:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.7211438417434692
+    min_value: -2.2884583473205566
+    scale: 0.015723928809165955
+    zero_point: 146
+  '@reshape_792:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.7211438417434692
+    min_value: -2.2884583473205566
+    scale: 0.015723928809165955
+    zero_point: 146
+  '@reshape_793:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4692413806915283
+    min_value: -1.5375393629074097
+    scale: 0.011791296303272247
+    zero_point: 130
+  '@fullconnect_794:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.173539638519287
+    min_value: -3.9987456798553467
+    scale: 0.03204817697405815
+    zero_point: 125
+  '@reshape_795:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.173539638519287
+    min_value: -3.9987456798553467
+    scale: 0.03204817697405815
+    zero_point: 125
+  '@reshape_796:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4692413806915283
+    min_value: -1.5375393629074097
+    scale: 0.011791296303272247
+    zero_point: 130
+  '@fullconnect_797:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.798213005065918
+    min_value: -5.1165690422058105
+    scale: 0.03888149559497833
+    zero_point: 132
+  '@reshape_798:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.798213005065918
+    min_value: -5.1165690422058105
+    scale: 0.03888149559497833
+    zero_point: 132
+  '@Mul_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Mul_561_Add_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Add_559:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 112.0908432006836
+    min_value: -89.33869934082031
+    scale: 0.7899197340011597
+    zero_point: 113
+  '@Constant__wav2vec2_encoder_layers_11_attention_Sqrt_1__wav2vec2_encoder_layers_11_attention_Sqrt_1_output_0_as_const_59:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_11_attention_Sqrt_2__wav2vec2_encoder_layers_11_attention_Sqrt_2_output_0_as_const_61:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_10_attention_Sqrt_1__wav2vec2_encoder_layers_10_attention_Sqrt_1_output_0_as_const_103:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_10_attention_Sqrt_2__wav2vec2_encoder_layers_10_attention_Sqrt_2_output_0_as_const_105:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_9_attention_Sqrt_1__wav2vec2_encoder_layers_9_attention_Sqrt_1_output_0_as_const_147:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_9_attention_Sqrt_2__wav2vec2_encoder_layers_9_attention_Sqrt_2_output_0_as_const_149:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_8_attention_Sqrt_1__wav2vec2_encoder_layers_8_attention_Sqrt_1_output_0_as_const_191:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_8_attention_Sqrt_2__wav2vec2_encoder_layers_8_attention_Sqrt_2_output_0_as_const_193:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_7_attention_Sqrt_1__wav2vec2_encoder_layers_7_attention_Sqrt_1_output_0_as_const_235:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_7_attention_Sqrt_2__wav2vec2_encoder_layers_7_attention_Sqrt_2_output_0_as_const_237:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_6_attention_Sqrt_1__wav2vec2_encoder_layers_6_attention_Sqrt_1_output_0_as_const_279:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_6_attention_Sqrt_2__wav2vec2_encoder_layers_6_attention_Sqrt_2_output_0_as_const_281:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_1__wav2vec2_encoder_layers_5_attention_Sqrt_1_output_0_as_const_323:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_2__wav2vec2_encoder_layers_5_attention_Sqrt_2_output_0_as_const_325:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_1__wav2vec2_encoder_layers_4_attention_Sqrt_1_output_0_as_const_367:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_2__wav2vec2_encoder_layers_4_attention_Sqrt_2_output_0_as_const_369:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_1__wav2vec2_encoder_layers_3_attention_Sqrt_1_output_0_as_const_411:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_2__wav2vec2_encoder_layers_3_attention_Sqrt_2_output_0_as_const_413:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_1__wav2vec2_encoder_layers_2_attention_Sqrt_1_output_0_as_const_455:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_2__wav2vec2_encoder_layers_2_attention_Sqrt_2_output_0_as_const_457:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_1__wav2vec2_encoder_layers_1_attention_Sqrt_1_output_0_as_const_498:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_2__wav2vec2_encoder_layers_1_attention_Sqrt_2_output_0_as_const_500:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv_507:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.298625648021698
+    min_value: -1.0701230764389038
+    scale: 0.005367641802877188
+    zero_point: 199
+  '@Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv_507:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 576119.9997317232
+    min_value: -576120.0
+    scale: 0.00026827678084373474
+    zero_point: 0
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.6/conv/Conv_523:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3466394245624542
+    min_value: -0.34710627794265747
+    scale: 0.0027205715887248516
+    zero_point: 128
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.6/conv/Conv_523:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 50633.257788922056
+    min_value: -50633.2578125
+    scale: 2.3577948013553395e-05
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_1__wav2vec2_encoder_layers_0_attention_Sqrt_1_output_0_as_const_534:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_2__wav2vec2_encoder_layers_0_attention_Sqrt_2_output_0_as_const_536:data':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3535533845424652
+    min_value: 0.0
+    scale: 0.0013864838983863592
+    zero_point: 0
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.5/conv/Conv_540:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0827252864837646
+    min_value: -0.8609253168106079
+    scale: 0.007622159086167812
+    zero_point: 113
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.5/conv/Conv_540:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 379361.9373233458
+    min_value: -379361.9375
+    scale: 0.00017665416817180812
+    zero_point: 0
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.4/conv/Conv_544:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.008009910583496
+    min_value: -2.0226993560791016
+    scale: 0.01580670289695263
+    zero_point: 128
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.4/conv/Conv_544:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2937290.9986322173
+    min_value: -2937291.0
+    scale: 0.0013677827082574368
+    zero_point: 0
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.3/conv/Conv_549:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.6591243743896484
+    min_value: -3.5516741275787354
+    scale: 0.024356070905923843
+    zero_point: 146
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.3/conv/Conv_549:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 10459236.995129539
+    min_value: -10459237.0
+    scale: 0.004870461765676737
+    zero_point: 0
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.2/conv/Conv_555:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5263522863388062
+    min_value: -3.908148765563965
+    scale: 0.021311769261956215
+    zero_point: 183
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.2/conv/Conv_555:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 39071215.98180605
+    min_value: -39071216.0
+    scale: 0.01819395273923874
+    zero_point: 0
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.1/conv/Conv_557:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8828860521316528
+    min_value: -3.5976507663726807
+    scale: 0.021492302417755127
+    zero_point: 167
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.1/conv/Conv_557:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 20318927.99053826
+    min_value: -20318928.0
+    scale: 0.009461738169193268
+    zero_point: 0
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_566:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.6735703349113464
+    min_value: -0.6219910383224487
+    scale: 0.005080632399767637
+    zero_point: 122
+  '@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_566:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 726887.1871615167
+    min_value: -726887.1875
+    scale: 0.00033848322345875204
+    zero_point: 0
+  '@fullconnect_578:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.1453343778848648
+    min_value: -0.16150858998298645
+    scale: 0.0012033057864755392
+    zero_point: 134
+  '@fullconnect_578:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 78118.64840112317
+    min_value: -78118.6484375
+    scale: 3.6376830394146964e-05
+    zero_point: 0
+  '@fullconnect_581:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.6316429376602173
+    min_value: -0.39344343543052673
+    scale: 0.004019946791231632
+    zero_point: 98
+  '@fullconnect_581:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 183929.21866435127
+    min_value: -183929.21875
+    scale: 8.564871677663177e-05
+    zero_point: 0
+  '@fullconnect_584:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3878746032714844
+    min_value: -0.35750821232795715
+    scale: 0.002923069754615426
+    zero_point: 122
+  '@fullconnect_584:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 52033.007788270246
+    min_value: -52033.0078125
+    scale: 2.4229757400462403e-05
+    zero_point: 0
+  '@fullconnect_587:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.424665629863739
+    min_value: -0.4560439884662628
+    scale: 0.003453763434663415
+    zero_point: 132
+  '@fullconnect_587:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 126766.03119096997
+    min_value: -126766.03125
+    scale: 5.90300332987681e-05
+    zero_point: 0
+  '@fullconnect_590:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5.758013725280762
+    min_value: -4.308422565460205
+    scale: 0.03947622328996658
+    zero_point: 109
+  '@fullconnect_590:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 5830675.99728488
+    min_value: -5830676.0
+    scale: 0.00271512009203434
+    zero_point: 0
+  '@fullconnect_593:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.4242594242095947
+    min_value: -0.3827746510505676
+    scale: 0.0031648394651710987
+    zero_point: 121
+  '@fullconnect_593:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 103886.41401412412
+    min_value: -103886.4140625
+    scale: 4.8375881306128576e-05
+    zero_point: 0
+  '@fullconnect_596:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.269325613975525
+    min_value: -1.2472572326660156
+    scale: 0.009868952445685863
+    zero_point: 126
+  '@fullconnect_596:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 558196.9997400693
+    min_value: -558197.0
+    scale: 0.00025993073359131813
+    zero_point: 0
+  '@fullconnect_599:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.929645538330078
+    min_value: -2.038853406906128
+    scale: 0.023405879735946655
+    zero_point: 87
+  '@fullconnect_599:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 896922.8745823377
+    min_value: -896922.875
+    scale: 0.0004176622605882585
+    zero_point: 0
+  '@fullconnect_602:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.32990798354148865
+    min_value: -0.28738918900489807
+    scale: 0.0024207732640206814
+    zero_point: 119
+  '@fullconnect_602:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 65683.9921569135
+    min_value: -65683.9921875
+    scale: 3.058649235754273e-05
+    zero_point: 0
+  '@fullconnect_605:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.43359488248825073
+    min_value: -0.3511570394039154
+    scale: 0.003077458357438445
+    zero_point: 114
+  '@fullconnect_605:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 100875.20307802633
+    min_value: -100875.203125
+    scale: 4.697367694461718e-05
+    zero_point: 0
+  '@fullconnect_608:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.399818778038025
+    min_value: -1.3527191877365112
+    scale: 0.010794266127049923
+    zero_point: 125
+  '@fullconnect_608:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1241966.749421664
+    min_value: -1241966.75
+    scale: 0.0005783358355984092
+    zero_point: 0
+  '@fullconnect_611:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0225961208343506
+    min_value: -1.0495734214782715
+    scale: 0.008126155473291874
+    zero_point: 129
+  '@fullconnect_611:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 220490.82802232596
+    min_value: -220490.828125
+    scale: 0.00010267404286423698
+    zero_point: 0
+  '@fullconnect_614:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9139686822891235
+    min_value: -0.8687478303909302
+    scale: 0.006991045083850622
+    zero_point: 124
+  '@fullconnect_614:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 189691.34366166807
+    min_value: -189691.34375
+    scale: 8.833191532175988e-05
+    zero_point: 0
+  '@fullconnect_617:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.037271738052368
+    min_value: -3.0465474128723145
+    scale: 0.023858115077018738
+    zero_point: 128
+  '@fullconnect_617:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2810966.248691042
+    min_value: -2810966.25
+    scale: 0.0013089581625536084
+    zero_point: 0
+  '@fullconnect_620:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.36975201964378357
+    min_value: -0.3535005748271942
+    scale: 0.0028362846933305264
+    zero_point: 125
+  '@fullconnect_620:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 107134.35932511167
+    min_value: -107134.359375
+    scale: 4.9888323701452463e-05
+    zero_point: 0
+  '@fullconnect_623:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7426266670227051
+    min_value: -0.8410897254943848
+    scale: 0.006210652645677328
+    zero_point: 135
+  '@fullconnect_623:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 226490.3592695322
+    min_value: -226490.359375
+    scale: 0.00010546779230935499
+    zero_point: 0
+  '@fullconnect_626:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8260819315910339
+    min_value: -0.7471753358840942
+    scale: 0.006169636268168688
+    zero_point: 121
+  '@fullconnect_626:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 978351.9995444193
+    min_value: -978352.0
+    scale: 0.0004555806517601013
+    zero_point: 0
+  '@fullconnect_629:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.047254204750061
+    min_value: -0.8616140484809875
+    scale: 0.007485758047550917
+    zero_point: 115
+  '@fullconnect_629:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 282757.9061183306
+    min_value: -282757.90625
+    scale: 0.00013166941062081605
+    zero_point: 0
+  '@fullconnect_632:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9851670861244202
+    min_value: -0.7015124559402466
+    scale: 0.006614429876208305
+    zero_point: 106
+  '@fullconnect_632:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 249845.40613365668
+    min_value: -249845.40625
+    scale: 0.00011634333350230008
+    zero_point: 0
+  '@fullconnect_635:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.5019121170043945
+    min_value: -0.7534019351005554
+    scale: 0.020609073340892792
+    zero_point: 37
+  '@fullconnect_635:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4523542.497893562
+    min_value: -4523542.5
+    scale: 0.002106438623741269
+    zero_point: 0
+  '@fullconnect_638:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3135862648487091
+    min_value: -0.32669728994369507
+    scale: 0.0025109159760177135
+    zero_point: 130
+  '@fullconnect_638:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 136968.06243621928
+    min_value: -136968.0625
+    scale: 6.378072430379688e-05
+    zero_point: 0
+  '@fullconnect_641:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7488643527030945
+    min_value: -1.0234135389328003
+    scale: 0.006950109265744686
+    zero_point: 147
+  '@fullconnect_641:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 187529.68741267468
+    min_value: -187529.6875
+    scale: 8.732531568966805e-05
+    zero_point: 0
+  '@fullconnect_644:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8625344038009644
+    min_value: -0.7028047442436218
+    scale: 0.006138584576547146
+    zero_point: 114
+  '@fullconnect_644:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1971115.249082128
+    min_value: -1971115.25
+    scale: 0.0009178720647469163
+    zero_point: 0
+  '@fullconnect_647:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.079909086227417
+    min_value: -0.9918906688690186
+    scale: 0.008124704472720623
+    zero_point: 122
+  '@fullconnect_647:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 443194.8747936213
+    min_value: -443194.875
+    scale: 0.0002063786960206926
+    zero_point: 0
+  '@fullconnect_650:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8471480011940002
+    min_value: -0.688768208026886
+    scale: 0.006023200694471598
+    zero_point: 114
+  '@fullconnect_650:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 328559.8435970024
+    min_value: -328559.84375
+    scale: 0.00015299759979825467
+    zero_point: 0
+  '@fullconnect_653:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8308852314949036
+    min_value: -1.477508544921875
+    scale: 0.009052524343132973
+    zero_point: 163
+  '@fullconnect_653:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 365781.21857966983
+    min_value: -365781.21875
+    scale: 0.00017033015319611877
+    zero_point: 0
+  '@fullconnect_656:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.34774014353752136
+    min_value: -0.4302347004413605
+    scale: 0.0030508816707879305
+    zero_point: 141
+  '@fullconnect_656:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 146453.9061818021
+    min_value: -146453.90625
+    scale: 6.819791451562196e-05
+    zero_point: 0
+  '@fullconnect_659:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8262938857078552
+    min_value: -0.616582989692688
+    scale: 0.005658340640366077
+    zero_point: 109
+  '@fullconnect_659:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 142685.0468085571
+    min_value: -142685.046875
+    scale: 6.644290260737761e-05
+    zero_point: 0
+  '@fullconnect_662:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7729132175445557
+    min_value: -0.7740870714187622
+    scale: 0.006066667847335339
+    zero_point: 128
+  '@fullconnect_662:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3105845.248553728
+    min_value: -3105845.25
+    scale: 0.0014462718972936273
+    zero_point: 0
+  '@fullconnect_665:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9170666933059692
+    min_value: -1.1484640836715698
+    scale: 0.008100120350718498
+    zero_point: 142
+  '@fullconnect_665:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 388836.5310689339
+    min_value: -388836.53125
+    scale: 0.00018106611969415098
+    zero_point: 0
+  '@fullconnect_668:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.6306620836257935
+    min_value: -0.7807859778404236
+    scale: 0.00553509034216404
+    zero_point: 141
+  '@fullconnect_668:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 265705.3436262713
+    min_value: -265705.34375
+    scale: 0.00012372869241517037
+    zero_point: 0
+  '@fullconnect_671:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.6872935891151428
+    min_value: -1.577588438987732
+    scale: 0.008881890214979649
+    zero_point: 178
+  '@fullconnect_671:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 436562.8122967096
+    min_value: -436562.8125
+    scale: 0.0002032904012594372
+    zero_point: 0
+  '@fullconnect_674:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3703518509864807
+    min_value: -0.4333105683326721
+    scale: 0.003151617245748639
+    zero_point: 137
+  '@fullconnect_674:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 148404.2186808939
+    min_value: -148404.21875
+    scale: 6.910609954502433e-05
+    zero_point: 0
+  '@fullconnect_677:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7464789748191833
+    min_value: -0.7129128575325012
+    scale: 0.005723105277866125
+    zero_point: 125
+  '@fullconnect_677:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 133414.71868787392
+    min_value: -133414.71875
+    scale: 6.212606967892497e-05
+    zero_point: 0
+  '@fullconnect_680:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7349163293838501
+    min_value: -0.6714754104614258
+    scale: 0.0055152615532279015
+    zero_point: 122
+  '@fullconnect_680:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2463587.4988528024
+    min_value: -2463587.5
+    scale: 0.001147197326645255
+    zero_point: 0
+  '@fullconnect_683:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8723344802856445
+    min_value: -1.0349072217941284
+    scale: 0.007479379419237375
+    zero_point: 138
+  '@fullconnect_683:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 352191.0935859982
+    min_value: -352191.09375
+    scale: 0.00016400175809394568
+    zero_point: 0
+  '@fullconnect_686:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7835886478424072
+    min_value: -0.7205712199211121
+    scale: 0.005898666568100452
+    zero_point: 122
+  '@fullconnect_686:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 277758.03112065885
+    min_value: -277758.03125
+    scale: 0.00012934116239193827
+    zero_point: 0
+  '@fullconnect_689:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0708297491073608
+    min_value: -2.1665029525756836
+    scale: 0.012695422396063805
+    zero_point: 171
+  '@fullconnect_689:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 811912.2496219239
+    min_value: -811912.25
+    scale: 0.000378076103515923
+    zero_point: 0
+  '@fullconnect_692:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.41651156544685364
+    min_value: -0.32728058099746704
+    scale: 0.0029168319888412952
+    zero_point: 112
+  '@fullconnect_692:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 141265.90618421795
+    min_value: -141265.90625
+    scale: 6.578206375706940e-05
+    zero_point: 0
+  '@fullconnect_695:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.4462660253047943
+    min_value: -0.6246836185455322
+    scale: 0.0041998024098575115
+    zero_point: 149
+  '@fullconnect_695:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 195034.93740917978
+    min_value: -195034.9375
+    scale: 9.082022006623446e-05
+    zero_point: 0
+  '@fullconnect_698:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.6117873191833496
+    min_value: -0.6295884847640991
+    scale: 0.004868140444159508
+    zero_point: 129
+  '@fullconnect_698:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2311879.998923447
+    min_value: -2311880.0
+    scale: 0.0010765530169010162
+    zero_point: 0
+  '@fullconnect_701:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8732191324234009
+    min_value: -0.8825135827064514
+    scale: 0.006885226350277662
+    zero_point: 128
+  '@fullconnect_701:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 333460.31234472047
+    min_value: -333460.3125
+    scale: 0.00015527955838479102
+    zero_point: 0
+  '@fullconnect_704:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7629204988479614
+    min_value: -0.763794481754303
+    scale: 0.005987117998301983
+    zero_point: 128
+  '@fullconnect_704:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 289963.7811149751
+    min_value: -289963.78125
+    scale: 0.0001350249076494947
+    zero_point: 0
+  '@fullconnect_707:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.9385608434677124
+    min_value: -1.2164593935012817
+    scale: 0.012372628785669804
+    zero_point: 98
+  '@fullconnect_707:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1600462.6242547266
+    min_value: -1600462.625
+    scale: 0.0007452734862454236
+    zero_point: 0
+  '@fullconnect_710:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3379517197608948
+    min_value: -0.36446720361709595
+    scale: 0.002754583954811096
+    zero_point: 132
+  '@fullconnect_710:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 123085.33588018392
+    min_value: -123085.3359375
+    scale: 5.731607598136179e-05
+    zero_point: 0
+  '@fullconnect_713:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.43525078892707825
+    min_value: -0.4422868490219116
+    scale: 0.0034413239918649197
+    zero_point: 129
+  '@fullconnect_713:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 88204.8827714264
+    min_value: -88204.8828125
+    scale: 4.1073599277297034e-05
+    zero_point: 0
+  '@fullconnect_716:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.6568694114685059
+    min_value: -0.7465922236442566
+    scale: 0.005503771360963583
+    zero_point: 136
+  '@fullconnect_716:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1108994.749483584
+    min_value: -1108994.75
+    scale: 0.0005164159229025245
+    zero_point: 0
+  '@fullconnect_719:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.140166163444519
+    min_value: -0.8593488931655884
+    scale: 0.00784123595803976
+    zero_point: 110
+  '@fullconnect_719:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 350376.3748368433
+    min_value: -350376.375
+    scale: 0.0001631567138247192
+    zero_point: 0
+  '@fullconnect_722:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.789940357208252
+    min_value: -0.8701052069664001
+    scale: 0.006509982980787754
+    zero_point: 134
+  '@fullconnect_722:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 290890.9061145434
+    min_value: -290890.90625
+    scale: 0.0001354566338704899
+    zero_point: 0
+  '@fullconnect_725:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8632441163063049
+    min_value: -1.0675901174545288
+    scale: 0.0075718993321061134
+    zero_point: 141
+  '@fullconnect_725:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 546499.1247455166
+    min_value: -546499.125
+    scale: 0.0002544834860600531
+    zero_point: 0
+  '@fullconnect_728:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.38564997911453247
+    min_value: -0.3336358070373535
+    scale: 0.0028207285795360804
+    zero_point: 118
+  '@fullconnect_728:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 130842.19525157186
+    min_value: -130842.1953125
+    scale: 6.09281451033894e-05
+    zero_point: 0
+  '@fullconnect_731:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.391689658164978
+    min_value: -0.3841928541660309
+    scale: 0.0030426764860749245
+    zero_point: 126
+  '@fullconnect_731:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 45819.37888491369
+    min_value: -45819.37890625
+    scale: 2.133631096512544e-05
+    zero_point: 0
+  '@fullconnect_734:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4692977666854858
+    min_value: -1.008341908454895
+    scale: 0.009716234169900417
+    zero_point: 104
+  '@fullconnect_734:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1556659.499275124
+    min_value: -1556659.5
+    scale: 0.0007248760666698217
+    zero_point: 0
+  '@fullconnect_737:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.145017385482788
+    min_value: -1.3090150356292725
+    scale: 0.00962365698069334
+    zero_point: 136
+  '@fullconnect_737:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 446402.53104212764
+    min_value: -446402.53125
+    scale: 0.0002078723773593083
+    zero_point: 0
+  '@fullconnect_740:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8430637121200562
+    min_value: -0.7230764627456665
+    scale: 0.006141726393252611
+    zero_point: 118
+  '@fullconnect_740:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 284889.8436173378
+    min_value: -284889.84375
+    scale: 0.0001326621713815257
+    zero_point: 0
+  '@fullconnect_743:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9667882323265076
+    min_value: -1.497550368309021
+    scale: 0.009664072655141354
+    zero_point: 155
+  '@fullconnect_743:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 596914.8747220398
+    min_value: -596914.875
+    scale: 0.00027796014910563827
+    zero_point: 0
+  '@fullconnect_746:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3851594626903534
+    min_value: -0.39250215888023376
+    scale: 0.0030496534891426563
+    zero_point: 129
+  '@fullconnect_746:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 160793.20305012484
+    min_value: -160793.203125
+    scale: 7.48751699575223e-05
+    zero_point: 0
+  '@fullconnect_749:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.46622011065483093
+    min_value: -0.6395628452301025
+    scale: 0.0043364036828279495
+    zero_point: 147
+  '@fullconnect_749:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 82930.63277388242
+    min_value: -82930.6328125
+    scale: 3.861758523271419e-05
+    zero_point: 0
+  '@fullconnect_752:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5742908716201782
+    min_value: -1.145930528640747
+    scale: 0.010667535476386547
+    zero_point: 107
+  '@fullconnect_752:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1024848.062022768
+    min_value: -1024848.0625
+    scale: 0.0004772320680785924
+    zero_point: 0
+  '@fullconnect_755:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0701630115509033
+    min_value: -0.9513371586799622
+    scale: 0.00792745128273964
+    zero_point: 120
+  '@fullconnect_755:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 417975.437305365
+    min_value: -417975.4375
+    scale: 0.0001946349802892655
+    zero_point: 0
+  '@fullconnect_758:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8036763668060303
+    min_value: -0.7110491394996643
+    scale: 0.005940099712461233
+    zero_point: 120
+  '@fullconnect_758:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 313192.1873541585
+    min_value: -313192.1875
+    scale: 0.00014584147720597684
+    zero_point: 0
+  '@fullconnect_761:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.2044628858566284
+    min_value: -0.9142618775367737
+    scale: 0.008308724500238895
+    zero_point: 110
+  '@fullconnect_761:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 369647.9060778693
+    min_value: -369647.90625
+    scale: 0.00017213071987498552
+    zero_point: 0
+  '@fullconnect_764:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.33370441198349
+    min_value: -0.30476561188697815
+    scale: 0.002503804164007306
+    zero_point: 122
+  '@fullconnect_764:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 127427.85931566177
+    min_value: -127427.859375
+    scale: 5.933822103543207e-05
+    zero_point: 0
+  '@fullconnect_767:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8046612739562988
+    min_value: -0.6530665159225464
+    scale: 0.0057165795005857944
+    zero_point: 114
+  '@fullconnect_767:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 72123.12496641505
+    min_value: -72123.125
+    scale: 3.358494723215699e-05
+    zero_point: 0
+  '@fullconnect_770:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.4101206064224243
+    min_value: -1.7680284976959229
+    scale: 0.012463330291211605
+    zero_point: 142
+  '@fullconnect_770:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 844684.8746066629
+    min_value: -844684.875
+    scale: 0.0003933370462618768
+    zero_point: 0
+  '@fullconnect_773:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8895101547241211
+    min_value: -0.8850550055503845
+    scale: 0.006959079299122095
+    zero_point: 127
+  '@fullconnect_773:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 354173.2810850752
+    min_value: -354173.28125
+    scale: 0.000164924786076881
+    zero_point: 0
+  '@fullconnect_776:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0095266103744507
+    min_value: -0.7457282543182373
+    scale: 0.006883352529257536
+    zero_point: 108
+  '@fullconnect_776:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 350319.2810868699
+    min_value: -350319.28125
+    scale: 0.00016313012747559696
+    zero_point: 0
+  '@fullconnect_779:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.4900427460670471
+    min_value: -0.38542869687080383
+    scale: 0.003433221485465765
+    zero_point: 112
+  '@fullconnect_779:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 147156.82805647477
+    min_value: -147156.828125
+    scale: 6.852523802081123e-05
+    zero_point: 0
+  '@fullconnect_782:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9429405331611633
+    min_value: -0.8185417652130127
+    scale: 0.006907773669809103
+    zero_point: 118
+  '@fullconnect_782:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 232382.70301678838
+    min_value: -232382.703125
+    scale: 0.0001082116286852397
+    zero_point: 0
+  '@fullconnect_785:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9826459884643555
+    min_value: -1.388879418373108
+    scale: 0.00930009875446558
+    zero_point: 149
+  '@fullconnect_785:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 398626.49981437507
+    min_value: -398626.5
+    scale: 0.00018562492914497852
+    zero_point: 0
+  '@fullconnect_788:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.2747986316680908
+    min_value: -1.1064467430114746
+    scale: 0.009338216856122017
+    zero_point: 118
+  '@fullconnect_788:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 400260.34356361424
+    min_value: -400260.34375
+    scale: 0.00018638574692886323
+    zero_point: 0
+  '@fullconnect_791:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9801333546638489
+    min_value: -0.8686813116073608
+    scale: 0.007250254042446613
+    zero_point: 120
+  '@fullconnect_791:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 183588.15616451012
+    min_value: -183588.15625
+    scale: 8.548989717382937e-05
+    zero_point: 0
+  '@fullconnect_794:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9401578903198242
+    min_value: -1.275070071220398
+    scale: 0.008687169291079044
+    zero_point: 147
+  '@fullconnect_794:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 219973.171772567
+    min_value: -219973.171875
+    scale: 0.00010243299038847908
+    zero_point: 0
+  '@fullconnect_797:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8395999670028687
+    min_value: -0.9411425590515137
+    scale: 0.006983303930610418
+    zero_point: 135
+  '@fullconnect_797:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 176828.54679265778
+    min_value: -176828.546875
+    scale: 8.234220877056941e-05
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.11/attention/Softmax_35_pre_float32_to_dynamic_fixed_pointi16_1:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 7.738644123077393
+    min_value: -4.510647773742676
+    fl: 12
+  '@Softmax_/wav2vec2/encoder/layers.11/attention/Softmax_35_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_2:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.826961874961853
+    min_value: 0.0
+    scale: 0.003242987673729658
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.10/attention/Softmax_68_pre_float32_to_dynamic_fixed_pointi16_3:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 15.321136474609375
+    min_value: -8.00322151184082
+    fl: 11
+  '@Softmax_/wav2vec2/encoder/layers.10/attention/Softmax_68_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_5:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9919648170471191
+    min_value: 0.0
+    scale: 0.0038900580257177353
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.9/attention/Softmax_113_pre_float32_to_dynamic_fixed_pointi16_7:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 11.569788932800293
+    min_value: -15.932648658752441
+    fl: 11
+  '@Softmax_/wav2vec2/encoder/layers.9/attention/Softmax_113_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_9:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9742193222045898
+    min_value: 0.0
+    scale: 0.003820467973127961
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.8/attention/Softmax_157_pre_float32_to_dynamic_fixed_pointi16_10:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 20.883281707763672
+    min_value: -13.69853401184082
+    fl: 10
+  '@Softmax_/wav2vec2/encoder/layers.8/attention/Softmax_157_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_12:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.927818775177002
+    min_value: 0.0
+    scale: 0.0036385050043463707
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.7/attention/Softmax_201_pre_float32_to_dynamic_fixed_pointi16_14:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 9.256307601928711
+    min_value: -12.877988815307617
+    fl: 11
+  '@Softmax_/wav2vec2/encoder/layers.7/attention/Softmax_201_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_16:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7433702945709229
+    min_value: 0.0
+    scale: 0.0029151777271181345
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.6/attention/Softmax_245_pre_float32_to_dynamic_fixed_pointi16_17:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 11.111465454101562
+    min_value: -11.03657054901123
+    fl: 11
+  '@Softmax_/wav2vec2/encoder/layers.6/attention/Softmax_245_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_18:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9346844553947449
+    min_value: 0.0
+    scale: 0.0036654293071478605
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.5/attention/Softmax_289_pre_float32_to_dynamic_fixed_pointi16_19:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 8.026464462280273
+    min_value: -10.441593170166016
+    fl: 11
+  '@Softmax_/wav2vec2/encoder/layers.5/attention/Softmax_289_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_21:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.6694899797439575
+    min_value: 0.0
+    scale: 0.0026254509575664997
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.4/attention/Softmax_333_pre_float32_to_dynamic_fixed_pointi16_23:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 10.188385009765625
+    min_value: -11.256902694702148
+    fl: 11
+  '@Softmax_/wav2vec2/encoder/layers.4/attention/Softmax_333_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_24:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.912666916847229
+    min_value: 0.0
+    scale: 0.003579085925593972
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.3/attention/Softmax_377_pre_float32_to_dynamic_fixed_pointi16_26:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 10.835286140441895
+    min_value: -15.80649185180664
+    fl: 11
+  '@Softmax_/wav2vec2/encoder/layers.3/attention/Softmax_377_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_28:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.8204485177993774
+    min_value: 0.0
+    scale: 0.003217445220798254
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.2/attention/Softmax_421_pre_float32_to_dynamic_fixed_pointi16_29:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 9.295522689819336
+    min_value: -7.993413925170898
+    fl: 11
+  '@Softmax_/wav2vec2/encoder/layers.2/attention/Softmax_421_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_32:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.7471961975097656
+    min_value: 0.0
+    scale: 0.002930181100964546
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.1/attention/Softmax_465_pre_float32_to_dynamic_fixed_pointi16_34:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 16.31294059753418
+    min_value: -9.931580543518066
+    fl: 10
+  '@Softmax_/wav2vec2/encoder/layers.1/attention/Softmax_465_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_38:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9544704556465149
+    min_value: 0.0
+    scale: 0.003743021283298731
+    zero_point: 0
+  '@Softmax_/wav2vec2/encoder/layers.0/attention/Softmax_508_pre_float32_to_dynamic_fixed_pointi16_39:out0':
+    qtype: i16
+    quantizer: dynamic_fixed_point
+    rounding: rtne
+    max_value: 4.8843560218811035
+    min_value: -3.7769649028778076
+    fl: 12
+  '@Softmax_/wav2vec2/encoder/layers.0/attention/Softmax_508_next_dynamic_fixed_pointi16_to_asymmetric_affineu8_40:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3025619387626648
+    min_value: 0.0
+    scale: 0.0011865174164995551
+    zero_point: 0
+customized_quantize_layers:
+  Softmax_/wav2vec2/encoder/layers.11/attention/Softmax_35: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.10/attention/Softmax_68: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.9/attention/Softmax_113: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.8/attention/Softmax_157: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.7/attention/Softmax_201: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.6/attention/Softmax_245: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.5/attention/Softmax_289: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.4/attention/Softmax_333: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.3/attention/Softmax_377: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.2/attention/Softmax_421: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.1/attention/Softmax_465: dynamic_fixed_point-i16
+  Softmax_/wav2vec2/encoder/layers.0/attention/Softmax_508: dynamic_fixed_point-i16

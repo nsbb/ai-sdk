@@ -1,0 +1,412 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@attach_Add_/lm_head/Add/out0_0:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.758608818054199
+    min_value: -4.614938259124756
+    scale: 0.03675900772213936
+    zero_point: 126
+  '@Add_/feature_projection/layer_norm/Add_1_8:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.2773051261901855
+    min_value: -1.8523014783859253
+    scale: 0.016194535419344902
+    zero_point: 114
+  '@Mul_/feature_extractor/conv_layers.6/activation/Mul_1_11:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.26818224787712097
+    min_value: -0.14032332599163055
+    scale: 0.0016019826289266348
+    zero_point: 88
+  '@Conv_/feature_extractor/conv_layers.6/conv/Conv_12:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.4074641466140747
+    min_value: -0.41294339299201965
+    scale: 0.003217284334823489
+    zero_point: 128
+  '@Mul_/feature_extractor/conv_layers.5/activation/Mul_1_13:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.1629245281219482
+    min_value: -0.16997122764587402
+    scale: 0.0052270423620939255
+    zero_point: 33
+  '@Conv_/feature_extractor/conv_layers.5/conv/Conv_14:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.2900198698043823
+    min_value: -4.887394428253174
+    scale: 0.024225154891610146
+    zero_point: 202
+  '@Mul_/feature_extractor/conv_layers.4/activation/Mul_1_15:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.823390483856201
+    min_value: -0.16997122764587402
+    scale: 0.01566024124622345
+    zero_point: 11
+  '@Conv_/feature_extractor/conv_layers.4/conv/Conv_16:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.823641538619995
+    min_value: -9.839447975158691
+    scale: 0.053580742329359055
+    zero_point: 184
+  '@Mul_/feature_extractor/conv_layers.3/activation/Mul_1_17:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 13.478501319885254
+    min_value: -0.16997124254703522
+    scale: 0.05352342128753662
+    zero_point: 3
+  '@Conv_/feature_extractor/conv_layers.3/conv/Conv_18:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 13.478501319885254
+    min_value: -78.15524291992188
+    scale: 0.35934799909591675
+    zero_point: 217
+  '@Mul_/feature_extractor/conv_layers.2/activation/Mul_1_19:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 16.743223190307617
+    min_value: -0.16997124254703522
+    scale: 0.06632625311613083
+    zero_point: 3
+  '@Conv_/feature_extractor/conv_layers.2/conv/Conv_20:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 16.743223190307617
+    min_value: -284.1649475097656
+    scale: 1.1800320148468018
+    zero_point: 241
+  '@Mul_/feature_extractor/conv_layers.1/activation/Mul_1_21:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 82.28504943847656
+    min_value: -0.16997122764587402
+    scale: 0.32335302233695984
+    zero_point: 1
+  '@Conv_/feature_extractor/conv_layers.1/conv/Conv_22:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 82.28504943847656
+    min_value: -764.55712890625
+    scale: 3.3209495544433594
+    zero_point: 230
+  '@Mul_/feature_extractor/conv_layers.0/activation/Mul_1_23:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 49.05405807495117
+    min_value: -0.16997124254703522
+    scale: 0.19303540885448456
+    zero_point: 1
+  '@Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_1_27:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 21.208242416381836
+    min_value: -21.216768264770508
+    scale: 0.16637259721755981
+    zero_point: 128
+  '@InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_29:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 21.208242416381836
+    min_value: -21.216768264770508
+    scale: 0.16637259721755981
+    zero_point: 128
+  '@Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_30:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0643538236618042
+    min_value: -0.9471388459205627
+    scale: 0.007888207212090492
+    zero_point: 120
+  '@Conv_/feature_extractor/conv_layers.0/conv/Conv_31:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0643538236618042
+    min_value: -0.9471388459205627
+    scale: 0.007888207212090492
+    zero_point: 120
+  '@Unsqueeze_/feature_extractor/Unsqueeze_32:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.66557776927948
+    min_value: -0.6818469166755676
+    scale: 0.005284018814563751
+    zero_point: 129
+  '@input_values_33:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.66557776927948
+    min_value: -0.6818469166755676
+    scale: 0.005284018814563751
+    zero_point: 129
+  '@Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_26_acuity_mark_perm_35:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 21.208242416381836
+    min_value: -21.216768264770508
+    scale: 0.16637259721755981
+    zero_point: 128
+  '@Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_1_27_acuity_mark_perm_36:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 21.208242416381836
+    min_value: -21.216768264770508
+    scale: 0.16637259721755981
+    zero_point: 128
+  '@InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_29_acuity_mark_perm_37:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0643538236618042
+    min_value: -0.9471388459205627
+    scale: 0.007888207212090492
+    zero_point: 120
+  '@Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_30_acuity_mark_perm_38:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0643538236618042
+    min_value: -0.9471388459205627
+    scale: 0.007888207212090492
+    zero_point: 120
+  '@Conv_/feature_extractor/conv_layers.0/conv/Conv_31_acuity_mark_perm_39:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.66557776927948
+    min_value: -0.6818469166755676
+    scale: 0.005284018814563751
+    zero_point: 129
+  '@reshape_40:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.168351173400879
+    min_value: -7.367438316345215
+    scale: 0.05308152735233307
+    zero_point: 139
+  '@fullconnect_41:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.758608818054199
+    min_value: -4.614938259124756
+    scale: 0.03675900772213936
+    zero_point: 126
+  '@reshape_42:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.758608818054199
+    min_value: -4.614938259124756
+    scale: 0.03675900772213936
+    zero_point: 126
+  '@reshape_43:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.2773051261901855
+    min_value: -1.8523014783859253
+    scale: 0.016194535419344902
+    zero_point: 114
+  '@fullconnect_44:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.168351173400879
+    min_value: -7.367438316345215
+    scale: 0.05308152735233307
+    zero_point: 139
+  '@reshape_45:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 6.168351173400879
+    min_value: -7.367438316345215
+    scale: 0.05308152735233307
+    zero_point: 139
+  '@Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_26_Add_/feature_extractor/conv_layers.0/layer_norm/Add_24:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 49.05405807495117
+    min_value: -63.456390380859375
+    scale: 0.44121745228767395
+    zero_point: 144
+  '@Conv_/feature_extractor/conv_layers.6/conv/Conv_12:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.3466394245624542
+    min_value: -0.34710627794265747
+    scale: 0.0027205715887248516
+    zero_point: 128
+  '@Conv_/feature_extractor/conv_layers.6/conv/Conv_12:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 30538.382798279457
+    min_value: -30538.3828125
+    scale: 1.4220542652765288e-05
+    zero_point: 0
+  '@Conv_/feature_extractor/conv_layers.5/conv/Conv_14:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0827252864837646
+    min_value: -0.8609253168106079
+    scale: 0.007622159086167812
+    zero_point: 113
+  '@Conv_/feature_extractor/conv_layers.5/conv/Conv_14:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 256334.06238063515
+    min_value: -256334.0625
+    scale: 0.00011936484952457249
+    zero_point: 0
+  '@Conv_/feature_extractor/conv_layers.4/conv/Conv_16:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.008009910583496
+    min_value: -2.0226993560791016
+    scale: 0.01580670289695263
+    zero_point: 128
+  '@Conv_/feature_extractor/conv_layers.4/conv/Conv_16:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1816832.9991539712
+    min_value: -1816833.0
+    scale: 0.0008460287936031818
+    zero_point: 0
+  '@Conv_/feature_extractor/conv_layers.3/conv/Conv_18:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.6591243743896484
+    min_value: -3.5516741275787354
+    scale: 0.024356070905923843
+    zero_point: 146
+  '@Conv_/feature_extractor/conv_layers.3/conv/Conv_18:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3469145.748384553
+    min_value: -3469145.75
+    scale: 0.0016154468758031726
+    zero_point: 0
+  '@Conv_/feature_extractor/conv_layers.2/conv/Conv_20:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5263522863388062
+    min_value: -3.908148765563965
+    scale: 0.021311769261956215
+    zero_point: 183
+  '@Conv_/feature_extractor/conv_layers.2/conv/Conv_20:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 14798792.993108775
+    min_value: -14798793.0
+    scale: 0.006891224998980761
+    zero_point: 0
+  '@Conv_/feature_extractor/conv_layers.1/conv/Conv_22:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.8828860521316528
+    min_value: -3.5976507663726807
+    scale: 0.021492302417755127
+    zero_point: 167
+  '@Conv_/feature_extractor/conv_layers.1/conv/Conv_22:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 8909426.995851224
+    min_value: -8909427.0
+    scale: 0.0041487752459943295
+    zero_point: 0
+  '@Conv_/feature_extractor/conv_layers.0/conv/Conv_31:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.6735703349113464
+    min_value: -0.6219910383224487
+    scale: 0.005080632399767637
+    zero_point: 122
+  '@Conv_/feature_extractor/conv_layers.0/conv/Conv_31:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 57651.68356690384
+    min_value: -57651.68359375
+    scale: 2.6846157197724096e-05
+    zero_point: 0
+  '@fullconnect_41:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.1453343778848648
+    min_value: -0.16150858998298645
+    scale: 0.0012033057864755392
+    zero_point: 134
+  '@fullconnect_41:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 137166.8905611267
+    min_value: -137166.890625
+    scale: 6.387331086443737e-05
+    zero_point: 0
+  '@fullconnect_44:weight':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 0.9429405331611633
+    min_value: -0.8185417652130127
+    scale: 0.006907773669809103
+    zero_point: 118
+  '@fullconnect_44:bias':
+    qtype: i32
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 240235.0936381318
+    min_value: -240235.09375
+    scale: 0.00011186818301212043
+    zero_point: 0
+customized_quantize_layers: {}

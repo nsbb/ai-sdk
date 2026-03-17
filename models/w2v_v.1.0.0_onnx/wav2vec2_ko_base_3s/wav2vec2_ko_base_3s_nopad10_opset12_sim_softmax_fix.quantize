@@ -1,0 +1,123 @@
+# !!!This file disallow TABs!!!
+version: 2
+quantize_parameters:
+  '@attach_Add_/lm_head/Add/out0_0:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 12.06890869140625
+    min_value: -10.214303016662598
+    scale: 0.0873851403594017
+    zero_point: 117
+  '@Add_/wav2vec2/encoder/layers.11/final_layer_norm/Add_1_4:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.067568063735962
+    min_value: -4.306519985198975
+    scale: 0.028917992487549782
+    zero_point: 149
+  '@Add_/wav2vec2/encoder/layers.11/Add_1_6:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 3.3965935707092285
+    min_value: -4.242735385894775
+    scale: 0.029958153143525124
+    zero_point: 142
+  '@Add_/wav2vec2/encoder/layers.11/layer_norm/Add_1_8:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.2161993980407715
+    min_value: -2.45474910736084
+    scale: 0.018317444249987602
+    zero_point: 134
+  '@Add_/wav2vec2/encoder/layers.11/Add_11:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5116863250732422
+    min_value: -1.6166799068450928
+    scale: 0.01226810272783041
+    zero_point: 132
+  '@Mul_/wav2vec2/encoder/layers.11/feed_forward/intermediate_act_fn/Mul_1_13:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 4.563433647155762
+    min_value: -0.16997124254703522
+    scale: 0.018562372773885727
+    zero_point: 9
+  '@Add_/wav2vec2/encoder/layers.10/final_layer_norm/Add_1_15:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.5476754903793335
+    min_value: -1.7315853834152222
+    scale: 0.012859846465289593
+    zero_point: 135
+  '@Add_/wav2vec2/encoder/layers.10/Add_1_20:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 206.9935302734375
+    min_value: -151.34886169433594
+    scale: 1.4052643775939941
+    zero_point: 108
+  '@Reshape_/wav2vec2/encoder/layers.11/attention/Reshape_3_22:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.1650173664093018
+    min_value: -0.8728957772254944
+    scale: 0.00799181591719389
+    zero_point: 109
+  '@Transpose_/wav2vec2/encoder/layers.11/attention/Transpose_3_25:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.1650173664093018
+    min_value: -0.8728957772254944
+    scale: 0.00799181591719389
+    zero_point: 109
+  '@Add_/wav2vec2/encoder/layers.10/layer_norm/Add_1_27:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.9188761711120605
+    min_value: -4.195846080780029
+    scale: 0.027900870889425278
+    zero_point: 150
+  '@MatMul_/wav2vec2/encoder/layers.11/attention/MatMul_1_30:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.1650173664093018
+    min_value: -0.8728957772254944
+    scale: 0.00799181591719389
+    zero_point: 109
+  '@Add_/wav2vec2/encoder/layers.10/Add_31:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 2.44244122505188
+    min_value: -3.24822998046875
+    scale: 0.022316357120871544
+    zero_point: 146
+  '@Mul_/wav2vec2/encoder/layers.10/feed_forward/intermediate_act_fn/Mul_1_33:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 23.82318878173828
+    min_value: -0.16997124254703522
+    scale: 0.09409082680940628
+    zero_point: 2
+  '@Softmax_/wav2vec2/encoder/layers.11/attention/Softmax_35:out0':
+    qtype: u8
+    quantizer: asymmetric_affine
+    rounding: rtne
+    max_value: 1.0
+    min_value: 0.0
+    scale: 0.00392156862745098
+    zero_point: 0

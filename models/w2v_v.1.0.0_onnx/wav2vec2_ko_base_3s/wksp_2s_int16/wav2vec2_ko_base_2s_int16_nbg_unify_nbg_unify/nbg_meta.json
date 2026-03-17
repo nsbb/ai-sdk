@@ -1,0 +1,38 @@
+{
+    "Inputs": {
+        "input_values_532": {
+            "name": "input_values",
+            "shape": [
+                1,
+                32000
+            ],
+            "format": "nchw",
+            "quantizer": "dynamic_fixed_point",
+            "quantize": {
+                "qtype": "i16",
+                "max_value": 0.5513872611862212,
+                "min_value": -0.538002594084697,
+                "fl": 15
+            }
+        }
+    },
+    "Outputs": {
+        "attach_Add_/lm_head/Add/out0_0": {
+            "name": "attach_Add_/lm_head/Add/out0",
+            "shape": [
+                1,
+                99,
+                56
+            ],
+            "format": "nchw",
+            "quantizer": "dynamic_fixed_point",
+            "quantize": {
+                "qtype": "i16",
+                "max_value": 12.068908643298549,
+                "min_value": -10.214303063129417,
+                "fl": 11
+            }
+        }
+    },
+    "Recurrent_connections": {}
+}

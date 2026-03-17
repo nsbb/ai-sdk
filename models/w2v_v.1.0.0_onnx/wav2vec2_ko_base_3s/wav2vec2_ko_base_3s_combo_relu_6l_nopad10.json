@@ -1,0 +1,4346 @@
+{
+    "MetaData": {
+        "Name": "main_graph",
+        "AcuityVersion": "6",
+        "Platform": "tensorflow",
+        "Org_Platform": "onnx"
+    },
+    "Layers": {
+        "attach_Add_/lm_head/Add/out0_0": {
+            "name": "attach_Add_/lm_head/Add/out0",
+            "op": "output",
+            "parameters": {},
+            "inputs": [
+                "@reshape_315:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.5/final_layer_norm/Add_1_4": {
+            "name": "Add_/wav2vec2/encoder/layers.5/final_layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.5/Add_1_6:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.5/Add_1_6": {
+            "name": "Add_/wav2vec2/encoder/layers.5/Add_1",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.5/layer_norm/Add_1_8:out0",
+                "@reshape_318:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.5/layer_norm/Add_1_8": {
+            "name": "Add_/wav2vec2/encoder/layers.5/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.5/Add_11:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.5/Add_11": {
+            "name": "Add_/wav2vec2/encoder/layers.5/Add",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.4/final_layer_norm/Add_1_15:out0",
+                "@reshape_321:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_13_13": {
+            "name": "Relu_relu_gelu_13",
+            "op": "relu",
+            "inputs": [
+                "@reshape_324:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.4/final_layer_norm/Add_1_15": {
+            "name": "Add_/wav2vec2/encoder/layers.4/final_layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.4/Add_1_19:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.4/Add_1_19": {
+            "name": "Add_/wav2vec2/encoder/layers.4/Add_1",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.4/layer_norm/Add_1_25:out0",
+                "@reshape_327:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_3_21": {
+            "name": "Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_3",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_3_28:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.4/layer_norm/Add_1_25": {
+            "name": "Add_/wav2vec2/encoder/layers.4/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.4/Add_31:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_3_28": {
+            "name": "Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_3",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.5/attention/MatMul_1_29:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.5/attention/MatMul_1_29": {
+            "name": "MatMul_/wav2vec2/encoder/layers.5/attention/MatMul_1",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Softmax_/wav2vec2/encoder/layers.5/attention/Softmax_35:out0",
+                "@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_36:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.4/Add_31": {
+            "name": "Add_/wav2vec2/encoder/layers.4/Add",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.3/final_layer_norm/Add_1_37:out0",
+                "@reshape_330:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_12_33": {
+            "name": "Relu_relu_gelu_12",
+            "op": "relu",
+            "inputs": [
+                "@reshape_333:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Softmax_/wav2vec2/encoder/layers.5/attention/Softmax_35": {
+            "name": "Softmax_/wav2vec2/encoder/layers.5/attention/Softmax",
+            "op": "softmax",
+            "parameters": {
+                "sf_axis": -1,
+                "beta": 1.0
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.5/attention/MatMul_41:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_36": {
+            "name": "Transpose_/wav2vec2/encoder/layers.5/attention/Transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_1_42:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.3/final_layer_norm/Add_1_37": {
+            "name": "Add_/wav2vec2/encoder/layers.3/final_layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.3/Add_1_43:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.5/attention/MatMul_41": {
+            "name": "MatMul_/wav2vec2/encoder/layers.5/attention/MatMul",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Mul_/wav2vec2/encoder/layers.5/attention/Mul_49:out0",
+                "@Mul_/wav2vec2/encoder/layers.5/attention/Mul_1_50:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_1_42": {
+            "name": "Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_1",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_339:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.3/Add_1_43": {
+            "name": "Add_/wav2vec2/encoder/layers.3/Add_1",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.3/layer_norm/Add_1_52:out0",
+                "@reshape_336:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_3_45": {
+            "name": "Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_3",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_3_55:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.5/attention/Mul_49": {
+            "name": "Mul_/wav2vec2/encoder/layers.5/attention/Mul",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_1_58:out0",
+                "@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_1__wav2vec2_encoder_layers_5_attention_Sqrt_1_output_0_as_const_59:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.5/attention/Mul_1_50": {
+            "name": "Mul_/wav2vec2/encoder/layers.5/attention/Mul_1",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_2_60:out0",
+                "@Constant__wav2vec2_encoder_layers_5_attention_Sqrt_2__wav2vec2_encoder_layers_5_attention_Sqrt_2_output_0_as_const_61:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.3/layer_norm/Add_1_52": {
+            "name": "Add_/wav2vec2/encoder/layers.3/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.3/Add_64:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_3_55": {
+            "name": "Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_3",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.4/attention/MatMul_1_56:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.4/attention/MatMul_1_56": {
+            "name": "MatMul_/wav2vec2/encoder/layers.4/attention/MatMul_1",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Softmax_/wav2vec2/encoder/layers.4/attention/Softmax_68:out0",
+                "@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_69:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_1_58": {
+            "name": "Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_1",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_2_70:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_5_attention_Sqrt_1__wav2vec2_encoder_layers_5_attention_Sqrt_1_output_0_as_const_59": {
+            "name": "Constant__wav2vec2_encoder_layers_5_attention_Sqrt_1__wav2vec2_encoder_layers_5_attention_Sqrt_1_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_2_60": {
+            "name": "Transpose_/wav2vec2/encoder/layers.5/attention/Transpose_2",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    3,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_71:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_5_attention_Sqrt_2__wav2vec2_encoder_layers_5_attention_Sqrt_2_output_0_as_const_61": {
+            "name": "Constant__wav2vec2_encoder_layers_5_attention_Sqrt_2__wav2vec2_encoder_layers_5_attention_Sqrt_2_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.3/Add_64": {
+            "name": "Add_/wav2vec2/encoder/layers.3/Add",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.2/final_layer_norm/Add_1_74:out0",
+                "@reshape_342:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_11_66": {
+            "name": "Relu_relu_gelu_11",
+            "op": "relu",
+            "inputs": [
+                "@reshape_348:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Softmax_/wav2vec2/encoder/layers.4/attention/Softmax_68": {
+            "name": "Softmax_/wav2vec2/encoder/layers.4/attention/Softmax",
+            "op": "softmax",
+            "parameters": {
+                "sf_axis": -1,
+                "beta": 1.0
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.4/attention/MatMul_78:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_69": {
+            "name": "Transpose_/wav2vec2/encoder/layers.4/attention/Transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_1_79:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_2_70": {
+            "name": "Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_2",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_351:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_71": {
+            "name": "Reshape_/wav2vec2/encoder/layers.5/attention/Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_345:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.2/final_layer_norm/Add_1_74": {
+            "name": "Add_/wav2vec2/encoder/layers.2/final_layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.2/Add_1_83:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.4/attention/MatMul_78": {
+            "name": "MatMul_/wav2vec2/encoder/layers.4/attention/MatMul",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Mul_/wav2vec2/encoder/layers.4/attention/Mul_89:out0",
+                "@Mul_/wav2vec2/encoder/layers.4/attention/Mul_1_90:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_1_79": {
+            "name": "Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_1",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_357:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.2/Add_1_83": {
+            "name": "Add_/wav2vec2/encoder/layers.2/Add_1",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.2/layer_norm/Add_1_96:out0",
+                "@reshape_354:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_3_85": {
+            "name": "Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_3",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_3_99:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.4/attention/Mul_89": {
+            "name": "Mul_/wav2vec2/encoder/layers.4/attention/Mul",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_1_102:out0",
+                "@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_1__wav2vec2_encoder_layers_4_attention_Sqrt_1_output_0_as_const_103:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.4/attention/Mul_1_90": {
+            "name": "Mul_/wav2vec2/encoder/layers.4/attention/Mul_1",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_2_104:out0",
+                "@Constant__wav2vec2_encoder_layers_4_attention_Sqrt_2__wav2vec2_encoder_layers_4_attention_Sqrt_2_output_0_as_const_105:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.2/layer_norm/Add_1_96": {
+            "name": "Add_/wav2vec2/encoder/layers.2/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.2/Add_109:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_3_99": {
+            "name": "Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_3",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.3/attention/MatMul_1_100:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.3/attention/MatMul_1_100": {
+            "name": "MatMul_/wav2vec2/encoder/layers.3/attention/MatMul_1",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Softmax_/wav2vec2/encoder/layers.3/attention/Softmax_113:out0",
+                "@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_114:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_1_102": {
+            "name": "Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_1",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_2_115:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_4_attention_Sqrt_1__wav2vec2_encoder_layers_4_attention_Sqrt_1_output_0_as_const_103": {
+            "name": "Constant__wav2vec2_encoder_layers_4_attention_Sqrt_1__wav2vec2_encoder_layers_4_attention_Sqrt_1_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_2_104": {
+            "name": "Transpose_/wav2vec2/encoder/layers.4/attention/Transpose_2",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    3,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_116:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_4_attention_Sqrt_2__wav2vec2_encoder_layers_4_attention_Sqrt_2_output_0_as_const_105": {
+            "name": "Constant__wav2vec2_encoder_layers_4_attention_Sqrt_2__wav2vec2_encoder_layers_4_attention_Sqrt_2_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.2/Add_109": {
+            "name": "Add_/wav2vec2/encoder/layers.2/Add",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.1/final_layer_norm/Add_1_118:out0",
+                "@reshape_360:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_10_111": {
+            "name": "Relu_relu_gelu_10",
+            "op": "relu",
+            "inputs": [
+                "@reshape_366:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Softmax_/wav2vec2/encoder/layers.3/attention/Softmax_113": {
+            "name": "Softmax_/wav2vec2/encoder/layers.3/attention/Softmax",
+            "op": "softmax",
+            "parameters": {
+                "sf_axis": -1,
+                "beta": 1.0
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.3/attention/MatMul_122:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_114": {
+            "name": "Transpose_/wav2vec2/encoder/layers.3/attention/Transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_1_123:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_2_115": {
+            "name": "Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_2",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_369:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_116": {
+            "name": "Reshape_/wav2vec2/encoder/layers.4/attention/Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_363:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.1/final_layer_norm/Add_1_118": {
+            "name": "Add_/wav2vec2/encoder/layers.1/final_layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.1/Add_1_127:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.3/attention/MatMul_122": {
+            "name": "MatMul_/wav2vec2/encoder/layers.3/attention/MatMul",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Mul_/wav2vec2/encoder/layers.3/attention/Mul_133:out0",
+                "@Mul_/wav2vec2/encoder/layers.3/attention/Mul_1_134:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_1_123": {
+            "name": "Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_1",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_375:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.1/Add_1_127": {
+            "name": "Add_/wav2vec2/encoder/layers.1/Add_1",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.1/layer_norm/Add_1_140:out0",
+                "@reshape_372:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_3_129": {
+            "name": "Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_3",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_3_143:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.3/attention/Mul_133": {
+            "name": "Mul_/wav2vec2/encoder/layers.3/attention/Mul",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_1_146:out0",
+                "@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_1__wav2vec2_encoder_layers_3_attention_Sqrt_1_output_0_as_const_147:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.3/attention/Mul_1_134": {
+            "name": "Mul_/wav2vec2/encoder/layers.3/attention/Mul_1",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_2_148:out0",
+                "@Constant__wav2vec2_encoder_layers_3_attention_Sqrt_2__wav2vec2_encoder_layers_3_attention_Sqrt_2_output_0_as_const_149:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.1/layer_norm/Add_1_140": {
+            "name": "Add_/wav2vec2/encoder/layers.1/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.1/Add_153:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_3_143": {
+            "name": "Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_3",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.2/attention/MatMul_1_144:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.2/attention/MatMul_1_144": {
+            "name": "MatMul_/wav2vec2/encoder/layers.2/attention/MatMul_1",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Softmax_/wav2vec2/encoder/layers.2/attention/Softmax_157:out0",
+                "@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_158:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_1_146": {
+            "name": "Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_1",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_2_159:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_3_attention_Sqrt_1__wav2vec2_encoder_layers_3_attention_Sqrt_1_output_0_as_const_147": {
+            "name": "Constant__wav2vec2_encoder_layers_3_attention_Sqrt_1__wav2vec2_encoder_layers_3_attention_Sqrt_1_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_2_148": {
+            "name": "Transpose_/wav2vec2/encoder/layers.3/attention/Transpose_2",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    3,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_160:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_3_attention_Sqrt_2__wav2vec2_encoder_layers_3_attention_Sqrt_2_output_0_as_const_149": {
+            "name": "Constant__wav2vec2_encoder_layers_3_attention_Sqrt_2__wav2vec2_encoder_layers_3_attention_Sqrt_2_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.1/Add_153": {
+            "name": "Add_/wav2vec2/encoder/layers.1/Add",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.0/final_layer_norm/Add_1_162:out0",
+                "@reshape_378:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_9_155": {
+            "name": "Relu_relu_gelu_9",
+            "op": "relu",
+            "inputs": [
+                "@reshape_384:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Softmax_/wav2vec2/encoder/layers.2/attention/Softmax_157": {
+            "name": "Softmax_/wav2vec2/encoder/layers.2/attention/Softmax",
+            "op": "softmax",
+            "parameters": {
+                "sf_axis": -1,
+                "beta": 1.0
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.2/attention/MatMul_166:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_158": {
+            "name": "Transpose_/wav2vec2/encoder/layers.2/attention/Transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_1_167:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_2_159": {
+            "name": "Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_2",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_387:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_160": {
+            "name": "Reshape_/wav2vec2/encoder/layers.3/attention/Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_381:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.0/final_layer_norm/Add_1_162": {
+            "name": "Add_/wav2vec2/encoder/layers.0/final_layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.0/Add_1_171:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.2/attention/MatMul_166": {
+            "name": "MatMul_/wav2vec2/encoder/layers.2/attention/MatMul",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Mul_/wav2vec2/encoder/layers.2/attention/Mul_177:out0",
+                "@Mul_/wav2vec2/encoder/layers.2/attention/Mul_1_178:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_1_167": {
+            "name": "Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_1",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_393:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.0/Add_1_171": {
+            "name": "Add_/wav2vec2/encoder/layers.0/Add_1",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.0/layer_norm/Add_1_184:out0",
+                "@reshape_390:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_3_173": {
+            "name": "Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_3",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_3_187:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.2/attention/Mul_177": {
+            "name": "Mul_/wav2vec2/encoder/layers.2/attention/Mul",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_1_190:out0",
+                "@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_1__wav2vec2_encoder_layers_2_attention_Sqrt_1_output_0_as_const_191:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.2/attention/Mul_1_178": {
+            "name": "Mul_/wav2vec2/encoder/layers.2/attention/Mul_1",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_2_192:out0",
+                "@Constant__wav2vec2_encoder_layers_2_attention_Sqrt_2__wav2vec2_encoder_layers_2_attention_Sqrt_2_output_0_as_const_193:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.0/layer_norm/Add_1_184": {
+            "name": "Add_/wav2vec2/encoder/layers.0/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.0/Add_197:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_3_187": {
+            "name": "Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_3",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.1/attention/MatMul_1_188:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.1/attention/MatMul_1_188": {
+            "name": "MatMul_/wav2vec2/encoder/layers.1/attention/MatMul_1",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Softmax_/wav2vec2/encoder/layers.1/attention/Softmax_201:out0",
+                "@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_202:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_1_190": {
+            "name": "Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_1",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_2_203:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_2_attention_Sqrt_1__wav2vec2_encoder_layers_2_attention_Sqrt_1_output_0_as_const_191": {
+            "name": "Constant__wav2vec2_encoder_layers_2_attention_Sqrt_1__wav2vec2_encoder_layers_2_attention_Sqrt_1_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_2_192": {
+            "name": "Transpose_/wav2vec2/encoder/layers.2/attention/Transpose_2",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    3,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_204:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_2_attention_Sqrt_2__wav2vec2_encoder_layers_2_attention_Sqrt_2_output_0_as_const_193": {
+            "name": "Constant__wav2vec2_encoder_layers_2_attention_Sqrt_2__wav2vec2_encoder_layers_2_attention_Sqrt_2_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layers.0/Add_197": {
+            "name": "Add_/wav2vec2/encoder/layers.0/Add",
+            "op": "add",
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layer_norm/Add_1_206:out0",
+                "@reshape_396:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_8_199": {
+            "name": "Relu_relu_gelu_8",
+            "op": "relu",
+            "inputs": [
+                "@reshape_402:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Softmax_/wav2vec2/encoder/layers.1/attention/Softmax_201": {
+            "name": "Softmax_/wav2vec2/encoder/layers.1/attention/Softmax",
+            "op": "softmax",
+            "parameters": {
+                "sf_axis": -1,
+                "beta": 1.0
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.1/attention/MatMul_210:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_202": {
+            "name": "Transpose_/wav2vec2/encoder/layers.1/attention/Transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_1_211:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_2_203": {
+            "name": "Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_2",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_405:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_204": {
+            "name": "Reshape_/wav2vec2/encoder/layers.2/attention/Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_399:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/layer_norm/Add_1_206": {
+            "name": "Add_/wav2vec2/encoder/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/Add_215:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.1/attention/MatMul_210": {
+            "name": "MatMul_/wav2vec2/encoder/layers.1/attention/MatMul",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Mul_/wav2vec2/encoder/layers.1/attention/Mul_221:out0",
+                "@Mul_/wav2vec2/encoder/layers.1/attention/Mul_1_222:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_1_211": {
+            "name": "Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_1",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_408:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/encoder/Add_215": {
+            "name": "Add_/wav2vec2/encoder/Add",
+            "op": "add",
+            "inputs": [
+                "@reshape_411:out0",
+                "@Relu_relu_gelu_7_229:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_3_217": {
+            "name": "Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_3",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_3_230:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.1/attention/Mul_221": {
+            "name": "Mul_/wav2vec2/encoder/layers.1/attention/Mul",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_1_233:out0",
+                "@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_1__wav2vec2_encoder_layers_1_attention_Sqrt_1_output_0_as_const_234:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.1/attention/Mul_1_222": {
+            "name": "Mul_/wav2vec2/encoder/layers.1/attention/Mul_1",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_2_235:out0",
+                "@Constant__wav2vec2_encoder_layers_1_attention_Sqrt_2__wav2vec2_encoder_layers_1_attention_Sqrt_2_output_0_as_const_236:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_7_229": {
+            "name": "Relu_relu_gelu_7",
+            "op": "relu",
+            "inputs": [
+                "@Slice_/wav2vec2/encoder/pos_conv_embed/padding/Slice_242:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_3_230": {
+            "name": "Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_3",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.0/attention/MatMul_1_231:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.0/attention/MatMul_1_231": {
+            "name": "MatMul_/wav2vec2/encoder/layers.0/attention/MatMul_1",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Softmax_/wav2vec2/encoder/layers.0/attention/Softmax_243:out0",
+                "@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_244:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_1_233": {
+            "name": "Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_1",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_2_245:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_1_attention_Sqrt_1__wav2vec2_encoder_layers_1_attention_Sqrt_1_output_0_as_const_234": {
+            "name": "Constant__wav2vec2_encoder_layers_1_attention_Sqrt_1__wav2vec2_encoder_layers_1_attention_Sqrt_1_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_2_235": {
+            "name": "Transpose_/wav2vec2/encoder/layers.1/attention/Transpose_2",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    3,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_246:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_1_attention_Sqrt_2__wav2vec2_encoder_layers_1_attention_Sqrt_2_output_0_as_const_236": {
+            "name": "Constant__wav2vec2_encoder_layers_1_attention_Sqrt_2__wav2vec2_encoder_layers_1_attention_Sqrt_2_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Slice_/wav2vec2/encoder/pos_conv_embed/padding/Slice_242": {
+            "name": "Slice_/wav2vec2/encoder/pos_conv_embed/padding/Slice",
+            "op": "slice",
+            "parameters": {
+                "begin": [
+                    0,
+                    0,
+                    0
+                ],
+                "size": [
+                    1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv_250:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Softmax_/wav2vec2/encoder/layers.0/attention/Softmax_243": {
+            "name": "Softmax_/wav2vec2/encoder/layers.0/attention/Softmax",
+            "op": "softmax",
+            "parameters": {
+                "sf_axis": -1,
+                "beta": 1.0
+            },
+            "inputs": [
+                "@MatMul_/wav2vec2/encoder/layers.0/attention/MatMul_251:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_244": {
+            "name": "Transpose_/wav2vec2/encoder/layers.0/attention/Transpose",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_1_252:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_2_245": {
+            "name": "Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_2",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_417:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_246": {
+            "name": "Reshape_/wav2vec2/encoder/layers.1/attention/Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_414:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/wav2vec2/feature_projection/layer_norm/Add_1_248": {
+            "name": "Add_/wav2vec2/feature_projection/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Relu_relu_gelu_6_257:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv_250": {
+            "name": "Conv_/wav2vec2/encoder/pos_conv_embed/conv/Conv",
+            "op": "group_conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 768,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 16,
+                "ksize": 128,
+                "stride": 1,
+                "pad_method": "padding_const",
+                "pad": [
+                    64,
+                    64
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@reshape_411:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "MatMul_/wav2vec2/encoder/layers.0/attention/MatMul_251": {
+            "name": "MatMul_/wav2vec2/encoder/layers.0/attention/MatMul",
+            "op": "matmul",
+            "parameters": {
+                "transpose_a": false,
+                "transpose_b": false
+            },
+            "inputs": [
+                "@Mul_/wav2vec2/encoder/layers.0/attention/Mul_259:out0",
+                "@Mul_/wav2vec2/encoder/layers.0/attention/Mul_1_260:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_1_252": {
+            "name": "Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_1",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_420:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_6_257": {
+            "name": "Relu_relu_gelu_6",
+            "op": "relu",
+            "inputs": [
+                "@Conv_/wav2vec2/feature_extractor/conv_layers.6/conv/Conv_266:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.0/attention/Mul_259": {
+            "name": "Mul_/wav2vec2/encoder/layers.0/attention/Mul",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_1_268:out0",
+                "@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_1__wav2vec2_encoder_layers_0_attention_Sqrt_1_output_0_as_const_269:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/encoder/layers.0/attention/Mul_1_260": {
+            "name": "Mul_/wav2vec2/encoder/layers.0/attention/Mul_1",
+            "op": "multiply",
+            "parameters": {
+                "axis": 1,
+                "bias": true
+            },
+            "inputs": [
+                "@Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_2_270:out0",
+                "@Constant__wav2vec2_encoder_layers_0_attention_Sqrt_2__wav2vec2_encoder_layers_0_attention_Sqrt_2_output_0_as_const_271:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/feature_extractor/conv_layers.6/conv/Conv_266": {
+            "name": "Conv_/wav2vec2/feature_extractor/conv_layers.6/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 2,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_5_267:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_5_267": {
+            "name": "Relu_relu_gelu_5",
+            "op": "relu",
+            "inputs": [
+                "@Conv_/wav2vec2/feature_extractor/conv_layers.5/conv/Conv_275:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_1_268": {
+            "name": "Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_1",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1,
+                    3
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_2_276:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_0_attention_Sqrt_1__wav2vec2_encoder_layers_0_attention_Sqrt_1_output_0_as_const_269": {
+            "name": "Constant__wav2vec2_encoder_layers_0_attention_Sqrt_1__wav2vec2_encoder_layers_0_attention_Sqrt_1_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_2_270": {
+            "name": "Transpose_/wav2vec2/encoder/layers.0/attention/Transpose_2",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    3,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_277:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Constant__wav2vec2_encoder_layers_0_attention_Sqrt_2__wav2vec2_encoder_layers_0_attention_Sqrt_2_output_0_as_const_271": {
+            "name": "Constant__wav2vec2_encoder_layers_0_attention_Sqrt_2__wav2vec2_encoder_layers_0_attention_Sqrt_2_output_0_as_const",
+            "op": "variable",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/feature_extractor/conv_layers.5/conv/Conv_275": {
+            "name": "Conv_/wav2vec2/feature_extractor/conv_layers.5/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 2,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_4_279:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_2_276": {
+            "name": "Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_2",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    149,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_426:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_277": {
+            "name": "Reshape_/wav2vec2/encoder/layers.0/attention/Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    -1,
+                    12,
+                    64
+                ]
+            },
+            "inputs": [
+                "@reshape_423:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_4_279": {
+            "name": "Relu_relu_gelu_4",
+            "op": "relu",
+            "inputs": [
+                "@Conv_/wav2vec2/feature_extractor/conv_layers.4/conv/Conv_283:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/feature_extractor/conv_layers.4/conv/Conv_283": {
+            "name": "Conv_/wav2vec2/feature_extractor/conv_layers.4/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_3_288:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_3_288": {
+            "name": "Relu_relu_gelu_3",
+            "op": "relu",
+            "inputs": [
+                "@Conv_/wav2vec2/feature_extractor/conv_layers.3/conv/Conv_289:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/feature_extractor/conv_layers.3/conv/Conv_289": {
+            "name": "Conv_/wav2vec2/feature_extractor/conv_layers.3/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_2_290:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_2_290": {
+            "name": "Relu_relu_gelu_2",
+            "op": "relu",
+            "inputs": [
+                "@Conv_/wav2vec2/feature_extractor/conv_layers.2/conv/Conv_291:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/feature_extractor/conv_layers.2/conv/Conv_291": {
+            "name": "Conv_/wav2vec2/feature_extractor/conv_layers.2/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_1_292:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_1_292": {
+            "name": "Relu_relu_gelu_1",
+            "op": "relu",
+            "inputs": [
+                "@Conv_/wav2vec2/feature_extractor/conv_layers.1/conv/Conv_293:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/feature_extractor/conv_layers.1/conv/Conv_293": {
+            "name": "Conv_/wav2vec2/feature_extractor/conv_layers.1/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_0_294:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Relu_relu_gelu_0_294": {
+            "name": "Relu_relu_gelu_0",
+            "op": "relu",
+            "inputs": [
+                "@Mul_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Mul_296_Add_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Add_295:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_1_298": {
+            "name": "Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_1",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    512,
+                    9599
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_1_298_acuity_mark_perm_309:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "InstanceNormalization_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_300": {
+            "name": "InstanceNormalization_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization",
+            "op": "instancenormalize",
+            "parameters": {
+                "eps": 9.999999747378752e-06,
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@InstanceNormalization_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_300_acuity_mark_perm_310:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_301": {
+            "name": "Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    0,
+                    512,
+                    -1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_301_acuity_mark_perm_311:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_302": {
+            "name": "Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 10,
+                "stride": 5,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_302_acuity_mark_perm_312:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Unsqueeze_/wav2vec2/feature_extractor/Unsqueeze_303": {
+            "name": "Unsqueeze_/wav2vec2/feature_extractor/Unsqueeze",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    48000
+                ]
+            },
+            "inputs": [
+                "@input_values_304:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "input_values_304": {
+            "name": "input_values",
+            "op": "input",
+            "parameters": {
+                "size": "",
+                "channels": 1,
+                "shape": [
+                    1,
+                    48000
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Mul_296_acuity_mark_perm_308": {
+            "name": "Mul_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Mul_296_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_1_298:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_1_298_acuity_mark_perm_309": {
+            "name": "Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_1_298_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@InstanceNormalization_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_300:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "InstanceNormalization_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_300_acuity_mark_perm_310": {
+            "name": "InstanceNormalization_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_300_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_301:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_301_acuity_mark_perm_311": {
+            "name": "Reshape_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Reshape_301_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_302:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_302_acuity_mark_perm_312": {
+            "name": "Conv_/wav2vec2/feature_extractor/conv_layers.0/conv/Conv_302_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Unsqueeze_/wav2vec2/feature_extractor/Unsqueeze_303:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_313": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.5/final_layer_norm/Add_1_4:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_314": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 56,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_313:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_315": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    56
+                ]
+            },
+            "inputs": [
+                "@fullconnect_314:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_316": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_13_13:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_317": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_316:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_318": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_317:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_319": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.5/attention/Reshape_3_21:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_320": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_319:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_321": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_320:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_322": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.5/layer_norm/Add_1_8:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_323": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 3072,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_322:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_324": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@fullconnect_323:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_325": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_12_33:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_326": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_325:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_327": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_326:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_328": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.4/attention/Reshape_3_45:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_329": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_328:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_330": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_329:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_331": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.4/layer_norm/Add_1_25:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_332": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 3072,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_331:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_333": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@fullconnect_332:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_334": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_11_66:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_335": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_334:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_336": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_335:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_337": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.4/final_layer_norm/Add_1_15:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_338": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_337:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_339": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_338:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_340": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.3/attention/Reshape_3_85:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_341": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_340:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_342": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_341:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_343": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.4/final_layer_norm/Add_1_15:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_344": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_343:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_345": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_344:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_346": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.3/layer_norm/Add_1_52:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_347": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 3072,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_346:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_348": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@fullconnect_347:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_349": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.4/final_layer_norm/Add_1_15:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_350": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_349:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_351": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_350:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_352": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_10_111:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_353": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_352:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_354": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_353:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_355": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.3/final_layer_norm/Add_1_37:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_356": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_355:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_357": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_356:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_358": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.2/attention/Reshape_3_129:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_359": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_358:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_360": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_359:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_361": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.3/final_layer_norm/Add_1_37:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_362": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_361:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_363": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_362:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_364": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.2/layer_norm/Add_1_96:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_365": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 3072,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_364:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_366": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@fullconnect_365:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_367": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.3/final_layer_norm/Add_1_37:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_368": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_367:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_369": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_368:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_370": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_9_155:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_371": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_370:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_372": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_371:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_373": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.2/final_layer_norm/Add_1_74:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_374": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_373:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_375": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_374:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_376": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.1/attention/Reshape_3_173:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_377": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_376:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_378": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_377:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_379": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.2/final_layer_norm/Add_1_74:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_380": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_379:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_381": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_380:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_382": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.1/layer_norm/Add_1_140:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_383": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 3072,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_382:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_384": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@fullconnect_383:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_385": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.2/final_layer_norm/Add_1_74:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_386": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_385:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_387": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_386:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_388": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@Relu_relu_gelu_8_199:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_389": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_388:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_390": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_389:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_391": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.1/final_layer_norm/Add_1_118:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_392": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_391:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_393": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_392:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_394": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Reshape_/wav2vec2/encoder/layers.0/attention/Reshape_3_217:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_395": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_394:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_396": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_395:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_397": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.1/final_layer_norm/Add_1_118:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_398": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_397:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_399": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_398:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_400": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.0/layer_norm/Add_1_184:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_401": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 3072,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_400:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_402": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    3072
+                ]
+            },
+            "inputs": [
+                "@fullconnect_401:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_403": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.1/final_layer_norm/Add_1_118:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_404": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_403:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_405": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_404:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_406": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.0/final_layer_norm/Add_1_162:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_407": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_406:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_408": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_407:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_409": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    512
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/feature_projection/layer_norm/Add_1_248:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_410": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_409:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_411": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_410:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_412": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.0/final_layer_norm/Add_1_162:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_413": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_412:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_414": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_413:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_415": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layers.0/final_layer_norm/Add_1_162:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_416": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_415:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_417": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_416:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_418": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layer_norm/Add_1_206:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_419": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_418:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_420": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_419:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_421": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layer_norm/Add_1_206:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_422": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_421:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_423": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_422:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_424": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Add_/wav2vec2/encoder/layer_norm/Add_1_206:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_425": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_424:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_426": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_425:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Mul_296_Add_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Add_295": {
+            "name": "batchnormalize",
+            "op": "batchnormalize",
+            "parameters": {
+                "eps": 0.0001
+            },
+            "inputs": [
+                "@Mul_/wav2vec2/feature_extractor/conv_layers.0/layer_norm/Mul_296_acuity_mark_perm_308:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        }
+    },
+    "quantize_info": {}
+}
