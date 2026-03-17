@@ -1,0 +1,1 @@
+/home/nsbb/travail/claude/T527/ai-sdk/models/w2v_v.1.0.0_onnx/wav2vec2_ko_xls_r_300m_3s/test_audio.npy

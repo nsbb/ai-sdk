@@ -1,0 +1,25 @@
+# !!!This file disallow TABs!!!
+input_meta:
+  databases:
+  - path: dataset_calib51.txt
+    type: TEXT
+    ports:
+    - lid: input_values_604
+      category: frequency
+      dtype: float32
+      sparse: false
+      tensor_name:
+      shape:
+      - 1
+      - 80000
+      fitting: scale
+      preprocess:
+        reverse_channel: false
+        scale: 1.0
+        preproc_node_params:
+          add_preproc_node: false
+          preproc_type: TENSOR
+          preproc_perm:
+          - 0
+          - 1
+      redirect_to_output: false

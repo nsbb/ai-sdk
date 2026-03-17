@@ -197,31 +197,6 @@ models/<MODEL_NAME>/wksp/<MODEL_NAME>_uint8/
 ./vpm_run -s sample.txt -l 100    # 100회 반복 (성능 측정)
 ```
 
-### 변환 환경 (Docker 사용 시)
-
-export ovxlib 단계에서 Linux gcc가 필요합니다. Docker 환경 권장:
-
-```bash
-docker run --rm \
-  -v $WORK:/work \
-  -v $VIVANTE57:/vivante57:ro \
-  -v $ACUITY612:/acuity612:ro \
-  t527-npu:v1.2 \
-  bash -c "
-    VSIM=/vivante57/cmdtools/vsimulator
-    export REAL_GCC=/usr/bin/gcc
-    export LD_LIBRARY_PATH=\$VSIM/lib:\$VSIM/lib/x64_linux/vsim:...
-    export EXTRALFLAGS=\"-Wl,-rpath,\$VSIM/lib ...\"
-    cd /acuity612/bin
-    ./pegasus export ovxlib --pack-nbg-unify --viv-sdk \$VSIM ...
-  "
-```
-
-> **핵심 주의사항**:
-> - Acuity 6.12.0 + VivanteIDE 5.7.2 조합 필수 (버전 불일치 시 컴파일 오류)
-> - `cd /acuity612/bin` 후 pegasus 실행 (vxcode/template 경로 문제 방지)
-> - `REAL_GCC` 환경변수로 gcc 경로 명시 필요
-
 ---
 
 ## 탑재 모델 목록
@@ -236,7 +211,7 @@ docker run --rm \
 | **Zipformer Encoder** | 한국어 | sherpa-onnx | `[1,39,80]` + 30 캐시 | ✅ 변환완료 (63MB) | 실기기 테스트 필요 |
 | Zipformer Decoder | 한국어 | sherpa-onnx | `[1,512]` | ✅ 변환완료 (2.8MB) | |
 | Zipformer Joiner | 한국어 | sherpa-onnx | `[1,512]` × 2 | ✅ 변환완료 (1.9MB) | |
-| **Wav2Vec2 (5s)** | 영어 | HuggingFace → ONNX | `[1,80000]` INT8 | ✅ 추론성공 (87MB, 714ms) | |
+| **Wav2Vec2 (5s)** | 영어 | HuggingFace → ONNX | `[1,80000]` INT8 | ✅ 추론성공 (87MB, 720ms) | CER 17.52% (6.12), [비교](models/w2v_v.1.0.0_onnx/wav2vec2_base_960h_5s/acuity_612_vs_621.md) |
 | DeepSpeech2 | 영어 | TensorFlow | `[1,1,T,161]` | ✅ 변환완료 | |
 
 ### 이미지 분류 / 객체 탐지
@@ -313,14 +288,92 @@ float_val = (int8_val - zero_point) * scale
 
 ---
 
+## Acuity Toolkit 버전 비교 (6.12 vs 6.21)
+
+두 가지 Acuity 버전을 사용할 수 있으며, 모델에 따라 결과가 다릅니다.
+
+### 환경
+
+| 항목 | Acuity 6.12.0 | Acuity 6.21.16 |
+|------|---------------|----------------|
+| 설치 형태 | 바이너리 (standalone) | pip wheel (Python) |
+| 실행 방법 | `./pegasus` (로컬 WSL) | `python3 .../pegasus.py` (Docker) |
+| Docker 이미지 | `t527-npu:v1.2` | `ubuntu-npu:v1.8.11` |
+| VivanteIDE 호환 | **5.7.2** (OVXLIB 1.1.20) | **5.8.2** (OVXLIB 1.2.18) |
+| export 시 `--with-input-meta` | 불필요 | **필수** |
+| inputmeta lid 검증 | 관대 (mismatch 무시) | **엄격** (정확히 일치 필요) |
+
+### 양자화 지원
+
+| 양자화기 | 6.12 | 6.21 |
+|---------|------|------|
+| asymmetric_affine (uint8) | O | O |
+| perchannel_symmetric_affine (PCQ int8) | O | O |
+| dynamic_fixed_point (int16) | O | O |
+| bfloat16 / qbfloat16 | O | O |
+| **float16** | X | **O** |
+| **e4m3 / e5m2** (FP8) | X | **O** |
+
+> **주의**: T527 NPU (VIP9000NANOSI_PLUS)는 **uint8/int8만 실제 추론 가능**.
+> fp16/bf16/int16은 NB가 생성되더라도 디바이스에서 HANG 또는 segfault 발생.
+
+### Wav2Vec2 영어 모델 실측 비교 (50샘플)
+
+| 양자화 | Acuity | CER | WER | NB크기 | 추론시간 |
+|--------|--------|-----|-----|--------|---------|
+| **uint8** | **6.12** | **17.52%** | **27.38%** | **87MB** | **~720ms** |
+| PCQ int8 | 6.21 | 19.24% | 34.39% | 99MB | ~826ms |
+| uint8 | 6.21 | 23.41% | 40.57% | 76MB | ~720ms |
+
+**결론**: 이 모델에서는 **Acuity 6.12 uint8이 최적**. 6.21은 NB 크기는 작지만 정확도 열화.
+모델별로 다를 수 있으므로 새 모델 변환 시 양쪽 모두 테스트 권장.
+
+상세 비교: [`models/w2v_v.1.0.0_onnx/wav2vec2_base_960h_5s/acuity_612_vs_621.md`](models/w2v_v.1.0.0_onnx/wav2vec2_base_960h_5s/acuity_612_vs_621.md)
+
+### Docker 사용법
+
+#### 6.12 (t527-npu:v1.2)
+
+```bash
+docker run --rm -v $WORK:/work -v $VIVANTE57:/vivante57:ro -v $ACUITY612:/acuity612:ro \
+  t527-npu:v1.2 bash -c "
+    VSIM=/vivante57/cmdtools/vsimulator
+    export REAL_GCC=/usr/bin/gcc
+    export EXTRALFLAGS=\"-Wl,-rpath,\$VSIM/lib -Wl,-rpath,\$VSIM/lib/x64_linux/vsim\"
+    cd /acuity612/bin
+    ./pegasus export ovxlib --pack-nbg-unify --optimize VIP9000NANOSI_PLUS_PID0X10000016 \
+      --viv-sdk \$VSIM --target-ide-project linux64 --batch-size 1 ...
+  "
+```
+
+#### 6.21 (ubuntu-npu:v1.8.11)
+
+```bash
+docker run --rm -v $WORK:/work:rw ubuntu-npu:v1.8.11 bash -c "
+    VSIM=/root/Vivante_IDE/VivanteIDE5.8.2/cmdtools/vsimulator
+    COMMON=/root/Vivante_IDE/VivanteIDE5.8.2/cmdtools/common/lib
+    # 핵심: lib 심링크
+    for lib in \$VSIM/lib/*.so \$COMMON/*.so; do
+      ln -sf \$lib /usr/lib/\$(basename \$lib) 2>/dev/null
+    done
+    ldconfig 2>/dev/null
+    PEGASUS='python3 /usr/local/acuity_command_line_tools/pegasus.py'
+    \$PEGASUS export ovxlib --with-input-meta inputmeta.yml \
+      --pack-nbg-unify --optimize VIP9000NANOSI_PLUS_PID0X10000016 \
+      --viv-sdk \$VSIM --target-ide-project linux64 --batch-size 1 ...
+  "
+```
+
+---
+
 ## 환경 설정
 
 ### 필수 툴체인
 
 | 도구 | 버전 | 용도 |
 |------|------|------|
-| Acuity Toolkit | 6.12.0 | 모델 변환 (import/quantize/export) |
-| VivanteIDE | 5.7.2 | NPU 시뮬레이터 (export 컴파일 시 필요) |
+| Acuity Toolkit | 6.12.0 / 6.21.16 | 모델 변환 (import/quantize/export) |
+| VivanteIDE | 5.7.2 (6.12용) / 5.8.2 (6.21용) | NPU 시뮬레이터 (export 컴파일 시 필요) |
 | NDK | r21+ | Android aarch64 바이너리 빌드 |
 | aarch64-gcc | 10.3 | Linux aarch64 바이너리 빌드 |
 

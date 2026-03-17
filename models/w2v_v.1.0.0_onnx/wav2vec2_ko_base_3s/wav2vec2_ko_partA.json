@@ -1,0 +1,553 @@
+{
+    "MetaData": {
+        "Name": "main_graph",
+        "AcuityVersion": "6",
+        "Platform": "tensorflow",
+        "Org_Platform": "onnx"
+    },
+    "Layers": {
+        "attach_Add_/layer_norm_1/Add_1/out0_0": {
+            "name": "attach_Add_/layer_norm_1/Add_1/out0",
+            "op": "output",
+            "parameters": {},
+            "inputs": [
+                "@Add_/layer_norm_1/Add_1_1:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/layer_norm_1/Add_1_1": {
+            "name": "Add_/layer_norm_1/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Add_/Add_2:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/Add_2": {
+            "name": "Add_/Add",
+            "op": "add",
+            "inputs": [
+                "@reshape_41:out0",
+                "@Mul_/pos_conv_embed/activation/Mul_1_5:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/pos_conv_embed/activation/Mul_1_5": {
+            "name": "Mul_/pos_conv_embed/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Slice_/pos_conv_embed/padding/Slice_8:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Slice_/pos_conv_embed/padding/Slice_8": {
+            "name": "Slice_/pos_conv_embed/padding/Slice",
+            "op": "slice",
+            "parameters": {
+                "begin": [
+                    0,
+                    0,
+                    0
+                ],
+                "size": [
+                    1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@Conv_/pos_conv_embed/conv/Conv_9:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/pos_conv_embed/conv/Conv_9": {
+            "name": "Conv_/pos_conv_embed/conv/Conv",
+            "op": "group_conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 768,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 16,
+                "ksize": 128,
+                "stride": 1,
+                "pad_method": "padding_const",
+                "pad": [
+                    64,
+                    64
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@reshape_41:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/layer_norm/Add_1_10": {
+            "name": "Add_/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.6/activation/Mul_1_14:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.6/activation/Mul_1_14": {
+            "name": "Mul_/feature_extractor/conv_layers.6/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.6/conv/Conv_15:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.6/conv/Conv_15": {
+            "name": "Conv_/feature_extractor/conv_layers.6/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 2,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.5/activation/Mul_1_16:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.5/activation/Mul_1_16": {
+            "name": "Mul_/feature_extractor/conv_layers.5/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.5/conv/Conv_17:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.5/conv/Conv_17": {
+            "name": "Conv_/feature_extractor/conv_layers.5/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 2,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.4/activation/Mul_1_18:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.4/activation/Mul_1_18": {
+            "name": "Mul_/feature_extractor/conv_layers.4/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.4/conv/Conv_19:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.4/conv/Conv_19": {
+            "name": "Conv_/feature_extractor/conv_layers.4/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.3/activation/Mul_1_20:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.3/activation/Mul_1_20": {
+            "name": "Mul_/feature_extractor/conv_layers.3/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.3/conv/Conv_21:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.3/conv/Conv_21": {
+            "name": "Conv_/feature_extractor/conv_layers.3/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.2/activation/Mul_1_22:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.2/activation/Mul_1_22": {
+            "name": "Mul_/feature_extractor/conv_layers.2/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.2/conv/Conv_23:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.2/conv/Conv_23": {
+            "name": "Conv_/feature_extractor/conv_layers.2/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.1/activation/Mul_1_24:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.1/activation/Mul_1_24": {
+            "name": "Mul_/feature_extractor/conv_layers.1/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.1/conv/Conv_25:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.1/conv/Conv_25": {
+            "name": "Conv_/feature_extractor/conv_layers.1/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.0/activation/Mul_1_26:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.0/activation/Mul_1_26": {
+            "name": "Mul_/feature_extractor/conv_layers.0/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_29_Add_/feature_extractor/conv_layers.0/layer_norm/Add_27:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_30": {
+            "name": "InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization",
+            "op": "instancenormalize",
+            "parameters": {
+                "eps": 9.999999747378752e-06,
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.0/conv/Conv_32:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.0/conv/Conv_32": {
+            "name": "Conv_/feature_extractor/conv_layers.0/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 10,
+                "stride": 5,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.0/conv/Conv_32_acuity_mark_perm_38:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Unsqueeze_/feature_extractor/Unsqueeze_33": {
+            "name": "Unsqueeze_/feature_extractor/Unsqueeze",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    48000
+                ]
+            },
+            "inputs": [
+                "@audio_34:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "audio_34": {
+            "name": "audio",
+            "op": "input",
+            "parameters": {
+                "size": "",
+                "channels": 1,
+                "shape": [
+                    1,
+                    48000
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.0/conv/Conv_32_acuity_mark_perm_38": {
+            "name": "Conv_/feature_extractor/conv_layers.0/conv/Conv_32_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Unsqueeze_/feature_extractor/Unsqueeze_33:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_39": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    512
+                ]
+            },
+            "inputs": [
+                "@Add_/layer_norm/Add_1_10:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_40": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_39:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_41": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_40:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_29_Add_/feature_extractor/conv_layers.0/layer_norm/Add_27": {
+            "name": "batchnormalize",
+            "op": "batchnormalize",
+            "parameters": {
+                "eps": 0.0001
+            },
+            "inputs": [
+                "@InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_30:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        }
+    },
+    "quantize_info": {}
+}

@@ -1,0 +1,613 @@
+{
+    "MetaData": {
+        "Name": "main_graph",
+        "AcuityVersion": "6",
+        "Platform": "tensorflow",
+        "Org_Platform": "onnx"
+    },
+    "Layers": {
+        "attach_Add_/lm_head/Add/out0_0": {
+            "name": "attach_Add_/lm_head/Add/out0",
+            "op": "output",
+            "parameters": {},
+            "inputs": [
+                "@reshape_42:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Add_/feature_projection/layer_norm/Add_1_8": {
+            "name": "Add_/feature_projection/layer_norm/Add_1",
+            "op": "layernormalize",
+            "parameters": {
+                "axis_list": [
+                    -1
+                ],
+                "eps": 9.999999747378752e-06
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.6/activation/Mul_1_11:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.6/activation/Mul_1_11": {
+            "name": "Mul_/feature_extractor/conv_layers.6/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.6/conv/Conv_12:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.6/conv/Conv_12": {
+            "name": "Conv_/feature_extractor/conv_layers.6/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 2,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.5/activation/Mul_1_13:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.5/activation/Mul_1_13": {
+            "name": "Mul_/feature_extractor/conv_layers.5/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.5/conv/Conv_14:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.5/conv/Conv_14": {
+            "name": "Conv_/feature_extractor/conv_layers.5/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 2,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.4/activation/Mul_1_15:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.4/activation/Mul_1_15": {
+            "name": "Mul_/feature_extractor/conv_layers.4/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.4/conv/Conv_16:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.4/conv/Conv_16": {
+            "name": "Conv_/feature_extractor/conv_layers.4/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.3/activation/Mul_1_17:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.3/activation/Mul_1_17": {
+            "name": "Mul_/feature_extractor/conv_layers.3/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.3/conv/Conv_18:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.3/conv/Conv_18": {
+            "name": "Conv_/feature_extractor/conv_layers.3/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.2/activation/Mul_1_19:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.2/activation/Mul_1_19": {
+            "name": "Mul_/feature_extractor/conv_layers.2/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.2/conv/Conv_20:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.2/conv/Conv_20": {
+            "name": "Conv_/feature_extractor/conv_layers.2/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.1/activation/Mul_1_21:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.1/activation/Mul_1_21": {
+            "name": "Mul_/feature_extractor/conv_layers.1/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.1/conv/Conv_22:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.1/conv/Conv_22": {
+            "name": "Conv_/feature_extractor/conv_layers.1/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 3,
+                "stride": 2,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.0/activation/Mul_1_23:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.0/activation/Mul_1_23": {
+            "name": "Mul_/feature_extractor/conv_layers.0/activation/Mul_1",
+            "op": "gelu",
+            "parameters": {
+                "approximate": false
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_26_Add_/feature_extractor/conv_layers.0/layer_norm/Add_24:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_1_27": {
+            "name": "Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_1",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    512,
+                    9599
+                ]
+            },
+            "inputs": [
+                "@Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_1_27_acuity_mark_perm_36:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_29": {
+            "name": "InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization",
+            "op": "instancenormalize",
+            "parameters": {
+                "eps": 9.999999747378752e-06,
+                "axis": [
+                    1
+                ]
+            },
+            "inputs": [
+                "@InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_29_acuity_mark_perm_37:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_30": {
+            "name": "Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    0,
+                    512,
+                    -1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_30_acuity_mark_perm_38:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.0/conv/Conv_31": {
+            "name": "Conv_/feature_extractor/conv_layers.0/conv/Conv",
+            "op": "conv1d",
+            "parameters": {
+                "padding_mode": "CONSTANT",
+                "weights": 512,
+                "padding": "VALID",
+                "bias": true,
+                "group_number": 1,
+                "ksize": 10,
+                "stride": 5,
+                "pad_method": "padding_const",
+                "pad": [
+                    0,
+                    0
+                ],
+                "dilation": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.0/conv/Conv_31_acuity_mark_perm_39:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Unsqueeze_/feature_extractor/Unsqueeze_32": {
+            "name": "Unsqueeze_/feature_extractor/Unsqueeze",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    1,
+                    1,
+                    48000
+                ]
+            },
+            "inputs": [
+                "@input_values_33:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "input_values_33": {
+            "name": "input_values",
+            "op": "input",
+            "parameters": {
+                "size": "",
+                "channels": 1,
+                "shape": [
+                    1,
+                    48000
+                ],
+                "is_scalar": false,
+                "type": "float32"
+            },
+            "inputs": [],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_26_acuity_mark_perm_35": {
+            "name": "Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_26_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_1_27:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_1_27_acuity_mark_perm_36": {
+            "name": "Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_1_27_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_29:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_29_acuity_mark_perm_37": {
+            "name": "InstanceNormalization_/feature_extractor/conv_layers.0/layer_norm/InstanceNormalization_29_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_30:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_30_acuity_mark_perm_38": {
+            "name": "Reshape_/feature_extractor/conv_layers.0/layer_norm/Reshape_30_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Conv_/feature_extractor/conv_layers.0/conv/Conv_31:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Conv_/feature_extractor/conv_layers.0/conv/Conv_31_acuity_mark_perm_39": {
+            "name": "Conv_/feature_extractor/conv_layers.0/conv/Conv_31_acuity_mark_perm",
+            "op": "permute",
+            "parameters": {
+                "perm": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            "inputs": [
+                "@Unsqueeze_/feature_extractor/Unsqueeze_32:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_40": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    768
+                ]
+            },
+            "inputs": [
+                "@reshape_45:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_41": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 56,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_40:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_42": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    56
+                ]
+            },
+            "inputs": [
+                "@fullconnect_41:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_43": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    512
+                ]
+            },
+            "inputs": [
+                "@Add_/feature_projection/layer_norm/Add_1_8:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "fullconnect_44": {
+            "name": "fullconnect",
+            "op": "fullconnect",
+            "parameters": {
+                "weights": 768,
+                "bias": true,
+                "regularize": false,
+                "axis": 1
+            },
+            "inputs": [
+                "@reshape_43:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "reshape_45": {
+            "name": "reshape",
+            "op": "reshape",
+            "parameters": {
+                "shape": [
+                    -1,
+                    149,
+                    768
+                ]
+            },
+            "inputs": [
+                "@fullconnect_44:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        },
+        "Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_26_Add_/feature_extractor/conv_layers.0/layer_norm/Add_24": {
+            "name": "batchnormalize",
+            "op": "batchnormalize",
+            "parameters": {
+                "eps": 0.0001
+            },
+            "inputs": [
+                "@Mul_/feature_extractor/conv_layers.0/layer_norm/Mul_26_acuity_mark_perm_35:out0"
+            ],
+            "outputs": [
+                "out0"
+            ]
+        }
+    },
+    "quantize_info": {}
+}

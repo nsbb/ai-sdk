@@ -1,0 +1,6 @@
+[network]
+/data/local/tmp/w2v_test/network_binary.nb
+[input]
+/data/local/tmp/w2v_test/input_0032.dat
+[output]
+/data/local/tmp/w2v_test/output_0032.dat
