@@ -65,3 +65,8 @@ conversation_history.txt
 # Large model data files without extension
 wav2vec2_ko_base_3s_nopad*_v2
 gen_nbg
+
+# HuggingFace/dataset cache
+*.arrow
+*.lock
+zeroth_korean_cache/
