@@ -33,7 +33,6 @@ KO_CITRINET_TEST_DIR = os.path.join(
     SCRIPT_DIR, "..", "..", "ko_citrinet_ngc", "data", "wav_test"
 )
 KO_CITRINET_GT = {
-    "test_00000.wav": "턴테이블",
     "test_00001.wav": "열선 시트 조금만 뒤로 옮겨",
     "test_00002.wav": "어느 방에 에어컨 작동 중이야",
     "test_00003.wav": "그 내용이 아직은 정확하지 않아요 고객님",

@@ -1,6 +1,0 @@
-[network]
-network_binary.nb
-[input]
-input_0.dat
-[output]
-output_0.dat
