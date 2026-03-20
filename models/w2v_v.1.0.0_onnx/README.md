@@ -24,6 +24,12 @@ facebook/wav2vec2 계열 모델의 T527 NPU 양자화 및 NB 변환 작업.
 3. **KL divergence** 알고리즘이 moving_average 대비 일관적으로 우수
 4. **dropout=0.1 재학습은 실패** — non-blank agreement 60.2% → 29.7%로 악화 (시도하지 말 것)
 
+### 다음 시도: int16 양자화
+
+T527 NPU는 int16(dynamic_fixed_point)을 지원한다 — zipformer int16이 디바이스에서 실행 확인됨.
+이전 wav2vec2 int16 "HANG" 보고는 VSIMULATOR_CONFIG 미설정(CID 불일치)이 원인일 가능성 높음.
+uint8 CER ~133% garbled 문제를 int16로 해결할 수 있는 대안.
+
 ### 실패한 접근들 (시도하지 말 것)
 
 | 접근 | 결과 | 이유 |
