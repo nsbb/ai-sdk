@@ -24,16 +24,25 @@ facebook/wav2vec2 계열 모델의 T527 NPU 양자화 및 NB 변환 작업.
 3. **KL divergence** 알고리즘이 moving_average 대비 일관적으로 우수
 4. **dropout=0.1 재학습은 실패** — non-blank agreement 60.2% → 29.7%로 악화 (시도하지 말 것)
 
-### 다음 시도: int16 양자화
+### int16 양자화 (2026-03-20, 시뮬 성공 / 디바이스 실패)
 
-T527 NPU는 int16(dynamic_fixed_point)을 지원한다 — zipformer int16이 디바이스에서 실행 확인됨.
-이전 wav2vec2 int16 "HANG" 보고는 VSIMULATOR_CONFIG 미설정(CID 불일치)이 원인일 가능성 높음.
-uint8 CER ~133% garbled 문제를 int16로 해결할 수 있는 대안.
+- **시뮬레이션 98.8%** NB agree (cos 0.9998) — Acuity 6.21 기준
+- **디바이스 1.2%** (garbage) — NPU HW의 Softmax/Erf int16 연산이 시뮬과 불일치
+- VivanteIDE 5.7.2 NB → HANG (layer_norm int16 커널 미지원), 5.8.2 NB → 실행되나 garbage
+- 레이어별 분석: CNN/InstanceNorm은 **int16 완벽** (cos 1.0), Softmax(min 0.914)/GELU(min 0.877)이 병목
+- zipformer는 Erf 없이 Sigmoid 사용 → int16 동작. **GELU→SiLU 대체가 유망한 다음 방향**
+
+### hybrid 양자화 (2026-03-20, 효과 미미)
+
+Pegasus `--hybrid`로 entropy 높은 레이어만 int16: CNN conv 7개 → 58.6% (+0.6%p), 45개 전부 → 46.3% (-11.7%p 악화).
+dtype_converter 삽입 오버헤드가 이득을 상쇄.
 
 ### 실패한 접근들 (시도하지 말 것)
 
 | 접근 | 결과 | 이유 |
 |------|------|------|
+| int16 전체 (디바이스) | 시뮬 98.8% → 디바이스 1.2% | Softmax/Erf int16 NPU HW 불일치 |
+| hybrid 45개 int16 | 46.3% (악화) | converter layer 오버헤드 |
 | dropout=0.1 재학습 후 PTQ | agreement 29.7% (악화) | CTC blank 과의존, PAD logit 증가 |
 | SDPA ONNX + 다양한 calibration (12종) | max 46.3% | ONNX 구조 자체가 uint8 비호환 |
 | XLS-R-300M (24L, 300M params) | 전부 실패 | 모델 크기 초과, attention 더 uniform |
